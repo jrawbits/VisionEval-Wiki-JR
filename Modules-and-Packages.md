@@ -5,18 +5,18 @@
 | SyntheticFirms | Create Synthetic Firms | household() | NA | X |   |
 | SetupZones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
 | CreatePlaceTypes | Create Place Types | urban() | NA | X |   |
-| TransportationSupply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
-| HouseholdLocation | Household location | NA | Not functionalized |   | X |
+| Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
+| Household Location | Household location | NA | Not functionalized |   | X |
 | DemandManagement WithCarServices | Demand Management With Car Services | NA | idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj |   | X |
 | Calculate VehicleOwnership | Calculate Vehicle Ownership | vehicle() | predictVehOwn, group qtr not functionalized | X | X |
-| CarServices AndAutonomousVehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
-| VehicleCharacteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
+| CarServices And AutonomousVehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
+| Vehicle Characteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
 | Calculate HouseholdAutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
 | CalculateTruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
 | CalculateAltModeVMT | Calculate Alt Mode VMT | demand() | predictLightVehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
-| Commercial ServiceVehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHhIncome, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVe hPowertrainMpgMpkwh, calcCommVeh HcEvDvmt |  | X |
+| Commercial Service VehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh PowertrainMpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | CalculateCongestion | Calculate Congestion | congestion() | calcCongestion | X | X |
-| InducedGrowthAndTravel | Induced Growth And Travel | policy congestion() | NA | X |   |
+| Induced GrowthAndTravel | Induced Growth And Travel | policy congestion() | NA | X |   |
 | PolicyAdjusted TravelDemand | Policy Adjusted Travel Demand | policy congestion() | NA | X |   |
 | PolicyAdjusted Congestion | Policy Adjusted Congestion | policy congestion() | NA | X |   |
 | TravelCost | Travel Cost | NA | calcVeh DepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge |   | X |
