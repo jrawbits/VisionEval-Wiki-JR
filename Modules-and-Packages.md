@@ -14,10 +14,10 @@
 | Calculate HouseholdAutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
 | CalculateTruckVMT | Calculate Truck VMT | demand() | adjustHvyVehAgeDistribution, assignHvyVehFuelEconomy | X | X |
 | CalculateAltModeVMT | Calculate Alt Mode VMT | demand() | predictLightVehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
-| Commercial ServiceVehicleTravel | Commercial service vehicle travel | NA | calcCommVehTravelFromHhIncome, calcCommVehTravelFromHhDvmt, calcCommVehTypeAgeProp, calcCommVehPowertrainMpgMpkwh, calcCommVehHcEvDvmt |  | X |
+| Commercial ServiceVehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHhIncome, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVe hPowertrainMpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | CalculateCongestion | Calculate Congestion | congestion() | calcCongestion | X | X |
 | InducedGrowthAndTravel | Induced Growth And Travel | policycongestion() | NA | X |   |
 | PolicyAdjusted TravelDemand | Policy Adjusted Travel Demand | policycongestion() | NA | X |   |
 | PolicyAdjusted Congestion | Policy Adjusted Congestion | policycongestion() | NA | X |   |
-| TravelCost | Travel Cost | NA | calcVehDepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge |   | X |
-| FuelConsumption AndEmissions | Fuel Consumption and Emissions | NA | calcVehFuelElecCo2, calcCarSvcFuelElecCo2Rates, calcCarSvcFuelElecCo2, calcFuelElectricityUse, calcCommVehEmissions, calcCommVehCosts, calcCommVehEmissionRatesByAge, adjEcoTire |   | X |
+| TravelCost | Travel Cost | NA | calcVeh DepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge |   | X |
+| FuelConsumption AndEmissions | Fuel Consumption and Emissions | NA | calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire |   | X |
