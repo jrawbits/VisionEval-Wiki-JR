@@ -1,20 +1,20 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| SyntheticHouseholds | Create Synthetic Households | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
-| GroupQuarters PopulationSynthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
-| SyntheticFirms | Create Synthetic Firms | household() | NA | X |   |
+| Synthetic Households | Create Synthetic Households | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| GroupQuarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
+| Synthetic Firms | Create Synthetic Firms | household() | NA | X |   |
 | SetupZones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
 | CreatePlaceTypes | Create Place Types | urban() | NA | X |   |
 | Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
 | Household Location | Household location | NA | Not functionalized |   | X |
 | DemandManagement WithCarServices | Demand Management With Car Services | NA | idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj |   | X |
-| Calculate VehicleOwnership | Calculate Vehicle Ownership | vehicle() | predictVehOwn, group qtr not functionalized | X | X |
-| CarServices And AutonomousVehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
+| Calculate Vehicle Ownership | Calculate Vehicle Ownership | vehicle() | predictVehOwn, group qtr not functionalized | X | X |
+| CarServices And Autonomous Vehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
 | Vehicle Characteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
 | Calculate HouseholdAutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
 | CalculateTruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
-| CalculateAltModeVMT | Calculate Alt Mode VMT | demand() | predictLightVehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
-| Commercial Service VehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh PowertrainMpgMpkwh, calcCommVeh HcEvDvmt |  | X |
+| CalculateAltModeVMT | Calculate Alt Mode VMT | demand() | predictLight Vehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
+| Commercial Service VehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh Powertrain MpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | CalculateCongestion | Calculate Congestion | congestion() | calcCongestion | X | X |
 | Induced GrowthAndTravel | Induced Growth And Travel | policy congestion() | NA | X |   |
 | PolicyAdjusted TravelDemand | Policy Adjusted Travel Demand | policy congestion() | NA | X |   |
