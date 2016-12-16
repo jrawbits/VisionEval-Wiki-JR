@@ -21,3 +21,11 @@
 | Policy Adjusted Congestion | Policy Adjusted Congestion | policy congestion() | NA | X |   |
 | TravelCost | Travel Cost | NA | calcVeh DepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge |   | X |
 | Fuel Consumption And Emissions | Fuel Consumption and Emissions | NA | calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire |   | X |
+
+The columns in the table are as follows:
+  - R Package: Name of the package to group modules.
+  - VE Module: Description of a VisionEval module to carry out some defined functionality.
+  - RPAT Module Today: The name of the RPAT function which now embodies the module functionality. NA means the functionality is not present.
+  - RSPM Module Today: The name of RSPM functions or if just part of a script (not functionalized) which embodies the module functionality. NA means the functionality is not present.
+  - VE RPAT: Checkmark if the module would be used for RPAT.
+  - VE RSPM: Checkmark if the module would be used for RSPM.
