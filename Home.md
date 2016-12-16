@@ -1,3 +1,3 @@
-Welcome to the VisionEval wiki!
+VisionEval 
 
   - [Modules and Packages](Modules-and-Packages)
