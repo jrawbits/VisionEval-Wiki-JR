@@ -6,6 +6,8 @@ VisionEval Framework is a model system:
   - Datastore and Framework services support a running model
   - Consistent geography (explicit or synthesized) in all components allows modules/packages to be shared across models
 
+![](ve.png)
+
 Projects
   - [RPAT](https://github.com/RSGInc/VisionEvalRPAT)
   - RSPM
