@@ -12,7 +12,7 @@
 | CarServices AndAutonomousVehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
 | VehicleCharacteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
 | Calculate HouseholdAutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
-| CalculateTruckVMT | Calculate Truck VMT | demand() | adjustHvyVehAgeDistribution, assignHvyVehFuelEconomy | X | X |
+| CalculateTruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
 | CalculateAltModeVMT | Calculate Alt Mode VMT | demand() | predictLightVehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
 | Commercial ServiceVehicleTravel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHhIncome, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVe hPowertrainMpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | CalculateCongestion | Calculate Congestion | congestion() | calcCongestion | X | X |
