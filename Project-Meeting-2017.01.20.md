@@ -14,7 +14,7 @@
   - revisions to VE framework
     - Moving along with the pilot to make the pilots possible
   - use of GitHub for issues, milestones, etc.
-    -Start using GitHub to create a project record
+    - Start using GitHub to create a project record
  
   - prioritize future work
     - pilot modules will be over budget
