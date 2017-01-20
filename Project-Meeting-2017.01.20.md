@@ -7,7 +7,6 @@
   - Brian Gardner
   - Brian Gregor
 
-
 ## update on work completed
   - pilot modules - household simulation and employment simulation
     - Close to completing 2.2
