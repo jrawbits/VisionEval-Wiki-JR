@@ -1,4 +1,7 @@
-The current list of VisionEval modules/package and models is maintained on this site.
+# VisionEval - A programming framework for disaggregate strategic planning models
+
+\
+The current list of VisionEval modules/package and models is maintained here.
 
 ###Modules & Packages 
 Modules perform individual tasks and are the fundamental building blocks of VisionEval code (e.g., create households). They perform single or multiple (sub-module) functions.  Packages are logically related combinations of one or more modules organized into libraries, as a way to distribute the VisionEval code (e.g. HH synthesis including location, income, age, etc.). Each module is assigned to a package.
