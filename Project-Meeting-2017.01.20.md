@@ -12,7 +12,7 @@
   - pilot modules - household simulation and employment simulation
     - Close to completing 2.2
   - revisions to VE framework
-    - Moving along with the pilot to make the pilot possible
+    - Moving along with the pilot to make the pilots possible
   - use of GitHub for issues, milestones, etc.
     -Start using GitHub to create a project record
  
