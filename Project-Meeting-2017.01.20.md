@@ -6,7 +6,7 @@
   - use of GitHub for issues, milestones, etc.
     - Start using GitHub to create a project record
  
-## Prioritize future work
+## Prioritize Future Work
   - pilot modules will be over budget
   - there are trade offs between re-implementing RSPM and RPAT vs. creating a framework that can accommodate both
   - how should we best accommodate this and prioritize additional work?
