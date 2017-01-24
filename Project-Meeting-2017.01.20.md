@@ -1,4 +1,5 @@
 ## Attendees
+  - Kristin Hull
   - Eric Pihl
   - Rachel Roper
   - Ben Stabler
