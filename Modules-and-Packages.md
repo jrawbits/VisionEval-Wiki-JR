@@ -1,6 +1,6 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| Synthetic Households | Create Synthetic Households | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| Synthetic Households | [Create Synthetic Households](https://github.com/gregorbj/SimHouseholds) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
 | Synthetic Firms | [Create Synthetic Firms](https://github.com/RSGInc/VisionEvalSyntheticFirms) | household() | NA | X |   |
 | Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
