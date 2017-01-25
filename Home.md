@@ -13,5 +13,5 @@ Models consist of a set sequence of modules called in a run script (e.g. RSPM, R
   - RSPM
 
 ###Graphical User Interface and Scenario Viewer
-A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models will be developed.  
+A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models is being developed.  
   - [[User Interface Design]]
