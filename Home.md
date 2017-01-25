@@ -12,6 +12,6 @@ Models consist of a set sequence of modules called in a run script (e.g. RSPM, R
   - [RPAT](https://github.com/RSGInc/VisionEvalRPAT)
   - RSPM
 
-###Graphical User Interface
-A GUI that works for both the RPAT and RSPM models will be developed.  
-  - [VisionEvalGUI](https://github.com/RSGInc/VisionEvalGUI)
+###Graphical User Interface and Scenario Viewer
+A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models will be developed.  
+  - [User Interface Design]
