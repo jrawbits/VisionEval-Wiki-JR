@@ -1,16 +1,23 @@
-# Design
-  - Merge the GUI and the Scenario Viewer into one solution
-  - Reads various VE settings and config files (INP, GET, SET) to figure out what is in the model setup
-  - Reads the HDF5 output datastore
+# Design Questions
+  - Should we merge the GUI and the Scenario Viewer into one solution?  Hopefully yes.
+  - It should reads various VE settings and config files (INP, GET, SET) to figure out what is in the model setup
+  - It should reads the HDF5 output datastore
+  - It should have a backend settings file so we can write a script to automate runs
 
-# Technology
-  - Entirely in javascript and served by GitHub pages
-  - Uses [hdf5.node](https://github.com/HDF-NI/hdf5.node), which requires the HDF5 libraries to first be installed on the user's machine
-  - Maybe use [Vega](https://vega.github.io/vega/) javascript library
-  - Maybe use [shiny](https://shiny.rstudio.com/) instead
+# Example options to review and discuss:
+    - Client-side JavaScript such as [ABMVIZ](http://rsginc.github.io/ABMVIZ) and [RPAT Dashboard](http://gregorbj.github.io/RPAT_Viewer_Pilot/VizRPAT)
+      - These are served by GitHub and read CSV files for data 
+      - Potential issue with reading VE's HDF5 datastore since HDF5 libraries are native to the OS; this [library](https://github.com/HDF-NI/hdf5.node) may solve this problem
+    - Client-side flexdashboard R package such as the [PART model dashboard](http://rsginc.github.io/part_model)
+      - Is run at the end of a model run; write R code that gets converted to HTML/JavaScript; see [here](http://rsginc.github.io/part_model/Modeling%20Knowledge%20Sharing%20--%20PART%20Dashboard.pptx) for more details
+      - Maybe not sufficient technology for a GUI as well; can also make use of [R shiny](https://shiny.rstudio.com/), see below.
+    - Server- and/or desktop-based such as the [FSDM GUI](https://github.com/gregorbj/FSDM_GUI/blob/master/documentation/FSDM_Users_Guide_20161116.docx) which uses [R shiny](https://shiny.rstudio.com/) and the existing [RPAT GUI](https://planningtools.transportation.org/files/63.pdf) which uses [CherryPy](http://cherrypy.org)
+      - These are not very lightweight since they require running a web server, installing R, RStudio, Python, and dependent libraries, which often requires user admin rights.
 
-# Prototype
-  - Setup and run with VE household and employment simulation models
+# What's our vision for the VE GUI/Visualizer?
+  - The scope says transfer the existing RPAT GUI (CherryPy) but that probably isn't the best choice for the long term future of VisionEval
+  - I suggest we look into client-side web applications like R flexdashboard
 
-# Batch running
-  - GUI will have a backend settings file so we can write a script to automate runs
+# Next steps
+  - Decide on technology
+  - Prototype a GUI/visualizer for running and visualizing the VE household and employment simulation models
