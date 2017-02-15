@@ -6,6 +6,7 @@
     - Needed to split VisionEvalSyntheticFirms into a base and future year module
 
 ## Work plan and early ideas for visualizer and GUI
+  - [[Requirements / Examples]]
   - Requirements / Questions
     - Should the GUI/Visualizer be one tool?  Hopefully yes.
     - Should the GUI/Visualizer be a desktop application, a client-side web application, or a server-based web application?  Hopefully a client-side web application since this means limited back-end administration
