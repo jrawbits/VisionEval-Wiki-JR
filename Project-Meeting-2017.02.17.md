@@ -12,4 +12,4 @@
 ## Proposed revision to work plan
   - RSG has spent about 1/3 of its budget
   - OSA has spent about 1/3 of its budget
-  - In terms of remaining budget, we can probably build a reasonable GUI/Visualizer and complete the RSPM translation (with simplified vehicle models); RPAT won't be translated
+  - In terms of remaining budget, we can probably build a reasonable GUI/Visualizer and complete the RSPM translation (with simplified vehicle models)
