@@ -3,6 +3,7 @@
   - It should reads various VE settings and config files (INP, GET, SET) to figure out what is in the model setup
   - It should reads the HDF5 output datastore
   - It should have a backend settings file so we can write a script to automate runs
+  - Who will administer the GUI/Visualizer?  Who will develop and support it?  Probably modelers, not software developers.
 
 # Example options to review and discuss
   - Client-side JavaScript such as [ABMVIZ](http://rsginc.github.io/ABMVIZ) and [RPAT Dashboard](http://gregorbj.github.io/RPAT_Viewer_Pilot/VizRPAT)
