@@ -18,7 +18,7 @@
 
 # What's our vision for the GUI/Visualizer?
   - The scope says transfer the existing RPAT GUI but that probably is not the best choice for the long term VE project
-  - I suggest we look into client-side web applications like R flexdashboard
+  - I suggest we look into client-side web applications like R flexdashboard and maybe R shiny.
 
 # Next steps
   - Decide on technology
