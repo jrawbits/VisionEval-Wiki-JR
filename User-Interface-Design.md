@@ -16,8 +16,8 @@
   - Server- and/or desktop-based such as the [FSDM GUI](https://github.com/gregorbj/FSDM_GUI/blob/master/documentation/FSDM_Users_Guide_20161116.docx) which uses [R shiny](https://shiny.rstudio.com/) and the existing [RPAT GUI](https://planningtools.transportation.org/files/63.pdf) which uses [CherryPy](http://cherrypy.org)
     - These are not very lightweight since they require running a web server, installing R, RStudio, Python, and dependent libraries, which often requires user admin rights.
 
-# What's our vision for the VE GUI/Visualizer?
-  - The scope says transfer the existing RPAT GUI (CherryPy) but that probably isn't the best choice for the long term future of VisionEval
+# What's our vision for the GUI/Visualizer?
+  - The scope says transfer the existing RPAT GUI but that probably is not the best choice for the long term VE project
   - I suggest we look into client-side web applications like R flexdashboard
 
 # Next steps
