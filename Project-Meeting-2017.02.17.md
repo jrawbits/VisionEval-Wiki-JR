@@ -1,5 +1,8 @@
-## HH and employment pilot modules (Brian and Ben)
+## HH and employment pilot modules
+  - 
 
-## Work plan and early ideas for visualizer and GUI (Ben)
+## Work plan and early ideas for visualizer and GUI
+  - 
 
-## Proposed revision to work plan (Ben)
+## Proposed revision to work plan
+  - 
