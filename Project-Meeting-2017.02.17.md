@@ -13,3 +13,9 @@
   - RSG has spent about 1/3 of its budget
   - OSA has spent about 1/3 of its budget
   - In terms of remaining budget, we can probably build a reasonable GUI/Visualizer and complete the RSPM translation (with simplified vehicle models)
+
+## Plan for RPAT translation
+ - translate current functionality 1:1
+ - current + RPAT_wishlist {need to add an RPAT future functionality wiki page or equiv}
+
+
