@@ -3,6 +3,7 @@
   - Revised and tested the HouseholdSim package
   - Revised and tested the VisionEvalSyntheticFirms package
     - Needed to split VisionEvalSyntheticFirms into a base and future year module
+  - Can now reference multiple datastores in the model setup
   - Still a little work to do on the VE package before updating GitHub
 
 ## Work plan and early ideas for visualizer and GUI
