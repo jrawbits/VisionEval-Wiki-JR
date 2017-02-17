@@ -4,7 +4,9 @@
   - Revised and tested the VisionEvalSyntheticFirms package
     - Needed to split VisionEvalSyntheticFirms into a base and future year module
   - Can now reference multiple datastores in the model setup
-  - Still a little work to do on the VE package before updating GitHub
+  - @Brian - still a little work to do on the VE package before updating GitHub
+  - @Ben - review pilot modules
+  - @Ben - merge all VE projects back into this repo for easier management
 
 ## Work plan and early ideas for visualizer and GUI
   - @Ben updated [[User-Interface-Design]] for review by team
