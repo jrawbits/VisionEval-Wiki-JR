@@ -19,4 +19,7 @@
  - translate current functionality 1:1
  - current + RPAT_wishlist {need to add an RPAT future functionality wiki page or equiv}
 
+## VE project ownership
+ - Will setup a VisionEval organization account and contractors will be owners during their contract period
+
 
