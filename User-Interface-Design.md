@@ -1,4 +1,10 @@
+# What's our vision for the GUI/Visualizer?
+  - The scope says transfer the existing RPAT GUI (see below), but that is probably not the best choice for the long term VE project
+  - I suggest we look into client-side web applications like R flexdashboard and maybe shiny (see below) since VE is an R-based framework.
+
 # Design Questions
+  - We want to avoid desktop application issues such as admin rights, installers, etc.
+  - We want it to be modular - the runner and visualizer are separate but they can cooperate
   - Should we merge the GUI and the Scenario Viewer into one solution?  Hopefully yes.
   - It should reads various VE settings and config files (INP, GET, SET) to figure out what is in the model setup
   - It should reads the HDF5 output datastore
@@ -17,13 +23,7 @@
   - Server- and/or desktop-based such as the [FSDM GUI](https://github.com/gregorbj/FSDM_GUI/blob/master/documentation/FSDM_Users_Guide_20161116.docx) which uses [R shiny](https://shiny.rstudio.com/) and the existing [RPAT GUI](https://planningtools.transportation.org/files/63.pdf) which uses [CherryPy](http://cherrypy.org)
     - These are not very lightweight since they require running a web server, installing R, RStudio, Python, and dependent libraries, which often requires user admin rights.
 
-# What's our vision for the GUI/Visualizer?
-  - The scope says transfer the existing RPAT GUI but that probably is not the best choice for the long term VE project
-  - I suggest we look into client-side web applications like R flexdashboard and maybe R shiny since VE is an R-based framework.
-  - We want to avoid desktop application issues such as admin rights, installers, etc.
-  - We want it to be modular - the runner and visualizer are separate but they can cooperate
-
 # Next steps
-  - Decide on technology -> the team agreed to a R flexdashboard / shiny-based approach
+  - Decide on technology -> the team agreed to look into R flexdashboard / shiny-based options
   - Prototype a GUI/visualizer for running and visualizing the VE household and employment simulation models
   
