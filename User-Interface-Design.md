@@ -13,13 +13,17 @@
     - The user writes R code that gets converted to HTML/JavaScript at the end of a model run
     - See [here](http://rsginc.github.io/part_model/Modeling%20Knowledge%20Sharing%20--%20PART%20Dashboard.pptx) for more details
     - Maybe not sufficient technology for a GUI as well; can also make use of [R shiny](https://shiny.rstudio.com/), see below.
+   - Brian ran into memory problems running it on his 4GB laptop
   - Server- and/or desktop-based such as the [FSDM GUI](https://github.com/gregorbj/FSDM_GUI/blob/master/documentation/FSDM_Users_Guide_20161116.docx) which uses [R shiny](https://shiny.rstudio.com/) and the existing [RPAT GUI](https://planningtools.transportation.org/files/63.pdf) which uses [CherryPy](http://cherrypy.org)
     - These are not very lightweight since they require running a web server, installing R, RStudio, Python, and dependent libraries, which often requires user admin rights.
 
 # What's our vision for the GUI/Visualizer?
   - The scope says transfer the existing RPAT GUI but that probably is not the best choice for the long term VE project
   - I suggest we look into client-side web applications like R flexdashboard and maybe R shiny since VE is an R-based framework.
+  - We want to avoid desktop application issues such as admin rights, installers, etc.
+  - We want it to be modular - the runner and visualizer are separate but they can cooperate
 
 # Next steps
-  - Decide on technology
+  - Decide on technology -> the team agreed to a R flexdashboard / shiny-based approach
   - Prototype a GUI/visualizer for running and visualizing the VE household and employment simulation models
+  
