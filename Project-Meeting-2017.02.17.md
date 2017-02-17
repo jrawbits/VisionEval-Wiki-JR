@@ -10,7 +10,7 @@
   - @Ben updated [[User-Interface-Design]] for review by team
   - Need to decide on an approach / technology before moving forward
   - @Jeremy wants to see a structured description of the data flow / API as part of the user interface design
-  - @Jeremy wants to ensure our deliverable is something to build-on; not something done quickly to satisfy project budget, which we might end up throwing away later on
+  - @Jeremy wants to ensure our deliverable is something to build-on; not something done quickly to satisfy project budget, which might be thrown away later on
   - We decided to try an R-based client-side application to stay within the programming language family and to avoid issues with installation, admin rights, etc.
 
 ## Proposed revision to work plan
