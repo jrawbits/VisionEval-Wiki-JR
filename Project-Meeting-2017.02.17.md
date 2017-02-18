@@ -26,3 +26,6 @@
 ## VE project ownership
  - @Volpe - planning to setup a VisionEval GitHub organization account and to add contractors as owners during their contract period so they can help manage the effort.  Contributors will be added to the organization as well.  
 
+## Next meeting
+ - Next meeting March 3rd
+ - @Ben move technical meeting back a week 
