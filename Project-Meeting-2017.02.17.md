@@ -24,6 +24,5 @@
  - @CH, RSG, OSA - develop scope, schedule, and budget by next Wed (2/22) for getting RPAT back up to a usable product to share with others 
 
 ## VE project ownership
- - @Volpe - will setup a VisionEval GitHub organization account and contractors will be owners during their contract period
-
+ - @Volpe - planning to setup a VisionEval GitHub organization account and to add contractors as owners during their contract period so they can help manage the effort.  Contributors will be added to the organization as well.  
 
