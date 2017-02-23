@@ -1,6 +1,6 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| VESimHouseholds | [Create Households](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| VESimHouseholds | [Create Households](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
 | VESyntheticFirms | [Create Base Synthetic Firms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
 | VESyntheticFirms | [Create Future Synthetic Firms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
