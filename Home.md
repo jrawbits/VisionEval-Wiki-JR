@@ -18,4 +18,4 @@ A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and 
   - [[Design | User-Interface-Design]]
 
 ### Outstanding Issues and Project Progress
-The current VE todo list and overall project progress is being managed as [Issues](https://github.com/gregorbj/VisionEval/issues) and [Project Milestones](https://github.com/gregorbj/VisionEval/milestones).  
+The current list of VisionEval todos, feature requests, known issues, etc. is being managed as [Issues](https://github.com/gregorbj/VisionEval/issues) for [Project Milestones](https://github.com/gregorbj/VisionEval/milestones).  
