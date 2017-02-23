@@ -7,5 +7,5 @@
 
 ###Project Management
  - [[Meeting Notes]]
- - [Issues | https://github.com/gregorbj/VisionEval/issues]
- - [Project Milestones | https://github.com/gregorbj/VisionEval/milestones]
+ - [Issues](https://github.com/gregorbj/VisionEval/issues)
+ - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
