@@ -1,8 +1,9 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| Synthetic Households | [Create Synthetic Households](https://github.com/gregorbj/SimHouseholds) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| VESimHouseholds | [CreateHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
-| Synthetic Firms | [Create Synthetic Firms](https://github.com/RSGInc/VisionEvalSyntheticFirms) | household() | NA | X |   |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
+| VESyntheticFirms | [CreateFutureSyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
 | Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
 | Create Place Types | Create Place Types | urban() | NA | X |   |
 | Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
