@@ -9,9 +9,10 @@ Modules perform individual tasks and are the fundamental building blocks of Visi
 
 ###Models
 Models consist of a set sequence of modules called in a run script (e.g. RSPM, RPAT). A model is further customized for a local community by the set of data used from the datastore.
-  - [RPAT](https://github.com/RSGInc/VisionEvalRPAT)
+  - [RPAT](https://github.com/gregorbj/VisionEval/tree/master/sources/models/VERPAT)
   - RSPM
 
 ###Graphical User Interface and Scenario Viewer
 A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models is being developed.  
-  - [[User Interface Design]]
+  - [VEGUI](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI)
+  - [[Design]]
