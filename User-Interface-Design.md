@@ -14,7 +14,8 @@
 # Example options to review and discuss
   - Client-side JavaScript such as [ABMVIZ](http://rsginc.github.io/ABMVIZ) and [RPAT Dashboard](http://gregorbj.github.io/RPAT_Viewer_Pilot/VizRPAT)
     - These are served by GitHub and read CSV files for data 
-    - Potential issue with reading VE's HDF5 datastore since HDF5 libraries are native; need to first install this [library](https://github.com/HDF-NI/hdf5.node)
+    - Potential issue with reading VE's HDF5 datastore since HDF5 libraries are native
+      - This [library](https://github.com/HDF-NI/hdf5.node) is the only HDF5 JavaScript library and it requires Node.js, which is basically a JavaScript web server, which is not easy to setup and maintain.  This likely prevents us from a client-side JavaScript-based solution.
   - Client-side flexdashboard R package such as the [PART model dashboard](http://rsginc.github.io/part_model)
     - The user writes R code that gets converted to HTML/JavaScript at the end of a model run
     - See [here](http://rsginc.github.io/part_model/Modeling%20Knowledge%20Sharing%20--%20PART%20Dashboard.pptx) for more details
