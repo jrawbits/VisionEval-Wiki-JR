@@ -27,5 +27,5 @@
 
 # Next steps
   - Decide on technology -> the team agreed to look into R flexdashboard / shiny-based options
-  - Prototype a GUI/visualizer for running and visualizing the VE household and employment simulation models
+  - [Prototype a GUI/visualizer](https://github.com/gregorbj/VisionEval/issues/46) for running and visualizing the VE household and employment simulation models
   
