@@ -12,7 +12,8 @@
     - [VERSPM model](https://github.com/gregorbj/VisionEval/issues/55)
 
 ## Technical team meeting review
-  - [Meeting notes here](https://github.com/gregorbj/VisionEval/wiki/Project-Meeting-2017.03.02)
+  - We met for the first time yesterday
+  - Here are the [meeting notes](https://github.com/gregorbj/VisionEval/wiki/Project-Meeting-2017.03.02)
 
 ## Next call
   - April 7th
