@@ -10,7 +10,7 @@
   - We will cooperate in an Agile way, i.e. we'll set targets for the next two weeks, go and work on them, and then come back and discuss progress, next steps, etc.  
 
 ## Next Steps
-  - @Thanh, Jennifer - get familiar with the VE GitHub site, download and run the existing pilots, etc.
+  - @Thanh, Jennifer, Josh, Eric - get familiar with the VE GitHub site, download and run the existing pilots, etc.
 
 ## Next Call
   - We will check-in every two weeks for 30 minutes
