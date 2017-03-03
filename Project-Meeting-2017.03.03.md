@@ -6,10 +6,13 @@
   - @Brian G and @Ben will address remaining comments
   - @Brian will commit a [VERSPM](https://github.com/gregorbj/VisionEval/issues/55)
   - @Brian will commit RVMPO for the RSPM model test data; @Tara check with RVMPO
-  - Pilot modules punch list
+  - Work to complete the pilot modules:
     - update framework [documentation](https://github.com/gregorbj/VisionEval/issues/43)
     - setup [pilot testing](https://github.com/gregorbj/VisionEval/issues/51)
     - [VERSPM model](https://github.com/gregorbj/VisionEval/issues/55)
 
 ## Technical team meeting review
   - [Meeting notes here](https://github.com/gregorbj/VisionEval/wiki/Project-Meeting-2017.03.02)
+
+## Next call
+  - April 7th
