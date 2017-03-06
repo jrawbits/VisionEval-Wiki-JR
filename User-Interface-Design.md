@@ -1,5 +1,5 @@
 # What's our vision for the GUI/Visualizer?
-  - The scope says transfer the existing RPAT GUI (see below), but that is probably not the best choice for the long term VE project
+  - The scope says transfer the [existing RPAT GUI](https://planningtools.transportation.org/files/63.pdf) (see below), but that is probably not the best choice for the long term VE project
   - I suggest we look into client-side web applications like R flexdashboard and maybe shiny (see below) since VE is an R-based framework.
 
 # Design Questions
