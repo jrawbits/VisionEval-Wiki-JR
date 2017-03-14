@@ -2,7 +2,7 @@
   - The scope says transfer the [existing RPAT GUI](https://planningtools.transportation.org/files/63.pdf) (see below), but that is probably not the best choice for the long term VE project
   - I suggest we look into client-side web applications like R flexdashboard and maybe shiny (see below) since VE is an R-based framework.
 
-# Design Questions
+# Design Questions / Requirements
   - We want to avoid desktop application issues such as admin rights, installers, etc.
   - We want it to be modular - the runner and visualizer are separate but they can cooperate
   - Should we merge the GUI and the Scenario Viewer into one solution?  Hopefully yes.
@@ -10,6 +10,7 @@
   - It should reads the HDF5 output datastore
   - It should have a backend settings file so we can write a script to automate runs
   - Who will administer the GUI/Visualizer?  Who will develop and support it?  Probably modelers, not software developers.
+  - It will display the modules to be called by the models and their current status as the model runs
 
 # Example options to review and discuss
   - Client-side JavaScript such as [ABMVIZ](http://rsginc.github.io/ABMVIZ) and [RPAT Dashboard](http://gregorbj.github.io/RPAT_Viewer_Pilot/VizRPAT)
