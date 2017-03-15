@@ -1,18 +1,20 @@
-# What's our vision for the GUI/Visualizer?
-  - The scope says transfer the [existing RPAT GUI](https://planningtools.transportation.org/files/63.pdf) (see below), but that is probably not the best choice for the long term VE project
+# Design Discussion
+
+## What's our vision for the GUI/Visualizer?
+  - Transferring the [existing RPAT GUI](https://planningtools.transportation.org/files/63.pdf) (see below) is scoped, but this is probably not the best choice for the long term VE project since it uses technology that is unlikely to be maintained by the VE community into the future.
   - I suggest we look into client-side web applications like R flexdashboard and maybe shiny (see below) since VE is an R-based framework.
 
-# Design Questions / Requirements
+## Design Questions / Requirements
   - We want to avoid desktop application issues such as admin rights, installers, etc.
   - We want it to be modular - the runner and visualizer are separate but they can cooperate
   - Should we merge the GUI and the Scenario Viewer into one solution?  Hopefully yes.
-  - It should reads various VE settings and config files (INP, GET, SET) to figure out what is in the model setup
+  - It should reads various VE settings and config files (such as the INP, GET, SET lists) to figure out what is in the model setup
   - It should reads the HDF5 output datastore
   - It should have a backend settings file so we can write a script to automate runs
-  - Who will administer the GUI/Visualizer?  Who will develop and support it?  Probably modelers, not software developers.
   - It will display the modules to be called by the models and their current status as the model runs
+  - Who will administer the GUI/Visualizer?  Who will develop and support it?  Probably modelers, not software developers.
 
-# Example options to review and discuss
+## Example options to review and discuss
   - Client-side JavaScript such as [ABMVIZ](http://rsginc.github.io/ABMVIZ) and [RPAT Dashboard](http://gregorbj.github.io/RPAT_Viewer_Pilot/VizRPAT)
     - These are served by GitHub and read CSV files for data 
     - Potential issue with reading VE's HDF5 datastore since HDF5 libraries are native
@@ -26,7 +28,19 @@
     - These are not very lightweight since they require running a web server, installing R, Python, and dependent libraries, which often requires user admin rights.
     - *Update: R shiny is fairly easy to install and update and therefore makes for a reasonable technology for the VE UI.*
 
-# Next steps
+## Next steps
   - Decide on technology -> the team agreed to look into R flexdashboard / shiny-based options
   - [Prototype a GUI/visualizer](https://github.com/gregorbj/VisionEval/issues/46) for running and visualizing the VE household and employment simulation models
   
+# Specification
+The VE UI lives [here](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI) and is implemented with R shiny.
+
+## Requirements
+  - [x] Avoid desktop application issues such as admin rights, installers, etc.  This requirement is satisfied by using R shiny, R commands to download and install required R software, and including clear instructions in the various READMEs in the repo. 
+  - [x] Modular - the runner and visualizer are separate but they can cooperate.  VE models do not require the UI in order to be run.  In order to run a VE model from the UI, the user simply selects a modle run script.
+  - [ ] GUI and the Scenario Viewer are one solution.  By using shiny, we will be able to implement the UI for running models with the scenario viewer (visualizer) for viewing the results of multiple model runs. 
+  - [ ] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.
+  - [ ] Reads multiple HDF5 output datastores in order to visualizer results across scenarios.  The user can select multiple HDF5 output datastores in the UI.
+  - [ ] After selecting a VE model run script, it displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which is currently running, and what remains to be run.
+
+## Required Revisions to the VE framework
