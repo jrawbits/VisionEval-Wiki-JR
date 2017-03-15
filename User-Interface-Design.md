@@ -40,11 +40,14 @@ This page describes the VE User Interface, which includes the model runner and s
 The VE UI lives [here](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI) and is implemented with R shiny.
 
 ## Requirements
-  - [x] Avoid desktop application issues such as admin rights, installers, etc.  This requirement is satisfied by using R shiny, R commands to download and install required R software, and including clear instructions in the various READMEs in the repo. 
-  - [x] Modular - the runner and visualizer are separate but they can cooperate.  VE models do not require the UI in order to be run.  In order to run a VE model from the UI, the user simply selects a model run script.
+  - [x] Avoid desktop application issues such as admin rights, installers, etc.  This requirement is satisfied by using R shiny, R commands to download and install required R software, and including clear instructions in the various READMEs in the repo.
+  - [x] Modular - the runner and visualizer are separate but they can cooperate.  VE models do not require the UI in order to be run.  In order to run a VE model from the UI, the user simply selects a model run script.  Cooperation is handled through the requirement to display module status (see below).
   - [ ] GUI and Scenario Viewer are one solution.  By using shiny, we will be able to implement the UI for running models and the scenario viewer (visualizer) for viewing the results of multiple model runs. 
-  - [ ] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.
-  - [ ] Reads HDF5 output datastores from multiple runs in order to visualizer results across scenarios.  The user can select multiple HDF5 output datastores in the UI.
-  - [ ] After selecting a VE model run script, the UI displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which module is currently running, and what modules still need to be run.
+  - [ ] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.  See issues [#60](https://github.com/gregorbj/VisionEval/issues/60)
+  - [ ] Reads any CSV input files in the inputs folder and lets the user edit the files from the UI.  See issues [#61](https://github.com/gregorbj/VisionEval/issues/61)
+  - [ ] Reads HDF5 output datastores from multiple runs in order to visualizer results across scenarios.  The user can select multiple HDF5 output datastores in the UI.  See issues [#62](https://github.com/gregorbj/VisionEval/issues/62)
+  - [ ] Update UI with running module status.  After selecting a VE model run script, the UI displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which module is currently running, and what modules still need to be run.  See issues [#63](https://github.com/gregorbj/VisionEval/issues/63)
+  - [ ] Copy a scenario.  After selecting a run model script, the complete scenario folder setup is copied to a new folder named by the user.  See issues [#64](https://github.com/gregorbj/VisionEval/issues/64)
 
-## Required Revisions to the VE framework
+## Revisions required to the VE framework
+In order for the UI and a VE model to cooperate about the module run state, the following change will be made to the visioneval framework.  The ModelState list will be kept in the Global namespace at all times so the UI and the model run script can share it.  The ModelState list now includes the results of the `parseModelScript` function call in the `initializeModel` function, which parses the model script and creates a table of module calls in the order they are called.  The `runModule` function is updated to set the status of each module in the module table as the model runs.  Example valid status values are: "planned", "running", "complete".
