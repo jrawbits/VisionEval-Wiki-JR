@@ -4,6 +4,7 @@
 - [[Modules and Packages|Modules-and-Packages]]
 - [[User Interface Design]]
 - [[RPAT Features | RPAT-features]]
+- [[Development Guidelines | Development-Guidelines]]
 
 ### Project Management
  - [[Meeting Notes]]
