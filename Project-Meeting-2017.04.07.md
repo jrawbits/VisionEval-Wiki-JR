@@ -12,5 +12,5 @@
   - OSA working on other SimHouseholds modules, including hh income and hh building type
 
 ### Project Management
-  - Working toward a release next week ahead of the technical review meeting
   - RSG and OSA established a git workflow, see [[development guidelines | Development-Guidelines]]
+  - Working toward a master branch update (interim release) next week ahead of the technical review meeting
