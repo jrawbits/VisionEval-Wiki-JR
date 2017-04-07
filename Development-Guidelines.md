@@ -1,4 +1,4 @@
-### Workflow
+### Git Workflow
   - The master branch contains the latest working/release version of the VE resources
   - The master branch is not directly written to
   - Work is done in the develop branch or an issue/feature branch off of develop
