@@ -6,11 +6,12 @@
   - [#85](https://github.com/gregorbj/VisionEval/issues/85)
   - [#86](https://github.com/gregorbj/VisionEval/issues/86)
   - [#91](https://github.com/gregorbj/VisionEval/issues/91)
+  - Will look into [HDF5Table](https://support.hdfgroup.org/HDF5/Tutor/h5table.html) support as well
 
 ### UI Updates
   - Please checkout latest code and try UI again
   - There are lots of improvements since the last version
-  - Jeremy was able to download and run the update and 
+  - Jeremy ran the updated UI successfully 
 
 ### Next Steps
   - @RSG - finish up remaining UI issues such as editing and saving tables
