@@ -1,6 +1,7 @@
 The VE User Interface, which includes the model runner and scenario viewer/visualizer, is described here.
   - [Design Discussion](#design-discussion)
   - [Specification](#specification)
+  - [Scenario Viewer](#scenario-viewer)
 
 # Design Discussion
 
@@ -45,8 +46,14 @@ The VE UI lives [here](https://github.com/gregorbj/VisionEval/tree/master/source
   - [ ] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.  See [#60](https://github.com/gregorbj/VisionEval/issues/60)
   - [ ] Reads any CSV input files in the inputs folder and lets the user edit the files from the UI.  See [#61](https://github.com/gregorbj/VisionEval/issues/61)
   - [ ] Reads HDF5 output datastores from multiple runs in order to visualizer results across scenarios.  The user can select multiple HDF5 output datastores in the UI.  See [#62](https://github.com/gregorbj/VisionEval/issues/62)
-  - [ ] Update UI with running module status.  After selecting a VE model run script, the UI displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which module is currently running, and what modules still need to be run.  See [#63](https://github.com/gregorbj/VisionEval/issues/63)
-  - [ ] Copy a scenario.  After selecting a run model script, the complete scenario folder setup is copied to a new folder named by the user.  See [#64](https://github.com/gregorbj/VisionEval/issues/64)
+  - [x] Update UI with running module status.  After selecting a VE model run script, the UI displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which module is currently running, and what modules still need to be run.  See [#63](https://github.com/gregorbj/VisionEval/issues/63)
+  - [x] Copy a scenario.  After selecting a run model script, the complete scenario folder setup is copied to a new folder named by the user.  See [#64](https://github.com/gregorbj/VisionEval/issues/64)
 
 ## Revisions required to the VE framework
 In order for the UI and a VE model to cooperate about the module run state, the following change will be made to the visioneval framework.  The ModelState list will be kept in the Global namespace at all times so the UI and the model run script can share it.  The ModelState list now includes the results of the `parseModelScript` function call in the `initializeModel` function, which parses the model script and creates a table of module calls in the order they are called.  The `runModule` function is updated to set the status of each module in the module table as the model runs.  Example valid status values are: "planned", "running", "complete".  This shared data structure is used to update the UI with the status of the running modules.  See [#65](https://github.com/gregorbj/VisionEval/issues/65)
+
+# Scenario Viewer
+The existing [RPAT Viewer Pilot](https://github.com/gregorbj/RPAT_Viewer_Pilot) is going to be integrated into the VE GUI.  It is implemented in JavaScript and can likely be integrated into the existing RShiny VEGUI without being significantly re-written.  The scenario viewer currently takes as input a CSV file of performance measures by scenario.  This will need to be created ahead of running the viewer.  Therefore, the current work tasks for integrating the scenario viewer into the VEGUI is:
+  - Add the ability to select a folder for VEGUI to recursively search for VE HDF5 output files.  See [#96](https://github.com/gregorbj/VisionEval/issues/96)
+  - Add the ability to select the performance measure R script that reads the VE HDF5 output file and produces the performance measures for each scenario. See [#96](https://github.com/gregorbj/VisionEval/issues/96)
+  - Integrate the RPAT Viewer Pilot into the existing VEGUI RShiny application. See [#97](https://github.com/gregorbj/VisionEval/issues/97)
