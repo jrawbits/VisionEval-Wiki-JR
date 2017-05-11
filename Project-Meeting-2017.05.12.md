@@ -8,3 +8,4 @@
   - Implemented better support for units, years of currency, etc. [#93](https://github.com/gregorbj/VisionEval/issues/93)
   - Is on the critical path for the work Liming is doing at PSU
   - Will commit before meeting
+  - Will update the design document next
