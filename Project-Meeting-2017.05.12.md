@@ -1,6 +1,7 @@
 # GUI
   - Prototype model runner complete - [Milestone 6](https://github.com/gregorbj/VisionEval/milestone/6), check out the develop branch to review
   - Make sure to update your list of installed packages as well
+  - The GUI is a little laggy, could use some performance improvements
   - Will start on Scenario Viewer/Visualizer integration next
 
 # Framework
