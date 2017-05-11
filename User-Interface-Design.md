@@ -42,9 +42,9 @@ The VE UI lives [here](https://github.com/gregorbj/VisionEval/tree/master/source
 ## Requirements
   - [x] Avoid desktop application issues such as admin rights, installers, etc.  This requirement is satisfied by using R shiny, R commands to download and install required R software, and including clear instructions in the various READMEs in the repo.
   - [x] Modular - the runner and visualizer are separate but they can cooperate.  VE models do not require the UI in order to be run.  In order to run a VE model from the UI, the user simply selects a model run script.  Cooperation is handled through the requirement to display module status (see below).
+  - [x] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.  See [#60](https://github.com/gregorbj/VisionEval/issues/60)
+  - [x] Reads any CSV input files in the inputs folder and lets the user edit the files from the UI.  See [#61](https://github.com/gregorbj/VisionEval/issues/61)
   - [ ] GUI and Scenario Viewer are one solution.  By using shiny, we will be able to implement the UI for running models and the scenario viewer (visualizer) for viewing the results of multiple model runs. 
-  - [ ] Reads the VE settings files (geo.csv, model_parameters.json, run_parameters.json) and lets the user edit the files from the UI.  See [#60](https://github.com/gregorbj/VisionEval/issues/60)
-  - [ ] Reads any CSV input files in the inputs folder and lets the user edit the files from the UI.  See [#61](https://github.com/gregorbj/VisionEval/issues/61)
   - [ ] Reads HDF5 output datastores from multiple runs in order to visualizer results across scenarios.  The user can select multiple HDF5 output datastores in the UI.  See [#62](https://github.com/gregorbj/VisionEval/issues/62)
   - [x] Update UI with running module status.  After selecting a VE model run script, the UI displays the VE modules to be run.  Once the model is running, it highlights which modules have been run, which module is currently running, and what modules still need to be run.  See [#63](https://github.com/gregorbj/VisionEval/issues/63)
   - [x] Copy a scenario.  After selecting a run model script, the complete scenario folder setup is copied to a new folder named by the user.  See [#64](https://github.com/gregorbj/VisionEval/issues/64)
