@@ -1,9 +1,10 @@
 # GUI
-  - Prototype model runner complete, check out the develop branch to review
+  - Prototype model runner complete - [Milestone 6](https://github.com/gregorbj/VisionEval/milestone/6), check out the develop branch to review
   - Make sure to update your list of installed packages as well
   - Will start on Scenario Viewer/Visualizer integration next
 
 # Framework
-  - Completed module testing function, which checks inputs, setups, outputs, against spec
+  - Completed module testing function, which checks inputs, setups, outputs, against spec [#51](https://github.com/gregorbj/VisionEval/issues/51)
+  - Implemented better support for units, years of currency, etc. [#93](https://github.com/gregorbj/VisionEval/issues/93)
+  - Is on the critical path for the work Liming is doing at PSU
   - Will commit before meeting
-  - Implemented better support for units, years of currency [#93](https://github.com/gregorbj/VisionEval/issues/93)
