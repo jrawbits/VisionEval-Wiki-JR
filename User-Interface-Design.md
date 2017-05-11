@@ -1,4 +1,4 @@
-The VE User Interface, which includes the model runner and scenario viewer/visualizer, is described here.
+The VE User Interface includes the model runner and scenario viewer/visualizer.
   - [Design Discussion](#design-discussion)
   - [Specification](#specification)
   - [Scenario Viewer](#scenario-viewer)
