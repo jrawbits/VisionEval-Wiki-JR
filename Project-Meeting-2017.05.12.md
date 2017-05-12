@@ -12,3 +12,5 @@
   - Is on the critical path for the work Liming is doing at PSU
   - All revisions committed
   - Will update the design document next [#43](https://github.com/gregorbj/VisionEval/issues/43)
+
+Will plan to merge to master after documentation update
