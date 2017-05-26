@@ -8,7 +8,7 @@
    - All the preparation of the estimation data is handled by the CreateEstimationDatasets.R script.
    - Revisions pushed to the develop branch. 
    - The package passes all the R tests but has a note that the package is larger than what CRAN accepts. That's due to the inclusion of the PUMS data used to estimate the models.
-  - @RSG and others to test these modules using the new module testing capabilities offered by the visioneval package. 
+  - @Ben and others to test these modules using the new module testing capabilities offered by the visioneval package. 
     - In the 'tests' directory there are 3 folders:
       - 'defs' includes all the definition files required for the RVMPO test case
       - 'inputs' includes all the input files needed by the modules for the RVMPO test case
@@ -25,4 +25,4 @@
 ## Next steps
   - @Brian plans to complete the next package which handles all the land use and system supply attributes
   - @Brian complete documentation updates
-  - @RSG test Brian's new modules
+  - @Ben to test Brian's new modules, and merge to master if acceptable
