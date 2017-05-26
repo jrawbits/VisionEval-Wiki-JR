@@ -25,4 +25,5 @@
 ## Next steps
   - @Brian plans to complete the next package which handles all the land use and system supply attributes
   - @Brian complete documentation updates
+  - @Everyone test and review Brian's additions
   - @Ben to test Brian's new modules, and merge to master if acceptable
