@@ -17,11 +17,12 @@
 ## visioneval framework
   - Brian added functions for implementing linear models, binary logit models, and binary search.
      - Writing these functions added some time, but they make module code more compact and understandable. In addition, they reduce a lot of redundant code in RSPM and should make transferal faster in the future.
-  - This took longer than anticipated due to modifying the visioneval code to include units handling and then debugging the code afterwards. 
+  - Also modified the visioneval code to include units handling, as noted earlier.
 
 ## Documentation 
   - Brian made some updates to the 'model_system_design.md' documentation and pushed those to the develop branch, but there is still more to do.
 
 ## Next steps
-  - Brian plans to complete the next package which handles all the land use and system supply attributes in a week.
-  - Complete documentation updates
+  - @Brian plans to complete the next package which handles all the land use and system supply attributes
+  - @Brian complete documentation updates
+  - @RSG test Brian's new modules
