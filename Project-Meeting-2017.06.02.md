@@ -8,7 +8,7 @@
 
 ## Modules
   - Brian completed all the modules in the VESimHouseholds package. These modules include CreateHouseholds, PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing
-  - Implemented module testing capabilities offered by the visioneval package
+  - Implemented the new module testing capabilities offered by the visioneval package
 
 ## Models
   - VERSPM model still needs to be updated to use new VESimHouseholds modules
