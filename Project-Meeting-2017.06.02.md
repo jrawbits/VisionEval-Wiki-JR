@@ -1,7 +1,7 @@
 ## visioneval framework
-  - Brian added functions for implementing linear models, binary logit models, and binary search.
-     - Writing these functions added some time, but they make module code more compact and understandable. In addition, they reduce a lot of redundant code in RSPM and should make transferal faster in the future.
-  - Updated visioneval code to include units handling, as noted earlier.
+  - Brian added functions for implementing linear models, binary logit models, and binary search
+    - Took some additional time, but the code is more compact, understandable, and there is less duplication
+  - Updated visioneval code to include units handling, as noted earlier
 
 ## Documentation 
   - Brian made some updates to the 'model_system_design.md' documentation, but there is still more to do
