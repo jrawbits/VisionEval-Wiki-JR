@@ -14,11 +14,17 @@
 ## UI
   - UI to setup a model, edit inputs, run the model, and view and export results is complete
   - Started working on integration of the RPAT Pilot Scenario Viewer
+  - Will not update the UI to support multiple scenario generation by varying inputs in a range since this first needs to be added to the visioneval framework and then exposed via the UI, and the current project doesn't have the budget for this
+  - @Tara to share existing scripts that generate multiple scenarios
+
+## Project management
+  - We always need to have working versions in the repo so others can participate (i.e. review, comment, etc.)  
+  - @Ben to update the work plan, in conjunction with OSA and CH
 
 ## Next steps
-  - @Brian update VERSPM to use new VESimHouseholds modules
-  - @Brian start on land use and system supply attributes modules
+  - @Brian update VERSPM to use new VESimHouseholds modules so we can fully test the updates
+  - @Brian start on land use and system supply attributes modules after that
   - @Brian complete documentation updates
-  - @Ben test entire system once ready 
+  - @Ben and @Jeremy test entire system once ready 
   - @RSG continue working on scenario viewer integration
 
