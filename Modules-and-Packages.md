@@ -1,9 +1,8 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| VESimHouseholds | [Create Households](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | CreateHouseholds, PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
-| VESyntheticFirms | [Create Base Synthetic Firms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
-| VESyntheticFirms | [Create Future Synthetic Firms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household() | NA | X |   |
+| [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | Create Base Synthetic Firms, Create Future Synthetic  | household() | NA | X |   |
 | Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
 | Create Place Types | Create Place Types | urban() | NA | X |   |
 | Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
