@@ -13,7 +13,7 @@
 | Vehicle Characteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
 | Calculate Household AutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
 | Calculate TruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
-| [VEAltModes](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEAltModes) | CalcAltModeTrips | demand() | predictLight Vehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
+| [VEAltModes](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEAltModes) | CalcAltModeTrips | demand() | calcAltModeTrips | X | X |
 | Calculate AltModeVMT | ? | demand() | predictLight Vehicles, calcLtVehDvmt | X | X |
 | Commercial Service Vehicle Travel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh Powertrain MpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | Calculate Congestion | Calculate Congestion | congestion() | calcCongestion | X | X |
