@@ -16,4 +16,4 @@
 ## Next Steps
   - Josh to review latest revisions
   - Ben to update install instructions with note about moving the R library to write accessible location (for ODOT)
-  - Brian test VEGUI and update the [Modules and Packages page](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
+  - Brian test VEGUI and update the [Modules and Packages page](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages) for VELandUse
