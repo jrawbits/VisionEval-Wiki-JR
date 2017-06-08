@@ -13,3 +13,7 @@
   - Created new package and 3 new modules: LocateHouseholds, LocateEmployment, and AssignDevTypes.
   - Close to completing the Calculate4DMeasures module (to create measures to be used in Liming's new multimodal travel 
 
+## Next Steps
+  - Josh to review latest revisions
+  - Ben to update install instructions with note about moving the R library to write accessible location (for ODOT)
+  - Brian test VEGUI and update the [Modules and Packages page](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
