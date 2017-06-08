@@ -1,4 +1,5 @@
 ### Meeting Notes
+ - [[June 8, 2017|Project Meeting 2017.06.08]] (technical team meeting)
 - [[June 2, 2017|Project Meeting 2017.06.02]]
 - [[May 26, 2017|Project Meeting 2017.05.26]] (technical team meeting)
 - [[May 12, 2017|Project Meeting 2017.05.12]] (technical team meeting)
