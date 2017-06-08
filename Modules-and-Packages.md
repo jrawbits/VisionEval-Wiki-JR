@@ -2,7 +2,7 @@
 | --- | --- | --- | --- | --- | ---|
 | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | CreateHouseholds, PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
-| [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | Create Base Synthetic Firms, Create Future Synthetic  | household() | NA | X |   |
+| [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | CreateBaseSyntheticFirms, CreateFutureSyntheticFirms | household() | NA | X |   |
 | Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
 | Create Place Types | Create Place Types | urban() | NA | X |   |
 | Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
@@ -13,7 +13,8 @@
 | Vehicle Characteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
 | Calculate Household AutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
 | Calculate TruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
-| Calculate AltModeVMT | Calculate Alt Mode VMT | demand() | predictLight Vehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
+| [VEAltModes](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEAltModes) | CalcAltModeTrips | demand() | predictLight Vehicles, calcLtVehDvmt, calcAltModeTrips | X | X |
+| Calculate AltModeVMT | ? | demand() | predictLight Vehicles, calcLtVehDvmt | X | X |
 | Commercial Service Vehicle Travel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh Powertrain MpgMpkwh, calcCommVeh HcEvDvmt |  | X |
 | Calculate Congestion | Calculate Congestion | congestion() | calcCongestion | X | X |
 | Induced Growth And Travel | Induced Growth And Travel | policy congestion() | NA | X |   |
