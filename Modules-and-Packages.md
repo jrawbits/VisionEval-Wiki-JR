@@ -1,6 +1,6 @@
 |  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
 | --- | --- | --- | --- | --- | ---|
-| [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | CreateHouseholds, PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
+| [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | CreateHouseholds (including group quarters population), PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
 | Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
 | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | CreateBaseSyntheticFirms, CreateFutureSyntheticFirms | household() | NA | X |   |
 | Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
