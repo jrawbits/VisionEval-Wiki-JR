@@ -20,7 +20,7 @@
 
 # Reviewing VE contributions
   - Josh wants to know what he should review
-  - We discussed the in-development VE review team submittal requirements as things he could also review:
+  - We discussed the in-development VE review team submittal requirements as what he could also review:
     - Software – module, model, and/or user interface code
     - Tests – sufficient code coverage testing with an included example test data set
     - Documentation – both developer and end-user documentation
