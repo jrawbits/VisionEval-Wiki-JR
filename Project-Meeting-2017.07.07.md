@@ -6,7 +6,7 @@
   - We'll soon merge develop into master for an updated VE release now that everything is working again
 
 # Review team setup progress
-  - The automated test system will make sure the VE software works and produces expected values
+  - The automated test system will make sure the software works and produces expected values
   - The review team will be responsible for determining the usefulness of a contribution
   - They will review what the contributor submits to "make the case"
   - The review team could develop templates for good practices
