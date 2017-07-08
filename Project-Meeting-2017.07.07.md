@@ -14,7 +14,7 @@
   - Ben and Brian to discuss review team responsibility at meeting next week
   - Brian and Elizabeth Sall working on a documentation plan
   - Ben and Dan @ Volpe working on software management plans
-  - The review team is a pilot; the polled funders will finalize the review process
+  - The review team is a pilot; the pooled funders will finalize the review process
 
 # Work plan update
   - See the work plan from the email
