@@ -19,9 +19,9 @@
 # Work plan update
   - See the work plan from the email
   - In summary, we're planning to do the following with the remaining budget:
-    - complete the setup of the automated testing and building system (RSG) with the next few weeks
-    - implement remaining VERSPM modules (OSA) by end of October
-    - update the VE framework documentation (OSA) by end of October
+    - complete the automated testing and building system setup with the next few weeks (RSG) 
+    - implement remaining VERSPM modules by end of October (OSA)
+    - update the VE framework documentation by end of October (OSA)
     - help maintain the repository and test system for other active VE projects (RSG)
   - Performance measures script is lower priority and will be worked on if budget permits
   - Its more important to work on VERSPM modules than to add tests to the framework
