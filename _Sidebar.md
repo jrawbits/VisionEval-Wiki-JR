@@ -1,6 +1,7 @@
 # [[VisionEval|home]]
 
 ### Software
+- [[Goals and Objectives|Goals-and-Objectives-of-VisionEval-Model-System]]
 - [[Modules and Packages|Modules-and-Packages]]
 - [[User Interface Design]]
 - [[RPAT Features | RPAT-features]]
