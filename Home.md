@@ -2,6 +2,9 @@
 
 VisionEval is a programming framework for disaggregate strategic planning models.  Background information is available on the project [webpage](https://gregorbj.github.io/VisionEval/).  This site is focused on management of the collaborative effort.
 
+### Contributions
+A good place to start when considering contributing to VisionEval is the [Goals and Objectives](Goals-and-Objectives-of-VisionEval-Model-System) page.  In addition, the [Working Together](Working-Together) page describes how we use version control and our test system, and the [Automated-Testing](Automated-Testing) describes our test setup in more detail. 
+
 ### Modules & Packages 
 Modules perform individual tasks and are the fundamental building blocks of VisionEval code (e.g., create households). They perform single or multiple (sub-module) functions.  Packages are logically related combinations of one or more modules organized into libraries, as a way to distribute the VisionEval code (e.g. HH synthesis including location, income, age, etc.). Each module is assigned to a package.
 
