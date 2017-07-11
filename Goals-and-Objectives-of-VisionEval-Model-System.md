@@ -9,3 +9,18 @@ The primary goal of VisionEval is to create a model system which enables sharing
   - Pre-emptive Error Checking: The model system will incorporate extensive checking to clearly identify errors in the model setup and inputs before the model is run to minimize runtime errors.
   - Documentation: Modules will include complete documentation so that they may be reviewed and understood by others. The calculations for estimating a module’s parameters will be included with the module.
   - Operating System Independence: The model system should run on any of the 3 major operating systems; Windows, Apple, or Linux.
+
+## Contribution Requirements
+Following are a number of potential module review criteria that are related to the listed objectives:
+  - Does it contain all the elements that are required by the VisionEval system specifications?
+  - Does it include test data?
+  - Does it pass the ‘testModule’ test which validates that it will run correctly in the model system?
+  - Does it include regression tests to enable checking that consistent results will be returned when updates are made to the framework and/or R programming environment?
+  - Does it only interact with the computing environment by returning a properly structured list to the framework: i.e. does not modify the global environment, does not read or write files (except by calling the ‘writeLog’ function), and only calls framework functions that are allowed?
+  - Does it includes all source files and data (NOTE: need to talk about how to address large datasets and also confidential data)?
+  - Is it licensed with an open-source license that allows the code to be freely distributed and modified and includes attribution so that the ‘provenance’ of the code can be tracked?
+  - Is it based on geographic definitions that are consistent with the model system definitions?
+  - If the module allows the estimation of regional parameters, does it provide default data, does it have clear documentation of what the estimation data needs to be and how it is to be formatted, and does it include proper data specifications to ensure that the user’s input data are correct?
+  - Does the module compute quickly enough (NOTE: need to talk about how to review this)?
+  - Is the module documentation complete? Does it include documentation of model estimation, algorithms, and instructions for using?
+  - Does the module only call R code and packages that work on all operating systems? If the code includes any non-R code (e.g. FORTRAN, C++) will that code compile on all operating systems?
