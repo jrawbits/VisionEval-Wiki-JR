@@ -1,32 +1,47 @@
-|  R Package   |  VE Module |  RPAT Module Today | RSPM Module Today | VE RPAT |  VE RSPM |
-| --- | --- | --- | --- | --- | ---|
-| [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | CreateHouseholds (including group quarters population), PredictWorkers, AssignLifeCycle, PredictIncome, PredictHousing | household() | createHhByAge, predictIncome, Supplemental household attributes, other | X | X |
-| Group Quarters Population Synthesis | Group Quarters Population Synthesis | NA | Not functionalized |   | X |
-| [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | CreateBaseSyntheticFirms, CreateFutureSyntheticFirms | household() | NA | X |   |
-| Setup Zones | Setup Zones | NA | Setup zones, Calculate derived land use attributes, predictBldgType |   | X |
-| Create Place Types | Create Place Types | urban() | NA | X |   |
-| Transportation Supply | Transportation Supply | accessibility() | Transportation supply, Parking supply | X | X |
-| Household Location | Household location | NA | Not functionalized |   | X |
-| Demand Management With Car Services | Demand Management With Car Services | NA | idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj |   | X |
-| Calculate Vehicle Ownership | Calculate Vehicle Ownership | vehicle() | predictVehOwn, group qtr not functionalized | X | X |
-| Car Services And Autonomous Vehicles | Car Services And Autonomous Vehicles | NA | calcCarSvcAvail, calcVehicleUse |   | X |
-| Vehicle Characteristics | Vehicle Characteristics | NA | predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv |  | X |
-| Calculate Household AutoVMT | Calculate Household Auto VMT | demand() | predictAveDvmt, predictMaxDvmt, calcAdjAveDvmt | X | X |
-| Calculate TruckVMT | Calculate Truck VMT | demand() | adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy | X | X |
-| [VEAltModes](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEAltModes) | CalcAltModeTrips | demand() | calcAltModeTrips | X | X |
-| Calculate AltModeVMT | ? | demand() | predictLight Vehicles, calcLtVehDvmt | X | X |
-| Commercial Service Vehicle Travel | Commercial service vehicle travel | NA | calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh Powertrain MpgMpkwh, calcCommVeh HcEvDvmt |  | X |
-| Calculate Congestion | Calculate Congestion | congestion() | calcCongestion | X | X |
-| Induced Growth And Travel | Induced Growth And Travel | policy congestion() | NA | X |   |
-| Policy Adjusted Travel Demand | Policy Adjusted Travel Demand | policy congestion() | NA | X |   |
-| Policy Adjusted Congestion | Policy Adjusted Congestion | policy congestion() | NA | X |   |
-| TravelCost | Travel Cost | NA | calcVeh DepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge |   | X |
-| Fuel Consumption And Emissions | Fuel Consumption and Emissions | NA | calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire |   | X |
+This page tracks the development road map for translating the existing RPAT and RSPM implementations into VisionEval models.  All completed VE modules are for VERSPM unless otherwise noted.  
 
-The columns in the table are as follows:
-  - R Package: Name of the package to group modules.
-  - VE Module: Description of a VisionEval module to carry out some defined functionality.
-  - RPAT Module Today: The name of the RPAT function which now embodies the module functionality. NA means the functionality is not present.
-  - RSPM Module Today: The name of RSPM functions or if just part of a script (not functionalized) which embodies the module functionality. NA means the functionality is not present.
-  - VE RPAT: Checkmark if the module would be used for RPAT.
-  - VE RSPM: Checkmark if the module would be used for RSPM.
+## Completed VisionEval Packages and Modules
+  - VESyntheticFirms
+    - CreateFutureSyntheticFirms (for VERPAT pilot)
+    - CreateBaseSyntheticFirms (for VERPAT pilot)
+  - VESimHouseholds
+    - CreateHouseholds
+    - PredictWorkers
+    - AssignLifeCycle
+    - PredictIncome
+    - PredictHousing
+  - VELandUse
+    - LocateHouseholds
+    - LocateEmployment
+    - AssignDevTypes
+    - Calculate4DMeasures
+    - CalculateUrbanMixMeasure
+  - VETransportSupply
+    - AssignTransitService
+    - AssignRoadMiles
+  - VEVehicleOwnership
+    - AssignVehicleOwnership
+  - VETravelDemand
+    - CalculateHouseholdDVMT
+    - CalculateAltModeTrips
+    
+## Planned VisionEval Packages and Modules (and existing RSPM modules)
+  - Demand Management With Car Services (idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj)
+  - Car Services And Autonomous Vehicles (calcCarSvcAvail, calcVehicleUse)
+  - Vehicle Characteristics (predictLtTruckOwn, calcVehicleAges, assignFuelEconomy, apportionDvmt, calcVehDvmt, assignPhev, assignEv	)
+  - Calculate TruckVMT (adjustHvyVeh AgeDistribution, assignHvy VehFuelEconomy)
+  - Commercial Service Vehicle Travel (calcCommVeh TravelFromHh Income, calcCommVeh TravelFromHhDvmt, calcCommVeh TypeAgeProp, calcCommVeh Powertrain MpgMpkwh, calcCommVeh HcEvDvmt)
+  - Calculate Congestion (calcCongestion)
+  - TravelCost (calcVeh DepreciationExp, estPaydWeights, selectFromWeights, calcCosts, Calculate total cost and VMT surcharge)
+  - Fuel Consumption And Emissions (calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire)
+  
+## Future VERPAT Migration 
+  - Will utilize and/or revise VE modules as needed for completing VERPAT, such as:
+    - household() will start from VESimHouseholds
+    - urban() will start from VELandUse
+    - accessibility() will start from VETransportSupply
+    - vehicle() will start from VEVehicleOwnership
+    - demand() will start from VETravelDemand
+    - congestion() 
+    - policy congestion()
+
