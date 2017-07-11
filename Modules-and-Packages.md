@@ -3,27 +3,27 @@ This page tracks the development road map for translating the existing RPAT and 
 ## Completed VE Packages and Modules
 All completed VE modules are for VERSPM unless otherwise noted.
 
-  - VESyntheticFirms
+  - [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms)
     - CreateFutureSyntheticFirms (VERPAT)
     - CreateBaseSyntheticFirms (VERPAT)
-  - VESimHouseholds
+  - [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds)
     - CreateHouseholds
     - PredictWorkers
     - AssignLifeCycle
     - PredictIncome
     - PredictHousing
-  - VELandUse
+  - [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse)
     - LocateHouseholds
     - LocateEmployment
     - AssignDevTypes
     - Calculate4DMeasures
     - CalculateUrbanMixMeasure
-  - VETransportSupply
+  - [VETransportSupply](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply)
     - AssignTransitService
     - AssignRoadMiles
-  - VEVehicleOwnership
+  - [VEVehicleOwnership](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEVehicleOwnership)
     - AssignVehicleOwnership
-  - VETravelDemand
+  - [VETravelDemand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETravelDemand)
     - CalculateHouseholdDVMT
     - CalculateAltModeTrips
     
