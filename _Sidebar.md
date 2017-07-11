@@ -6,11 +6,9 @@
 - [[Working Together | Working-Together]]
 - [[Automated Testing|Automated-Testing]]
 
-### Development Notes
-- [[User Interface Design]]
-- [[RPAT Features Today| RPAT-features]]
-
 ### Project Management
  - [[Meeting Notes]]
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
+- [[User Interface Design]]
+- [[RPAT Features Today| RPAT-features]]
