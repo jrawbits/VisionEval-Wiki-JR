@@ -16,4 +16,6 @@ The data specification system also enables a model to be thoroughly checked befo
   - Whether model inputs are consistent with specifications; and,
   - Whether every module when it is called will have the data it needs to run (either in specified input files or the datastore) and whether the attributes of those data are consistent with the specifications for the module.
 
-These checks that are built into the framework software make it possible to implement automated checking of VisionEval module packages and VisionEval model whenever a module package and/or model is added to or modified in the VisionEval repository. As described [here](https://github.com/gregorbj/VisionEval/wiki/Development-Guidelines), Travis CI services are used to automatically test all modules and models to assure that they work properly.
+These checks that are built into the framework software make it possible to implement automated checking of VisionEval module packages and VisionEval model whenever a module package and/or model is added to or modified in the VisionEval repository. 
+
+As described [here](https://github.com/gregorbj/VisionEval/wiki/Development-Guidelines), Travis CI services are used to automatically test all modules and models to assure that they work properly.
