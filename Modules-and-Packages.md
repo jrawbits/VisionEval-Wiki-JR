@@ -50,7 +50,7 @@ Below are the remaining RSPM modules to be re-implemented as VE modules.
 ## Future VERPAT Migration 
 The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  For example:
 
-  - household() will start from VESimHouseholds
+  - household() will start from VESimHouseholds and VESyntheticFirms
   - urban() will start from VELandUse
   - accessibility() will start from VETransportSupply
   - vehicle() will start from VEVehicleOwnership
