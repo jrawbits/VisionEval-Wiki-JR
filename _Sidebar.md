@@ -10,5 +10,4 @@
  - [[Meeting Notes]]
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
-- [[User Interface Design]]
-- [[RPAT Features Today| RPAT-features]]
+ - [[RPAT Features Today| RPAT-features]]
