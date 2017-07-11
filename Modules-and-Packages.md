@@ -1,9 +1,11 @@
-This page tracks the development road map for translating the existing RPAT and RSPM implementations into VisionEval models.  All completed VE modules are for VERSPM unless otherwise noted.  
+This page tracks the development road map for translating the existing RPAT and RSPM implementations into VisionEval models.
 
 ## Completed VE Packages and Modules
+All completed VE modules are for VERSPM unless otherwise noted.
+
   - VESyntheticFirms
-    - CreateFutureSyntheticFirms (for VERPAT pilot)
-    - CreateBaseSyntheticFirms (for VERPAT pilot)
+    - CreateFutureSyntheticFirms (VERPAT)
+    - CreateBaseSyntheticFirms (VERPAT)
   - VESimHouseholds
     - CreateHouseholds
     - PredictWorkers
@@ -26,8 +28,10 @@ This page tracks the development road map for translating the existing RPAT and 
     - CalculateAltModeTrips
     
 ## Planned VE Packages and Modules
+Below are the remaining RSPM modules to be re-implemented as VE modules.
+
   - Demand Management With Car Services
-    - Existing RSPM modules: idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj
+    - idEcoWorkers, idImpHouseholds, adjDvmtEcoImp, idEcoDriverHh, idLowRollTire, idPayingParkers, calcParkCostAdj
   - Car Services And Autonomous Vehicles
     - Existing RSPM modules: calcCarSvcAvail, calcVehicleUse
   - Vehicle Characteristics
@@ -44,12 +48,13 @@ This page tracks the development road map for translating the existing RPAT and 
     - Existing RSPM modules: calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire
   
 ## Future VERPAT Migration 
-  - Will utilize and/or revise VE modules as needed for completing VERPAT, such as:
-    - household() will start from VESimHouseholds
-    - urban() will start from VELandUse
-    - accessibility() will start from VETransportSupply
-    - vehicle() will start from VEVehicleOwnership
-    - demand() will start from VETravelDemand
-    - congestion() 
-    - policy congestion()
+The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  For example:
+
+  - household() will start from VESimHouseholds
+  - urban() will start from VELandUse
+  - accessibility() will start from VETransportSupply
+  - vehicle() will start from VEVehicleOwnership
+  - demand() will start from VETravelDemand
+  - congestion() 
+  - policy congestion()
 
