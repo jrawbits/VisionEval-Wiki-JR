@@ -3,7 +3,7 @@
 ### Software Management
 - [[Goals and Objectives|Goals-and-Objectives-of-VisionEval-Model-System]]
 - [[Modules and Packages|Modules-and-Packages]]
-- [[Development Guidelines | Development-Guidelines]]
+- [[Working Together | Working-Together]]
 - [[Automated Testing|Automated-Testing]]
 
 ### Development Notes
