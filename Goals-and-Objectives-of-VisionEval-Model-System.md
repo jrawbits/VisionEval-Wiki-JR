@@ -1,3 +1,6 @@
+This page reiterates the primary goal and objectives of the model system to establish the context for review and acceptance. It then lists potential review criteria that relate to the goal and objectives.
+
+## Goals and Objectives
 The primary goal of VisionEval is to create a model system which enables sharing and collaboration in the development model components (aka modules) that can be easily combined together to build strategic planning models. The design objectives of the model system are:
   - Modularity: The model system enables new capabilities to be added in a “plug-and-play” fashion so models can be improved and extended and so improvements developed for one model can be easily shared with other models.
   - Loose Coupling: Modules operate independently from one-another, only communicating through passing of data to and from a common datastore. Modules are like pure functions, they do not change anything, and they just take data, do their computations, and then return the result.
@@ -10,7 +13,7 @@ The primary goal of VisionEval is to create a model system which enables sharing
   - Documentation: Modules will include complete documentation so that they may be reviewed and understood by others. The calculations for estimating a module’s parameters will be included with the module.
   - Operating System Independence: The model system should run on any of the 3 major operating systems; Windows, Apple, or Linux.
 
-## Contribution Requirements
+## Contribution Review Criteria
 Following are a number of potential module review criteria that are related to the listed objectives:
   - Does it contain all the elements that are required by the VisionEval system specifications?
   - Does it include test data?
