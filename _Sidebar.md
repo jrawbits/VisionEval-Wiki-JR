@@ -11,3 +11,6 @@
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
  - [[RPAT Features Today| RPAT-features]]
+
+### Review Committee
+ - [[Meeting #1]]
