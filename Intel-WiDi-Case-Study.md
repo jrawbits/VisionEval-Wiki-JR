@@ -1,7 +1,7 @@
 For my Personal Experience case study from Intel WiDi receiver open source project - our team developed open source software that anyone could “license” for their own products. The software was called “WiDi” and used the “Miracast” standard. 
 
 We charged a nominal $200 fee for “overhead” IF you wanted to use our “Intel Inside” logo on your product
-Then you had to pay $200 and go through our certification process (a student ran some tests ), if not – then no charge. 
+Then you had to pay $200 and go through our certification process (a student ran some tests), if not – then no charge. 
 
 Here’s how the process worked…
 
@@ -13,5 +13,5 @@ Generally we used an AGILE type process but it was very loosely applied – no o
 
 In terms of governance – that was largely the responsibility of our Product Manager who approved/disapproved any feature functionality etc in version release meetings weekly.
 
-All in all – the RELEASE side of this open software project required about 5 FTE’s – Product Manager, Library Manager, Release Manager, Student Tester, and a Sales engineer
+All in all – the RELEASE side of this open software project required about 5 FTE’s – Product Manager, Library Manager, Release Manager, Student Tester, and a Sales engineer.
 
