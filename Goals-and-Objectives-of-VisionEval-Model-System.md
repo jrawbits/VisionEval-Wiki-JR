@@ -7,7 +7,7 @@ The primary goal of VisionEval is to create a model system which enables sharing
   - Openness: Modules are developed to be completely open. All module code, parameters, data, and specifications are open to inspection and licensed to allow users to use, modify, and redistribute them as they see fit.
   - Geographic Scalability: The model system enables models to be applied at a variety of geographic scales (e.g. metropolitan, state) but share common geographic definitions to enable modules to be more readily shared between different model scales.
   - Data Accessibility: Model results are saved in a datastore that is easy to query. Results can be filtered, aggregated, and post-processed to compute desired performance measures.
-  - Regionalization: Where necessary, modules will have built in capabilities for estimating and calibrating sub-model parameters from regional data.
+  - Regionalization: Where necessary, modules will have built in capabilities for estimating and calibrating sub-model parameters from regional data for easy customization to local area.
   - Speed: Modules will run quickly so that models can be run in a practical manner large numbers of times to effectively explore a large strategic planning decision space.
   - Pre-emptive Error Checking: The model system will incorporate extensive checking to clearly identify errors in the model setup and inputs before the model is run to minimize runtime errors.
   - Documentation: Modules will include complete documentation so that they may be reviewed and understood by others. The calculations for estimating a module’s parameters will be included with the module.
