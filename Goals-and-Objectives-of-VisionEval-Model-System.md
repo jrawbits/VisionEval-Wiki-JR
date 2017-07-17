@@ -1,7 +1,8 @@
 This page reiterates the primary goal and objectives of the model system to establish the context for review and acceptance. It then lists potential review criteria that relate to the goal and objectives.
 
 ## Goals and Objectives
-The primary goal of VisionEval is to create a model system which enables sharing and collaboration in the development model components (aka modules) that can be easily combined together to build strategic planning models. The design objectives of the model system are:
+The primary goal of VisionEval is to create a model system which enables sharing and collaboration in the development of model components (aka modules) that can be easily combined together to build strategic planning models. The design objectives of the model system are:
+  - Strategic Planning Models: Federal direction has challenged state, regional, and local transportation agencies with measuring the outcomes of decisions through performance-based planning, including considering how transportation solutions may impact future goals such as sustainability, health, mobility, etc. VisionEval is an open source common framework building on the successful GreenSTEP family of tools that is intended to address these needs.
   - Modularity: The model system enables new capabilities to be added in a “plug-and-play” fashion so models can be improved and extended and so improvements developed for one model can be easily shared with other models.
   - Loose Coupling: Modules operate independently from one-another, only communicating through passing of data to and from a common datastore. Modules are like pure functions, they do not change anything, and they just take data, do their computations, and then return the result.
   - Openness: Modules are developed to be completely open. All module code, parameters, data, and specifications are open to inspection and licensed to allow users to use, modify, and redistribute them as they see fit.
@@ -21,7 +22,7 @@ Following are a number of potential module review criteria that are related to t
   - Does it include regression tests to enable checking that consistent results will be returned when updates are made to the framework and/or R programming environment?
   - Does it only interact with the computing environment by returning a properly structured list to the framework: i.e. does not modify the global environment, does not read or write files (except by calling the ‘writeLog’ function), and only calls framework functions that are allowed?
   - Does it includes all source files and data (NOTE: need to talk about how to address large datasets and also confidential data)?
-  - Is it licensed with an open-source license that allows the code to be freely distributed and modified and includes attribution so that the ‘provenance’ of the code can be tracked?
+  - Is it licensed with the VisionEval [license](https://github.com/gregorbj/VisionEval/blob/master/LICENSE) that allows the code to be freely distributed and modified and includes attribution so that the ‘provenance’ of the code can be tracked?
   - Is it based on geographic definitions that are consistent with the model system definitions?
   - If the module allows the estimation of regional parameters, does it provide default data, does it have clear documentation of what the estimation data needs to be and how it is to be formatted, and does it include proper data specifications to ensure that the user’s input data are correct?
   - Does the module compute quickly enough (NOTE: need to talk about how to review this)?
