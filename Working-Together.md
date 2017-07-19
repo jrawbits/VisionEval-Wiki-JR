@@ -1,4 +1,4 @@
-## Branches in the repo
+## Branches
   - The master branch contains the latest release version of the VE resources
   - Work is done in the develop branch or an issue/feature branch off of develop
   - The gh-pages branch contains only the [website](https://gregorbj.github.io/VisionEval) resources
