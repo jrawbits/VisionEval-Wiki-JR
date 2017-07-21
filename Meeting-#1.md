@@ -51,21 +51,21 @@ Kristin welcomed everyone to the call and asked participants to introduce themse
 Tara reviewed the VisionEval Phase 2 Activities using the graphic below.  She explained that the current technical work focuses on migrating existing tools to VisionEval common software framework.  She also explained that FHWA is establishing a pooled fund to support VisionEval.  Ben noted that this pooled fund/open source approach is being used for other modeling products in the industry and will likely become more common.  Tara also noted that packages of the “RPSM Multimodal Model” developed by Liming Wang/PSU in a recent ODOT Research project will be the test submittal in the 3rd meeting.
  
 ### Open Source Best Practices – Dan Flynn, Volpe
-Dan presented a series of slides summarizing best practices for review of contributions to open source projects, including OSADP (private GitHub), Node.js (active), vegan (smaller less formal), and ActivitySim (most similar).  He covered the development process/governance, licenses and community engagement. The slides are available on the Meeting #1 wiki.  
+Dan presented a series of [slides](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation summarizing best practices for review of contributions to open source projects, including OSADP (private GitHub), Node.js (active), vegan (smaller less formal), and ActivitySim (most similar).  He covered the development process/governance, licenses and community engagement. The slides are available on the Meeting #1 wiki.  
 Group members discussed:
   - Private Github sites tend allow more control, but are less transparent and attract less new contributors. Most examples were self-funded/volunteer-time by active members (OSADP and ActivitySim are the exceptions). More formal structures have a technical review committee or equivalent decision body. Twitter & podcasts can be helpful to pull in contributors.
   - New terms: “release” is any updated version of the model or modules and is treated as a tag in GitHub;“master” is the stable working version for end users, which may also be accessible on a user friendly website (e.g., TravelWorks RPAT) and/or CRAN mirror.  Some releases may be a package with R integrated to make it easier for users to install.
   - How to share data modules and if they should live in a specific repository.
   - That a Collaborator License Agreement (CLA) should be included as part of the governance structure as it avoids future disruptions (e.g. prevents someone contributing code they don’t own; increases code credibility; tracks who contributed the code and who reviewed it).  Should be in the checklist.
 
-Tara reviewed process described by Susan for Intel.  This process is summarized on the wiki.
+Tara reviewed process described by Susan for Intel.  This process is summarized [here](https://github.com/gregorbj/VisionEval/wiki/Intel-WiDi-Case-Study).
 
 ### Background on VisionEval Development Tools – Ben Stabler, RSG/Brian Gregor, OSA
-Ben reviewed the wiki and described how the submittal and review process works today. He reviewed software management pieces of VisionEval.  Brian reviewed goals and objectives.  He highlighted that modules or sub-models can be shared in a plug and play fashion, that it is important for modules to be easily “regionalized”, and that it was important for models to run quickly; etc.  Brian reviewed the contribution review criteria.  Dan Frye asked if most entries will be new modules or line by line additions to existing modules. Brian said that he expected to see more new modules at first and to later see revisions to existing modules. 
+Ben reviewed the wiki and described how the submittal and review process works today. He reviewed software management pieces of VisionEval.  Brian reviewed [goals and objectives](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System).  He highlighted that modules or sub-models can be shared in a plug and play fashion, that it is important for modules to be easily “regionalized”, and that it was important for models to run quickly; etc.  Brian reviewed the contribution review criteria.  Dan Frye asked if most entries will be new modules or line by line additions to existing modules. Brian said that he expected to see more new modules at first and to later see revisions to existing modules. 
 
 A group member suggested that VisionEval could have different checklists and procedures for different types of additions (e.g. a bug fix would not require Review Committee approval).  
 
-Ben discussed VisionEval’s Automated Testing.  He explained that Automated Testing will result in an automated pass/fail message and will test:
+Ben discussed VisionEval’s [Automated Testing](https://github.com/gregorbj/VisionEval/wiki/Automated-Testing).  He explained that Automated Testing will result in an automated pass/fail message and will test:
   - Input data are checked against input data specifications;
   - Input data geography is checked against specified model geography;
   - Module specifications are checked for correctness;
@@ -91,7 +91,4 @@ Kristin told the Review Team that their next meeting was scheduled for August 3.
   - Comments on charter
   - Input on the “Contributor Review Criteria”, which will inform the “review checklist”, including variations for different types of submittals.
 
-- [Open Source Project](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation
-- [Contributor Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System)
-- [Automated Testing](https://github.com/gregorbj/VisionEval/wiki/Automated-Testing)
-- [Intel WiDi Case Study](https://github.com/gregorbj/VisionEval/wiki/Intel-WiDi-Case-Study)
+
