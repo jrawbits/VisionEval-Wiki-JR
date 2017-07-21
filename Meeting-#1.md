@@ -1,5 +1,3 @@
-# VisionEval Review Team #1
-
 MEETING DATE:	Wednesday, July 12
 MEETING TIME:	12-3 p.m. 
 LOCATION:	Call in/Webinar
