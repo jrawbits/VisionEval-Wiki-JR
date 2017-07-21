@@ -52,8 +52,9 @@ Tara reviewed the VisionEval Phase 2 Activities using the graphic below.  She ex
  
 ### Open Source Best Practices – Dan Flynn, Volpe
 Dan presented a series of [slides](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation summarizing best practices for review of contributions to open source projects, including OSADP (private GitHub), Node.js (active), vegan (smaller less formal), and ActivitySim (most similar).  He covered the development process/governance, licenses and community engagement.  
+
 Group members discussed:
-  - Private Github sites tend allow more control, but are less transparent and attract less new contributors. Most examples were self-funded/volunteer-time by active members (OSADP and ActivitySim are the exceptions). More formal structures have a technical review committee or equivalent decision body. Twitter & podcasts can be helpful to pull in contributors.
+  - Private GitHub sites tend allow more control, but are less transparent and attract less new contributors. Most examples were self-funded/volunteer-time by active members (OSADP and ActivitySim are the exceptions). More formal structures have a technical review committee or equivalent decision body. Twitter & podcasts can be helpful to pull in contributors.
   - New terms: “release” is any updated version of the model or modules and is treated as a tag in GitHub;“master” is the stable working version for end users, which may also be accessible on a user friendly website (e.g., TravelWorks RPAT) and/or CRAN mirror.  Some releases may be a package with R integrated to make it easier for users to install.
   - How to share data modules and if they should live in a specific repository.
   - That a Collaborator License Agreement (CLA) should be included as part of the governance structure as it avoids future disruptions (e.g. prevents someone contributing code they don’t own; increases code credibility; tracks who contributed the code and who reviewed it).  Should be in the checklist.
