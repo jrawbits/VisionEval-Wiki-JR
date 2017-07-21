@@ -11,12 +11,14 @@ Review team members and alternates
   - Jana Natarajan, WSDOT
   - Liming Wang, PSU 
   - Dan Frye, PSU (alternate)
+
 Absent
   - Chris Porter, Cambridge Systematics
   - Jeremy Raw, FHWA
   - Kristin Tufte, PSU
   - Alex Bigazzi, UBC
   - Matt Hardy, AASHTO (observer)
+
 Observers and staff
   - Eric Pihl, FHWA (observer) 
   - Ben Stabler, RSG (staff) 
