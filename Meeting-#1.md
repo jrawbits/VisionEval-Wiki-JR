@@ -93,8 +93,8 @@ Kristin told the Review Team that their next meeting was scheduled for August 3.
   - Input on the [Contributor Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System#contribution-review-criteria), which will inform the “review checklist”, including variations for different types of submittals.
 
 ## Other links from meeting:
--- [Open Source Project](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation
--- [Contributor Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System)
--- [Automated Testing](https://github.com/gregorbj/VisionEval/wiki/Automated-Testing)
--- [Intel WiDi Case Study](https://github.com/gregorbj/VisionEval/wiki/Intel-WiDi-Case-Study)
+*  [Open Source Project](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation
+* [Contributor Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System)
+* [Automated Testing](https://github.com/gregorbj/VisionEval/wiki/Automated-Testing)
+* [Intel WiDi Case Study](https://github.com/gregorbj/VisionEval/wiki/Intel-WiDi-Case-Study)
 
