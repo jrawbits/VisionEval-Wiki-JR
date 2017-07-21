@@ -90,6 +90,6 @@ Define different types of code submittals and how the checklists/review process 
 ### Close and Next Steps
 Kristin told the Review Team that their next meeting was scheduled for August 3. By July 19, she asked team members to provide:
   - Comments on charter
-  - Input on the “Contributor Review Criteria”, which will inform the “review checklist”, including variations for different types of submittals.
+  - Input on the [Contributor Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System#contribution-review-criteria), which will inform the “review checklist”, including variations for different types of submittals.
 
 
