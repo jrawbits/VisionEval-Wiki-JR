@@ -16,5 +16,5 @@
 # Links for Meeting #2
 * [White paper](http://htmlpreview.github.io/?https://github.com/VisionEval/OSwhitepaper/blob/master/VEwhitepaper.html) on open source best practices
 * [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System)
-* [User Guide Outline](https://github.com/gregorbj/VisionEval/wiki/Meeting-%232)
-* [VESimHouseholds package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds)
+* [Developer Guide Outline](https://github.com/gregorbj/VisionEval/wiki/Meeting-%232)
+* [Example Package/VESimHouseholds package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds)
