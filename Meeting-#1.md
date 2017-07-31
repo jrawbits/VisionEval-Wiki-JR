@@ -11,9 +11,9 @@ Review team members and alternates
   - Jana Natarajan, WSDOT
   - Liming Wang, PSU 
   - Dan Frye, PSU (alternate)
+ - Chris Porter, Cambridge Systematics
 
 Absent
-  - Chris Porter, Cambridge Systematics
   - Jeremy Raw, FHWA
   - Kristin Tufte, PSU
   - Alex Bigazzi, UBC
