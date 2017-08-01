@@ -2,9 +2,10 @@
 
 ### Software Management
 - [[Goals and Objectives|Goals-and-Objectives-of-VisionEval-Model-System]]
-- [[Modules and Packages|Modules-and-Packages]]
-- [[Working Together | Working-Together]]
+- [[Working Together |Working-Together]]
 - [[Automated Testing|Automated-Testing]]
+- [[Contribution Review Criteria|Contribution-Review-Criteria]]
+- [[Modules and Packages|Modules-and-Packages]]
 - [[Development Roadmap|Development-Roadmap]]
 
 ### Project Management
