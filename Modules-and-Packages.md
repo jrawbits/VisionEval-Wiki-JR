@@ -1,4 +1,4 @@
-This page tracks the development road map for translating the existing RPAT and RSPM implementations into VisionEval models.
+This page tracks progress on the current FHWA project to translate the existing RPAT and RSPM implementations into VisionEval models.  The larger, overall VisionEval roadmap is maintained on the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap) page.
 
 ## Existing VE Packages and Modules
 All completed VE modules are for VERSPM unless otherwise noted.
@@ -27,7 +27,7 @@ All completed VE modules are for VERSPM unless otherwise noted.
     - CalculateHouseholdDVMT
     - CalculateAltModeTrips
 
-## Planned Modules to Be Added to Existing VE Packages
+## Planned New Modules to Be Added to Existing VE Packages
 
   - VESimHouseholds
     - PredictDrivers (module from ODOT RSPM multimodal research project)
@@ -39,7 +39,7 @@ All completed VE modules are for VERSPM unless otherwise noted.
     - AssignAV (from RSPM v3.6 autonomous and shared vehicle code)
     - AssignVehicleAges (from RSPM calcVehicleAges and related)
    
-## Planned VE Packages and Modules
+## Planned New VE Packages (and Modules)
 Below are the remaining RSPM modules to be re-implemented as VE modules.
 
   - Demand Management With Car Services
@@ -58,13 +58,4 @@ Below are the remaining RSPM modules to be re-implemented as VE modules.
     - Existing RSPM modules: calcVehFuelElecCo2, calcCarSvcFuel ElecCo2Rates, calcCar SvcFuelElecCo2, calcFuel ElectricityUse, calcCommVeh Emissions, calcCommVehCosts, calcCommVeh EmissionRatesByAge, adjEcoTire
   
 ## Future VERPAT Migration 
-The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  For example:
-
-  - household() will start from VESimHouseholds and VESyntheticFirms
-  - urban() will start from VELandUse
-  - accessibility() will start from VETransportSupply
-  - vehicle() will start from VEVehicleOwnership
-  - demand() will start from VETravelDemand
-  - congestion() 
-  - policy congestion()
-
+The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  This work task is in the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap).
