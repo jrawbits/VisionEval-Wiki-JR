@@ -9,7 +9,7 @@
 
 ### Review Team protocols
 * Approve revised protocols
-* Note: we won’t review protocols in detail, so please come prepared with any issues or concerns that require group discussion. 
+* *Note: we won’t review protocols in detail, so please come prepared with any issues or concerns that require group discussion.*
 
 ### Contribution criteria
 * Review of [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria)
