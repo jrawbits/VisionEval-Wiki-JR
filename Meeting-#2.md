@@ -12,7 +12,7 @@
 * Note: we won’t review protocols in detail, so please come prepared with any issues or concerns that require group discussion. 
 
 ### Contribution criteria
-* Review of [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Goals-and-Objectives-of-VisionEval-Model-System)
+* Review of [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria)
 * Discussion of other requirements
 
 ### Outline of developer guide and module example
