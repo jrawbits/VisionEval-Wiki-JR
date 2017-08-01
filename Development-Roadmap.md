@@ -10,7 +10,7 @@ This page also maintains a set of wishlist/enhancements, which may overlap with 
 This current work task is described in more detail [here](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
 
 ## VERPAT Migration 
-The translation of RPAT to VERPAT needs to be completed.  The plan is for VERPAT to utilize and/or revise VE modules as needed.  For example:
+The translation of RPAT to VERPAT still needs to be completed.  The plan is for VERPAT to utilize and/or revise VE modules as needed.  For example:
 
   - household() will start from VESimHouseholds and VESyntheticFirms
   - urban() will start from VELandUse
