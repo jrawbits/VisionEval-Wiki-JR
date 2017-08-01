@@ -1,4 +1,4 @@
-This page reiterates the primary goal and objectives of the model system to establish the context for review and acceptance, as described in the [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria)
+This page reiterates the primary goal and objectives of the model system to establish the context for review and acceptance, as described in the [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria).
 
 ## Goals and Objectives
 The primary goal of VisionEval is to create a model system which enables sharing and collaboration in the development of model components (aka modules) that can be easily combined together to build strategic planning models. The design objectives of the model system are:
