@@ -3,7 +3,7 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [VERPAT Migration](#verpat-migration)
   - [The next work package](#the-next-work-package)
 
-This page also maintains a set of wishlist/enhancements, which often overlap somewhat with the project [Issues](https://github.com/gregorbj/VisionEval/issues).
+This page also maintains a set of wishlist/enhancements, which may overlap with the project [Issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
 
 ## Setting Up VisionEval, including VERSPM Migration
