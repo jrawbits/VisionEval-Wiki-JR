@@ -21,8 +21,9 @@ The translation of RPAT to VERPAT still needs to be completed.  The plan is for 
   - policy congestion()
 
 ## Upcoming
-* Develop graphic user interface and dashboard
+* Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
+
 ## Wishlist
 * Safety and security: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
 * Mobility: roadway and ITS mobility measure, better congestion model sensitive to network connectivity, local/long distance freight modules, roadway reliability 
