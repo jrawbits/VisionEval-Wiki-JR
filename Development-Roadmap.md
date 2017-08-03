@@ -1,16 +1,16 @@
 This page maintains current, future, and wishlist related developments to the VisionEval model system.  The current set of work packages are:
-  - [Setting Up VisionEvalincluding VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
+  - [Setting Up VisionEval including VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
   - [VERPAT Migration](#verpat-migration)
   - [Upcoming](#Upcoming)
 
-This page also maintains a set of wishlist/enhancements, which may overlap with the project [Issues](https://github.com/gregorbj/VisionEval/issues).
+This page also maintains a set of wishlist/enhancements, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
 
 ## Setting Up VisionEval, including VERSPM Migration
 This current work task is described in more detail [here](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
 
 ## VERPAT Migration 
-The translation of RPAT to VERPAT still needs to be completed.  The plan is for VERPAT to utilize and/or revise VE modules as needed.  For example:
+The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
 
   - household() will start from VESimHouseholds and VESyntheticFirms
   - urban() will start from VELandUse
