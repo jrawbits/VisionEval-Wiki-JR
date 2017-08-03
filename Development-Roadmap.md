@@ -1,5 +1,5 @@
 This page maintains current, future, and wishlist related developments to the VisionEval model system.  The current set of work packages are:
-  - [Setting Up VisionEval](#setting-up-visioneval-including-verspm-migration)
+  - [Setting Up VisionEval](#setting-up-visioneval-including-verspm-migration) including VERSPM Migration
   - [VERPAT Migration](#verpat-migration)
   - [Upcoming](#Upcoming)
 
