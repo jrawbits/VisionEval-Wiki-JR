@@ -16,7 +16,7 @@
 * Discussion of other requirements
 
 ### Outline of developer guide and module example
-* [Developer Guide Outline] (https://docs.google.com/document/d/1jXtptJ4MmpLP30srOfnS-Lg0qibIPMHZNDmpO30f_UM/edit#) 
+* [Developer Guide Outline](https://docs.google.com/document/d/1jXtptJ4MmpLP30srOfnS-Lg0qibIPMHZNDmpO30f_UM/edit#)
 * [Example Package (VESimHouseholds)](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds)
 
 ### Introduce multimodal model
