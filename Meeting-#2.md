@@ -19,7 +19,7 @@
 * Review of [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria)
 * Discussion of other requirements
 
-### Introduce multimodal model
+### [Introduce multimodal model](https://cities-lab.github.io/SPR788/VEReviewTeam.html#1)
 
 ### Close/actions/next steps
 
