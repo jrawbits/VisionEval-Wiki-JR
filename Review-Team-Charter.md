@@ -5,6 +5,10 @@ FIGURE ONE
 
 To maintain the integrity of these end models, the Sponsors established a Review Team process.  The Sponsors have delegated authority to this Review Team and appointed staff/consultants to manage and accept changes to VisionEval and make periodic releases of the software. The Review Team will not accept contributions that make changes to the fundamental framework without input from the Sponsors.
 
+### Table of Contents
+[Mission and Overview of VisionEval](#mission-and-overview-of-visioneval)  
+[Charge and Roles](#charge-and-roles)
+
 The VisionEval repository includes two main branches:
   - The [[master branch|https://github.com/gregorbj/VisionEval]] contains the latest version of the end models and the latest release of the VisionEval software. 
   - The [[develop branch|https://github.com/gregorbj/VisionEval/tree/develop]] is the in-progress development branch and contains all proposed changes, ranging from sponsor-directed upgrades and developer contributions, to updates due to new releases of R.
