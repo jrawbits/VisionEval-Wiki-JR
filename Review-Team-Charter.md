@@ -1,6 +1,6 @@
 The VisionEval Open Source project houses a common code base for a family of strategic planning models for public use which is maintained and supported by a set of agencies (i.e., “Sponsor”).   As illustrated below, the “code base,” housed in this publicly accessible repository, includes a common set of component “modules” that are assembled in various ways along with a “user interface” and the “services” that allow them to communicate.  Together these modules make up functioning “models” (i.e., RPAT, RSPM) that can be applied with local data to support analysis in various communities. 
  
-FIGURE ONE
+[[ve_software.png]]
 
 To maintain the integrity of these end models, the Sponsors established a Review Team process.  The Sponsors have delegated authority to this Review Team and appointed staff/consultants to manage and accept changes to VisionEval and make periodic releases of the software. The Review Team will not accept contributions that make changes to the fundamental framework without input from the Sponsors.
 
@@ -14,7 +14,7 @@ If developers wish to create software components that are outside of the core mi
 
 This VisionEval review process is outlined in this document. 
 
-FIGURE TWO
+[[review_process.png]]
 
 ### Sections
   - [Charge and Roles](#charge-and-roles)  
