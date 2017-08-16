@@ -13,7 +13,7 @@
 
 ### Skim useful references to know about
   - VE [[style guide |https://github.com/gregorbj/VisionEval/blob/master/api/Coding_Guidelines.md]]
-  - [[GitHub repo processes / branching and versioning plan | Working-Together]]
+  - GitHub repo [[processes / branching and versioning plan | Working-Together]]
   - [[Testing requirements, test data, and running tests|Automated-Testing]] [ Status: other items not yet scoped ]
   - Developer [[roadmap|Development-Roadmap]]
   - Organization and naming of packages and modules, see [[VE Name Registry|https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VENameRegistry.json]] [ Status: to be developed ]
