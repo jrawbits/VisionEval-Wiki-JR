@@ -5,15 +5,15 @@
   - Understand how to use GitHub and [[TravisCI|https://travis-ci.org/]]
 
 ### Get VisionEval Running
-  - Use the [[Quick start|Getting-Started]] guide to download and run an example
+  - Use the [[Quick Start|Getting-Started]] guide to download and run an example
 
 ### Understand the development principles and organization of VisionEval framework
   - Review [[System Design Documentation|https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md]] 
   - Review [[Contribution Criteria|Contribution-Review-Criteria]]
 
 ### Skim useful references to know about
-  - VE [[Style Guide |https://github.com/gregorbj/VisionEval/blob/master/api/Coding_Guidelines.md]]
-  - [[GitHub Repo Processes / branching and versioning plan | Working-Together]]
+  - VE [[style guide |https://github.com/gregorbj/VisionEval/blob/master/api/Coding_Guidelines.md]]
+  - [[GitHub repo processes / branching and versioning plan | Working-Together]]
   - [[Testing requirements, test data, and running tests|Automated-Testing]] [ Status: other items not yet scoped ]
   - Developer [[roadmap|Development-Roadmap]]
   - Organization and naming of packages and modules, see [[VE Name Registry|https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VENameRegistry.json]] [ Status: to be developed ]
