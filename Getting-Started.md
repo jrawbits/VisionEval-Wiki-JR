@@ -73,5 +73,3 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds", 
 runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI", ref="develop")
 ```
   3. Navigate to and run both VERPAT and VERSPM's run_model.R script 
-
-Ensure these operations complete successfully before finalizing commits to develop.
