@@ -1,6 +1,6 @@
 # VisionEval
 
-VisionEval is a programming framework for disaggregate strategic planning models.  Background information is available on the project [Website](https://gregorbj.github.io/VisionEval/), including the [System Design](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md).  This site is focused on management of the collaborative effort.
+VisionEval is a programming framework for disaggregate strategic planning models.  Background information is available on the project [Website](https://gregorbj.github.io/VisionEval/), including the [System Design](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md).  This site is focused on management of the collaborative effort.  
 
 ### Getting Started
 Start with the [[Getting Started|Getting-Started]] page and the [[Developer Orientation|Developer-Orientation]] page.
