@@ -1,7 +1,10 @@
 # [[VisionEval|home]]
 
-### Software Management
+### Getting Started
+- [[Getting Started|Getting-Started]]
 - [[Developer Orientation|Developer-Orientation]]
+
+### Software Management
 - [[Goals and Objectives|Goals-and-Objectives-of-VisionEval-Model-System]]
 - [[Working Together |Working-Together]]
 - [[Automated Testing|Automated-Testing]]
