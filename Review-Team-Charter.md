@@ -1,13 +1,8 @@
-## Mission and Overview of VisionEval
 The VisionEval Open Source project houses a common code base for a family of strategic planning models for public use which is maintained and supported by a set of agencies (i.e., “Sponsor”).   As illustrated below, the “code base,” housed in this publicly accessible repository, includes a common set of component “modules” that are assembled in various ways along with a “user interface” and the “services” that allow them to communicate.  Together these modules make up functioning “models” (i.e., RPAT, RSPM) that can be applied with local data to support analysis in various communities. 
  
 FIGURE ONE
 
 To maintain the integrity of these end models, the Sponsors established a Review Team process.  The Sponsors have delegated authority to this Review Team and appointed staff/consultants to manage and accept changes to VisionEval and make periodic releases of the software. The Review Team will not accept contributions that make changes to the fundamental framework without input from the Sponsors.
-
-### Table of Contents
-[Mission and Overview of VisionEval](#mission-and-overview-of-visioneval)  
-[Charge and Roles](#charge-and-roles)
 
 The VisionEval repository includes two main branches:
   - The [[master branch|https://github.com/gregorbj/VisionEval]] contains the latest version of the end models and the latest release of the VisionEval software. 
@@ -20,6 +15,11 @@ If developers wish to create software components that are outside of the core mi
 This VisionEval review process is outlined in this document. 
 
 FIGURE TWO
+
+### Table of Contents
+[Charge and Roles](#charge-and-roles)
+[Review Team Governance](#review-team-governance)
+[Code and Documentation Management ](#code-and-documentation-management)
 
 ## Charge and Roles
 
@@ -89,8 +89,9 @@ The Review Team will provide feedback to developers via this site. The Review Te
 ## Code and Documentation Management 
 
 ### Automated Testing
-The VisionEval software repository is under continuous automated testing to ensure contributions do not break existing functionality, additions are well formatted and functioning.  This testing will also ensure consistency with prior versions.  Before any changes are merged into the master branch, new VisionEval code must pass all tests.  The contributor must address issues that result in a failing test before the pull request is created and the change is ultimately merged into VisionEval. 
-Developers either work on a fork of the repository, or in a developer feature branch and then issue a pull request to the VisionEval repository develop branch.  When a new feature is developed in the repository, the continuous integration system (i.e. GitHub + TravisCI) automatically tests the new software to ensure it operates correctly.  All VisionEval resources are automatically tested.  This includes the VisionEval framework (foundation) package, modules, models, and user interfaces.  This ensures the complete end user software will work when a user downloads a new release.  The Repository Manager maintains the test coverage goals and enforces a minimum threshold of test coverage for each new pull request.  Developers are encouraged to watch the repository to be informed of revisions that may interest them.
+The VisionEval software repository is under continuous [[automated testing|Automated-Testing]] to ensure contributions do not break existing functionality, additions are well formatted and functioning.  This testing will also ensure consistency with prior versions.  Before any changes are merged into the master branch, new VisionEval code must pass all tests.  The contributor must address issues that result in a failing test before the pull request is created and the change is ultimately merged into VisionEval. 
+
+As described in [[Working Together|Working-Together]], developers either work on a fork of the repository, or in a developer feature branch and then issue a pull request to the VisionEval repository develop branch.  When a new feature is developed in the repository, the continuous integration system automatically tests the new software to ensure it operates correctly.  All VisionEval resources are automatically tested.  This includes the VisionEval framework (foundation) package, modules, models, and user interfaces.  This ensures the complete end user software will work when a user downloads a new release.  The Repository Manager maintains the test coverage goals and enforces a minimum threshold of test coverage for each new pull request.  Developers are encouraged to watch the repository to be informed of revisions that may interest them.
 
 ### Releases
 The Release Manager will make official releases of VisionEval. The Release Manager will always have a working version of the complete software package as confirmed by the automated testing system.
@@ -99,13 +100,12 @@ The Release Manager will make official releases of VisionEval. The Release Manag
 Software documentation, including developer and user-oriented documentation, is maintained in the repository.  Documentation is held to the same standard as code.  If any of the documentation is missing or insufficient, the contribution will be rejected. Documentation is intended to ensure that contributions are well understood by the community of developers, reviewers, and users.
 
 ## Style, Philosophy and Licensing
-The VisionEval project maintains a code and documentation style guide, as well as many examples from which to better understand what is expected in a contribution.  All contributions are open source and must be licensed according to the documented VisionEval license.  Contributions deemed insufficient in terms of style, philosophy, or license will be rejected.  
+The VisionEval project maintains a code and documentation style guide, as well as many examples from which to better understand what is expected in a contribution.  All contributions are open source and must be licensed according to the documented VisionEval [[license|https://github.com/gregorbj/VisionEval/blob/master/LICENSE]].  Contributions deemed insufficient in terms of style, philosophy, or license will be rejected.  
 
 ### Contribution Criteria
-The Review Team maintains clear standards for software acceptance in the form of contribution criteria available on the project site.  The Review Team will ensure that these criteria are available to developers in creating their submittal (along with developer guidance and examples), and used in Review Team assessment of code submittals.
+The Review Team maintains clear standards for software acceptance in the form of [[contribution criteria|Contribution-Review-Criteria]] available on the project site.  The Review Team will ensure that these criteria are available to developers in creating their submittal (along with developer guidance and examples), and used in Review Team assessment of code submittals.
 
 ### Contribution and Acknowledgment
 Each contributor should be recognized and feel a productive part of the community, and it is a goal to encourage diversity, respect, and equality. Key to this is the recognition of contributions from individuals in a manner that also recognizes the community effort that made it all possible. Contributions of actual code are supported by design discussion, oversight, testing, documentation, bug fixes and much more. No code contribution is an independent unit of work (or should not be). It is therefore impossible to credit individual developers.  Developers will be recognized on GitHub as developers, but individual code will not be acknowledged.
 
-Each contributor will complete the Contributor Licensing Agreement on the GitHub site in order to grant ownership to the Sponsors for the contribution project resources
-
+Each contributor will complete the [[Contributor Licensing Agreement|]] in order to grant ownership to the Sponsors for the contribution project resources.
