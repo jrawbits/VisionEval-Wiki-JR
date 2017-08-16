@@ -17,7 +17,7 @@
   - [[Testing requirements, test data, and running tests|Automated-Testing]] [ Status: other items not yet scoped ]
   - Developer [[roadmap|Development-Roadmap]]
   - Organization and naming of packages and modules, see [[VE Name Registry|https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VENameRegistry.json]] [ Status: to be developed ]
-  - [[Original GREENSTEP documentation | https://github.com/gregorbj/RSPM/blob/master/Version_3.5/Documentation/GreenSTEP-RSPM_Documentation_20151220.docx]]
+  - Original GREENSTEP [[documentation | https://github.com/gregorbj/RSPM/blob/master/Version_3.5/Documentation/GreenSTEP-RSPM_Documentation_20151220.docx]]
   - Organization of data store and test data, see [[VE Name Registry|https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VENameRegistry.json]] [ Status: to be developed ] 
   - List of useful functions in the API for developers [ Status: to be developed; see [[API|https://github.com/gregorbj/VisionEval/tree/master/api]] for now ]
 
