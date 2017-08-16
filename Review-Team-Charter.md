@@ -17,9 +17,9 @@ This VisionEval review process is outlined in this document.
 FIGURE TWO
 
 ### Table of Contents
-[Charge and Roles](#charge-and-roles)
-[Review Team Governance](#review-team-governance)
-[Code and Documentation Management ](#code-and-documentation-management)
+[Charge and Roles](#charge-and-roles)  
+[Review Team Governance](#review-team-governance)  
+[Code and Documentation Management ](#code-and-documentation-management)  
 
 ## Charge and Roles
 
