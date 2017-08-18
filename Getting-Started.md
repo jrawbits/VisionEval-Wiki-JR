@@ -10,7 +10,7 @@ The repository is organized into two directories:
 - The **api** directory contains documentation of the model system. The [model system design](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md) document is the most complete at the present time. VisionEval framework functions are documented in a [network visualization](https://gregorbj.github.io/VisionEval/website/visioneval_functions.html) of the functions and their call relationships. Functions are represented by network nodes. Call relationships are represented by arrows which point from the calling function to the called function. Function details are shown at the bottom of the page when a function node is selected.
 
 ## Installation and Setup
-  1. Install [R 3.3+](https://cran.r-project.org) in a location where you have write access.
+  1. Install [R 3.3.2+](https://cran.r-project.org) in a location where you have write access.
   2. Start R
   3. If working within a proxy server (like ODOT), run the following commands to enable install from GitHub:
 ```
@@ -18,13 +18,17 @@ library(httr)
 set_config(use_proxy(url="proxynew.odot.state.or.us", port=8080)) 
 set_config( config( ssl_verifypeer = 0L ) )
 ```
-  4. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.
-  5. Run the following commands to download and install the required libraries and their dependencies:
+  4. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.  See `.libPaths()`.
+  5. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
 ```
 install.packages(c("devtools", "roxygen2", "stringr", "knitr"))
 install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable"))
 devtools::install_github(c("tdhock/namedCapture", "trestletech/shinyTree"))
+
 devtools::install_bioc(c("BiocInstaller", "rhdf5"))
+ #or 
+source("https://bioconductor.org/biocLite.R")
+biocLite("rhdf5")
 ```
   6. Run the following commands to download and install the required VE framework package:
 ```
