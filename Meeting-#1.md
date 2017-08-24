@@ -48,7 +48,11 @@ Kristin welcomed everyone to the call and asked participants to introduce themse
   - Tara Weidner, ODOT (staff) – analyst at ODOT, inherited GreenSTEP model and is expanding it
 
 ### VisionEval Overview – Tara Weidner, ODOT
-Tara reviewed the VisionEval Phase 2 Activities using the graphic below.  She explained that the current technical work focuses on migrating existing tools to VisionEval common software framework.  She also explained that FHWA is establishing a pooled fund to support VisionEval.  Ben noted that this pooled fund/open source approach is being used for other modeling products in the industry and will likely become more common.  Tara also noted that packages of the “RPSM Multimodal Model” developed by Liming Wang/PSU in a recent ODOT Research project will be the test submittal in the 3rd meeting.
+Tara reviewed the VisionEval Phase 2 Activities using the diagram below.  
+
+[Venn Diagram](ve-venn.JPG)
+
+She explained that the current technical work focuses on migrating existing tools to VisionEval common software framework.  She also explained that FHWA is establishing a pooled fund to support VisionEval.  Ben noted that this pooled fund/open source approach is being used for other modeling products in the industry and will likely become more common.  Tara also noted that packages of the “RPSM Multimodal Model” developed by Liming Wang/PSU in a recent ODOT Research project will be the test submittal in the 3rd meeting.
  
 ### Open Source Best Practices – Dan Flynn, Volpe
 Dan presented a series of [slides](https://github.com/gregorbj/VisionEval/wiki/documents/ContributorReviewTeam1OpenSourceVolpe.pdf) information presentation summarizing best practices for review of contributions to open source projects, including OSADP (private GitHub), Node.js (active), vegan (smaller less formal), and ActivitySim (most similar).  He covered the development process/governance, licenses and community engagement.  
