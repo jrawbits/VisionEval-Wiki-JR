@@ -1,5 +1,12 @@
 This page tracks progress on the current FHWA project to translate the existing RPAT and RSPM implementations into VisionEval models.  The larger, overall VisionEval roadmap is maintained on the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap) page.  The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  This work task is in the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap).
 
+Module Status Code Key:  
+- I = module includes implementation code (i.e. it will run in a model)  
+- E = module includes code to estimate model parameters  
+- T = module includes test code  
+- D = module includes model documentation  
+- V = module includes vignettes which explain what the module does and how it is used  
+
 |Package              |Module                         |Description                                                                            |Status |Completion |Notes                                   |
 |:--------------------|:------------------------------|:--------------------------------------------------------------------------------------|:------|:----------|:---------------------------------------|
 | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms)     |CreateBaseSyntheticFirms       |Creates base year synthetic firms by NAICS and number of jobs                          |I      |           |VERPAT model, likely for RSPM in future |
