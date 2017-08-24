@@ -37,6 +37,36 @@ Observers and staff
 ### Welcome and introductions
 Kristin reviewed the agenda.   She also addressed the key topics in Daniel Flynn’s white paper on open source projects and highlighted those topics that the Review Team will address.
 
+<TABLE>
+ <TR>
+      <TH>Topic</TH>
+      <TH>Address?</TH>
+   </TR>
+   <TR>
+      <TD>License/CLA</TD>
+      <TD>Charter and contribution work flow</TD>
+   </TR>
+   <TR>
+      <TD>Developer Best Practices Guidance </TD>
+      <TD>Discuss with Review Team today</TD>
+   </TR>
+   <TR>
+      <TD>Clear standards for code acceptance</TD>
+      <TD>Discuss what is covered in automated tests with Review Team today</TD>
+   </TR>
+ <TR>
+      <TD>Automated code tests</TD>
+      <TD>Developed by consultant team</TD>
+   </TR>
+<TR>
+      <TD>Work flow/contribution process</TD>
+      <TD>Developed by consultant team; documented on wiki</TD>
+   </TR>
+<TR>
+      <TD>Long term desired features</TD>
+      <TD>Current list will be posted to wiki</TD>
+   </TR>
+</TABLE>
 
 
 ### White paper
