@@ -103,10 +103,10 @@ Liming reviewed slides introducing the Multi-Modal model, which re-estimates the
 The Review Team will review this submittal at their next meeting to conclude the pilot effort.
 
 ### Close/actions/next steps
-* Kristin will circulate new Review Team Charter
-* Ben will update contribution review criteria
+* Kristin will circulate new [Review Team Charter](https://github.com/gregorbj/VisionEval/wiki/Review-Team-Charter)
+* Ben will update [Contribution Review Criteria](https://github.com/gregorbj/VisionEval/wiki/Contribution-Review-Criteria)
 * Liming will submit (pull request) his Multi-Modal RSPM model code for review (to be distributed to the Review Team before the next meeting)
-* Consultant team will continue to make progress on other fronts, including incorporating Review Team comments in the Developers Orientation materials.
+* Consultant team will continue to make progress on other fronts, including incorporating Review Team comments in the Developers Orientation materials
 * Review Team can watch for materials from Meetings #1-3 on the GitHub Wiki site. 
 
-### Adjourn
+
