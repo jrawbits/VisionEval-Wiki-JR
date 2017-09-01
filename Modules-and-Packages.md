@@ -1,13 +1,13 @@
 This page tracks progress on the current FHWA project to translate the existing RPAT and RSPM implementations into VisionEval models.  The larger, overall VisionEval roadmap is maintained on the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap) page.  The translation of RPAT to VERPAT will utilize and/or revise VE modules as needed.  This work task is in the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap).
 
 Module Status Code Key:  
-- I = module includes implementation code (i.e. it will run in a model)  
+- I = module includes implementation code (i.e. it will run in a model)
 - E = module includes code to estimate model parameters  
 - T = module includes test code  
 - D = module includes model documentation  
 - V = module includes vignettes which explain what the module does and how it is used  
 
-The table below includes Package, Module, Description, Status, Completion, and Notes columns.  Please scroll at the bottom of the table to see additional columns.
+This table includes columns for Package, Module, Description, Status, Completion, and Notes.  Please scroll at the bottom of the table to see additional columns.
 
 |Package              |Module                         |Description                                                                            |Status |Completion |Notes                                   |
 |:--------------------|:------------------------------|:--------------------------------------------------------------------------------------|:------|:----------|:---------------------------------------|
