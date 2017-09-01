@@ -29,6 +29,9 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
 ## Upcoming
 * Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
+* Create Package Template
+* Create Pay As You Drive (PAYD) Module
+* Translate GreenSTEP to VEGreenSTEP
 
 ## Wishlist
 * Safety and security: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
