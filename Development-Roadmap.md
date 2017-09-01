@@ -2,7 +2,7 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [Setting Up VisionEval including VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
   - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
   - [VERPAT Migration](#verpat-migration)
-  - [Upcoming](#Upcoming)
+  - [Upcoming](#upcoming)
 
 This page also maintains a set of wishlist/enhancements, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
@@ -27,7 +27,7 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
 ## Upcoming
 * Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
-* Create Package Template
+* Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
 * Create Pay As You Drive (PAYD) Module
 * Translate GreenSTEP to VEGreenSTEP
 
