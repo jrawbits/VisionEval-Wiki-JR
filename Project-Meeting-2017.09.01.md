@@ -12,7 +12,7 @@
   - Making improvements to VELandUse for easier calibration process and better performance
 
 ## Future developments
-  - CH working on package template and Pay As You Drive module; Brian provided livst 
+  - CH working on package template and Pay As You Drive module; Brian provided list of requirements 
   - Need to add to the Development Roadmap --> [done](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap)
   - VEGreenSTEP will likely be converted later this Fall; also added to roadmap
   - Coordination with VERPAT development will be important since zone synthesis is key
