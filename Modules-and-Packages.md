@@ -7,6 +7,8 @@ Module Status Code Key:
 - D = module includes model documentation  
 - V = module includes vignettes which explain what the module does and how it is used  
 
+The table below includes Package, Module, Description, Status, Completion, and Notes columns.  Please scroll at the bottom of the table to see additional columns.
+
 |Package              |Module                         |Description                                                                            |Status |Completion |Notes                                   |
 |:--------------------|:------------------------------|:--------------------------------------------------------------------------------------|:------|:----------|:---------------------------------------|
 | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms)     |CreateBaseSyntheticFirms       |Creates base year synthetic firms by NAICS and number of jobs                          |I      |           |VERPAT model, likely for RSPM in future |
