@@ -11,9 +11,7 @@ This page also maintains a set of wishlist/enhancements, which may overlap with 
 This current work task is described in more detail [here](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
 
 ## Integrate PSU Multi-Modal model
-Replace VERSPM modules with PSU’s Multi-Modal model, including modules X, Y, and Z.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit).  In the process, it improves the auto ownership module (important in car sharing and automated vehicle policies).  It also add household attributes  that can improve/be used by other  modules, including:
-  - home location 5D built form variables (density, design, diversity, destination accessibility, distance to decent transit)
-  - Number of workers
+Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit) than the current VE module. In addition the model of household ADVMT has better sensitivity to auto ownership; which is non-linear. This is important in car sharing and automated vehicle policies. It also includes a new household drivers and auto ownership models.
 
 ## VERPAT Migration 
 The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
