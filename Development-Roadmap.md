@@ -1,5 +1,6 @@
 This page maintains current, future, and wishlist related developments to the VisionEval model system.  The current set of work packages are:
   - [Setting Up VisionEval including VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
+  - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
   - [VERPAT Migration](#verpat-migration)
   - [Upcoming](#Upcoming)
 
@@ -8,6 +9,11 @@ This page also maintains a set of wishlist/enhancements, which may overlap with 
 
 ## Setting Up VisionEval, including VERSPM Migration
 This current work task is described in more detail [here](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages)
+
+## Integrate PSU Multi-Modal model
+Replace VERSPM modules with PSU’s Multi-Modal model, including modules X, Y, and Z.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit).  In the process, it improves the auto ownership module (important in car sharing and automated vehicle policies).  It also add household attributes  that can improve/be used by other  modules, including:
+  - home location 5D built form variables (density, design, diversity, destination accessibility, distance to decent transit)
+  - Number of workers
 
 ## VERPAT Migration 
 The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
