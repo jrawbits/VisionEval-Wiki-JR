@@ -6,7 +6,7 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [VEGreenSTEP Migration](#upcoming)
 
 
-This page also maintains a set of wishlist/enhancements, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
+This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
 
 ## Setting Up VisionEval, including VERSPM Migration
