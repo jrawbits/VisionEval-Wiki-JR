@@ -30,7 +30,7 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
 * Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
 * Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
-* Create Pay As You Drive (PAYD) example/template module
+* Create Pay As You Drive (PAYD) module as the example for new developers
 
 ## VEGreenSTEP Migration
 * Translate GreenSTEP to VEGreenSTEP
