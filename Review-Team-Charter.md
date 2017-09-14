@@ -77,14 +77,14 @@ The Review Team’s decision making is limited to accepting or rejecting revisio
   - Voting is recorded on the project site.  
   - The Review Team chair is responsible for determining how to move forward when a Review Team member does not cast a vote or seeking outside reviews if there are too few accept votes (i.e., due to abstains).  
 
-The Review Team will provide feedback to developers via this site. The Review Team provides feedback for each required submittal category as follows:
+The Review Team will provide feedback to developers via this site.  The Review Team will provide feedback for each review criteria and will required submittal category as follows:
 
-| Status  | Software | Documentation	 | Methods | 
-|---------|----------|-------------------|---------|
-| Accept  |          |                   |         |
-| Accept but recommend revisions |  |    |         |
-| Do not accept|          |              |         |
-| Abstain      |          |              |         |
+| Status                         | Software | Documentation	| Methods | 
+|--------------------------------|----------|-------------------|---------|
+| Accept                         |          |                   |         |
+| Accept but recommend revisions |          |                   |         |
+| Do not accept                  |          |                   |         |
+| Abstain                        |          |                   |         |
 
 ## Code and Documentation Management 
 
