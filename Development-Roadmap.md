@@ -3,8 +3,8 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
   - [VERPAT Migration](#verpat-migration)
   - [Usability](#usability)
+  - [Migrate to the new VisionEval home](#new-ve-home)
   - [VEGreenSTEP Migration](#upcoming)
-
 
 This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
@@ -32,8 +32,8 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
 * Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
 * Create Pay As You Drive (PAYD) module as the example for new developers
 
-## VEGreenSTEP Migration
-* Translate GreenSTEP to VEGreenSTEP
+## New VE Home
+Eventually VisionEval will move to its new [organization](https://github.com/VisionEval) home.
 
 ## Wishlist
 * Safety and security: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
