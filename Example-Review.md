@@ -1,9 +1,10 @@
-## VETravelDemandMM Contribution Review Comments
-Ben Stabler, RSG, Tara Weidner, ODOT, September 13, 2017
-
 ### Overview
 Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike. 
 
+### Pull Request
+VETravelDemandMM Contribution [Pull Request](https://github.com/gregorbj/VisionEval/pull/130).
+
+### Question Response
 | Review Question | Ben’s Comments  | Tara’s Comments   |
 |-----------------|-----------------|-------------------|
 | 1. Does it contain all the elements that are required by the VisionEval system specifications?                                                                                                                                                                                                                                                                                                                         | yes, it is modular, open, includes estimation capabilities, good documentation, tests, and it runs fast                                                                                                        | Ditto.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
