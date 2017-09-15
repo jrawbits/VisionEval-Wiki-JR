@@ -25,10 +25,9 @@ Ben: Submission looks great and is quite complete.  Travis returns a bunch of R 
 
 Tara: Submission has a more rigorous output estimation of non-vehicle travel (bike, walk, transit) than the current VE module. In addition the model of household ADVMT has better sensitivity to auto ownership; which is non-linear. This is important in car sharing and automated vehicle policies. It also includes a new household drivers and auto ownership models..  Addition of built form variables provides opportunities for improving other modules (e.g., effectiveness of TDM depends on built form/5Ds of home location).  It went through ODOT-led peer-reviewed research process (SPR#788) that included engagement by FHWA, transit, planning, and regional MPO technical staff at various decision points.  Package includes several levels of sensitivity testing (module, model, and literature elasticity). New inputs are required but appear to be some start at US-wide tools (e.g., Placetypes_USA, using 2010 EPA SLD data) to assist in their development.  
 
-
 As a result, we recommend accepting the submission after addressing the issues noted:
   - update travis script to test new package
-  - revise software to let the user know that NHTS2009, SLD, the confidential data for estimation, and the estimation script should not quite work as expected
+  - revise the documentation/software to let the user know that the NHTS2009, SLD, confidential data for estimation, and estimation script are exceptions to the guidelines for various reasons
   - add proof of ODOT release of ownership 
 
 | Status                         | Software | Documentation	| Methods | 
