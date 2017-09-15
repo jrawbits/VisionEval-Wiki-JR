@@ -21,7 +21,7 @@ To submit a contribution for review, issue a pull request with a comment introdu
 | 13. Any other comments?                                                                                                                                                                                                                                                           |                               | x                      |   x                          |     x                  |
 
 ## Feedback
-The Review Team will provide feedback for each review criteria and will required submittal category as follows:
+The Review Team will provide feedback for each review criteria above and tag each submittal category as follows:
 
 | Status                         | Software | Documentation	| Methods | 
 |--------------------------------|----------|-------------------|---------|
