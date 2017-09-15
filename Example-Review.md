@@ -2,7 +2,7 @@
 Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike. 
 
 ### Pull Request
-VETravelDemandMM Contribution [Pull Request](https://github.com/gregorbj/VisionEval/pull/130), including responses to the review criteria.  
+VETravelDemandMM Contribution [Pull Request](https://github.com/gregorbj/VisionEval/pull/130), including responses to the review criteria.  The Repository manager and the Review team chair also met with the contributor ahead of time to answer questions.  
 
 ### Review Comments
 | Review Question | Ben’s Comments  | Tara’s Comments   |
