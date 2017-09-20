@@ -24,3 +24,4 @@
  - [[Meeting #2]]
  - [[Meeting #3]]
  - [[Example Review|Example-Review]]
+ - [Governance Best Practices](https://github.com/VisionEval/OSwhitepaper/blob/master/VEwhitepaper.html)
