@@ -19,6 +19,9 @@ The data specification system also enables a model to be thoroughly checked befo
 
 These checks that are built into the framework software make it possible to implement automated checking of VisionEval module packages and VisionEval model whenever a module package and/or model is added to or modified in the VisionEval repository. 
 
+## UI Testing
+VEGUI is tested using shinytest.
+
 ## Test System
 [TravisCI](https://travis-ci.org/) services are used to automatically test all modules and models to assure that they work properly.  Here are a few details on the test system:
   - Tests automatically run with every commit and the pass/fail status is at the bottom of the README as [rendered by GitHub](https://github.com/gregorbj/VisionEval/tree/develop)
