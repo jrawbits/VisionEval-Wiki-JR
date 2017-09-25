@@ -13,8 +13,6 @@ Liming reviewed slides summarizing his code submittal, the multimodal model (MM)
 Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question. _(In notes: *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. +Issues to be addressed by sponsor/pooled fund partners at a future date)_
 
 The Review Team discussed the following:
-
-
 * It was noted that this submittal will also bring RPAT and RSPM closer together, as they will both use similar land use/5D built form input variables when this module is adopted.
 * How are accepted module/package changes added into the overall production model (e.g., VERPSM, VERPAT)?  Who owns the overall repository and has authority to revise pieces of the model.  The group discussed these questions and determined that what is included in the next production release of models is part of the job descriptions of the release and repository managers and will be addressed in consult with the sponsors.
 * *The group discussed where data should reside when it comes from external sources, or is oversized or confidentiality issues.  Should the data set be copied to a repository or should links to the external data be provided, with instructions if needed for access to confidential data.  The group agreed that a subset of the developers (Ben, Brian Gregor, Liming, Tara) should address this question.
@@ -30,10 +28,10 @@ The Review Team discussed the following:
 * A pre-submittal meeting (like the one that Tara and Ben had with Liming) is a useful part of the process.  We should offer it to developers.
 * It was noted that Liming has made significant contributions to moving the VisionEval project forward with this research/submittal.  He helped clean up the code and added helper functions that can be added to the framework for other developers, as well as adding to the automated tests. 
 * *It was suggested that develop input on the process be included as a last question on the criteria list. Liming’s developer comments on this pilot process included:
-* *It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
-* +Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
-* +Some overlap in Review Team Criteria questions.
-* Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
+** *It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
+** +Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
+** +Some overlap in Review Team Criteria questions.
+** Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
 * +The team should identify a different process for contributions that affect the framework.
 * *To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
 * Review team members should plan on 2-3 hours to review a submittal.
