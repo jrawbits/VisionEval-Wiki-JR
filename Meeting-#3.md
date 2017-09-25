@@ -1,15 +1,15 @@
-##Objectives
-•	Review results of multimodal module test case
+## Objectives
+* Review results of multimodal module test case
 Summary
-##WELCOME AND INTRODUCTIONS
+## WELCOME AND INTRODUCTIONS
 Kristin reviewed the agenda. She told the group that this was their final meeting during the pilot process and that the group would spend their time today testing the review process developed in the last two meetings and encapsulated in the Review Team charter, review criteria and other changes on the VisionEval wiki.  
 
-##OVERVIEW OF MULTIMODAL MODEL AND RESULTS
+## OVERVIEW OF MULTIMODAL MODEL AND RESULTS
 Tara reminded the Review Team that they had been emailed links to the developer’s submittal being reviewed today.  This included links to the GitHub pull request and relevant documents and automated test results 
 
 Liming reviewed slides summarizing his code submittal, the multimodal model (MM) update to VERSPM.  He explained that the VETravelDemandMM package would provide a better representation of multi-modal travel of households, update models with the latest and best available data, provide rigorous selection and benchmark of different model structures, and take advantage of R infrastructure and new packages.  A summary of the package is available here. He reviewed the methods and model structure.  Liming also reviewed the documentation or the module. He shared the results of the automated tests and said that the package passed all automated tests.
 
-##CONTRIBUTION REVIEW CRITERIA RESULTS AND FEEDBACK FORM
+## CONTRIBUTION REVIEW CRITERIA RESULTS AND FEEDBACK FORM
 Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question.  
 The Review Team discussed the following:
 * Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc.
@@ -23,7 +23,7 @@ The Review Team discussed the following:
 •	+Need for some standard contract language for licensing to ensure that contractors developing code have the appropriate permissions for licensing. 
 •	*Slight revision to Review Criteria question 9 to ensure verification of release of ownership.  A CLA might be considered.
 •	*How to sort modules and packages where users have a choice between models or modules that do similar things.  As used in this submittal, submitted modules should try to use the same name as original module plus extra characters at the end, e.g., VETravelDemandMM)
-##REVIEW TEAM FEEDBACK ON THE PROCESS/PILOT
+## REVIEW TEAM FEEDBACK ON THE PROCESS/PILOT
 •	This process was useful.
 o	Liming’s summary is a good way to focus reviewers.
 o	Contribution review criteria covered the key questions.
@@ -46,7 +46,7 @@ Based on the discussion, the Review Team chairs (Tara and Ben) recommended accep
 •	Add proof of ODOT release of ownership.
 •	Vignette and/or cheat sheet summarizing estimated functions and dependent variables.
 
-##CLOSE/NEXT STEPS
+## CLOSE/NEXT STEPS
 Kristin will send out a “voting” email to all Review Team members.  Ben will post he and Tara’s responses to the contribution review criteria to the Wiki for member use.
 Issues above designated with * will be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. Those designated with + are left to be addressed by sponsor/pooled fund partners at a future date. 
 
