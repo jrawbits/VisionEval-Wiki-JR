@@ -1,6 +1,6 @@
 ## Objectives
 * Review results of multimodal module test case
-Summary
+# Summary
 ## WELCOME AND INTRODUCTIONS
 Kristin reviewed the agenda. She told the group that this was their final meeting during the pilot process and that the group would spend their time today testing the review process developed in the last two meetings and encapsulated in the Review Team charter, review criteria and other changes on the VisionEval wiki.  
 
@@ -15,16 +15,16 @@ The Review Team discussed the following:
 * Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc.
 + Issues to be addressed by sponsor/pooled fund partners at a future date 
 
-•	It was noted that this submittal will also bring RPAT and RSPM closer together, as they will both use similar land use/5D built form input variables when this module is adopted.
-•	How are accepted module/package changes added into the overall production model (e.g., VERPSM, VERPAT)?  Who owns the overall repository and has authority to revise pieces of the model.  The group discussed these questions and determined that what is included in the next production release of models is part of the job descriptions of the release and repository managers and will be addressed in consult with the sponsors.
-•	*The group discussed where data should reside when it comes from external sources, or is oversized or confidentiality issues.  Should the data set be copied to a repository or should links to the external data be provided, with instructions if needed for access to confidential data.  The group agreed that a subset of the developers (Ben, Brian Gregor, Liming, Tara) should address this question.
-•	*A member asked if the estimation script was in the R directory.  Liming explained that the estimation script cannot be put the R directory because it will not run correctly due to the confidential data. Ben suggested the documentation be changed to note the data issue.
-•	+A review team member suggested that it might be good to test the model with a larger set of test data than the RVCOG data.
-•	+Need for some standard contract language for licensing to ensure that contractors developing code have the appropriate permissions for licensing. 
-•	*Slight revision to Review Criteria question 9 to ensure verification of release of ownership.  A CLA might be considered.
-•	*How to sort modules and packages where users have a choice between models or modules that do similar things.  As used in this submittal, submitted modules should try to use the same name as original module plus extra characters at the end, e.g., VETravelDemandMM)
+* It was noted that this submittal will also bring RPAT and RSPM closer together, as they will both use similar land use/5D built form input variables when this module is adopted.
+* How are accepted module/package changes added into the overall production model (e.g., VERPSM, VERPAT)?  Who owns the overall repository and has authority to revise pieces of the model.  The group discussed these questions and determined that what is included in the next production release of models is part of the job descriptions of the release and repository managers and will be addressed in consult with the sponsors.
+* *The group discussed where data should reside when it comes from external sources, or is oversized or confidentiality issues.  Should the data set be copied to a repository or should links to the external data be provided, with instructions if needed for access to confidential data.  The group agreed that a subset of the developers (Ben, Brian Gregor, Liming, Tara) should address this question.
+* *A member asked if the estimation script was in the R directory.  Liming explained that the estimation script cannot be put the R directory because it will not run correctly due to the confidential data. Ben suggested the documentation be changed to note the data issue.
+* +A review team member suggested that it might be good to test the model with a larger set of test data than the RVCOG data.
+* +Need for some standard contract language for licensing to ensure that contractors developing code have the appropriate permissions for licensing. 
+* *Slight revision to Review Criteria question 9 to ensure verification of release of ownership.  A CLA might be considered.
+* *How to sort modules and packages where users have a choice between models or modules that do similar things.  As used in this submittal, submitted modules should try to use the same name as original module plus extra characters at the end, e.g., VETravelDemandMM)
 ## REVIEW TEAM FEEDBACK ON THE PROCESS/PILOT
-•	This process was useful.
+* This process was useful.
 o	Liming’s summary is a good way to focus reviewers.
 o	Contribution review criteria covered the key questions.
 o	A pre-submittal meeting (like the one that Tara and Ben had with Liming) is a useful part of the process.  We should offer it to developers.
