@@ -12,8 +12,8 @@ Liming reviewed slides summarizing his code submittal, the multimodal model (MM)
 ## CONTRIBUTION REVIEW CRITERIA RESULTS AND FEEDBACK FORM
 Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question.  
 The Review Team discussed the following:
-* Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc.
-+ Issues to be addressed by sponsor/pooled fund partners at a future date 
+* *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc.
+* +Issues to be addressed by sponsor/pooled fund partners at a future date 
 
 * It was noted that this submittal will also bring RPAT and RSPM closer together, as they will both use similar land use/5D built form input variables when this module is adopted.
 * How are accepted module/package changes added into the overall production model (e.g., VERPSM, VERPAT)?  Who owns the overall repository and has authority to revise pieces of the model.  The group discussed these questions and determined that what is included in the next production release of models is part of the job descriptions of the release and repository managers and will be addressed in consult with the sponsors.
