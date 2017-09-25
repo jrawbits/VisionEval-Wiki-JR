@@ -1,25 +1,25 @@
 ## Attendees
 **Review team members and alternates**
-Brian Gregor, OSA	
-Chris Porter, Cambridge Systematics
-Jeremy Raw, FHWA
-Daniel Flynn, Volpe
-Patrick Hall, ARC
-Jana Natarajan, WSDOT
-Liming Wang, PSU
-Alex Bigazzi, UBC
+* Brian Gregor, OSA	
+* Chris Porter, Cambridge Systematics
+* Jeremy Raw, FHWA
+* Daniel Flynn, Volpe
+* Patrick Hall, ARC
+* Jana Natarajan, WSDOT
+* Liming Wang, PSU
+* Alex Bigazzi, UBC
 
 **Absent**
-Kristin Tufte, PSU
-Eric Pihl, FHWA (observer)
-Josh Roll, ODOT
-Dan Frye, PSU (alternate)
+* Kristin Tufte, PSU
+* Eric Pihl, FHWA (observer)
+* Josh Roll, ODOT
+* Dan Frye, PSU (alternate)
 
 **Observers and staff**
-Ben Stabler, RSG (staff)
-Brian Hurley, ODOT (staff)
-Tara Weidner, ODOT (staff)
-Kristin Hull, CH2M (staff)
+* Ben Stabler, RSG (staff)
+* Brian Hurley, ODOT (staff)
+* Tara Weidner, ODOT (staff)
+* Kristin Hull, CH2M (staff)
 
 
 ## Objectives
