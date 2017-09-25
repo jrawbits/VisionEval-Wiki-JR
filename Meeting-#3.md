@@ -25,28 +25,29 @@ The Review Team discussed the following:
 * *How to sort modules and packages where users have a choice between models or modules that do similar things.  As used in this submittal, submitted modules should try to use the same name as original module plus extra characters at the end, e.g., VETravelDemandMM)
 ## REVIEW TEAM FEEDBACK ON THE PROCESS/PILOT
 * This process was useful.
-o	Liming’s summary is a good way to focus reviewers.
-o	Contribution review criteria covered the key questions.
-o	A pre-submittal meeting (like the one that Tara and Ben had with Liming) is a useful part of the process.  We should offer it to developers.
-o	It was noted that Liming has made significant contributions to moving the VisionEval project forward with this research/submittal.  He helped clean up the code and added helper functions that can be added to the framework for other developers, as well as adding to the automated tests. 
-o	*It was suggested that develop input on the process be included as a last question on the criteria list. Liming’s developer comments on this pilot process included:
-o	*It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
-o	+Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
-o	+Some overlap in Review Team Criteria questions.
-o	Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
-•	+The team should identify a different process for contributions that affect the framework.
-•	* To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
-•	Review team members should plan on 2-3 hours to review a submittal.
-•	Template of Review Team Criteria questions worked well.
-•	Review Team co-chairs (Tara & Ben) worked well to cover both code details and methods.
-•	Meeting structure worked well, i.e., short developer overview followed by Review Team chair(s) walking through developer response to Review Team criteria questions to frame the discussion by submitter and Review Team members, arriving at whether each criterion was adequately met. 
+* Liming’s summary is a good way to focus reviewers.
+* Contribution review criteria covered the key questions.
+* A pre-submittal meeting (like the one that Tara and Ben had with Liming) is a useful part of the process.  We should offer it to developers.
+* It was noted that Liming has made significant contributions to moving the VisionEval project forward with this research/submittal.  He helped clean up the code and added helper functions that can be added to the framework for other developers, as well as adding to the automated tests. 
+* *It was suggested that develop input on the process be included as a last question on the criteria list. Liming’s developer comments on this pilot process included:
+* *It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
+* +Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
+* +Some overlap in Review Team Criteria questions.
+* Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
+* +The team should identify a different process for contributions that affect the framework.
+* * To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
+* Review team members should plan on 2-3 hours to review a submittal.
+* Template of Review Team Criteria questions worked well.
+* Review Team co-chairs (Tara & Ben) worked well to cover both code details and methods.
+* Meeting structure worked well, i.e., short developer overview followed by Review Team chair(s) walking through developer response to Review Team criteria questions to frame the discussion by submitter and Review Team members, arriving at whether each criterion was adequately met. 
 Based on the discussion, the Review Team chairs (Tara and Ben) recommended acceptance of the submittal after the following changes are made.  The developer will be alerted by the repository manager (Ben) of these required actions once formalized in a vote of the Review Team:
-•	Update automated testing script to test new package.
-•	Revise the documentation/software to let the user know that the NHTS2009, SLD, confidential data for estimation, and estimation script are exceptions to the guidelines for various reasons.
-•	Add proof of ODOT release of ownership.
-•	Vignette and/or cheat sheet summarizing estimated functions and dependent variables.
+* Update automated testing script to test new package.
+* Revise the documentation/software to let the user know that the NHTS2009, SLD, confidential data for estimation, and estimation script are exceptions to the guidelines for various reasons.
+* Add proof of ODOT release of ownership.
+* Vignette and/or cheat sheet summarizing estimated functions and dependent variables.
 
 ## CLOSE/NEXT STEPS
 Kristin will send out a “voting” email to all Review Team members.  Ben will post he and Tara’s responses to the contribution review criteria to the Wiki for member use.
+
 Issues above designated with * will be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. Those designated with + are left to be addressed by sponsor/pooled fund partners at a future date. 
 
