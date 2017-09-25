@@ -26,6 +26,9 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
   - congestion() 
   - policy congestion()
 
+## VEGreenSTEP Migration 
+The translation of the statewide GreenSTEP to VisionEval is funded and planned for 2017/2018.  It will utilize and/or revise VE modules as needed. 
+
 ## Usability
 * Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
