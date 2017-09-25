@@ -10,7 +10,8 @@ Tara reminded the Review Team that they had been emailed links to the developerâ
 Liming reviewed slides summarizing his code submittal, the multimodal model (MM) update to VERSPM.  He explained that the VETravelDemandMM package would provide a better representation of multi-modal travel of households, update models with the latest and best available data, provide rigorous selection and benchmark of different model structures, and take advantage of R infrastructure and new packages.  A summary of the package is available here. He reviewed the methods and model structure.  Liming also reviewed the documentation or the module. He shared the results of the automated tests and said that the package passed all automated tests.
 
 ## CONTRIBUTION REVIEW CRITERIA RESULTS AND FEEDBACK FORM
-Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question. _ (In notes: *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. +Issues to be addressed by sponsor/pooled fund partners at a future date)_
+Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question. _(In notes: *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. +Issues to be addressed by sponsor/pooled fund partners at a future date)_
+
 The Review Team discussed the following:
 
 
