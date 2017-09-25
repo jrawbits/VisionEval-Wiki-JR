@@ -10,10 +10,9 @@ Tara reminded the Review Team that they had been emailed links to the developerâ
 Liming reviewed slides summarizing his code submittal, the multimodal model (MM) update to VERSPM.  He explained that the VETravelDemandMM package would provide a better representation of multi-modal travel of households, update models with the latest and best available data, provide rigorous selection and benchmark of different model structures, and take advantage of R infrastructure and new packages.  A summary of the package is available here. He reviewed the methods and model structure.  Liming also reviewed the documentation or the module. He shared the results of the automated tests and said that the package passed all automated tests.
 
 ## CONTRIBUTION REVIEW CRITERIA RESULTS AND FEEDBACK FORM
-Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question.  
+Tara and Ben reviewed Liming  responses to the contribution review criteria,  summarizing their comments on how the submittal met each question. _ (In notes: *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc. +Issues to be addressed by sponsor/pooled fund partners at a future date)_
 The Review Team discussed the following:
-* *Issues to be addressed following the meeting and reflected on the VisionEval Wiki charter, criteria, etc.
-* +Issues to be addressed by sponsor/pooled fund partners at a future date 
+
 
 * It was noted that this submittal will also bring RPAT and RSPM closer together, as they will both use similar land use/5D built form input variables when this module is adopted.
 * How are accepted module/package changes added into the overall production model (e.g., VERPSM, VERPAT)?  Who owns the overall repository and has authority to revise pieces of the model.  The group discussed these questions and determined that what is included in the next production release of models is part of the job descriptions of the release and repository managers and will be addressed in consult with the sponsors.
