@@ -13,7 +13,7 @@ This page also maintains a wishlist, which may overlap with the project [issues]
 This current work task is described in more detail [here](Modules-and-Packages)
 
 ## Integrate PSU Multi-Modal model
-Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit) than the current VE module. In addition the model of household ADVMT has better sensitivity to auto ownership; which is non-linear. This is important in car sharing and automated vehicle policies. It also includes a new household drivers and auto ownership models.
+Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit) than the current VE module. In addition the model of household ADVMT has better sensitivity to auto ownership; which is non-linear. This is important in car sharing and automated vehicle policies. It also includes a new household drivers and auto ownership models. The inclusion of built form variables brings RSPM and RPAT closer aligned, and allows opportunities to incorporate built form into other modules.
 
 ## VERPAT Migration 
 The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
