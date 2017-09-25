@@ -35,7 +35,7 @@ The Review Team discussed the following:
 * +Some overlap in Review Team Criteria questions.
 * Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
 * +The team should identify a different process for contributions that affect the framework.
-* * To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
+* *To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
 * Review team members should plan on 2-3 hours to review a submittal.
 * Template of Review Team Criteria questions worked well.
 * Review Team co-chairs (Tara & Ben) worked well to cover both code details and methods.
