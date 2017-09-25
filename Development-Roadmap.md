@@ -2,6 +2,7 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [Setting Up VisionEval including VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
   - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
   - [VERPAT Migration](#verpat-migration)
+  - [VEGreenSTEP Migration](#vegreenstep-migration)
   - [Usability](#usability)
   - [Migrate to the new VisionEval home](#new-ve-home)
   - [VEGreenSTEP Migration](#upcoming)
