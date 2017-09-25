@@ -28,10 +28,10 @@ The Review Team discussed the following:
 * A pre-submittal meeting (like the one that Tara and Ben had with Liming) is a useful part of the process.  We should offer it to developers.
 * It was noted that Liming has made significant contributions to moving the VisionEval project forward with this research/submittal.  He helped clean up the code and added helper functions that can be added to the framework for other developers, as well as adding to the automated tests. 
 * *It was suggested that develop input on the process be included as a last question on the criteria list. Liming’s developer comments on this pilot process included:
-** *It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
-** +Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
-** +Some overlap in Review Team Criteria questions.
-** Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
+    * *It would be helpful to have some history of how a package developed over time. It was suggested that the suggested pull request be done to pull more than just a snapshot of the code. 
+    * +Responses to contribution review questions took a lot of time for the developer.  We may need to look at how developers are supported through this process if the development is not funded/sponsored by an institution or agency. This would result in more complete submittals beyond code that passes automated tests (e.g., in-line code comments, vignettes, function menus, estimation scripts and data, sensitivity testing) 
+   * +Some overlap in Review Team Criteria questions.
+   * Developer pre-meeting worked well to highlight any issues that could be addressed before the Review Team met to discuss the submittal.
 * +The team should identify a different process for contributions that affect the framework.
 * *To aid the job of the Review Team in complex contributions, it was suggested that developers include a summary showing how the changed package fits into the overall model system and a quick summary of the estimated functions and their dependent variables.  
 * Review team members should plan on 2-3 hours to review a submittal.
