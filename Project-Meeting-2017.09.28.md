@@ -4,7 +4,7 @@
   - @Ben to setup a meeting the week of Oct 23rd with the AASHTO and ODOT projects so we can discuss timing and approach
   - We're thinking of transferring ownership and then forking back to the repos we're currently working in for the existing AASHTO and ODOT projects
   - We're thinking we won't tackle splitting things out into separate repos until after the pooled funds gets up and running [#129](https://github.com/gregorbj/VisionEval/issues/129)
-  - Work flow will likely be similar: transferred VE repo for distribution (i.e. release), a separate branch/repo for development , and forks for development (off the development branch)
+  - Work flow will likely be similar: transferred VE repo for distribution (i.e. release), a separate branch/repo for development , and forks for development (off the development branch/repo)
 
 ## Automated GUI testing
   - VE GUI automatic testing is now working [#108](https://github.com/gregorbj/VisionEval/issues/108)
