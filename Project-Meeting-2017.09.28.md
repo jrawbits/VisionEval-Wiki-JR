@@ -1,6 +1,6 @@
 ## Repository transfer to Pooled Funds
   - Pooled funds group starts mid October and RFP expected mid Nov
-  - Need to transfer repo See issues [#44](https://github.com/gregorbj/VisionEval/issues/44) before RFP released, so within ~6 weeks
+  - Need to transfer repo [#44](https://github.com/gregorbj/VisionEval/issues/44) before RFP released, so within ~6 weeks
   - @Ben to setup a meeting the week of Oct 23rd with the AASHTO and ODOT projects so we can discuss timing and approach
   - We're thinking of transferring ownership and then forking back to the repos we're currently working in for the existing AASHTO and ODOT projects
   - We're thinking we won't tackle splitting things out into separate repos until after the pooled funds gets up and running (https://github.com/gregorbj/VisionEval/issues/129)
