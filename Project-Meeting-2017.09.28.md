@@ -9,7 +9,7 @@
 ## Automated GUI testing
   - VE GUI automatic testing is now working [#108](https://github.com/gregorbj/VisionEval/issues/108)
   - It runs the VERPAT demo and makes sure it completes
-  - Currently working on better documentation for the VEGUI code and the wiki related to test setup
+  - @Adi working on better documentation for the VEGUI code and the wiki related to test setup
 
 ## R binary files in addition to HDF5
   - See [#131](https://github.com/gregorbj/VisionEval/issues/131)
