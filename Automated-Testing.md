@@ -20,7 +20,20 @@ The data specification system also enables a model to be thoroughly checked befo
 These checks that are built into the framework software make it possible to implement automated checking of VisionEval module packages and VisionEval model whenever a module package and/or model is added to or modified in the VisionEval repository. 
 
 ## UI Testing
-VEGUI is tested using shinytest.
+VEGUI is an application that allows a user to run various VisionEval models. VEGUI is tested using shinytest to ensure its functionality and its usability. Multiple test scripts are written to test different functionalities. Following is a list of tests currently implemented:
+- [open_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/tests/opentest.R): Checks if VEGUI opens and closes without any glitch,
+- [run_verpat_model_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/tests/run_verpat_model_test.R): Checks if VEGUI opens, runs a VERPAT model, collects all the results, and closes properly.
+
+A test requires a set of expected results (images or json) to make comparisons and draw conclusions. A test is successful if it finishes. A failed test will prompt the user with the differences compared to the expected results.
+The main test script [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R) serves has a host and makes call to all the aforementioned tests.
+
+The following steps describe a process to create a new test and/or the expected results:
+ - Use [test_template](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/tests/test_template.R) as a template to write your own script;
+ - Set the parameter `createExpectedResults` in the main test script [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R) to TRUE (this will allow a user to create a new set of expected results);
+ - Source the new test script in [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R);
+ - Run [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R) to save the expected results;
+ - Set the parameter `createExpectedResults` in the main test script [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R) to FALSE;
+ - Run [run_vegui_test](https://github.com/gregorbj/VisionEval/blob/develop/sources/VEGUI/run_vegui_test.R) to ensure that the test finishes successfully.
 
 ## Test System
 [TravisCI](https://travis-ci.org/) services are used to automatically test all modules and models to assure that they work properly.  Here are a few details on the test system:
