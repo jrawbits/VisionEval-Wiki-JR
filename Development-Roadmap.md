@@ -50,4 +50,4 @@ Eventually VisionEval will move to its new [organization](https://github.com/Vis
 * **Strategic investment and financial responsibility**: improved cost accounting framework (life cycle cost, asset management, user cost by income, transit fares)
 * **Integration with other tools** like TREDIS, ITHIM, land use sketch tools, input pre-processor (bike, ITS, TO)
 * US/global comparisons for **inputs**
-* **Case studies** of use of results
+* **Case studies** of scenario planning using VisionEval tools
