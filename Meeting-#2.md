@@ -52,7 +52,7 @@ Kristin reviewed the agenda.   She also addressed the key topics in Daniel Flynn
    </TR>
    <TR>
       <TD>Clear standards for code acceptance</TD>
-      <TD>Discuss what is covered in automated tests with Review Team today [added wiki Contributor Review Criteria]</TD>
+      <TD>Discuss what is covered in automated tests with Review Team today [added wiki Contribution Review Criteria]</TD>
    </TR>
  <TR>
       <TD>Automated code tests</TD>
