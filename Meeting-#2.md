@@ -64,7 +64,7 @@ Kristin reviewed the agenda.   She also addressed the key topics in Daniel Flynn
    </TR>
 <TR>
       <TD>Long term desired features</TD>
-      <TD>Current list will be posted to wiki</TD>
+      <TD>Current list will be posted to wiki (added Development Roadmap)</TD>
    </TR>
 </TABLE>
 
