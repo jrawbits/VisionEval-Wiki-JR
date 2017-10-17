@@ -60,7 +60,7 @@ Kristin reviewed the agenda.   She also addressed the key topics in Daniel Flynn
    </TR>
 <TR>
       <TD>Work flow/contribution process</TD>
-      <TD>Developed by consultant team; documented on wiki [added wiki Contribution Review Criteria]</TD>
+      <TD>Developed by consultant team; documented on wiki [added wiki Working Together]</TD>
    </TR>
 <TR>
       <TD>Long term desired features</TD>
