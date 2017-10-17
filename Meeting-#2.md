@@ -48,23 +48,23 @@ Kristin reviewed the agenda.   She also addressed the key topics in Daniel Flynn
    </TR>
    <TR>
       <TD>Developer Best Practices Guidance </TD>
-      <TD>Discuss with Review Team today (added wiki Developer Orientation)</TD>
+      <TD>Discuss with Review Team today [added wiki Developer Orientation]</TD>
    </TR>
    <TR>
       <TD>Clear standards for code acceptance</TD>
-      <TD>Discuss what is covered in automated tests with Review Team today (added wiki Automated Testing)</TD>
+      <TD>Discuss what is covered in automated tests with Review Team today [added wiki Contributor Review Criteria]</TD>
    </TR>
  <TR>
       <TD>Automated code tests</TD>
-      <TD>Developed by consultant team</TD>
+      <TD>Developed by consultant team [added wiki Automated Testing]</TD>
    </TR>
 <TR>
       <TD>Work flow/contribution process</TD>
-      <TD>Developed by consultant team; documented on wiki (added Contribution Review Criteria)</TD>
+      <TD>Developed by consultant team; documented on wiki [added wiki Contribution Review Criteria]</TD>
    </TR>
 <TR>
       <TD>Long term desired features</TD>
-      <TD>Current list will be posted to wiki (added Development Roadmap)</TD>
+      <TD>Current list will be posted to wiki [added wiki Development Roadmap]</TD>
    </TR>
 </TABLE>
 
