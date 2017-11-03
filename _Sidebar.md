@@ -22,6 +22,6 @@
  - [[Review Team Charter|Review-Team-Charter]]
  - [[Meeting #1]]
  - [[Meeting #2]]
- - [[Meeting #3]]
+ - [Meeting #3 Example Contribution[Meeting #3]]
  - [[Example Review|Example-Review]]
  - [Governance Best Practices](http://htmlpreview.github.io/?https://github.com/VisionEval/OSwhitepaper/blob/master/VEwhitepaper.html)
