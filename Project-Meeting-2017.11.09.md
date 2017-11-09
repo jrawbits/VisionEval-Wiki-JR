@@ -18,4 +18,4 @@
 
 # ITM
   - Planning three papers for ITM, Brian on the framework, Liming on his multi-modal travel demand for individual households package, and FHWA/RSG on collaborative project management, governance, etc.  
-  - Should we do a panel or separate papers - @Ben to follow-up with Maren
+  - Should we do a panel or separate papers - @Ben to ask Maren since she is on the organizing committee
