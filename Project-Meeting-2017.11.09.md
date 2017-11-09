@@ -13,7 +13,7 @@
   - I also created a milestone for the [ODOT VE Support project](https://github.com/gregorbj/VisionEval/milestone/16) and updated the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap)
 
 # VisionEval organization
-  - Dan forked the repo to the VisionEval organization and plans to delete storagetest branch and gh-pages
+  - Dan forked the repo to the VisionEval organization and plans to delete storagetest branch and gh-pages (once content is merged into the VE site)
   - See http://www.visioneval.org and https://github.com/visioneval
 
 # ITM
