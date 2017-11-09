@@ -20,7 +20,7 @@ Replace VERSPM modules with PSU’s Multi-Modal model, including modules which c
 The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
 
   - household() will start from VESimHouseholds and VESyntheticFirms
-  - urban() will start from VELandUse
+  - urban() will start from VELandUse, see [#136](https://github.com/gregorbj/VisionEval/issues/136)
   - accessibility() will start from VETransportSupply
   - vehicle() will start from VEVehicleOwnership
   - demand() will start from VETravelDemand
@@ -28,13 +28,13 @@ The translation of RPAT to VERPAT still needs to be completed.  VERPAT will util
   - policy congestion()
 
 ## VEGreenSTEP Migration 
-The translation of the statewide GreenSTEP to VisionEval is funded and planned for 2017/2018.  It will utilize and/or revise VE modules as needed. 
+The [translation of the statewide GreenSTEP to VisionEval](https://github.com/gregorbj/VisionEval/issues/139) is funded and planned for 2017/2018.  It will utilize and/or revise VE modules as needed. 
 
 ## Usability
 * Improve the graphic user interface and integrate the dashboard/visualizer
 * Improve documentation
 * Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
-* Create Pay As You Drive (PAYD) module as the example for new developers
+* Create [Pay As You Drive (PAYD)](https://github.com/gregorbj/VisionEval/issues/137) module as the example for new developers
 
 ## New VE Home
 Eventually VisionEval will move to its new [organization](https://github.com/VisionEval) home.
