@@ -9,7 +9,7 @@
   - Adi working on converting RPAT urban() module to CalculatePlaceTypes module, which will be added to the VELandUse package [#136]( https://github.com/gregorbj/VisionEval/issues/136)
 
 # Project management
-  - As a result of the amendment to complete RPAT and the GUI/Visualizer, I created new project [milestones](https://github.com/gregorbj/VisionEval/milestones), close some others, and reviewed/updated all the project issues
+  - As a result of the amendment to complete RPAT and the GUI/Visualizer, I created new project [milestones](https://github.com/gregorbj/VisionEval/milestones), closed some others, and reviewed/updated all the project issues
   - I also created a milestone for the [ODOT VE Support project](https://github.com/gregorbj/VisionEval/milestone/16) and updated the [Development Roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap)
 
 # VisionEval organization
