@@ -1,7 +1,7 @@
 # RSPM migration
   - Brian pushed all his updates over the last couple of months to the storagetest branch
   - This allows RSG and others to work on this branch as well now
-  - Brian completed several new VEHouseholdTravel modules and updated VERSPM to run them all
+  - Brian completed several new VEHouseholdTravel modules and updated VERSPM to run them
   - [Modules and Packages](Modules-and-Packages) page updated
 
 # RPAT migration
