@@ -1,4 +1,4 @@
-## RSPM Migration
+## VERSPM Migration
   - Brian working on the energy and emissions model: VEEnergyAndEmissions
   - Made two significant revisions to the framework as a result:
     - Added an optional inputs pre-processor step called by the initialize module
@@ -12,7 +12,7 @@
   - Next up is budgets and costs and congestion modules
   - Should be done with VERSPM by mid-Jan
 
-## VERPAT
+## VERPAT Migration
   - Adi finished placetypes module and accessibilities module
   - Adi working on vehicles module now
   - VESimHouseholds doesn't work for 0 group quarters - @Brian to investigate
