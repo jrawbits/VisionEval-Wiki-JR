@@ -2,7 +2,7 @@
   - Brian working on the energy and emissions model: VEEnergyAndEmissions
   - Made two significant revisions to the framework as a result:
     - Added an optional inputs pre-processor step called by the initialize module
-    - Added an OPTIONAL tag to <INP> to check, if data is present
+    - Added an OPTIONAL tag to INP to check input, if data is present
     - These can be used to pre-process input data and to run various data checks, such as proportions sum to 1
     - Still need to update documentation for framework revisions
   - Working in the storage-test branch and so will merge in develop before committing and testing
