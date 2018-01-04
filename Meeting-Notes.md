@@ -1,5 +1,6 @@
 ### Meeting Notes
-- [January 12, 2018](https://github.com/gregorbj/VisionEval/wiki/January-12-meeting-agenda) (full team meeting)
+- [January 12, 2018](January-12-meeting-agenda) (full team meeting)
+- [[January 4, 2018|Project Meeting 2018.01.04]] (technical team meeting)
 - [[December 21, 2017|Project Meeting 2017.12.21]] (technical team meeting)
 - [[November 9, 2017|Project Meeting 2017.11.09]] (technical team meeting)
 - [[October 26, 2017|Project Meeting 2017.10.26]] (technical team meeting)
