@@ -1,6 +1,6 @@
 # RSPM updates
   - framework updates have been finalized
-  - Brian to merge in latest develop branch to his local repo
+  - Brian to merge latest develop branch into his local repo
   - then finish energy and emissions package in the develop branch
   - should be done by end of next week
 
