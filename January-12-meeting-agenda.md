@@ -1,5 +1,5 @@
 ## Milestone schedule
-  - Not needed because it is on [GitHub](milestones)
+  - Not needed because it is on [GitHub](https://github.com/gregorbj/VisionEval/milestones)
   - Add GreenStep conversion to GitHub schedule
 
 ## Technical work status – Ben
