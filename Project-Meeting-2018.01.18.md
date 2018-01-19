@@ -3,7 +3,7 @@
   - still working on documentation updates
   - passing tests locally
   - pushed commits but Travis is failing due to tests taking too long (50+ minutes)
-  - @Ben to revise Travis setup so we can continue to use our test system
+  - @Ben to revise Travis setup so we can continue to use our test system [#144](https://github.com/gregorbj/VisionEval/issues/144)
     - we may use conditional jobs, build stages, or parallel builds for example
 
 # RSPM
