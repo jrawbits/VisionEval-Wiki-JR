@@ -1,5 +1,6 @@
 ### Meeting Notes
-- [January 12, 2018](January-12-meeting-agenda) (full team meeting)
+- [[January 18, 2018|Project Meeting 2018.01.18]] (technical team meeting)
+- [January 12, 2018](January-12-meeting-agenda)
 - [[January 4, 2018|Project Meeting 2018.01.04]] (technical team meeting)
 - [[December 21, 2017|Project Meeting 2017.12.21]] (technical team meeting)
 - [[November 9, 2017|Project Meeting 2017.11.09]] (technical team meeting)
