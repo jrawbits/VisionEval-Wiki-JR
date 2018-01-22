@@ -5,7 +5,7 @@
   - should be done by end of next week
 
 # RPAT updates
-  - finished RPAT vehicle modulecode, still working on documentation
+  - finished RPAT vehicle module code, still working on documentation
   - starting working on demand module
   - Adi plans to commit the vehicle module and accessibility module by end of week
   - hopefully will complete the demand module within two weeks
