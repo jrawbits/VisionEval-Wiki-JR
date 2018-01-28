@@ -38,7 +38,7 @@ The following steps describe a process to create a new test and/or the expected 
 ## Test System
 [TravisCI](https://travis-ci.org/) services are used to automatically test all modules and models to assure that they work properly.  Here are a few details on the test system:
   - Tests automatically run with every commit and the pass/fail status is at the bottom of the README as [rendered by GitHub](https://github.com/gregorbj/VisionEval/tree/develop)
-  - The current Travis build and test script is [here](https://github.com/gregorbj/VisionEval/blob/develop/.travis.yml), which includes all the steps to install, build, and run all the VE resources.  To add a new module or model, add an additional line to the `env` property for the module or model.  This will result in an additional parallel build process using Travis' [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix).  The environment variables are:
+  - The current Travis build and test script is [here](https://github.com/gregorbj/VisionEval/blob/develop/.travis.yml), which includes all the steps to install, build, and run all the VE resources.  To add a new module or model, add an additional line to the `env` property for the module or model.  This will result in an additional parallel build process using Travis' [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#Build-Matrix).  Example environment variables are:
     - FOLDER=sources/modules/VELandUse (folder location relative to the root; note framework, modules, and models are fixed)
     - SCRIPT=tests/scripts/test.R (test script to run, which is required by the VisionEval specification)
     - TYPE=module (either module or model)
