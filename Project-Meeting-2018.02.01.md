@@ -14,7 +14,7 @@
   - Or should it be separate modules (still in the same package) - Base Policy, Future Policy No, Future Policy Yes
   - Adi to discuss with Colin
 
-| RunType | RunYear | Landuse | Supply | Policy |
+| RunType | RunYear | Landuse (L) | Supply (S) | Policy (P) |
 | ------| ----- |- | --- | ----- |
 | E	| 2010  | E (existing) | 	E| 	N| 
 | EL ES NP| 2040	| E| 	E| 	N| 
