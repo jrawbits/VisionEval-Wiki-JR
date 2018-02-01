@@ -16,9 +16,9 @@
 
 | RunType | RunYear | Landuse | Supply | Policy |
 | ------| ----- |- | --- | ----- |
-| E	| 2010  | E| 	E| 	N| 
+| E	| 2010  | E (existing) | 	E| 	N| 
 | ELESNP| 2040	| E| 	E| 	N| 
-| FLFSNP| 2040	| F| 	F| 	N| 
+| FLFSNP| 2040	| F (future) | 	F| 	N| 
 | FLFSYP| 2040	| F| 	F| 	Y| 
 
 
