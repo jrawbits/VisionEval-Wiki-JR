@@ -29,7 +29,7 @@ As a result, we recommend accepting the submission after addressing the issues n
   - update travis automated testing script to test new package
   - revise the documentation/software to let the user know that the NHTS2009, SLD, confidential data for estimation, and estimation script are exceptions to the guidelines for various reasons
   - add proof of ODOT release of ownership 
-  - vignette and/or cheat sheet summarizing estimated functions and dependent variables
+  - [vignette](https://github.com/cities-lab/VETravelDemandMM/blob/master/vignettes/Intro.Rmd) and/or [cheat sheet](documents/RSPM-TFLmodelVariables_May2017.pdf) summarizing estimated functions and dependent variables
 
 | Status                         | Software | Documentation	| Methods | 
 |--------------------------------|----------|-------------------|---------|
