@@ -41,21 +41,34 @@ base VisionEval framework, including:
 -   RPAT, formerly SmartGAP
 
 # Audiences
-This section identifies various VisionEval documentation audiences for the purposes of this documentation plan.
+This section identifies various VisionEval documentation audiences. For the purposes of this documentation plan, most of these fall into one of the following categories:
+* high-level decision-maker, 
+* semi-technical planner leading a project application, 
+* more technical model applier, and 
+* code contributors (for model enhancement, research, or core framework development)
+
+## Decision-Maker
 
 **Policy-maker / Agency Manager**: responsible for deciding whether to invest in VisionEval in time or resources (e.g., apply within region, or participate in pooled fund) as well as knowing when and how it is useful within the broader policy context. Needs to evaluate return-on-investment from a time/money/opportunity-cost perspective, relative to other tools. Concerned with application staffing and resource needs, maintenance, as well as tool credibility and value.
 
+## Semi-Technical Manager
 **Planner / Project Manager:** responsible for knowing how VisionEval might fit into a specific planning or policy project. Understands how to budget (time and money) and staff VisionEval tools within the context of a project or plan update and how to utilize the model and results. Understands basic data needs and model assumptions and caveats, how to choose between VE models, data needs, and how VE models can integrate with other tools.
+
+## Model Applier
+Model appliers could range in spectrum from people comfortable primarily in a GUI environment to those more interested and comfortable exploring the code and methods that they are using.
 
 **User:** responsible for gathering inputs, setting up, running, and evaluating and summarizing the results for VisionEval models within the context of a project or plan update. Understands the model methods, assumptions, caveats, and how to change them. Can identify and troubleshoot unexpected results and present results at appropriate levels of aggregation considering caveats. Has a basic knowledge of the R programming language and intermediate knowledge of travel modeling concepts.
 
 **Super-user:** In addition to more basic application of the tool, this audience will typically be more interested in VisionEval coding and methods and their evolution. These data scientists or academics, could possess more coding experience or subject matter strength, making them good candidates for reviewing new code, advise on new methods, or capable of basic upgrades, re-ordering modules, or re-estimation of parts of the VisionEval code (typically not building a module from scratch).
 
-**Model Developer:** responsible for using templates and instructions for developing new models, modules, and packages for VisionEval. Has an intermediate to advanced knowledge of the R programming language (experience in creating R packages) and advanced knowledge of travel modeling concepts (or is working with somebody who does). Model Developers should be well acquainted with VisionEval coding guidance and interested in contribution criteria and processes.
+## Contributor
+This category encompasses everyone who might contribute code or concepts to mainline VisionEval models.
 
-**Researcher:** interested in using VisionEval to test a research hypothesis. Should be familiar with all aspects of being a model applier and if needed, should also have skills associated with model developer. In addition, a researcher will be interested in research questions of interest to society that can be addressed with VisionEval as well as data that may help develop and support new modules.
+**Developer:** responsible for using templates and instructions for developing new models, modules, and packages for VisionEval. Has an intermediate to advanced knowledge of the R programming language (experience in creating R packages) and advanced knowledge of travel modeling concepts (or is working with somebody who does). Model Developers should be well acquainted with VisionEval coding guidance and interested in contribution criteria and processes.
 
-**Framework Developer:** uses an advanced understanding of the R programming language, the VisionEval framework, and VisionEval contribution guidelines, governance, and roadmap in order to progress the state of the VisionEval framework for the benefit of all.
+**Researcher:** interested in using VisionEval to test a research hypothesis. Should be familiar with all aspects of being a model applier and if needed, should also have skills associated with model developer. In addition, a researcher will be interested in research questions of interest to society that can be addressed with VisionEval as well as data that may help develop and support new modules. Also interested in materials that enable use of VisionEval in curriculum/classroom settings.
+
+**Framework Developer:** A “super-developer” able to alter VisionEval core code, uses an advanced understanding of the R programming language, the VisionEval framework, and VisionEval contribution guidelines, governance, and roadmap in order to progress the state of the VisionEval framework for the benefit of all.
 
 Documentation Needs
 ===================
@@ -65,7 +78,7 @@ This section lists information needs or questions organized by situations and or
 > Each of these information needs or questions should be
 addressed within one click of entering into a Primary VisionEval Venue
 
-Table 1. Mapping of audiences to situations
+Table 1. Document needs fall out of mapping of audiences to situations
 
  . | **Policy/Project Mgr** |  **User**  | **Super User** | **Developer** | **Researcher** | **Fmwk Dev’r** | **Agency Mgr**       
 --- | :---: | :---: | :---: | :---: | :---: | :---: | ---                                       
@@ -79,12 +92,12 @@ Research| :white_circle: | :white_circle: | :white_circle: |:white_circle: |:whi
 Framework Dev’t| :white_circle: | :white_circle: | :white_circle: |:white_circle: |:white_circle: |:white_circle: |:white_circle: |
 
 
-## Awareness
+## A. Awareness
 
 **Primary Audiences:** Agency Manager or Project Manager   
 **Other Audiences:** All
 
-Strategically placed and widely available promotional materials will raise awareness about Vision Eval. The focus of this document is on documentation rather than an awareness campaign; however, materials developed as part of the documentation plan can inform and provide material for an awareness campaign. Dimensions that should be addressed when developing initial awareness include easy (one-click) access to the following information:
+Strategically placed and widely available promotional materials will raise awareness about Vision Eval.  Materials developed as part of documentation can inform and provide material for an awareness campaign.   Dimensions that should be addressed when developing initial awareness include easy (one-click) access to the following information:
 
 -   What it is. What can it be used to evaluate?  
 -   How can results support policy conversations?  
@@ -97,7 +110,7 @@ Strategically placed and widely available promotional materials will raise aware
 
 > To the extent possible, references to previous frameworks in the VisionEval history should be scrubbed from any ‘primary’ descriptions so as to avoid confusion for new audiences.
 
-## Consideration / Evaluation
+## B. Consideration / Evaluation
 
 **Primary audiences:** Agency Manager or Project Manager  
 **Other audiences:** Researcher
@@ -112,7 +125,7 @@ Once aware and considering its use, they will likely be interested in:
 -   Tool credibility. Have results been compared to other tool I use? literature ?
 -   Key differences that impact choice of which VisionEval model to use on their project.
 
-## Model Application / Planning
+## C. Model Application
 
 **Primary audience:** model applier and planning or policy project
 manager  
@@ -122,14 +135,14 @@ developer, researcher
 Once a team has decided to use VisionEval for a project or plan update, they need to plan out what that looks like with more specifics.
 
 -   Prerequisites   
--   High level overview of philosophy, main components, and how it works  
+-   Overview of main components and how it works  
 -   Specific data needs and where one typically finds them  
 -   Best practices and case studies that they can follow or learn from  
 -   Resources to connect with others who are using VisionEval to get their assistance/opinions  
 -   Understanding of which modules and inputs have an effect on outcomes they are concerned with   
 -   What skills do I need to acquire to be a High-End applier/Developer;  What outside/inside resources are available to gain these skill sets
 
-## Using VisionEval GUI
+## D. Using VisionEval GUI
 
 **Primary audience:** user; model applier  
 **Other audiences:** planner, super-user, model developer, model
@@ -143,11 +156,10 @@ When a project is underway and the model applier sits down to start using Vision
  when and why?
 -   What are typical troubleshooting tactics, and if those don’t work how do they get help?  
 -   Quick reference on terminology and definitions  
--   How do they summarize and evaluate results?
 
 This documentation should focus on the user of the GUI rather than using any code or the API. Documentation should include plenty of screen-shots.
 
-## Using VisionEval API
+## E. Using VisionEval API
 
 **Primary audience:** super-user  
 **Other audiences:** user, model developer, model framework developer,
@@ -155,7 +167,7 @@ researcher
 
 Super-users will likely prefer to use the API rather than the GUI to use VisionEval. Documentation for using Vision-Eval with the API should integrated into the GUI-based documentation, but obscured by default such that regular users are not presented with code. This can be accomplished using a tab-based system.
 
-## Developing Modules, Packages, or Models
+## F. Developing Modules, Packages, or Models
 
 **Primary audience:** model developer   
 **Other audiences:** model framework developer, researcher, super-user
@@ -174,7 +186,7 @@ philosophy and contribution guidelines,. Specifically, they will need:
 -   Licensing  
 -   How to modify or add a model
 
-## Using VisionEval for Research or Classroom Projects
+## G. Using VisionEval for Research or Classroom Projects
 
 **Primary audience:** model researcher or teacher  
 **Other audiences:** model framework developer
@@ -186,7 +198,7 @@ An academic researcher may want to use VisionEval for a specific research projec
 -   How do I cite VisionEval?  
 -   How have others used VisionEval as part of classroom curriculum?
 
-## Developing the VisionEval Software Framework
+## H. Developing the VisionEval Software Framework
 
 **Primary audience:** model framework developer
 
@@ -207,22 +219,22 @@ One of the challenges facing the VisionEval project is the multiple channels of 
 
 VisionEval documentation should be disseminated via the following Primary Documentation Venues:
 
--   FrontDoor: visioneval.org
--   User's Guide Website: user.visioneval.org  
--   Developer’s Guide Website: dev.visioneval.org
--   Github Code github.com/visioneval/framework
+-   Main Website: visioneval.org
+-   User's Guide Website: visioneval.org/users
+-   Developer’s Guide Website: visioneval.org/developers
+-   Github github.com/visioneval/framework
 -   Agency project websites (including [*Oregon DOT Scenario Planning page with  video*](http://www.oregon.gov/ODOT/Planning/Pages/Strategic-Assessment.aspx))  
 -   Outside References/Related Links (e.g., TRF Resource, SHRP2 Future  Forces, FHWA Scenario Planning; other travel modeling open source  projects/forums)
 
-Table 2 maps these venues to the situations identified in the previous section with the dark color representing a primary and light color representing secondary.. A switchover from VisionEval.org occurs when the primary audience switches from policy/planning to technical in nature.
+Table 2 maps these venues to the situations identified in the previous section with the dark color representing a primary and light color representing secondary. A switchover from VisionEval.org occurs when the primary audience switches from policy/planning to technical in nature.
 
 Table 2. Mapping of Primary Documentation Venues to situations (dark:
 primary light: secondary)
 
-. | **VisionEval.org** |  **Agency Project Website**  | **user.visioneval.org** | **dev.visioneval.org** | **Github Code**
+. | **VisionEval.org** |  **Agency Project Website**  | **visioneval.org/users** | **visioneval.org/developers** | **Github Code**
 --- | :---: | :---: | :---: | :---: | ---  
 Awareness | The Front Door :red_circle: | Explain agency involvement, redirect to VisionEval.org :black_circle: |   |  |  
-Consideration | The Front Door :red_circle: | Provide information specific to the region, but then redirect to VisionEval.org <br> :black_circle: |   |  |  
+Consideration | The Front Door :red_circle: | Provide information specific to the agency, but then redirect to VisionEval.org <br> :black_circle: |   |  |  
 Project Planning | :red_circle: | Provide information specific to the agency, but then redirect to VisionEval.org <br> :black_circle: | Case Studies: How supported conversions, partnerships, resources needed. | |
 Using |  | Provide information specific to the agency, but redirect to user's guide <br> :black_circle: | :red_circle: | | |  
 Developing | | Provide information specific to the agency, but redirect to dev.visioneval.org :black_circle: | | :red_circle: | |  
@@ -231,7 +243,7 @@ Framework Dev't | | Provide information specific to the agency, then redirect to
 
 ### Retirement of and redirection from previous venues
 
-To limit confusion, each VisionEval Predecessor Model should clearly identify that future focus and development has migrated from that model to the VisionEval framework. Currently, it seems as though they are being actively developed and maintained (from project website and their github code), which will cause confusion that they are “competing” projects.
+To limit confusion, each VisionEval Predecessor Model should clearly identify that future focus and development has migrated from that model to the VisionEval framework. Currently, it seems as though they are being actively developed and maintained since they don't have a redirect to VisionEval (from project website and their github code), which causes confusion that they are “competing” projects.
 
 > Each predecessor project should clearly direct users to the appropriate VisionEval resource and very clearly indicate its replacement via a statement such as `RPAT is now transitioning to VisionEval. Please refer to VisionEval project for all information post RPAT version X`.
 
@@ -241,7 +253,7 @@ Additionally, when models with similar capabilities are developed within the Vis
 
 ## Responsibilities and Maintenance  
 
-Each Venue should have a responsible party, a support team, and a plan to make sure all information and links are up-to-date. Table 3 shows a suggested schedule of these responsibilities, although most of the cells are yet to be determined pending decisions made in the shared management plan. Development and version progression will likely require a more frequent update schedule for development and user’s guides whereas more broad information about the framework will change less frequently.
+Each Venue should have a responsible party, a support team, and a plan to make sure all information and links are up-to-date. Table 3 shows a suggested schedule of these responsibilities, although most of the cells are yet to be determined pending decisions made in the VisionEval pooled fund shared management plan. Any plans will also need to decide access and editing rights to the website content. Development and version progression will likely require a more frequent update schedule for development and user’s guides whereas more broad information about the framework will change less frequently.
 
 Table 3. Mapping of Primary Documentation Venues to Maintenance
 Schedules
@@ -279,7 +291,8 @@ Potential awareness channels:
 
 ## Documentation versus Support
 
-Good documentation is not a replacement for the product support. As VisionEval acquires a broader user base, dynamic quality product support will become a significant need. However, support is often one of the poorest executed components of an otherwise successful open source project. While the Primary VisionEval Projects are likely loathe to support or advertise for a single commercial support provider, they can provide the framework for a peer support network of users. Again, in order to limit information sprawl, the Primary VisionEval Projects should create, endorse, and maintain a limited selection of peer-to-peer resources, which are not specifically detailed as a documentation product, but are critical to the success of the VisionEval ecosystem.
+Good documentation is not a replacement for the product support. As VisionEval acquires a broader user base, dynamic quality product support will become a significant need. However, support is often one of the poorest executed components of an otherwise successful open source project. While the Primary VisionEval Projects are likely loathe to support or advertise for a single commercial support provider, they can provide the framework for a peer support network of users. Again, in order to limit information sprawl, the Primary VisionEval Projects should create, endorse, and maintain a limited selection of peer-to-peer resources, which are not specifically detailed as a documentation product, but are critical to the success of the VisionEval ecosystem, such as a users group, group chat, and an in-person meeting.
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:arrow_upper_right: **User's Group**  
 **Primary "User" VisionEval Venue** :arrow_right: **Conferences**  
@@ -289,12 +302,12 @@ Good documentation is not a replacement for the product support. As VisionEval a
 information  
 **Group chat**: more ad-hoc conversations and help via a platform like
 [*Slack*](https://slack.com/)  
-**Conferences**: in-person get-togethers to showcase advances and work
+**Conferences**: in-person get-togethers covering planning or developer topics, to share best practice applications, showcase advances and integration into larger toolkit, and work
 through hurdles and the roadmap together
 
 # Proposed Products
 
-## Awareness, Consideration and Planning Oriented Documentation
+## 1. Awareness, Consideration and Planning Oriented Documentation
 
 ### house: Splash Page Home
 The Splash Page is the main point of entry for people who are getting familiar with VisionEval for the first time. The content should be crisp, quickly consumable, and not littered with unnecessary detail. Page design should be modern, mobile-ready web design of full-bleed graphics and a scroll-down with small menu selections shown in top-right corner. Top-level menu options should include: users-guide, get-started, and about. Additionally, a github logo somewhere in the top header should let developers know to “click there”.
@@ -302,35 +315,36 @@ The Splash Page is the main point of entry for people who are getting familiar w
 Suggested content ordering is:  
 -   Top headline should have a full-bleed graphic, the byline “Exploring  Tomorrow Today” and state what VisionEval does in less than two sentences in words that mean something to a city official. Message can be further supplemented with short video (Volpe’s 5-min video).  
 -   Three (or so) short case studies (see below) representing different use case typologies should be listed with click-thrus available to a full description with graphics that could be printed out if desired. Quotes from agencies could be listed under the headlines, if applicable.  
--   Key Products, such as the web-based interactive Scenario Viewer could be included to further share value of specific case studies. To highlight these products, a short couple minute video might be needed to provide context.  
--   High level description of how VisionEval would fit into an existing toolbox/why it is different, using graphics. Some of this content already exists (RSPM vs Other Models being best example), but it need to be shortened, crisped, and re-aligned to VisionEval rather than any of the predecessor models.  
+-   Key Products, such as the web-based interactive Scenario Viewer, Place Type Tool, and Curriculum guide could be included to further share value of specific case studies and underscore other valued uses of the tools. To highlight these products, a short couple minute video might be needed to provide context.  
+-   High level description of how VisionEval would fit into an existing toolbox/why it is different, using graphics. Some of this content already exists (RSPM vs. other models.docx being best example), but it need to be shortened, crisped, and re-aligned to VisionEval rather than any of the predecessor models.  
 -   A collection of logos from agencies and companies that VisionEval is “used and supported by”. This is not to show official endorsement or investment; rather, it is to show that there are a lot of agencies working with it.  
 -   A diagram of “how it works” to use VisionEval from a manager’s perspective using graphics to show different stages including hiring consultants/using existing technical team, data results. This section should answer high-level questions like what it costs, data requirements, time requirements, and staff needs. It should also link to one to two longer, in-depth case studies (see below).
--   To add even more “trustworthiness”, a select list of peer-reviewed references, with a link to more.
+-   To add even more “trustworthiness”, a select list of peer-reviewed references, project awards, with a link to more (e.g., peer review, sensitivity tests).
+-   Track interested parties via an email list sign-up
 
 *Examples*: Both [*Envision Tomorrow*](http://envisiontomorrow.org/) and
 [*Urban Footprint*](https://urbanfootprint.com/) have effective modern, graphics-forward splash pages with content-snippets that are examples to look towards.
 
 The splash page should live at http://visioneval.org and be an easily-updated Jekyll page (or similar). VisionEval.org is currently owned by Volpe as part of the pooled fund and exists as a placeholder page. This page should be updated no less than semi-annually to feel fresh and include Google Analytics in order to track traffic.
 
-### Splash / About Page  
+### Splash Page / About
 The About page should have information about governance, financial support, and predecessor projects, which should be kept off the main splash page because it is potentially confusing.
 
 Example: [*http://visioneval.org/about/*](http://visioneval.org/about/)
 
 ### :page_facing_up:Tear Sheet  
-This something that can be printed and brought to conferences or printed out to bring to a meeting. Content should be a summary of content on visioneval.org Splash Page and should be a downloadable PDF linked to from the main Splash Page. This should be updated whenever the Splash Page content is updated.
+This is something that can be printed and brought to conferences or printed out to bring to a meeting. Content should be a summary of content on visioneval.org Splash Page and should be a downloadable PDF linked to from the main Splash Page. This should be updated whenever the Splash Page content is updated.
 
 *Example*: The Peer Exchange Handout
-(`VisionEval_HandOut_2016PeerExchange.pdf`) is an example of a tear-sheet, but takes up precious real-estate describing the history and relationship between each of the predecessor models rather than showcasing value. Other handouts have been developed for ITM2016 conference Strategic Planning workshop and 2016 Pooled Fund Outreach.
+(`VisionEval_HandOut_2016PeerExchange.pdf`) is an example of a tear-sheet, but takes up precious real-estate describing the history and relationship between each of the predecessor models rather than showcasing value. Other VisionEval handouts have been developed for the 2016 TRB ITM Conference's "Strategic Planning Tool" workshop and 2017 Pooled Fund Outreach.
 
 ### :computer: Pitch Deck   
-A short (5 - 10 slide) presentation deck that summarizes the information on the landing page. This can be used as source material for anyone giving a VisionEval presentation or would be used in meetings discussing the potential use of VisionEval. Creating a standard set of 5-10 slides that are routinely updated will ensure the message of what VisionEval is remains crip, and up-to-date while reducing redundant work.
+A short (5 - 10 slide) presentation deck that summarizes the information on the landing page. This can be used as source material for anyone giving a VisionEval presentation or would be used in meetings discussing the potential use of VisionEval. Creating a standard set of 5-10 slides that are routinely updated will ensure the message of what VisionEval is remains crisp, and up-to-date while reducing redundant work.
 
 ### Hypothetical Use Cases / Short Case Studies  
-The purpose of these hypothetical use cases or short case studies is to show what the framework is designed to be used for. They can be real case studies (if they exist), case studies from predecessor frameworks that could be easily implemented in VisionEval, or hypothetical case studies based on capabilities. These should be short – no longer than a few paragraphs and a few photos. Content for each use case should follow a standard template and include: (1) how tool supported policy conversation, provided value, influenced decision (2) a comparison to other tools that were considered and (2) a rough trade-off calculation on time/precision/money/data requirements that makes VisionEval a competitive/useful tool. Cases should be reviewed no less than every year to make sure they are accurate and cover all the framework capabilities.
+The purpose of these hypothetical use cases or short case studies is to show what the framework is designed to be used for. They can be real case studies (if they exist), case studies from predecessor frameworks that could be easily implemented in VisionEval, or hypothetical case studies based on capabilities. These should be short – no longer than a few paragraphs and a few photos. Content for each use case should follow a standard template and include: (1) how tool supported policy conversation, provided value, influenced decision (2) a comparison to other tools that were considered and (3) a rough trade-off calculation on time/precision/money/data requirements that makes VisionEval a competitive/useful tool. Cases should be reviewed no less than every year to make sure they are accurate and cover all the framework capabilities.
 
-*Examples*: VisionEval capabilities handout (`VisionEval Capabilities_20160817.pdf`) is a good start for defining what they should focus on. Volpe has also developed [*RPAT pilot Case Studies*](https://planningtools.transportation.org/560/resources.html) including those for FHWA newsletter articles that might be used as a template for what to include. A more technical example of these can be found at [*Use Cases from R Open-Sci*](https://ropensci.org/usecases/).
+*Examples*: VisionEval capabilities handout from the August 2016 Peer Exchange (`VisionEval Capabilities_20160817.pdf`) is a good start for defining what they should focus on. Volpe has also developed [*RPAT pilot Case Studies*](https://planningtools.transportation.org/560/resources.html) including those for FHWA newsletter articles that might be used as a template for what to include. A more technical example of these can be found at [*Use Cases from R Open-Sci*](https://ropensci.org/usecases/).
 
 ### Full Case Studies
 The purpose of full case studies is to help a project manager template a process for a project or plan update that uses VisionEval.
@@ -339,7 +353,7 @@ The content should focus on process, resource needs (time, money, and personnel)
 
 Full case studies should be their own page on visioneval.org, but formatted in order to be easily printed to PDF or to a printer to bring to a meeting or use as a reference. Case studies should be reviewed annually to make sure they are still accurate, relevant, and recent enough to be compelling.
 
-## User-Oriented Documentation: User’s Guide
+## User-Oriented Documentation
 
 The User’s Guide content should be divided into sections which will be accessed from different stages and points in time:
 
@@ -359,11 +373,11 @@ The User’s Guide content should be divided into sections which will be accesse
 5.  Help!  
 6.  Course  
 
-Content should be centered around the website: user.visioneval.org, which would ideally be a jekyll-based (or similar) website hosted on GitHub. Some content discussed here already exists, but needs to be reframed to a user rather than developer.
+Content should be centered around the website: visioneval.org/user, which would ideally be a jekyll-based (or similar) website hosted on GitHub. Some content discussed here already exists, but needs to be reframed to a user rather than developer.
 
 The user documentation should have the following features:  
 -   Easily updated when relevant software is updated, but backward-rollable to view documentation for any version (i.e. VueJS.org.  
--   Toggle between GUI-based and API-based descriptions and  instructions; be able to drill down as far as you want, but top-level is similar to the [*RSPM User’s  Guide.*](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf)  
+-   Toggle between GUI-based and API-based descriptions and  instructions to enable most comfortable user, developer environment, respectively; be able to drill down as far as you want, but top-level framing should be similar to the [*RSPM User’s  Guide.*](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf)  
 -   Toggle between models, but uses reusable content blocks where models are the same  
 -   Version-controllable
 
@@ -386,19 +400,20 @@ Useful online documentation format examples include:
 The Project Planning section should include one-to three simplified checklists to follow and provide links to the in-depth case studies. If it is possible, it would also be useful to provide ranges for estimated level of effort and time horizons that should be used for planning a project.
 
 ### VisionEval in a Nutshell  
-VisionEval in a Nutshell should be a less than half day read about VisionEval philosophies, definitions, models and setup. This guide should focus on new users be able to be read top-to bottom rather than as a reference or as a how-to document that is used as a step-by-step guide. The guide should be oriented towards the VE GUI, but provide additional information (in a tab or sidebar) about the API and code organization. A potential outline would be:
+VisionEval in a Nutshell should be a less than half day (20 to 30 pages) read about VisionEval philosophies, definitions, models and setup. This guide should focus on new users be able to be read top-to bottom rather than as a reference or as a how-to document that is used as a step-by-step guide. The guide should be oriented towards the general user audience (VE GUI), but provide additional information (in a tab or sidebar) about the API and code organization. A potential outline would be:
 
 -   Where VisionEval fits in the planning process  
-    -   Comparison with other tools  
+    -   Comparison with other tools (e.g., strategic planning, level of detail, policy breadth)
+    -   Companion tools (e.g., Place Types USA, ITHIM health, etc.)
 -   Framework Design  
--   Intro to each model and purpose  
+-   Intro to each model and purpose (e.g., methods and influencing factors)  
 -   Discussion of model differences, commonalities, modules, and data needs
 
 Some content already exists, including:
 
 -   [*VisionEval system design  document*](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md), reframed to focus on **user** needs rather than **developers.**
 -   [*RSPM Quick  Summary*](http://www.oregon.gov/ODOT/Planning/Documents/RSPM-Quick-Summary.pdf), with more detail.  
--   The RSPM Handout (`RSPM_handout_20141015.pdf`) is a good example of content, but should also include documentation that documents each module referenced in the model (`RSPM-TFLmodelVariables_May2017.pdf`) and links to module-level documentation on estimation results.  
+-   The RSPM Handout (`RSPM_handout_20141015.pdf`) is a good example of content, but should also include documentation that documents each module referenced in the model (`RSPM-TFLmodelVariables_May2017.pdf`) and links to module-level documentation on estimation results and validation.  
 -   ODOT [*Data  checklist*](http://www.oregon.gov/ODOT/Planning/Documents/Appendix-Metropolitan-Data-Decision.pdf) from appendix.
 
 ### Guides     
@@ -414,10 +429,10 @@ Guides should be togglable between the GUI and API as well a different VE versio
 Guides will be customized for each model, using reusable content blocks when possible.
 
 #### Getting Started Guide  
-Walks a user through installation and a tour of the GUI or API to run a model. The content for the API currently exists in the [*VisionEval wiki*](https://github.com/gregorbj/VisionEval/wiki/Getting-Started), but should be augmented to use the example model and the GUI. Over time, this should also be augmented to include a troubleshooting guide to guide users through commonly encountered problems when setting it up for the first time.
+Walks a user through installation and a tour of the GUI or API to run a model. Ideally the guide would be accompanied by an example model dataset (see data under product #3).  Definitions and standards should be noted (e.g., basics on common input formats, geography definitions, etc.). The content for the API currently exists in the [*VisionEval wiki*](https://github.com/gregorbj/VisionEval/wiki/Getting-Started), but should be augmented to use the example model and the GUI. Over time, this should also be augmented to include a troubleshooting guide to guide users through commonly encountered problems when setting it up for the first time.
 
 #### Data + Parameter Guide  
-Should walk through input data acquisition, cleaning, and formatting that could easily be used as a template. It should include common and practical tests of data validity, best practices as well as helpful guidance about where to source data. For example vehicle inputs reflecting Federal CAFE vs. CA-led states vehicle programs, or low carbon fuel programs, or reasonable biking diversion ranges, or converting transit funding into transit estimated service inputs. The data guide also walks through the datastore and how it is organized and queried. This guide will also reference outside tools where appropriate such as the [*PlaceTypes USA*](https://github.com/gregorbj/Placetypes_USA) tool.
+Should walk through input data acquisition, cleaning, and formatting that could easily be used as a template. It should include common and practical tests of data validity, best practices as well as helpful guidance about where to source data. For example default vehicle inputs that might be standardized reflecting Federal CAFE vs. CA-led states vehicle programs, or low carbon fuel programs, or reasonable biking diversion ranges, or converting transit funding into transit estimated service inputs. The data guide also walks through the datastore and how it is organized and queried. This guide will also reference outside tools where appropriate such as the [*PlaceTypes USA*](https://github.com/gregorbj/Placetypes_USA) tool.
 
 #### Running a VE Model Guide  
 Should discuss how to set up scenarios and definitions, strategies for running scenarios across a decision-space, and should undertake appropriate sanity checks on the output.
@@ -446,15 +461,15 @@ A glossary reference of terms and names of models.
 The Help page should have troubleshooting, frequently asked questions, directions on how to submit a bug, and what to do if they need more help or assistance.
 
 ### Course  
-If the user community grows large enough, we should consider an interactive course structure, which are available to create using frameworks like [*Teachable*](https://teachable.com/).
+If the user community grows large enough, we should consider an interactive course structure, which are available to create using frameworks like [*Teachable*](https://teachable.com/).  Existing curriculum for using the tools in classroom settings should be made available for academic use.  
 
 ## Developer-Oriented Documentation
 
 The developer site should be the main entry point and point of organization for developers. One of the main challenges will be organizing developer documentation from potentially many github repositories that could exist for not only the VisionEval Framework, but supporting packages and other materials as well. For that reason, we suggest creating a web landing page as a central point rather than using a wiki within a specific GitHub repository. This does not preclude the content from living in a GitHub wiki linked to from a webpage, but using a separate, version-controlled webpage gives much greater flexibility in how content is viewed and updated and allows for a better user-experience for documenting multiple versions. In some cases (such as a development roadmap) this flexibility isn’t required and thus transitioning to a webpage from wiki is not necessary.
 
-The current [*VisionEval Framework webpage*](https://gregorbj.github.io/VisionEval/) is based in Jeykyll and links to developer information contained in the VisionEval wiki. The following is a list of suggested content that is directly linked to from the page:
+The current [*VisionEval Framework webpage*](https://gregorbj.github.io/VisionEval/) is a good start. It is based in Jeykyll and links to developer information contained in the VisionEval wiki. The following is a list of suggested content that is directly linked to from the page:
 
-1.  README.md  
+1.  Repository README.md  
 2.  Quick Start  
 3.  Development principles and design  
     a.  Framework  
@@ -474,8 +489,8 @@ The current [*VisionEval Framework webpage*](https://gregorbj.github.io/VisionEv
 
 Each of these items is discussed in more detail below.
 
-### Repository README  
-Even though similar content will be available in the User’s Guide and other points of entry, the GitHub Read Me should have at a minimum:
+### Repository README.md  
+Even though similar content will be available in the User’s Guide and other points of entry, the GitHub Read Me (currently in the .md / markdown format) should have at a minimum:
 
 -   Purpose of code and framework
 -   Links to main website properties
@@ -512,7 +527,7 @@ A single document that tells you how to contribute. The [*Contribution Criteria*
 Most of the content exists in the [*Testing framework*](https://github.com/gregorbj/VisionEval/wiki/Automated-Testing) wiki entry, which has a fairly comprehensive discussion about the testing that is done on the framework itself and the user interface. Additional content is needed in order to document the desired structure and tests for supporting packages and how to implement regression testing with the test dataset.
 
 #### Test Dataset  
-There needs to be a Test Dataset small enough to store in the GitHub repository for a model (i.e. RSPM). It can be used for doing regression tests as well as understanding how the model works through the various vignettes.
+There needs to be a VE Test Dataset small enough to store in the GitHub repository for a model (i.e. RSPM). It can be used for doing regression tests as well as understanding how the model works through the various vignettes.
 
 #### Development Roadmap  
 The current [development roadmap](https://github.com/gregorbj/VisionEval/wiki/Development-Roadmap)* is fairly comprehensive, but will need to be updated based on migration to the new organizational home and projects that are going to be pursued by the Pooled Fund.
@@ -542,11 +557,18 @@ API documentation of each function which currently exists.
 # Priorities :triangular_flag_on_post::triangular_flag_on_post:
 VisionEval has had a strong start on documentation geared towards
 developers, so the priority for documentation needs to shift to getting
-basic coverage for the remaining audiences, in the following priority:
+basic coverage for the remaining audiences:
 
-1.  **User’s guide outline and framework** :triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post:that can start to be populated by a variety of contributors (including ODOT and consultants) with what we know today; with the understanding that some things will change in forthcoming versions.  
-2.  **Example Datasets** :triangular_flag_on_post::triangular_flag_on_post::triangular_flag_on_post:for each model that enable testing and showcasing working modules.  
-3.  **Contribution Vignettes** :triangular_flag_on_post::triangular_flag_on_post:in order to enable contributions from other sources.  
-4.  **VE in a Nutshell** :triangular_flag_on_post::triangular_flag_on_post, which could be easily created from content in the [*RSPM Quick Summary document*](http://keepachangelog.com) and would include a good explanation of the model and inputs and a table of influencing factors and key differences between VE and other tools.
+## Applier Audience 
 
-After a design review, the team should develop an awareness-oriented video explaining the two-way scenario viewer.
+1.  **User’s Guides**.  Start by outlining the various Guides and How-Tos.  Design the framework so it incorporates code documentation automatically at the detailed end, but is wrapped with text organized for a less-technical user audience (e.g., RSPM User Guide Appendix 2).  The VE Guides can then start to be populated by a variety of contributors (including ODOT and consultants) with what we know today; with the understanding that some things will change in forthcoming versions.
+2.  **VE in a Nutshell**. This high-level read from a user perspective could built on content in the [*RSPM Quick Summary document*](http://keepachangelog.com) and would include a good explanation of the strategic planning model and inputs and a table of influencing factors and key differences between VE and other tools.
+
+## Developer Audience
+
+1.  **Example Datasets**.  Datasets for each model would enable testing and showcasing of working modules.  
+3.  **Contribution Vignettes**. Vignettes explain components and provide an example of code documentation vest practices.  More of these facilitate and enable contributions from other sources.  
+
+## Awareness Audience
+
+1.  **Video explaining two-way scenario viewer**. This would facilitate awareness of a compelling reason to use strategic tools.  However, it may be best completed after a User Experience design review of the two-way viewer.
