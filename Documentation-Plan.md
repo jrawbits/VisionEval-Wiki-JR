@@ -8,10 +8,11 @@ The purpose of this document is to outline a documentation approach to VisionEva
 This document is organized as follows: it first discusses the various audiences and needs for VisionEval documentation and then goes on to define documentation venues and finally specific pieces of documentation that have or should be developed, their statuses, and relative priority.
 
 **Outline**
- * [Audiences](#Audiences)
- * [Venues](#Venues)
- * [Proposed Products](#Proposed-Products)
- * [Priorities](#Priorities)
+ * [Audiences](#audiences)
+ * [Venues](#venues)
+ * [Situational Needs](#situational-needs)
+ * [Proposed Products](#proposed-products)
+ * [Priorities](#priorities)
 
 **Principles:**
 Documentation for VisionEval should adopt the following principles:
@@ -50,7 +51,6 @@ This section identifies various VisionEval documentation audiences. For the purp
  - more technical model applier, and   
  - contributors (for model enhancement, research, or core framework development)  
 
-
 ## Decision-Maker
 
 **Policy-maker / Agency Manager**: responsible for deciding whether to invest in VisionEval in time or resources (e.g., apply within region, or participate in pooled fund) as well as knowing when and how it is useful within the broader policy context. Needs to evaluate return-on-investment from a time/money/opportunity-cost perspective, relative to other tools. Concerned with application staffing and resource needs, maintenance, as well as tool credibility and value.
@@ -74,8 +74,7 @@ This category encompasses everyone who might contribute code or concepts to main
 
 **Framework Developer:** A “super-developer” able to alter VisionEval core code, uses an advanced understanding of the R programming language, the VisionEval framework, and VisionEval contribution guidelines, governance, and roadmap in order to progress the state of the VisionEval framework for the benefit of all.
 
-Situational Needs
-===================
+# Situational Needs
 
 This section lists information needs or questions organized by situations and ordered from general (general knowledge) to specific (narrow audiences). Table 1 shows how each of these situations (rows) likely maps to each audience (columns). Each cross-section mapping or “point of information”, highlighted in the table should be easily accessible from a *Primary VisionEval Venue*, which is discussed in the next section.
 
