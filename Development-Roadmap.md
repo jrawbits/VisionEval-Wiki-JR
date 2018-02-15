@@ -6,6 +6,7 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [Usability](#usability)
   - [Migrate to the new VisionEval home](#new-ve-home)
   - [VEGreenSTEP Migration](#upcoming)
+  - [Vision Eval Documentation Plan][[Documentation-Plan]]
 
 This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
