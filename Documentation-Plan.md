@@ -692,7 +692,7 @@ This is an exhaustive list of all the API functions, as [*currently exists.*](ht
 This does not currently exist, but should include a list
 of useful methods within the VisionEval API and examples of how to use them. If deemed useful enough, this could also be formatted into a downloadable “cheat sheet”. This would be a compliment to the complete API documentation of each function which currently exists.
 
-# Priorities :triangular_flag_on_post::triangular_flag_on_post:
+# Priorities
 VisionEval has had a strong start on documentation geared towards developers, so the priority for documentation needs to shift to getting basic coverage for awareness and user situations.
 
 ## Applier Audience
