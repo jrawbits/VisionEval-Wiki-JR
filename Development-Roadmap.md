@@ -3,10 +3,9 @@ This page maintains current, future, and wishlist related developments to the Vi
   - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
   - [VERPAT Migration](#verpat-migration)
   - [VEGreenSTEP Migration](#vegreenstep-migration)
-  - [Usability](#usability)
+  - [Usability](#usability) (including [[Documentation-Plan]])
   - [Migrate to the new VisionEval home](#new-ve-home)
   - [VEGreenSTEP Migration](#upcoming)
-  - [[Documentation-Plan]]
 
 This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
@@ -33,7 +32,7 @@ The [translation of the statewide GreenSTEP to VisionEval](https://github.com/gr
 
 ## Usability
 * Improve the graphic user interface and integrate the dashboard/visualizer
-* Improve documentation
+* Improve documentation, as outlined in the [[Documentation-Plan]]
 * Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
 * Create [Pay As You Drive (PAYD)](https://github.com/gregorbj/VisionEval/issues/137) module as the example for new developers
 
