@@ -5,7 +5,7 @@
     - Then calculates congestion levels
     - Still need to calculate travel speeds and facility type allocation
     - Lots of inline code documentation already
-  - Will go back and finish VEEnergyAndEmissions once VERoadPerformance output VMTs and speeds
+  - Will go back and finish VEEnergyAndEmissions once VERoadPerformance outputs VMTs and speeds
   - After that, the next package is VECosts for calculating HH level costs like parking
   - Probably done with VERSPM in about a month
 
