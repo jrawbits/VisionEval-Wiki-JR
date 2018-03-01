@@ -1,5 +1,5 @@
 # RSPM Migration
-  - Working on congestion module as part of new VERoadPerformance package
+  - @Brian working on congestion module as part of new VERoadPerformance package
     - Plan to deprecate VECommercialTravel and move functionality into VERoadPerformance 
     - New package calculates DVMT by year, vehicle class, facility type, etc.
     - Then calculates congestion levels
@@ -10,7 +10,7 @@
   - Probably done with VERSPM in about a month
 
 # RPAT Migration
-  - Should finish PolicyVMT translation tomorrow
+  - @Aditya should finish PolicyVMT translation tomorrow
   - Next week will work on PolicyCongestion, which should take about a week
   - The final module is performance metrics
   - We decided to create a VEReports package that does the following:
