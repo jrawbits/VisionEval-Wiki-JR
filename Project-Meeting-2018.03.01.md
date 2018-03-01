@@ -11,7 +11,7 @@
 
 # RPAT Migration
   - @Aditya should finish PolicyVMT translation tomorrow
-  - Next week will work on PolicyCongestion, which should take about a week
+  - Next week start on PolicyCongestion, which should take about a week to translate
   - The final module is performance metrics
   - We decided to create a VEReports package that does the following:
     - Includes functions to produce the existing RPAT metrics
