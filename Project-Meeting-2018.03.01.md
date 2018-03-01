@@ -17,7 +17,7 @@
     - Includes functions to produce the existing RPAT metrics
     - Eventually will make use of new framework functions to query the datastore using user specified queries
     - We'll translate the RPAT functionality for now and then look to generalize it with the next revision, which depends on schedule and budget
-    - We may add functions to VEReports that makes querying easier that could be moved to the framework once proven
+    - We may add functions to VEReports that makes querying easier, and which may be moved to the framework once proven
     - This package is going to evolve quite a bit as we start to work more on end user stuff
     - @Brian share example of CALL module
 
