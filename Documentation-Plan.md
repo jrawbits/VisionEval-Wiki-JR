@@ -274,8 +274,8 @@ Each maintenance interval should include updates and highlights, testing of any 
 
 The focus of this Documentation Plan is on the organization and content of venues under the purview of the VisionEval Project; however, in the case of the ‘awareness’ objective, a significant amount of outreach and integration with other documentation is a prerequisite to getting the right traffic at our destinations.
 
-**Outreach Chanel A** :arrow_lower_right:
-**Outreach Chanel B** :arrow_right:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **Primary "Awareness" VisionEval Venue**
+**Outreach Chanel A** :arrow_lower_right:  
+**Outreach Chanel B** :arrow_right:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  **Primary "Awareness" VisionEval Venue**  
 **Outreach Chanel C** :arrow_upper_right:
 
 The focus of the outreach facet of the documentation plan will be on what people should see once they seek VisionEval out as well as having tidy summaries and bites of information “at the ready” should there be an opportunity to add VisionEval to a related information channel. In all cases, it should strive to drive interested parties back to a VisionEval Primary Venue. A partial list of potential channels is provided below, but should be more fully addressed through an outreach plan.
