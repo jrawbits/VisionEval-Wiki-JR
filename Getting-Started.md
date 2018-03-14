@@ -49,7 +49,7 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissio
   2. Start R and run the following commands:
 
 ```
-#point to the location of the cloned repository, not the location of the auto-installed R packages
+#location of the cloned repository, not the auto-installed R packages
 full_path_to_VERPAT = "C:/projects/development/VisionEval/sources/models/VERPAT" #or VERSPM 
 setwd(full_path_to_VERPAT)
 source("run_model.R")
