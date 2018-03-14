@@ -44,6 +44,8 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupply"
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdVehicles")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VECommercialTravel")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
 ```
 
 ## Running the Pilot VE RPAT from within R
