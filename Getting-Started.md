@@ -39,6 +39,12 @@ devtools::install_github("gregorbj/VisionEval/sources/framework/visioneval")
 #the following modules are required for the pilot VERPAT; others are required for VERSPM
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VELandUse")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupply")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdVehicles")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
+
 ```
 
 ## Running the Pilot VE RPAT from within R
@@ -72,8 +78,6 @@ the develop branch.  To download, install, and test the develop branch resources
   2. Run the same R commands above, except reference the develop branch, for example:
 ```
 devtools::install_github("gregorbj/VisionEval/sources/framework/visioneval", ref="develop")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms", ref="develop")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds", ref="develop")
 runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI", ref="develop")
 ```
   3. Navigate to and run both VERPAT and VERSPM's run_model.R script 
