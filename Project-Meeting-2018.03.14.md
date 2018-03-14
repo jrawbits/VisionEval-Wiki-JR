@@ -1,6 +1,6 @@
 # VERPAT
-  - CalculatePolicyVmt done
-  - Working on performance metrices as part of new VEReports package
+  - CalculatePolicyVmt module done
+  - Working on final RPAT module - performance metrices - as part of new VEReports package
 
 # VERSPM
   - 
