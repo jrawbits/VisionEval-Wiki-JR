@@ -21,7 +21,7 @@ set_config( config( ssl_verifypeer = 0L ) )
   4. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.  See `.libPaths()`.
   5. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
 ```
-install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr"))
+install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"))
 install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable"))
 devtools::install_github(c("tdhock/namedCapture", "trestletech/shinyTree"))
 
