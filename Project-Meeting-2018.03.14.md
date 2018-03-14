@@ -10,6 +10,6 @@
 
 # Next Release / Test System
   - Ready to release version, but VEGUI broke with latest update to framework
-  - Will merge develop to master [#156](https://github.com/gregorbj/VisionEval/pull/156) once fixed
+  - Will merge develop to master via pull request [#156](https://github.com/gregorbj/VisionEval/pull/156) once fixed
   - Updated [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started)
   - Still need to update [Modules and Packages](https://github.com/gregorbj/VisionEval/wiki/Modules-and-Packages) page
