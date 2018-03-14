@@ -6,7 +6,7 @@ The [repository](https://github.com/gregorbj/VisionEval) is organized into two d
   - [visioneval framework](https://github.com/gregorbj/VisionEval/tree/master/sources/framework/visioneval) package
   - [VE modules](https://github.com/gregorbj/VisionEval/tree/master/sources/modules) such as VESimHouseholds and VESyntheticFirms
   - VE models such as the pilot version of [VERPAT](https://github.com/gregorbj/VisionEval/tree/master/sources/models/VERPAT) and [VERSPM](https://github.com/gregorbj/VisionEval/tree/master/sources/models/VERSPM)
-  - [VE GUI](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI) graphical user interface and scenario viewer / visualizer for running and viewing results of VE models
+  - [VEGUI](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI) graphical user interface and scenario viewer / visualizer for running and viewing results of VE models
 - The **api** directory contains documentation of the model system. The [model system design](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md) document is the most complete at the present time. VisionEval framework functions are documented in a [network visualization](https://gregorbj.github.io/VisionEval/website/visioneval_functions.html) of the functions and their call relationships. Functions are represented by network nodes. Call relationships are represented by arrows which point from the calling function to the called function. Function details are shown at the bottom of the page when a function node is selected.
 
 ## Installation and Setup
@@ -24,9 +24,6 @@ set_config( config( ssl_verifypeer = 0L ) )
 install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"))
 install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable"))
 devtools::install_github(c("tdhock/namedCapture", "trestletech/shinyTree"))
-
-devtools::install_bioc(c("BiocInstaller", "rhdf5"))
- #or 
 source("https://bioconductor.org/biocLite.R")
 biocLite("rhdf5")
 ```
@@ -34,9 +31,8 @@ biocLite("rhdf5")
 ```
 devtools::install_github("gregorbj/VisionEval/sources/framework/visioneval")
 ```
-  7. Run the following commands to download and install the required VE modules for VERPAT:
+  7. Run the following commands to download and install the required VE modules for VERPAT and VERSPM:
 ```
-#the following modules are required for the pilot VERPAT; others are required for VERSPM
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VELandUse")
@@ -48,18 +44,18 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VECommercialTravel
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
 ```
 
-## Running the Pilot VE RPAT from within R
+## Running VERPAT or VERSPM from within R
   1. Git clone (i.e. copy) this repository to your computer.
   2. Start R and run the following commands:
 
 ```
 #point to the location of the cloned repository, not the location of the auto-installed R packages
-full_path_to_VERPAT = "C:/projects/development/VisionEval/sources/models/VERPAT"
+full_path_to_VERPAT = "C:/projects/development/VisionEval/sources/models/VERPAT" #or VERSPM 
 setwd(full_path_to_VERPAT)
 source("run_model.R")
 ```
 
-## Running the Pilot VE GUI to run Pilot VE RPAT
+## Running VEGUI to run VERPAT or VERSPM
   1. Git Clone (i.e. copy) this repository to your computer.
   1. Start R and run the following commands:
 
@@ -67,9 +63,9 @@ source("run_model.R")
 library("shiny")
 runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI")
 ```
-  3. The VE GUI should launch in your browser
-  4. Click "Select Scenario Script" and navigate to the VERPAT run_model.R script in your local repository
-  5. Click "Run" and then "Run Model Script" to run the VERPAT model
+  3. VEGUI should launch in your browser
+  4. Click "Select Scenario Script" and navigate to the VERPAT or VERSPM run_model.R script in your local repository
+  5. Click "Run" and then "Run Model Script" to run the model
 
 # Develop Branch
 
