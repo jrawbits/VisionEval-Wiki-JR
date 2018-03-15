@@ -23,7 +23,6 @@
   - List of useful functions in the API for developers [ Status: to be developed; see [[API|https://github.com/gregorbj/VisionEval/tree/master/api]] for now ]
 
 ### Go thru relevant Package Development Tutorials
-  - Vignette for adding a new package using package template [ Status: need to be developed ]
   - Vignette for adding a module to existing package [ Status: needs to be developed ]
   - Vignette for making changes to existing module [ Status: needs to be developed ]
 
