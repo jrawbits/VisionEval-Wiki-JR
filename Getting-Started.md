@@ -49,9 +49,9 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissio
   2. Start R and run the following commands:
 
 ```
-full_path = "C:/projects/development/VisionEval/sources/VEGUI"
+full_path = "C:/projects/development/VisionEval/sources/models/VERPAT" #or VERSPM 	
 setwd(full_path)
-runApp('../VEGUI')
+source("run_model.R")
 ```
 
 ## Running VEGUI from GitHub to run VERPAT or VERSPM
@@ -65,6 +65,16 @@ runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI")
   3. VEGUI should launch in your browser
   4. Click "Select Scenario Script" and navigate to the VERPAT or VERSPM run_model.R script in your local repository
   5. Click "Run" and then "Run Model Script" to run the model
+
+## Running VEGUI from within R to run VERPAT or VERSPM
+  1. Git Clone (i.e. copy) this repository to your computer.
+  1. Start R and run the following commands:
+
+```
+full_path = "C:/projects/development/VisionEval/sources/VEGUI"
+setwd(full_path)	
+runApp('../VEGUI')
+```
 
 # Develop Branch
 
