@@ -49,13 +49,12 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissio
   2. Start R and run the following commands:
 
 ```
-#location of the cloned repository, not the auto-installed R packages
-full_path = "C:/projects/development/VisionEval/sources/models/VERPAT" #or VERSPM 
+full_path = "C:/projects/development/VisionEval/sources/VEGUI"
 setwd(full_path)
-source("run_model.R")
+runApp('../VEGUI')
 ```
 
-## Running VEGUI to run VERPAT or VERSPM
+## Running VEGUI from GitHub to run VERPAT or VERSPM
   1. Git Clone (i.e. copy) this repository to your computer.
   1. Start R and run the following commands:
 
