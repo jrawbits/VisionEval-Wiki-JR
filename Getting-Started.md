@@ -44,7 +44,10 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VECommercialTravel
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
 ```
 
-## Running VERPAT or VERSPM from within R
+## Running VE Models
+There are multiple ways to run VisionEval models.
+
+### Running VERPAT or VERSPM from within R
   1. Git clone (i.e. copy) this repository to your computer.
   2. Start R and run the following commands:
 
@@ -54,7 +57,7 @@ setwd(full_path)
 source("run_model.R")
 ```
 
-## Running VEGUI from GitHub to run VERPAT or VERSPM
+### Running VEGUI from GitHub to run VERPAT or VERSPM
   1. Git Clone (i.e. copy) this repository to your computer.
   1. Start R and run the following commands:
 
@@ -66,7 +69,7 @@ runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI")
   4. Click "Select Scenario Script" and navigate to the VERPAT or VERSPM run_model.R script in your local repository
   5. Click "Run" and then "Run Model Script" to run the model
 
-## Running VEGUI from within R to run VERPAT or VERSPM
+### Running VEGUI from within R to run VERPAT or VERSPM
   1. Git Clone (i.e. copy) this repository to your computer.
   1. Start R and run the following commands:
 
@@ -76,7 +79,7 @@ setwd(full_path)
 runApp('../VEGUI')
 ```
 
-# Develop Branch
+## Develop Branch
 
 The current release version of VisionEval is on the master branch.  The current development version is on
 the develop branch.  To download, install, and test the develop branch resources, do the following:
