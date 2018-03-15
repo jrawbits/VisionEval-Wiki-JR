@@ -27,5 +27,7 @@
   - Vignette for adding a module to existing package [ Status: needs to be developed ]
   - Vignette for making changes to existing module [ Status: needs to be developed ]
 
-
-
+### Understanding licensing
+  - VisionEval uses this [LICENSE](https://github.com/gregorbj/VisionEval/blob/master/LICENSE)
+  - Each package has a DESCRIPTION file and a LICENSE file
+  - The source files do not contain license and/or copyright information
