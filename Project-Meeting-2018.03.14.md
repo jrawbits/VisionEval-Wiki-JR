@@ -24,7 +24,7 @@
 
 # Project management
   - Reviewed, commented on, and closed several issues
-  - Added a new [milestone](https://github.com/gregorbj/VisionEval/milestones) - End User Experience - for the next phase of work
+  - Added a new [milestone](https://github.com/gregorbj/VisionEval/milestones) - End User Experience - for the next phase of work and a couple new issues for new work
   - Cleaned up the licensing throughout the repository [#47](https://github.com/gregorbj/VisionEval/issues/47)
   - Plan to stick with R 3.4 for completing VERPAT and VERSPM
   - Let's review who is on the meeting invite list - I'll send an email about this
