@@ -1,5 +1,5 @@
 ## Overview 
-The VE software framework is written in the R programming language for statistical computing and graphics. The software framework is available as a R package, *visioneval*. The purpose of the model system and framework is to enable models be created in a plug-and-play fashion from modules that are also distributed as R packages. A simple R script is used to implement a model by initializing the model environment and then calling modules successively.
+The VE software framework is written in the R programming language for statistical computing and graphics.  The purpose of the model system and framework is to enable models be created in a plug-and-play fashion from modules that are also distributed as R packages. A simple R script is used to implement a model by initializing the model environment and then calling modules successively.
 
 The [repository](https://github.com/gregorbj/VisionEval) is organized into two directories:
 - The **sources** directory contains four directories:
