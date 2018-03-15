@@ -11,6 +11,7 @@
 - [[Contribution Review Criteria|Contribution-Review-Criteria]]
 - [[Modules and Packages|Modules-and-Packages]]
 - [[Development Roadmap|Development-Roadmap]]
+- [[Documentation Plan|Documentation-Plan]]
 
 ### Project Management
  - [[Meeting Notes]]
