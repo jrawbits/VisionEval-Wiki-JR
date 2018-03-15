@@ -10,7 +10,7 @@ The [repository](https://github.com/gregorbj/VisionEval) is organized into two d
 - The **api** directory contains documentation of the model system. The [model system design](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md) document is the most complete at the present time. VisionEval framework functions are documented in a [network visualization](https://gregorbj.github.io/VisionEval/website/visioneval_functions.html) of the functions and their call relationships. Functions are represented by network nodes. Call relationships are represented by arrows which point from the calling function to the called function. Function details are shown at the bottom of the page when a function node is selected.
 
 ## Installation and Setup
-  1. Install [R 3.3.2+](https://cran.r-project.org) in a location where you have write access.
+  1. Install [R 3.4.2+](https://cran.r-project.org) in a location where you have write access.
   2. Start R
   3. If working within a proxy server (like ODOT), run the following commands to enable install from GitHub:
 ```
