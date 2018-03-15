@@ -1,11 +1,11 @@
-### Assumptions + Prerequisites
+### Assumptions + prerequisites
   - Understand [[R|https://cran.r-project.org]]
   - Understand basic statistics, data analysis, and modeling principles
   - Understand how to build [[R packages|https://support.rstudio.com/hc/en-us/articles/200486488-Developing-Packages-with-RStudio]]
   - Understand how to use GitHub and [[TravisCI|https://travis-ci.org/]]
   - Understand [[RShiny|https://shiny.rstudio.com]] and [[shinytest|https://github.com/rstudio/shinytest]] if contributing to the User Interface
 
-### Get VisionEval Running
+### Get VisionEval running
   - Use the [[Quick Start|Getting-Started]] guide to download and run an example
 
 ### Understand the development principles and organization of VisionEval framework
