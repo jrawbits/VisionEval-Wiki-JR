@@ -1,6 +1,8 @@
+There are two sets of VERPAT input folders - definitions and inputs.
+
 # Definitions
 The following files need to be configured in the defs folder:
-  - deflators.csv
+  - [deflators.csv](#deflatorscsv)
   - geo.csv
   - model_parameters.json
   - run_parameters.json
