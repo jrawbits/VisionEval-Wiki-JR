@@ -465,7 +465,7 @@ Content should be centered around the website: visioneval.org/user, which would 
 
 The user documentation should have the following features:
 -   Can be easily updated when relevant software is updated, but backward-rollable to view documentation for any version (i.e. VueJS.org.
--   Toggle between GUI-based and code-based descriptions and  instructions to enable more advanced users to access more features, but not alienate users who are more comfortable pointing and clicking; be able to drill down as far as you want, but top-level framing should be similar to the [*RSPM User’s  Guide.*](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf)
+-   Toggle between GUI-based and code-based descriptions and  instructions to enable more advanced users to access more features, but not alienate users who are more comfortable pointing and clicking; be able to drill down as far as you want, but top-level framing should be similar to the [*RSPM User’s  Guide.*] (Appendix 2).(http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf)
 -   Toggle between models, but uses reusable content blocks where models are the same
 -   Version-controllable
 
