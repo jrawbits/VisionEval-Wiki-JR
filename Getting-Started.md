@@ -22,8 +22,8 @@ set_config( config( ssl_verifypeer = 0L ) )
   5. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
 ```
 install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"))
-install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable"))
-devtools::install_github(c("tdhock/namedCapture", "trestletech/shinyTree"))
+install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable","shinyTree"))
+devtools::install_github("tdhock/namedCapture")
 source("https://bioconductor.org/biocLite.R")
 biocLite("rhdf5")
 ```
