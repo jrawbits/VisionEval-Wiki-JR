@@ -78,6 +78,9 @@ full_path = "C:/projects/development/VisionEval/sources/VEGUI"
 setwd(full_path)	
 runApp('../VEGUI')
 ```
+  3. VEGUI should launch in your browser
+  4. Click "Select Scenario Script" and navigate to the VERPAT or VERSPM run_model.R script in your local repository
+  5. Click "Run" and then "Run Model Script" to run the model
 
 ## Develop Branch
 
