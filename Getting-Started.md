@@ -43,7 +43,7 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel"
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VERoadPerformance")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VETravelCosts")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VETravelCost")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEReports")
 ```
 
