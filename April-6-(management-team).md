@@ -17,7 +17,7 @@
    * VERSPM will not have any output summaries either
 * Release
    * Ben to pull develop into master within the next couple of days
-   * Need to have master branch usable, passes tests (Jeremy).  Ben said RPAT works at this point. Jeremy needs to point to a published repository that doesn't change during the open competition for support for pooled fund.
+   * For pooled funds, need to have master branch usable, passes tests (Jeremy).  Ben said RPAT works at this point. Jeremy needs to point to a published repository that doesn't change during the open competition for support for pooled fund.
 * User focused materials
   * Next step of project is user focused materials (documentation, tutorials, GUI, visualizer) for MPO planner audience
   * Please start gathering your thoughts/expectations about these materials
