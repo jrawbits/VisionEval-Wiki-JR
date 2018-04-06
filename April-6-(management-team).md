@@ -19,7 +19,7 @@
    * Ben to pull develop into master within the next couple of days
    * For pooled funds, need to have master branch usable, passes tests (Jeremy).  Ben said RPAT works at this point. Jeremy needs to point to a published repository that doesn't change during the open competition.
 * User focused materials
-  * Next step of project is user focused materials (documentation, tutorials, GUI, visualizer) for MPO planner audience
+  * Next step of project is user focused materials (documentation, tutorials, GUI, visualizer) for non-power users (MPO planners for example)
   * Please start gathering your thoughts/expectations about these materials
   * Need a workshop in second half of April and first half of May to brainstorm -- Kristin will schedule
   * Focused on user experience
