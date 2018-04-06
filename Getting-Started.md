@@ -37,11 +37,14 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VELandUse")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupply")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdVehicles")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VECommercialTravel")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VERoadPerformance")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VETravelCosts")
+devtools::install_github("gregorbj/VisionEval/sources/modules/VEReports")
 ```
 
 ## Running VE Models
