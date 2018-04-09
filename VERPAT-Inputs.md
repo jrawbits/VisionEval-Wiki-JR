@@ -10,9 +10,70 @@ The following five files need to be configured in the "defs" directory:
 
 ## run_parameters.json
 
-The "run_parameters.json" file contains parameters that define key attributes of the model run and relationships to other model runs.
+The "run_parameters.json" file contains parameters that define key attributes of the model run and relationships to other model runs. A more detailed description of the file can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The format of the VERPAT *run_parameters.json* file is as follows:
+
+```json
+{
+    "Model": ["RPAT"],
+    "Scenario": ["RPAT Pilot"],
+    "Description": ["Pilot RPAT module in VisionEval"],
+    "Region": ["Multnomah County Oregon"],
+    "BaseYear": ["2005"],
+    "Years": ["2005", "2035"],
+    "DatastoreName": ["Datastore"],
+    "DatastoreType": ["RD"],
+    "Seed": [1],
+    "RunTypes": ["E", "ELESNP"]
+}
+```
+
+
 
 ## model_parameters.json
+
+The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The format of the VERPAT *model_parameters.json* file is as follows:
+
+```json
+[
+  {"NAME": "EmploymentGrowth",
+   "VALUE": "1.5",
+   "TYPE": "double",
+   "UNITS": "multiplier",
+   "PROHIBIT": "",
+   "ISELEMENTOF": ""},
+  {
+    "NAME": "FwyLaneMiGrowth",
+    "VALUE": "1",
+    "TYPE" : "double",
+    "UNITS" : "multiplier",
+    "PROHIBIT" : "c('NA', '< 0')",
+    "ISELEMENTOF" : ""
+  },
+  {
+    "NAME" : "ArtLaneMiGrowth",
+    "VALUE": "1",
+    "TYPE" : "double",
+    "UNITS" : "multiplier",
+    "PROHIBIT" : "c('NA', '< 0')",
+    "ISELEMENTOF" : ""
+  },
+  .
+  .
+  .
+  {
+    "NAME" : "AutoCostGrowth",
+    "VALUE": "1.5",
+    "TYPE" : "double",
+    "UNITS" : "multiplier",
+    "PROHIBIT" : "c('NA', '< 0')",
+    "ISELEMENTOF" : ""
+  }
+]
+```
+
+
+
+
 
 ## deflators.csv
 The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
@@ -139,7 +200,7 @@ The "units.csv" file describes the default units to be used for storing complex 
 | currency | USD      |
 | distance | MI       |
 | area     | SQMI     |
-| $\vdots$ | $\vdots$ |
+| ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
