@@ -1,16 +1,16 @@
-There are two sets of VERPAT input folders - definitions and inputs.
+There are two sets of VERPAT input folders - [definitions](#definitions) and [inputs](#inputs).
 
 # Definitions
 The following five files need to be configured in the "defs" directory:
   - [run_parameters.json](#run_parametersjson)
-- [model_parameters.json](#model_parametersjson)
+  - [model_parameters.json](#model_parametersjson)
   - [deflators.csv](#deflatorscsv)
   - [geo.csv](#geocsv)
   - [units.csv](#unitscsv)
 
 ## run_parameters.json
 
-
+The "run_parameters.json" file contains parameters that define key attributes of the model run and relationships to other model runs.
 
 ## model_parameters.json
 
@@ -28,31 +28,31 @@ The **deflators.csv** file defines the annual deflator values, such as the consu
 
 The "geography.csv" file describes all of the geographic relationships for the model and the names of geographic entities in a [CSV-formatted](https://en.wikipedia.org/wiki/Comma-separated_values) text file. The format of the file is as follows:
 
-| [Azone](model_system_design.md#62-model-geography) | [Bzone](model_system_design.md#62-model-geography) | [Czone](model_system_design.md#62-model-geography) | [Marea](model_system_design.md#62-model-geography) |
-| :------------------------------------------------: | :------------------------------------------------: | :------------------------------------------------: | :------------------------------------------------: |
-|                     Multnomah                      |                        Rur                         |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       Sub_R                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       Sub_E                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       Sub_M                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       Sub_T                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       CIC_R                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       CIC_E                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       CIC_M                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                       CIC_T                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                        UC_R                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                        UC_E                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                        UC_M                        |                         NA                         |                     Multnomah                      |
-|                     Multnomah                      |                        UC_T                        |                         NA                         |                     Multnomah                      |
+| [Azone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Bzone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Czone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Marea](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|                          Multnomah                           |                             Rur                              |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            Sub_R                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            Sub_E                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            Sub_M                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            Sub_T                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            CIC_R                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            CIC_E                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            CIC_M                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                            CIC_T                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                             UC_R                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                             UC_E                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                             UC_M                             |                              NA                              |                          Multnomah                           |
+|                          Multnomah                           |                             UC_T                             |                              NA                              |                          Multnomah                           |
 
 The geography is described by 13 place types as shown below. One emerging school of thought in land use planning is to consider land uses in terms of place types instead of simply residential or commercial or high density compared to low density. A place type refers to all of the characteristics of a developed area including the types of uses included, the mix of uses, the density and intensity of uses.
 
 |                                  | URBAN <br />CORE | CLOSE-IN <br />COMMUNITY |   SUBURBAN   |    RURAL     |
 | :------------------------------- | :--------------: | :----------------------: | :----------: | :----------: |
-| **Residential**                  |   $\checkmark$   |       $\checkmark$       | $\checkmark$ |              |
-| **Commercial**                   |   $\checkmark$   |       $\checkmark$       | $\checkmark$ |              |
-| **Mixed-Use**                    |   $\checkmark$   |       $\checkmark$       | $\checkmark$ |              |
-| **Transit-Oriented Development** |   $\checkmark$   |       $\checkmark$       | $\checkmark$ |              |
-| **Rural/Greenfield**             |                  |                          |              | $\checkmark$ |
+| **Residential**                  |   $$\checkmark$$   |       $$\checkmark$$       | $$\checkmark$$ |              |
+| **Commercial**                   |   $$\checkmark$$   |       $$\checkmark$$       | $$\checkmark$$ |              |
+| **Mixed-Use**                    |   $$\checkmark$$   |       $$\checkmark$$       | $$\checkmark$$ |              |
+| **Transit-Oriented Development** |   $$\checkmark$$   |       $$\checkmark$$       | $$\checkmark$$ |              |
+| **Rural/Greenfield**             |                  |                          |              | $$\checkmark$$ |
 
 An initial typology or system to organize place types can be traced to the Smart Growth Transect, which contained six zones in its original configuration including:
 
@@ -77,7 +77,7 @@ Several of these place type categories provided additional options such as the C
 
 An alternative view of place types was provided by Reconnecting America, which developed a performance based place type approach for describing areas proximate to transit stations. Station areas would vary in terms of their relative focus between residential units, employees or a mix of the two. Station areas are also characterized on their relative intensity as well as shown below.
 
-![PERFORMANCE BASED TYPOLOGY FOR TRANSIT STATION AREAS](.\VERPAT_images\performancebasedtypology.png)
+![PERFORMANCE BASED TYPOLOGY FOR TRANSIT STATION AREAS](/VERPAT_images/performancebasedtypology.png "PERFORMANCE BASED TYPOLOGY FOR TRANSIT STATION AREAS")
 
 The approach employed for the place types in RPAT is therefore an amalgam of these approaches, in that the terminology is borrowed from the Smart Growth Transect and Caltrans Smart Mobility Study, while the relative performance of each place type is taken from the Reconnecting America approach but applied to a region instead of transit station sites.
 
@@ -104,9 +104,9 @@ The conversion of land use data to the place type scheme used in RPAT involved t
 1. The first step was to allocate the UGPM areas to the four area types used in RPAT. The Urban Core area type includes Region Core, Region Employment Centers and Aerotropolis UGPM areas; Close-in Community includes Maturing Neighborhoods; Suburban includes Developing Suburbs and Established Suburbs; and Rural includes Rural Areas and Developing Rural.
 2. The ARC traffic analysis zone (TAZ) system was overlaid with the area types and the centroid of the TAZ was used to determine its area type.
 3. The RPAT development type, the other dimension of the place type matrix, which included residential, mixed-use, employment, and TOD development types was determined for each TAZ not in the rural area type using the base year percentage of the TAZ’s employment in relation to the total of the population and employment in the TAZ. The mix between the employment and employment was used to determine the TAZs development type using the following cut points:
-   - Residential: $\lt 33.33\%$ 
-   - Mixed Use: $33.33\% \text{ to } 66.67\%$
-   - Employment: $\gt 66.67\%$
+   - Residential: $$\lt 33.33\%$$ 
+   - Mixed Use: $$33.33\% \text{ to } 66.67\%$$
+   - Employment: $$\gt 66.67\%$$
 4. Identify any TAZs that are TOD based on transit service and specific development types: only one TAZ was determined to be TOD as a development type, Lindbergh Center, in the Urban Core area type.
 5. The combination of the area type and the development type was then used to allocate all TAZs to one of the 13 place types.
 
@@ -131,5 +131,16 @@ The following is an enumeration of each place type abbreviation as it appears in
 
 
 ## units.csv
+
+The "units.csv" file describes the default units to be used for storing complex data types in the model. The format of the file is as follows:
+
+| Type     | Units    |
+| -------- | -------- |
+| currency | USD      |
+| distance | MI       |
+| area     | SQMI     |
+| $\vdots$ | $\vdots$ |
+
+The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](./model_system_design.md#63-data-types-units-and-currency-deflators).
 
 # Inputs
