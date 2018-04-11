@@ -21,11 +21,11 @@ set_config( config( ssl_verifypeer = 0L ) )
   4. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.  See `.libPaths()`.
   5. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
 ```
-install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"))
-install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable","shinyTree"))
+install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"), dependencies = TRUE)
+install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable","shinyTree"), dependencies = TRUE)
 devtools::install_github("tdhock/namedCapture")
 source("https://bioconductor.org/biocLite.R")
-biocLite("rhdf5")
+biocLite(c("rhdf5","zlibbioc"))
 ```
   6. Run the following commands to download and install the required VE framework package:
 ```
