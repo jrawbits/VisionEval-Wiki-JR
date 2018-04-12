@@ -6,7 +6,7 @@
   - translation almost done and all completed modules pushed to master
 
 # Test System
-  - revised test system to use Travis caches
+  - revised test system to use Travis caches due to time limit constraints
 
 # Next Phase of Work
   - will be starting on user experience improvements
