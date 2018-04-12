@@ -25,7 +25,7 @@ install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"),
 install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable","shinyTree"), dependencies = TRUE)
 devtools::install_github("tdhock/namedCapture")
 source("https://bioconductor.org/biocLite.R")
-biocLite(c("rhdf5","zlibbioc"))
+biocLite(c("rhdf5","zlibbioc"), suppressUpdates=TRUE)
 ```
   6. Run the following commands to download and install the required VE framework package:
 ```
