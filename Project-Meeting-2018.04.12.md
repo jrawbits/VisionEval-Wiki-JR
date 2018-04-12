@@ -19,4 +19,4 @@
   - will be starting on user experience improvements
     - design workshop upcoming - add Dan
     - UI, visualizer, documentation, and tutorials 
-    - release/installation/etc.  
+    - release plan, versioning, process, etc.
