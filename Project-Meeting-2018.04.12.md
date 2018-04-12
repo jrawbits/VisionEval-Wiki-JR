@@ -17,7 +17,6 @@
 
 # Next Phase of Work
   - will be starting on user experience improvements
-    - design workshop
+    - design workshop upcoming - add Dan
     - UI, visualizer, documentation, and tutorials 
     - release/installation/etc.  
-  - add Dan to the invite
