@@ -12,8 +12,8 @@
 # Getting Started
   - In addition to the Getting Started page, we will add an install.R script for download and installation
   - We need to remove Remote references to develop branch packages when we push to master
-  - See [#169](https://github.com/gregorbj/VisionEval/issues/169) and [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started)
   - Eventually we want to remove the test data from the installation since it is big
+  - See [#169](https://github.com/gregorbj/VisionEval/issues/169) and [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started)
 
 # Next Phase of Work
   - will be starting on user experience improvements
