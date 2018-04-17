@@ -27,7 +27,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 }
 ```
 
-[Top](#verpat)
+[Top](#definitions)
 
 ## model_parameters.json
 
@@ -71,7 +71,7 @@ The "model_parameters.json" can contain global parameters for a particular model
 ]
 ```
 
-[Top](#verpat)
+[Top](#definitions)
 
 ## deflators.csv
 The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
@@ -83,7 +83,7 @@ The **deflators.csv** file defines the annual deflator values, such as the consu
 |              2001              |  182.4   |
 | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
 
-[Top](#verpat)
+[Top](#definitions)
 
 ## geo.csv
 
@@ -189,7 +189,7 @@ The following is an enumeration of each place type abbreviation as it appears in
 | UC_M         | Urban Core Mixed Use                            |
 | UC_T         | Urban Core Transit Oriented Development         |
 
-[Top](#verpat)
+[Top](#definitions)
 
 ## units.csv
 
@@ -204,15 +204,17 @@ The "units.csv" file describes the default units to be used for storing complex 
 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
-[Top](#verpat)
+[Top](#definitions)
 
 # Inputs/Outputs
 
-The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively. The inputs are classified into three categories:
+The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively. The inputs are classified into five categories:
 
-1. **User inputs**: These are inputs (model or scenario specific) that a user is allowed to change.
-2. **Parameter inputs**: These are inputs specific to model that are fixed.
-3. **Internal module inputs**: These are inputs produced as output by other modules.
+1. **User input files**: These are input files (model or scenario specific) that a user is recommended to change.
+2. **User input model parameters**: These are input parameters (model or scenario specific), defined in [model_parameters.json](#model_parametersjson), that a user is recommended to change.
+3. **Fixed input files**: These are input parameters specific to the model that are fixed.
+4. **Fixed input model parameters**: These are input parameters specific to the model, defined in [model_parameters.json](#model_parametersjson), that are fixed.
+5. **Internal module inputs**: These are inputs produced as output by other modules.
 
 | MODULE                                                      | PACKAGE                                                      | RPAT             |
 | ----------------------------------------------------------- | ------------------------------------------------------------ | ---------------- |
@@ -236,22 +238,22 @@ The VERPAT model is a compilation of several packages, listed below, the inputs 
 | [CalculateCongestionPolicy](#calculatecongestionpolicy)     | [VETransportSupplyUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) | policycongestion |
 | [ReportRPATMetrics](#reportrpatmetrics)                     | [VEReports](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports) | metrics          |
 
-[Top](#verpat)
+[Top](#definitions)
 
 ## CreateHouseholds
 
 This module creates simulated households for a model using inputs of population by age group for each Azone and year.
 
-### User Inputs
+### User Input Files
 
 1. **Household population (*azone_hh_pop_by_age.csv*)**: This file contains population estimates/forecasts by county and age cohort for each of the base and future years. The file format includes six age categories used by the population synthesis model:
 
-   - 0-14
-   - 15-19
-   - 20-29
-   - 30-54
-   - 55-64
-   - 65 Plus
+   - **0-14**
+   - **15-19**
+   - **20-29**
+   - **30-54**
+   - **55-64**
+   - **65 Plus**
 
    Future year data must be developed by the user; in many regions population forecasts are available from regional or state agencies and/or local academic sources. As with the employment data inputs the future data need not be county specific. Rather, regional totals by age group can be entered into the file with a value such as “region” entered in the county field.
 
@@ -264,8 +266,8 @@ This module creates simulated households for a model using inputs of population 
 
 2. **Household size (*azone_hhsize_targets.csv*)**: This file contains the household specific targets. This contain two household specific attributes:
 
-   - AveHhSize: Average household size of households (non-group quarters)
-   - Prop1PerHh: Proportion of households (non-group quarters) having only one person
+   - **AveHhSize**: Average household size of households (non-group quarters)
+   - **Prop1PerHh**: Proportion of households (non-group quarters) having only one person
 
    Here is a snapshot of the file:
 
@@ -276,12 +278,12 @@ This module creates simulated households for a model using inputs of population 
 
 3. **Group quarter population (*azone_gq_pop_by_age.csv*)**: This file contains group quarters population estimates/forecasts by county and age cohort for each of the base and future years. The file format includes six age categories used by the population synthesis model:
 
-   - 0-14
-   - 15-19
-   - 20-29
-   - 30-54
-   - 55-64
-   - 65 Plus
+   - **0-14**
+   - **15-19**
+   - **20-29**
+   - **30-54**
+   - **55-64**
+   - **65 Plus**
 
    Here is a snapshot of the file:
 
@@ -290,15 +292,6 @@ This module creates simulated households for a model using inputs of population 
    | Multnomah | 2005 | 0           | 0            | 0            | 1            | 0            | 0            |
    | Multnomah | 2035 | 0           | 0            | 0            | 1            | 0            | 0            |
 
-
-
-### Parameter Inputs
-
-There are no parameter inputs to this module.
-
-### Internal Module Inputs
-
-There are no model inputs to this module.
 
 ### Module Outputs
 
@@ -313,4 +306,166 @@ There are no model inputs to this module.
 9. **Age65Plus**: Persons in 65 or older age group
 10. **HhType**: Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group quarters
 
-[Top](#verpat)
+[Top](#definitions)
+
+## PredictWorkers
+
+This module assigns workers by age to households and to non-institutional group quarters population. It is a simple model which predicts workers as a function of the household type and age composition. There is no responsiveness to jobs or how changes in the job market and demographics might change the worker age composition, but the user can exogenously adjust the relative employment by age group, Azone, and year. The values are the proportions of persons in the age group who are workers relative to the proportions in the estimation year.
+
+### User Input Files
+
+1. **Relative employment (*azone_relative_employment.csv*)**: This file contains ratio of workers to persons by age cohort in model year vs. estimation data year. This file contains five age cohorts:
+
+   - **RelEmp15to19**: Ratio of workers to persons age 15 to 19 in model year vs. in estimation data year
+   - **RelEmp20to29**: Ratio of workers to persons age 20 to 29 in model year vs. in estimation data year
+   - **RelEmp30to54**: Ratio of workers to persons age 30 to 54 in model year vs. in estimation data year
+   - **RelEmp55to64**: Ratio of workers to persons age 55 to 64 in model year vs. in estimation data year
+   - **RelEmp65Plus**: Ratio of workers to persons age 65 or older in model year vs. in estimation data year
+
+   Here is a snapshot of the file:
+
+   | Geo       | Year | RelEmp15to19 | RelEmp20to29 | RelEmp30to54 | RelEmp55to64 | RelEmp65Plus |
+   | --------- | ---- | ------------ | ------------ | ------------ | ------------ | ------------ |
+   | Multnomah | 2005 | 1            | 1            | 1            | 1            | 1            |
+   | Multnomah | 2035 | 1            | 1            | 1            | 1            | 1            |
+
+### Internal Module Inputs
+
+| Package         | Module                                | Outputs       | Description                                                  |
+| --------------- | ------------------------------------- | ------------- | ------------------------------------------------------------ |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age0to14**  | Persons in 0 to 14 year old age group                        |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age15to19** | Persons in 15 to 19 year old age group                       |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age20to29** | Persons in 20 to 29 year old age group                       |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age30to54** | Persons in 30 to 54 year old age group                       |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age55to64** | Persons in 55 to 64 year old age group                       |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **Age65Plus** | Persons in 65 or older age group                             |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **HhType**    | Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group  quarters |
+
+### Module Outputs
+
+1. **Wkr15to19**: Workers in 15 to 19 year old age group
+2. **Wkr20to29**: Workers in 20 to 29 year old age group
+3. **Wkr30to54**: Workers in 30 to 54 year old age group
+4. **Wkr55to64**: Workers in 55 to 64 year old age group
+5. **Wkr65Plus**: Workers in 65 or older age group
+6. **Workers**: Total number of workers
+7. **NumWkr**: Number of workers residing in the zone
+
+[Top](#definitions)
+
+## PredictIncome
+
+This module predicts the income for each simulated household given the number of workers in each age group and the average per capita income for the Azone where the household resides.
+
+### User Input Files
+
+1. **Regional income (*azone_per_cap_inc.csv*)**: This file contains information on regional average per capita  household and group quarters income by forecast year in year 2000 dollars. The data can be obtained from the U.S. Department of [Commerce Bureau of Economic Analysis](http://www.bea.gov/regional/index.htm) for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace ***2000*** in column labels with current year. For example, if the data is obtained in year 2005 dollars then the column labels in the file shown below will become **HHIncomePC.2005** and **GQIncomePC.2005**.
+   Here is a snapshot of the file:
+
+   | Geo       | Year | HHIncomePC.2000 | GQIncomePC.2000 |
+   | --------- | ---- | --------------- | --------------- |
+   | Multnomah | 2005 | 32515           | 0               |
+   | Multnomah | 2035 | 40000           | 0               |
+
+### Internal Module Inputs
+
+| Package         | Module                                | Outputs       | Description                                                  |
+| --------------- | ------------------------------------- | ------------- | ------------------------------------------------------------ |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **HhSize**    | Number of  persons                                           |
+| VESimHouseholds | [CreateHouseholds](#createhouseholds) | **HhType**    | Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group  quarters |
+| VESimHouseholds | [PredictWorkers](#predictworkers)     | **Wkr15to19** | Workers in 15 to 19 year old age group                       |
+| VESimHouseholds | [PredictWorkers](#predictworkers)     | **Wkr20to29** | Workers in 20 to 29 year old age group                       |
+| VESimHouseholds | [PredictWorkers](#predictworkers)     | **Wkr30to54** | Workers in 30 to 54 year old age group                       |
+| VESimHouseholds | [PredictWorkers](#predictworkers)     | **Wkr55to64** | Workers in 55 to 64 year old age group                       |
+| VESimHouseholds | [PredictWorkers](#predictworkers)     | **Wkr65Plus** | Workers in 65 or older age group                             |
+
+### Module Outputs
+
+1. **Income**: Total annual household (non-qroup & group quarters) income in year 1999 dollars.
+
+[Top](#definitions)
+
+## CreateBaseSyntheticFirms
+
+This module creates a set of firms for base year that represents the likely firm composition for the region, given the County Business Pattern data of firms by size and industry. Each firm is described in terms of the number of employees and its industry.
+
+### User Input Files
+
+1. **Employment (*azone_employment_by_naics.csv*)**: This file contains employment data for each of the counties that make up the region. The file is derived from County Business Pattern ([CBP](http://www.census.gov/econ/cbp/)) data by county. Industries are categorized by the North American Industrial Classification System (NAICS) 6 digit codes. Firm size categories are:
+
+   - **n1_4**: 1- 4 employees
+   - **n5_9**: 5-9 employees
+   - **n10_19**: 10-19 employees
+   - **n20_99**: 20-99 employees
+   - **n100_249**: 100-249 employees
+   - **n250_499**: 250-499 employees
+   - **n500_999**: 500-999 employees
+   - **n1000**: 1,000 or More Employee Size Class
+   - **n1000_1**: 1,000-1,499 employees
+   - **n1000_2**: 1,500-2,499 employees
+   - **n1000_3**: 2,500 to 4, 999 Employees
+   - **n1000_4**: Over 5,000 employees
+
+   While the county field is required to be present, the business synthesis process does not require a meaningful value and therefore users may simply enter “region”. The consistency in the naming of the "region" should be maintained across all the files that contains the label *"county"* or *"Geo"*. It is also not necessary to use such detailed NAICS categories if those are not available; the current business synthesis model and subsequent models do not use this level of detail (although future versions of the model may) – at minimum, the number of establishments for all employment types can be provided by size category. Regions with significant employment in industries such as government and public administration that are not covered by the CBP may need to add records to the file that cover this type of employment to more accurately match employment totals in their region. The two additional fields contained in the file are:
+
+   - **emp**: Total number of employees
+   - **est**: Total number of establishments
+
+   Here is the snapshot of the file:
+
+   | county    | year | naics  | emp  | est  | n1_4 | n5_9 | n10_19 | n20_49 | n50_99 | n100_249 | n250_499 | n500_999 | n1000 | n1000_1 | n1000_2 | n1000_3 | n1000_4 |
+   | --------- | ---- | ------ | ---- | ---- | ---- | ---- | ------ | ------ | ------ | -------- | -------- | -------- | ----- | ------- | ------- | ------- | ------- |
+   | Multnomah | 2005 | 113110 | 0    | 5    | 2    | 1    | 0      | 2      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 113310 | 0    | 3    | 2    | 0    | 0      | 1      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 114111 | 0    | 1    | 0    | 1    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 114112 | 0    | 1    | 1    | 0    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 115114 | 0    | 1    | 0    | 0    | 0      | 0      | 0      | 0        | 1        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 115210 | 0    | 4    | 3    | 1    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 115310 | 0    | 5    | 2    | 0    | 1      | 1      | 1      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 212319 | 0    | 1    | 1    | 0    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+   | Multnomah | 2005 | 212321 | 0    | 4    | 1    | 1    | 1      | 1      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
+
+### Module Outputs
+
+1. **naics**: The six digit naics code
+2. **esizecat**: The employment size category
+3. **numbus**: The number of businesses
+4. **emp**: The number of employees in a business
+
+[Top](#definitions)
+
+## CreateFutureSyntheticFirms
+
+This module creates a set of firms for future year that represents the likely firm composition for the region, given the County Business Pattern data of firms by size and industry. Each firm is described in terms of the number of employees and its industry.
+
+### User Input Parameters
+
+1. **Employment Growth (*EmploymentGrowth*)**: This variable represents a growth rate for employment in the region between the base year and the future year. A rate of 1 indicates no changes in overall employment, a value of more than 1 indicates some growth (e.g., 1.5 = 50% growth) and a value of less than 1 indicates decline in employment. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME": "EmploymentGrowth",
+       "VALUE": "1.5",
+       "TYPE": "double",
+       "UNITS": "multiplier",
+       "PROHIBIT": "",
+       "ISELEMENTOF": ""
+   }
+   ```
+
+### Internal Module Inputs
+
+| Package          | Module                                                | Outputs      | Description                           |
+| ---------------- | ----------------------------------------------------- | ------------ | ------------------------------------- |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **naics**    | The six digit naics code              |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **esizecat** | The employment size category          |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **numbus**   | The number of businesses              |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **emp**      | The number of employees in a business |
+
+### Module Outputs
+
+1. **naics**: The six digit naics code
+2. **esizecat**: The employment size category
+3. **numbus**: The number of businesses
+4. **emp**: The number of employees in a business
+
