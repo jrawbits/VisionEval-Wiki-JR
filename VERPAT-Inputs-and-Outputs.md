@@ -1,4 +1,6 @@
-There are two sets of VERPAT input folders - [definitions](#definitions) and [inputs](#inputsoutputs).
+# Contents
+  - [definitions](#definitions)
+  - [inputs and outputs](#inputs-and-outputs)
 
 # Definitions
 The following five files need to be configured in the "defs" directory:
@@ -27,7 +29,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 }
 ```
 
-[Top](#definitions)
+[Top](#contents)
 
 ## model_parameters.json
 
@@ -71,7 +73,7 @@ The "model_parameters.json" can contain global parameters for a particular model
 ]
 ```
 
-[Top](#definitions)
+[Top](#contents)
 
 ## deflators.csv
 The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
@@ -83,7 +85,7 @@ The **deflators.csv** file defines the annual deflator values, such as the consu
 |              2001              |  182.4   |
 | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
 
-[Top](#definitions)
+[Top](#contents)
 
 ## geo.csv
 
@@ -189,7 +191,7 @@ The following is an enumeration of each place type abbreviation as it appears in
 | UC_M         | Urban Core Mixed Use                            |
 | UC_T         | Urban Core Transit Oriented Development         |
 
-[Top](#definitions)
+[Top](#contents)
 
 ## units.csv
 
@@ -204,9 +206,9 @@ The "units.csv" file describes the default units to be used for storing complex 
 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
-[Top](#definitions)
+[Top](#contents)
 
-# Inputs/Outputs
+# Inputs and Outputs
 
 The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively. The inputs are classified into five categories:
 
@@ -238,7 +240,7 @@ The VERPAT model is a compilation of several packages, listed below, the inputs 
 | [CalculateCongestionPolicy](#calculatecongestionpolicy)     | [VETransportSupplyUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) | policycongestion |
 | [ReportRPATMetrics](#reportrpatmetrics)                     | [VEReports](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports) | metrics          |
 
-[Top](#definitions)
+[Top](#contents)
 
 ## CreateHouseholds
 
@@ -306,7 +308,7 @@ This module creates simulated households for a model using inputs of population 
 9. **Age65Plus**: Persons in 65 or older age group
 10. **HhType**: Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group quarters
 
-[Top](#definitions)
+[Top](#contents)
 
 ## PredictWorkers
 
@@ -351,7 +353,7 @@ This module assigns workers by age to households and to non-institutional group 
 6. **Workers**: Total number of workers
 7. **NumWkr**: Number of workers residing in the zone
 
-[Top](#definitions)
+[Top](#contents)
 
 ## PredictIncome
 
@@ -383,7 +385,7 @@ This module predicts the income for each simulated household given the number of
 
 1. **Income**: Total annual household (non-qroup & group quarters) income in year 1999 dollars.
 
-[Top](#definitions)
+[Top](#contents)
 
 ## CreateBaseSyntheticFirms
 
@@ -432,7 +434,7 @@ This module creates a set of firms for base year that represents the likely firm
 3. **numbus**: The number of businesses
 4. **emp**: The number of employees in a business
 
-[Top](#definitions)
+[Top](#contents)
 
 ## CreateFutureSyntheticFirms
 
