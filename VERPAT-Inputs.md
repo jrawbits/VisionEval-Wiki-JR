@@ -1,4 +1,8 @@
-There are two sets of VERPAT input folders - [definitions](#definitions) and [inputs](#inputs).
+
+
+# VERPAT
+
+There are two sets of VERPAT input folders - [definitions](#definitions) and [inputs](#inputs/outputs).
 
 # Definitions
 The following five files need to be configured in the "defs" directory:
@@ -27,7 +31,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 }
 ```
 
-
+[Top](#VERPAT)
 
 ## model_parameters.json
 
@@ -71,9 +75,7 @@ The "model_parameters.json" can contain global parameters for a particular model
 ]
 ```
 
-
-
-
+[Top](#VERPAT)
 
 ## deflators.csv
 The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
@@ -84,6 +86,8 @@ The **deflators.csv** file defines the annual deflator values, such as the consu
 |              2000              |   178    |
 |              2001              |  182.4   |
 | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
+
+[Top](#VERPAT)
 
 ## geo.csv
 
@@ -189,7 +193,7 @@ The following is an enumeration of each place type abbreviation as it appears in
 | UC_M         | Urban Core Mixed Use                            |
 | UC_T         | Urban Core Transit Oriented Development         |
 
-
+[Top](#VERPAT)
 
 ## units.csv
 
@@ -204,28 +208,113 @@ The "units.csv" file describes the default units to be used for storing complex 
 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
-# Inputs
+[Top](#VERPAT)
 
-The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively:
+# Inputs/Outputs
 
-| MODULE                                                    | PACKAGE                                                      | RPAT      |
-| --------------------------------------------------------- | ------------------------------------------------------------ | --------- |
-| [CreateHouseholds](#createhouseholds)                     | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
-| [PredictWorkers](#predictworkers)                         | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
-| [PredictIncome](#predictincome)                           | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
-| [CreateBaseSyntheticFirms](#createbasesyntheticfirms)     | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household |
-| [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household |
-| [CreateBasePlaceTypes](#createbaseplacetypes)             | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | household |
-| [CreateFuturePlaceTypes](#createfutureplacetypes)         | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | household |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
-|                                                           |                                                              |           |
+The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively. The inputs are classified into three categories:
 
+1. **User inputs**: These are inputs (model or scenario specific) that a user is allowed to change.
+2. **Parameter inputs**: These are inputs specific to model that are fixed.
+3. **Internal module inputs**: These are inputs produced as output by other modules.
+
+| MODULE                                                      | PACKAGE                                                      | RPAT             |
+| ----------------------------------------------------------- | ------------------------------------------------------------ | ---------------- |
+| [CreateHouseholds](#CreateHouseholds)                       | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household        |
+| [PredictWorkers](#predictworkers)                           | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household        |
+| [PredictIncome](#predictincome)                             | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household        |
+| [CreateBaseSyntheticFirms](#createbasesyntheticfirms)       | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household        |
+| [CreateFutureSyntheticFirms](#createfuturesyntheticfirms)   | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household        |
+| [CreateBasePlaceTypes](#createbaseplacetypes)               | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | urban            |
+| [CreateFuturePlaceTypes](#createfutureplacetypes)           | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | urban            |
+| [CreateBaseAccessibility](#CreateBaseAccessibility)         | [VETransportSupply](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply) | accessibility    |
+| [CreateFutureAccessibility](#CreateFutureAccessibility)     | [VETransportSupply](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply) | accessibility    |
+| [AssignVehicleFeatures](#AssignVehicleFeatures)             | [VEHouseholdVehicles](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles) | vehicle          |
+| [AssignVehicleFeaturesFuture](#AssignVehicleFeaturesFuture) | [VEHouseholdVehicles](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles) | vehicle          |
+| [CalculateTravelDemand](#CalculateTravelDemand)             | [VEHouseholdTravel](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) | demand           |
+| [CalculateTravelDemandFuture](#CalculateTravelDemandFuture) | [VEHouseholdTravel](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) | demand           |
+| [CalculateCongestionBase](#CalculateCongestionBase)         | [VETransportSupplyUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) | congestion       |
+| [CalculateCongestionFuture](#CalculateCongestionFuture)     | [VETransportSupplyUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) | congestion       |
+| [CalculateInducedDemand](#CalculateInducedDemand)           | [VEHouseholdTravel](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) | induced          |
+| [CalculatePolicyVmt](#CalculatePolicyVmt)                   | [VEHouseholdTravel](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) | policyvmt        |
+| [CalculateCongestionPolicy](#CalculateCongestionPolicy)     | [VETransportSupplyUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) | policycongestion |
+| [ReportRPATMetrics](#ReportRPATMetrics)                     | [VEReports](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports) | metrics          |
+
+[Top](#VERPAT)
+
+## CreateHouseholds
+
+This module creates simulated households for a model using inputs of population by age group for each Azone and year.
+
+### User Inputs
+
+1. **Household population (*azone_hh_pop_by_age.csv*)**: This file contains population estimates/forecasts by county and age cohort for each of the base and future years. The file format includes six age categories used by the population synthesis model:
+
+   - 0-14
+   - 15-19
+   - 20-29
+   - 30-54
+   - 55-64
+   - 65 Plus
+
+   Future year data must be developed by the user; in many regions population forecasts are available from regional or state agencies and/or local academic sources. As with the employment data inputs the future data need not be county specific. Rather, regional totals by age group can be entered into the file with a value such as “region” entered in the county field.
+
+   Here is a snapshot of the file:
+
+   | Geo       | Year | Age0to14 | Age15to19 | Age20to29 | Age30to54 | Age55to64 | Age65Plus |
+   | --------- | ---- | -------- | --------- | --------- | --------- | --------- | --------- |
+   | Multnomah | 2005 | 129869   | 41133     | 99664     | 277854    | 71658     | 72648     |
+   | Multnomah | 2035 | 169200   | 48800     | 144050    | 327750    | 116100    | 162800    |
+
+2. **Household size (*azone_hhsize_targets.csv*)**: This file contains the household specific targets. This contain two household specific attributes:
+
+   - AveHhSize: Average household size of households (non-group quarters)
+   - Prop1PerHh: Proportion of households (non-group quarters) having only one person
+
+   Here is a snapshot of the file:
+
+   | Geo       | Year | AveHhSize | Prop1PerHh |
+   | --------- | ---- | --------- | ---------- |
+   | Multnomah | 2005 | NA        | NA         |
+   | Multnomah | 2035 | NA        | NA         |
+
+3. **Group quarter population (*azone_gq_pop_by_age.csv*)**: This file contains group quarters population estimates/forecasts by county and age cohort for each of the base and future years. The file format includes six age categories used by the population synthesis model:
+
+   - 0-14
+   - 15-19
+   - 20-29
+   - 30-54
+   - 55-64
+   - 65 Plus
+
+   Here is a snapshot of the file:
+
+   | Geo       | Year | GrpAge0to14 | GrpAge15to19 | GrpAge20to29 | GrpAge30to54 | GrpAge55to64 | GrpAge65Plus |
+   | --------- | ---- | ----------- | ------------ | ------------ | ------------ | ------------ | ------------ |
+   | Multnomah | 2005 | 0           | 0            | 0            | 1            | 0            | 0            |
+   | Multnomah | 2035 | 0           | 0            | 0            | 1            | 0            | 0            |
+
+
+
+### Parameter Inputs
+
+There are no parameter inputs to this module.
+
+### Internal Module Inputs
+
+There are no model inputs to this module.
+
+### Module Outputs
+
+1. **NumHh**: Number of households (non-group quarters)
+2. **HhId**: Unique household ID
+3. **HhSize**: Number of persons
+4. **Age0to14**: Persons in 0 to 14 year old age group
+5. **Age15to19**: Persons in 15 to 19 year old age group
+6. **Age20to29**: Persons in 20 to 29 year old age group
+7. **Age30to54**: Persons in 30 to 54 year old age group 
+8. **Age55to64**: Persons in 55 to 64 year old age group
+9. **Age65Plus**: Persons in 65 or older age group
+10. **HhType**: Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group quarters
+
+[Top](#VERPAT)
