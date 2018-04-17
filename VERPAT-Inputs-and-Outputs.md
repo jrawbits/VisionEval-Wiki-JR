@@ -1,5 +1,6 @@
-# Contents
 This page describes the VERPAT inputs (including definitions) and outputs by module.
+
+# Contents
   - [Definitions](#definitions)
   - [Inputs and Outputs](#inputs-and-outputs)
 
