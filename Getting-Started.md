@@ -11,27 +11,30 @@ The [repository](https://github.com/gregorbj/VisionEval) is organized into two d
 
 ## Installation and Setup
   1. Install [R 3.4.2+](https://cran.r-project.org) in a location where you have write access.
-  2. Start R
-  3. If working within a proxy server, run the following commands to enable install from GitHub:
+  2. Start R and source the [install script](https://github.com/gregorbj/VisionEval/install.R) described below. 
+ This can be done via: `source("https://raw.githubusercontent.com/gregorbj/VisionEval/master/install.R")`
+
+### Install Script Steps
+  1. If working within a proxy server, run the following commands to enable install from GitHub:
 ```
 library(httr)
 set_config(use_proxy(url="proxynew.odot.state.or.us", port=8080)) 
 set_config( config( ssl_verifypeer = 0L ) )
 ```
-  4. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.  See `.libPaths()`.
-  5. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
+  2. If working with an R install without write access to its library folder (like ODOT), first change your library location to a write accessible location.  See `.libPaths()`.
+  3. Run the following commands to download and install the required libraries and their dependencies.  If `BiocInstaller` can't be downloaded, try the alternative approach.
 ```
 install.packages(c("curl","devtools", "roxygen2", "stringr", "knitr", "digest"), dependencies = TRUE)
 install.packages(c("shiny", "shinyjs", "shinyFiles", "data.table", "DT", "shinyBS", "future", "testit", "jsonlite", "shinyAce", "envDocument", "rhandsontable","shinyTree"), dependencies = TRUE)
 devtools::install_github("tdhock/namedCapture")
 source("https://bioconductor.org/biocLite.R")
-biocLite(c("rhdf5","zlibbioc"))
+biocLite(c("rhdf5","zlibbioc"), suppressUpdates=TRUE)
 ```
-  6. Run the following commands to download and install the required VE framework package:
+  4. Run the following commands to download and install the required VE framework package:
 ```
 devtools::install_github("gregorbj/VisionEval/sources/framework/visioneval")
 ```
-  7. Run the following commands to download and install the required VE modules for VERPAT and VERSPM:
+  5. Run the following commands to download and install the required VE modules for VERPAT and VERSPM:
 ```
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds")
