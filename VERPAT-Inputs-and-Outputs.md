@@ -2,7 +2,7 @@ This page describes the VERPAT inputs (including definitions) and outputs by mod
 
 # Contents
   - [Definitions](#definitions)
-  - [Inputs and Outputs](#inputs-and-outputs)
+  - [Inputs and Outputs by Module](#inputs-and-outputs)
 
 # Definitions
 The following five files need to be configured in the "defs" directory:
