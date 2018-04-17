@@ -1,6 +1,7 @@
 # Contents
-  - [definitions](#definitions)
-  - [inputs and outputs](#inputs-and-outputs)
+This page describes the VERPAT inputs (including definitions) and outputs by module.
+  - [Definitions](#definitions)
+  - [Inputs and Outputs](#inputs-and-outputs)
 
 # Definitions
 The following five files need to be configured in the "defs" directory:
