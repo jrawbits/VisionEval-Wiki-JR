@@ -35,7 +35,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 
 ## model_parameters.json
 
-The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs](#inputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
+The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs and outputs](#inputs-and-outputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
 
 ```json
 [
