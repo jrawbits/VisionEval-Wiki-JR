@@ -31,7 +31,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 
 ## model_parameters.json
 
-The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The format of the VERPAT *model_parameters.json* file is as follows:
+The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs](#inputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
 
 ```json
 [
@@ -205,3 +205,27 @@ The "units.csv" file describes the default units to be used for storing complex 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
 # Inputs
+
+The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively:
+
+| MODULE                                                    | PACKAGE                                                      | RPAT      |
+| --------------------------------------------------------- | ------------------------------------------------------------ | --------- |
+| [CreateHouseholds](#createhouseholds)                     | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
+| [PredictWorkers](#predictworkers)                         | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
+| [PredictIncome](#predictincome)                           | [VESimHouseholds](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) | household |
+| [CreateBaseSyntheticFirms](#createbasesyntheticfirms)     | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household |
+| [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | [VESyntheticFirms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) | household |
+| [CreateBasePlaceTypes](#createbaseplacetypes)             | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | household |
+| [CreateFuturePlaceTypes](#createfutureplacetypes)         | [VELandUse](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) | household |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+|                                                           |                                                              |           |
+
