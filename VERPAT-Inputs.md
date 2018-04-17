@@ -1,7 +1,3 @@
-
-
-# VERPAT
-
 There are two sets of VERPAT input folders - [definitions](#definitions) and [inputs](#inputsoutputs).
 
 # Definitions
