@@ -385,7 +385,7 @@ This module predicts the income for each simulated household given the number of
 
 ### Module Outputs
 
-1. **Income**: Total annual household (non-qroup & group quarters) income in year 1999 dollars.
+1. **Income**: Total annual household (non-qroup & group quarters) income in year 1999 dollars
 
 [Top](#contents)
 
@@ -473,3 +473,357 @@ This module creates a set of firms for future year that represents the likely fi
 3. **numbus**: The number of businesses
 4. **emp**: The number of employees in a business
 
+
+[Top](#contents)
+
+## CalculateBasePlaceTypes
+
+Population and employment location characteristics are important variables in the vehicle ownership, travel demand, and accessibility models. There are four place types (urban core, Close-in Community, suburban, and rural and five location categories (residential, commercial, mixed-use, transit-oriented development, and Greenfield). This module utilizes models for households that were developed to estimate location characteristics using National Household Travel Survey data for the base year. Firms are currently allocated randomly to fit the employment allocation inputs since there are no national datasets from which to draw these relationships.
+
+### User Input Files
+
+1. **Population and Jobs by Place Type (*bzone_pop_emp_prop.csv*)**: This file contains the distribution of  population and employment among the 13 place types for base and future year. Each column, for each year, must sum to one (1). It is acceptable to have no land use (i.e. a value of 0) in certain categories.
+   The yearly TAZ employment and population totals were summed by the 13 place type and then scaled to total one for both employment and population.
+   Here is a snapshot of the file:
+
+   | Geo   | Year | Pop  | Emp  |
+   | ----- | ---- | ---- | ---- |
+   | Rur   | 2005 | 0.05 | 0.1  |
+   | Sub_R | 2005 | 0.3  | 0    |
+   | Sub_E | 2005 | 0    | 0.2  |
+   | Sub_M | 2005 | 0.1  | 0.1  |
+   | Sub_T | 2005 | 0    | 0    |
+   | CIC_R | 2005 | 0.15 | 0    |
+   | CIC_E | 2005 | 0    | 0.2  |
+   | CIC_M | 2005 | 0.1  | 0.1  |
+   | CIC_T | 2005 | 0    | 0    |
+   | UC_R  | 2005 | 0.1  | 0    |
+   | UC_E  | 2005 | 0    | 0.1  |
+   | UC_M  | 2005 | 0.1  | 0.1  |
+   | UC_T  | 2005 | 0.1  | 0.1  |
+   | Rur   | 2035 | 0.05 | 0.1  |
+   | Sub_R | 2035 | 0.3  | 0    |
+   | Sub_E | 2035 | 0    | 0.2  |
+   | Sub_M | 2035 | 0.1  | 0.1  |
+   | Sub_T | 2035 | 0    | 0    |
+   | CIC_R | 2035 | 0.15 | 0    |
+   | CIC_E | 2035 | 0    | 0.2  |
+   | CIC_M | 2035 | 0.1  | 0.1  |
+   | CIC_T | 2035 | 0    | 0    |
+   | UC_R  | 2035 | 0.1  | 0    |
+   | UC_E  | 2035 | 0    | 0.1  |
+   | UC_M  | 2035 | 0.1  | 0.1  |
+   | UC_T  | 2035 | 0.1  | 0.1  |
+
+### Internal Module Inputs
+
+| Package          | Module                                                | Outputs       | Description                                                  |
+| ---------------- | ----------------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **HhId**      | Unique  household ID                                         |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age0to14**  | Persons in 0 to 14 year old age group                        |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age15to19** | Persons in 15 to 19 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age20to29** | Persons in 20 to 29 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age30to54** | Persons in 30 to 54 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age55to64** | Persons in 55 to 64 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **Age65Plus** | Persons in 65 or older age group                             |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                 | **HhSize**    | Number of  persons                                           |
+| VESimHouseholds  | [PredictIncome](#predictincome)                       | **Income**    | Total annual household (non-qroup & group quarters) income in year  1999 dollars |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **naics**     | The six digit naics code                                     |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **esizecat**  | The employment size category                                 |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **numbus**    | The number of businesses                                     |
+| VESyntheticFirms | [CreateBaseSyntheticFirms](#createbasesyntheticfirms) | **emp**       | The number of employees in a business                        |
+
+### Module Outputs
+
+The outputs produced by this module is for base year.
+
+1. **DrvLevels**: The number of people in a household who can drive classified in three categories ("Drv1", "Drv2", "Drv3Plus")
+2. **HhPlaceTypes**: A place type as assigned to the households
+3. **EmpPlaceTypes**: A place types as assigned to the businesses
+4. **UrbanPop**: Total population by place types
+5. **UrbanEmp**: Total employees by place types
+6. **UrbanIncome**: Total income by place types
+
+[Top](#contents)
+
+## CalculateFuturePlaceTypes
+
+This module is similar to *CalculateBasePlaceTypes* module but utilizes future year data to assign population and employment location characteristics.
+
+### User Input Files
+
+1. **Population and Jobs by Place Type (*bzone_pop_emp_prop.csv*)**: This is the same file used as input in [CalculateBasePlaceTypes](#calculatebaseplacetypes) module.
+
+### Internal Module Inputs:
+
+| Package          | Module                                                    | Outputs       | Description                                                  |
+| ---------------- | --------------------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **HhId**      | Unique  household ID                                         |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age0to14**  | Persons in 0 to 14 year old age group                        |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age15to19** | Persons in 15 to 19 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age20to29** | Persons in 20 to 29 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age30to54** | Persons in 30 to 54 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age55to64** | Persons in 55 to 64 year old age group                       |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **Age65Plus** | Persons in 65 or older age group                             |
+| VESimHouseholds  | [CreateHouseholds](#createhouseholds)                     | **HhSize**    | Number of  persons                                           |
+| VESimHouseholds  | [PredictIncome](#predictincome)                           | **Income**    | Total annual household (non-qroup & group quarters) income in year  1999 dollars |
+| VESyntheticFirms | [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | **naics**     | The six digit naics code                                     |
+| VESyntheticFirms | [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | **esizecat**  | The employment size category                                 |
+| VESyntheticFirms | [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | **numbus**    | The number of businesses                                     |
+| VESyntheticFirms | [CreateFutureSyntheticFirms](#createfuturesyntheticfirms) | **emp**       | The number of employees in a business                        |
+| VELandUse        | [CalculateBasePlaceTypes](#calculatebaseplacetypes)       | **UrbanPop**  | Total population by place types                              |
+| VELandUse        | [CalculateBasePlaceTypes](#calculatebaseplacetypes)       | **UrbanEmp**  | Total employees by place types                               |
+
+### Module Outputs
+
+The outputs produced by this module is for future year.
+
+1. **DrvLevels**: The number of people in a household who can drive classified in three categories ("Drv1", "Drv2", "Drv3Plus")
+2. **HhPlaceTypes**: A place type as assigned to the households
+3. **EmpPlaceTypes**: A place types as assigned to the businesses
+4. **UrbanPop**: Total population by place types
+5. **UrbanEmp**: Total employees by place types
+6. **UrbanIncome**: Total income by place types
+
+[Top](#contents)
+
+## CreateBaseAccessibility
+
+This module calculates freeway, arterial, and public transit supply levels for all years using existing (base) data. The number of lane miles of freeways and arterials is computed for each region based on the change in inventories for a particular scenario. For public transit, the inputs specify the change in transit revenue miles relative to the base. Inputs for each area also specify the revenue mile split between electrified rail and buses.
+
+### User Input Files
+
+1. **Road lane miles (*marea_lane_miles.csv*)**: This file contains the amount of transportation supply by base year in terms of lane miles of freeways and arterial roadways in the region. The base year data is duplicated for future year.
+   **Freeway** and **Arterial** are total lane miles for those functional classes in the region. These data can be derived from the Federal Highway Administration’s (FHWA) Highway [Statistics data](http://www.fhwa.dot.gov/policy/ohim/hs05/roadway_extent.cfm).
+   Here is a snapshot of the file:
+
+   | Geo       | Year | FwyLaneMi | ArtLaneMi |
+   | --------- | ---- | --------- | --------- |
+   | Multnomah | 2005 | 250       | 900       |
+   | Multnomah | 2035 | 250       | 900       |
+
+2. **Transit revenue miles (*marea_rev_miles_pc.csv*)**: This file contains the amount of transportation supply by base year in terms of the revenue miles operating by the transit system in the region. The base year data is duplicated for future year.
+   **Bus** and **Rail** are annual bus and rail revenue miles per capita for the region. These data can be derived from the [National Transit Database](https://www.transit.dot.gov/ntd/ntd-data), where the annual database contains a “service” table that has annual revenue mile data by mode for each transit operator.
+   Here is a snapshot of the file:
+
+   | Geo       | Year | BusRevMiPC | RailRevMiPC |
+   | --------- | ---- | ---------- | ----------- |
+   | Multnomah | 2005 | 19         | 4           |
+   | Multnomah | 2035 | 19         | 4           |
+
+### Internal Module Inputs
+
+| Package   | Module                                                  | Outputs      | Description                     |
+| --------- | ------------------------------------------------------- | ------------ | ------------------------------- |
+| VELandUse | [CalculateBasePlaceTypes](#calculatebaseplacetypes)     | **UrbanPop** | Total population by place types |
+| VELandUse | [CalculateFuturePlaceTypes](#calculatefutureplacetypes) | **UrbanPop** | Total population by place types |
+
+### Module Outputs
+
+1. **FwyLaneMiPC**: Ratio of urbanized area freeway and expressway lane-miles to urbanized area population
+2. **ArtLaneMiPC**: Ratio of urbanized area arterial lane-miles to urbanized area population
+3. **TranRevMiPC**: Transit revenue miles per capita for the region
+4. **BusRevMi**: Bus revenue miles for the region
+5. **RailRevMi**: Rail revenue miles for the region
+
+[Top](#contents)
+
+## CreateFutureAccessibility
+
+This module calculates freeway, arterial, and public transit supply levels for all years using future (estimated) data.
+
+### User Input Files
+
+1. **Road lane miles (*marea_lane_miles.csv*)**: This file contains the amount of transportation supply by base year in terms of lane miles of freeways and arterial roadways in the region. The base year data is duplicated for future year.
+   **Freeway** and **Arterial** are total lane miles for those functional classes in the region. These data can be derived from the Federal Highway Administration’s (FHWA) Highway [Statistics data](http://www.fhwa.dot.gov/policy/ohim/hs05/roadway_extent.cfm).
+   Here is a snapshot of the file:
+
+   | Geo       | Year | FwyLaneMi | ArtLaneMi |
+   | --------- | ---- | --------- | --------- |
+   | Multnomah | 2005 | 250       | 900       |
+   | Multnomah | 2035 | 250       | 900       |
+
+2. **Transit revenue miles (*marea_rev_miles_pc.csv*)**: This file contains the amount of transportation supply by base year in terms of the revenue miles operating by the transit system in the region. The base year data is duplicated for future year.
+   **Bus** and **Rail** are annual bus and rail revenue miles per capita for the region. These data can be derived from the [National Transit Database](https://www.transit.dot.gov/ntd/ntd-data), where the annual database contains a “service” table that has annual revenue mile data by mode for each transit operator.
+   Here is a snapshot of the file:
+
+   | Geo       | Year | BusRevMiPC | RailRevMiPC |
+   | --------- | ---- | ---------- | ----------- |
+   | Multnomah | 2005 | 19         | 4           |
+   | Multnomah | 2035 | 19         | 4           |
+
+### User Input Parameters
+
+1. **FwyLaneMiGrowth**: The variable indicates the percent increase in supply of freeways lane miles in the future year compared to base year. By default, the transportation supply is assumed to grow in line with population increase; therefore a value of 1 indicates growth in proportion with population growth. A value less than 1 indicates that there will be less freeway lane mile supply, per person, in the future. A value of 1 indicates faster freeway expansion than population growth.  It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME": "FwyLaneMiGrowth",
+       "VALUE": "1",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+2. **ArtLaneMiGrowth**:  The variable indicates the percent increase in supply of arterial lane miles in the future year compared to base year. It is a similar value to freeway except that it measures arterial lane mile growth. It is also proportional to population growth. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "ArtLaneMiGrowth",
+       "VALUE": "1",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+3. **BusRevMiPCGrowth**: It is the percent increase in transit revenue miles per capita for bus. It behaves in a similar way to the freeway and rail values in that a value of 1 indicates per capita revenue miles stays constant. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "BusRevMiPCGrowth",
+       "VALUE": "1",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+4. **RailRevMiPCGrowth**: It is the percent increase in transit revenue miles per capita for rail. This encompasses all rail modes, from light rail through to commuter rail. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "RailRevMiPCGrowth",
+       "VALUE": "1",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+### Internal Module Inputs
+
+| Package   | Module                                                  | Outputs      | Description                     |
+| --------- | ------------------------------------------------------- | ------------ | ------------------------------- |
+| VELandUse | [CalculateBasePlaceTypes](#calculatebaseplacetypes)     | **UrbanPop** | Total population by place types |
+| VELandUse | [CalculateFuturePlaceTypes](#calculatefutureplacetypes) | **UrbanPop** | Total population by place types |
+
+### Module Outputs
+
+1. **FwyLaneMiPCFuture**: Ratio of urbanized area freeway and expressway lane-miles to urbanized area population calculated using future (estimated) data
+2. **ArtLaneMiPCFuture**: Ratio of urbanized area arterial lane-miles to urbanized area population calculated using future (estimated) data
+3. **TranRevMiPCFuture**: Transit revenue miles per capita for the region calculated using future (estimated) data
+4. **BusRevMiFuture**: Bus revenue miles for the region calculated using future (estimated) data
+5. **RailRevMiFuture**: Rail revenue miles for the region calculated using future (estimated) data
+
+[Top](#contents)
+
+## AssignVehicleFeatures
+
+This module assigns each household a number of vehicles it is likely to own based on the number of persons of driving age in the household, whether only elderly persons live in the household, the income of the household, the population density where the household lives, the freeway supply, the transit supply, and whether the household is located in an urban mixed-use area.
+
+### User Input Files
+
+1. **Vehicle fuel economy (*model_veh_mpg_by_year.csv*)**: This file contains the estimates and forecasts of average fuel economy and power economy in miles per gallon for autos, light trucks, heavy trucks (trucks) and miles per kilowatt for trains by vehicle model year. Note that this is not the fleet average for that year. It is the average for new vehicles sold in that year. The fuel economy is the same for all fuel types and is measured in gasoline equivalent gallons (i.e., energy content of a gallon of gasoline). This file is used in the calculations of fuel consumption. This file can be used to test alternative vehicle development scenarios, such as improved technology and/or fuel economy standards that lead to higher vehicle fuel economies.
+   Here is a snapshot of the file:
+
+   | ModelYear                      | AutoMpg                        | LtTruckMpg                     | TruckMpg                       | BusMpg                         | TrainMpg                       |
+   | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ |
+   | 1975                           | 15.1                           | 12.7                           | 5.1                            | 4.2                            | 0.098266                       |
+   | 1976                           | 16.6                           | 13.2                           | 5.1                            | 4.1                            | 0.098266                       |
+   | 1977                           | 17.4                           | 14.1                           | 5.1                            | 4.1                            | 0.098266                       |
+   | 1978                           | 19.2                           | 13.7                           | 5.1                            | 4                              | 0.098266                       |
+   | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
+   | 2046                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+   | 2047                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+   | 2048                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+   | 2049                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+   | 2050                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+
+
+
+### Fixed Input Files
+
+1. **Less than one vehicle per driving age person (*model_lt1_veh_prop.csv*)**: This file contains distribution of number of vehicles for a household with less than one vehicle per driving age person. The sample file is not displayed as this data should not be altered.
+2. **Greater than one vehicle per driving age person (*model_gt1_veh_prop.csv*)**: This file contains distribution of number of vehicles for a household with greater than one vehicle per driving age person. The sample file is not displayed as this data should not be altered.
+3. **Vehicle distribution by age (*model_veh_cumprop_by_vehage.csv*)**: This file contains the cumulative distribution of vehicles, of type automobiles and light truck, by vehicle age.
+4. **Vehicle distribution by age and income (*model_veh_prop_by_vehage_vehtype_inc.csv*)**: This file contains the distribution of vehicles, of type automobiles and light truck, by vehicle age and household income group.
+5. **Distribution of DVMT split (*model_veh_mpg_dvmt_prop.csv*)**: This file contains the probability distribution of DVMT split between vehicles for households with one, two, three, four, and five plus vehicles.
+
+### Internal Module Inputs
+
+| Package           | Module                                                  | Outputs          | Description                                                  |
+| ----------------- | ------------------------------------------------------- | ---------------- | :----------------------------------------------------------- |
+| VESimHouseholds   | [CreateHouseholds](#createhouseholds)                   | **HhId**         | Unique  household ID                                         |
+| VESimHouseholds   | [CreateHouseholds](#createhouseholds)                   | **Age0to14**     | Persons in 0 to 14 year old age group                        |
+| VESimHouseholds   | [CreateHouseholds](#createhouseholds)                   | **Age65Plus**    | Persons in 65 or older age group                             |
+| VESimHouseholds   | [CreateHouseholds](#createhouseholds)                   | **HhSize**       | Number of  persons                                           |
+| VESimHouseholds   | [CreateHouseholds](#createhouseholds)                   | **HhType**       | Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group  quarters |
+| VESimHouseholds   | [PredictIncome](#predictincome)                         | **Income**       | Total annual household (non-qroup & group quarters) income in year  1999 dollars |
+| VELandUse         | [CalculateFuturePlaceTypes](#calculatefutureplacetypes) | **DrvLevels**    | The number of people in a household who can drive classified in three  categories ("Drv1", "Drv2", "Drv3Plus") |
+| VELandUse         | [CalculateFuturePlaceTypes](#calculatefutureplacetypes) | **HhPlaceTypes** | A place type as assigned to the households                   |
+| VETransportSupply | [CreateBaseAccessibility](#createbaseaccessibility)     | **FwyLaneMiPC**  | Ratio of urbanized area freeway and expressway lane-miles to urbanized  area population |
+| VETransportSupply | [CreateBaseAccessibility](#createbaseaccessibility)     | **TranRevMiPC**  | Transit revenue miles per capita for the region              |
+
+### Module Outputs
+
+1. **VehId**: Unique vehicle ID
+2. **Type**: Vehicle body type: Auto = automobile, LtTrk = light trucks (i.e. pickup, SUV, Van)
+3. **Age**: Vehicle age in years
+4. **Mileage**: Mileage of vehicles (automobiles and light truck)
+5. **DvmtProp**: Proportion of average vehicle DVMT
+6. **Vehicles**: Number of automobiles and light trucks owned or leased by the household
+7. **NumLtTrk**: Number of light trucks (pickup, sport-utility vehicle, and van) owned or leased by household
+8. **NumAuto**: Number of automobiles (i.e. 4-tire passenger vehicles that are not light trucks) owned or leased by household
+
+[Top](#contents)
+
+## AssignVehicleFeaturesFuture
+
+[Top](#contents)
+
+## CalculateTravelDemand
+
+ Calculate Travel Demand - The average daily vehicle miles traveled, auto and transit trips for each household is modeled based on household information determined in previous steps for the base conditions. The model is sensitive to household income, population density of the neighborhood where the household resides, number of household vehicles, whether the household owns no vehicles, the levels of public transportation and freeway supplies in the region, the driving age population in the household, the presence of persons over age 65, and whether the neighborhood is characterized by mixed-use development.
+ Calculate Truck and Bus Vehicle Miles Traveled (VMT) - Regional truck VMT is calculated based on changes in the regional household income. As a default, a one-to-one relationship between regional income growth and truck VMT growth is assumed. In other words, a doubling of total regional income would result in a doubling of truck VMT. Bus VMT is calculated from bus revenue miles that are factored up to total vehicle miles to account for miles driven in non-revenue service.
+
+[Top](#contents)
+
+## CalculateTravelDemandFuture
+
+[Top](#contents)
+
+## CalculateCongestionBase
+
+Calculate the amount of congestion – Auto, and light truck VMT, truck VMT and bus VMT in are allocated to freeways, arterials, and other roadways. Truck and bus VMT are allocated based on mode-specific data, and auto and light truck VMT are allocated based on a combination of factors and a model that is sensitive to the relative supplies of freeway and arterial lane miles. System-wide ratios of VMT to lane miles for freeways and arterials are used to allocate VMT to congestion levels using congestion levels defined by the Texas Transportation Institute for the Urban Mobility Report. Each freeway and arterial congestion level is associated with an average trip speed for conditions that do and do not include ITS treatment for incident management on the roadway. Overall average speeds by congestion level are calculated based on input assumptions about the degree of incident management. Speed vs. fuel efficiency relationships for light vehicles, trucks, and buses are used to adjust the fleet fuel efficiency averages computed for the region.
+
+[Top](#contents)
+
+## CalculateCongestionFuture
+
+[Top](#contents)
+
+## CalculateInducedDemand
+
+Calculate Induced Travel Demand – Induced demand is calculated for changes in roadway supply in the near term as a function of speed, based on potential mode and route shifts to produce changes in VMT and in the longer term to include changes in vehicle ownership, still as a function of speed. This model does not include induced demand as a result of changes in growth that may occur as part of a smart growth scenario because the evidence is limited empirical evidence.
+
+[Top](#contents)
+
+## CalculatePolicyVmt
+
+Calculate Scenario Travel Demand – The average daily VMT for each household can be adjusted based on changes in growth patterns by place type, changes in auto operating cost, changes in road lane miles or transit revenue miles for any scenario. There are also a series of policy assumptions that can contribute to changes in VMT: pricing such as VMT charges or parking pricing, ITS strategies for freeways and arterials, and vanpool, telecommuting, ridesharing, and transit pass programs. All of these will contribute to shifts in travel demand for a given scenario.
+
+[Top](#contents)
+
+## CalculateCongestionPolicy
+
+[Top](#contents)
+
+## ReportRPATMetrics
+
+[Top](#contents)
