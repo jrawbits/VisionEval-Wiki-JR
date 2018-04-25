@@ -788,10 +788,10 @@ This module assigns each household a number of vehicles it is likely to own base
 This module assigns household vehicle ownership, vehicle types, and ages to each household vehicle, based on household, land use, and transportation system characteristics. Vehicles are classified as either a passenger car (automobile) or a light truck (pickup trucks, sport utility vehicles, vans, etc.). A 'Vehicle' table is created which has a record for each household vehicle. The type and age of each vehicle owned or leased by households is assigned to this table along with the household ID (HhId)to enable this table to be joined with the household table.
 
 ### User Input Files
-None? Everything taken from Assign Vehicle Features
+None? Everything taken from Assign Vehicle Features #edit
 
 ### Fixed Input Files
-None? Everything taken from Assign Vehicle Features
+None? Everything taken from Assign Vehicle Features #edit
 
 [Top](#contents)
 
