@@ -799,11 +799,12 @@ Calculate Travel Demand - The average daily vehicle miles traveled, auto and tra
 Calculate Truck and Bus Vehicle Miles Traveled (VMT) - Regional truck VMT is calculated based on changes in the regional household income. As a default, a one-to-one relationship between regional income growth and truck VMT growth is assumed. In other words, a doubling of total regional income would result in a doubling of truck VMT. Bus VMT is calculated from bus revenue miles that are factored up to total vehicle miles to account for miles driven in non-revenue service.
 
 ### User Input Files
-None? Everything taken from Assign Vehicle Features #edit
+1. **(*region_truck_bus_vmt.csv*)**
 
 ### Fixed Input Files
 1. **(*region_fuel_co2.csv*)**
 2. **(*region_fuel_prop_by_veh.csv*)**
+3. **(*region_fuel_composition_prop.csv*)**
 
 [Top](#contents)
 
