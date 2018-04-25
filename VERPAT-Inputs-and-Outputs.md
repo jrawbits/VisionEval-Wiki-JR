@@ -785,8 +785,6 @@ This module assigns each household a number of vehicles it is likely to own base
 
 ## AssignVehicleFeaturesFuture
 
-This module assigns household vehicle ownership, vehicle types, and ages to each household vehicle, based on household, land use, and transportation system characteristics. Vehicles are classified as either a passenger car (automobile) or a light truck (pickup trucks, sport utility vehicles, vans, etc.). A 'Vehicle' table is created which has a record for each household vehicle. The type and age of each vehicle owned or leased by households is assigned to this table along with the household ID (HhId)to enable this table to be joined with the household table.
-
 ### User Input Files
 None? Everything taken from Assign Vehicle Features #edit
 
@@ -797,8 +795,15 @@ None? Everything taken from Assign Vehicle Features #edit
 
 ## CalculateTravelDemand
 
- Calculate Travel Demand - The average daily vehicle miles traveled, auto and transit trips for each household is modeled based on household information determined in previous steps for the base conditions. The model is sensitive to household income, population density of the neighborhood where the household resides, number of household vehicles, whether the household owns no vehicles, the levels of public transportation and freeway supplies in the region, the driving age population in the household, the presence of persons over age 65, and whether the neighborhood is characterized by mixed-use development.
- Calculate Truck and Bus Vehicle Miles Traveled (VMT) - Regional truck VMT is calculated based on changes in the regional household income. As a default, a one-to-one relationship between regional income growth and truck VMT growth is assumed. In other words, a doubling of total regional income would result in a doubling of truck VMT. Bus VMT is calculated from bus revenue miles that are factored up to total vehicle miles to account for miles driven in non-revenue service.
+Calculate Travel Demand - The average daily vehicle miles traveled, auto and transit trips for each household is modeled based on household information determined in previous steps for the base conditions. The model is sensitive to household income, population density of the neighborhood where the household resides, number of household vehicles, whether the household owns no vehicles, the levels of public transportation and freeway supplies in the region, the driving age population in the household, the presence of persons over age 65, and whether the neighborhood is characterized by mixed-use development.
+Calculate Truck and Bus Vehicle Miles Traveled (VMT) - Regional truck VMT is calculated based on changes in the regional household income. As a default, a one-to-one relationship between regional income growth and truck VMT growth is assumed. In other words, a doubling of total regional income would result in a doubling of truck VMT. Bus VMT is calculated from bus revenue miles that are factored up to total vehicle miles to account for miles driven in non-revenue service.
+
+### User Input Files
+None? Everything taken from Assign Vehicle Features #edit
+
+### Fixed Input Files
+1. **(*region_fuel_co2.csv*)**
+2. **(*region_fuel_prop_by_veh.csv*)**
 
 [Top](#contents)
 
