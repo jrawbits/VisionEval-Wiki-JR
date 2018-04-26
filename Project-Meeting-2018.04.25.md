@@ -6,7 +6,7 @@
 # VERSPM
   - All modules done and passing tests in a new branch, [rspm_complete](https://github.com/gregorbj/VisionEval/tree/rspm_complete)
   - Eliminated VECommercialTravel, VERoadPerformance, VEEnergyAndEmissions, and VETravelCosts, and replaced them with VEPowertrainsAndFuels and VETravelPerformance so still some work to do to merge to develop
-  - Working on memo on conversion and differences from RSPM
+  - Working on memo on conversion and differences from RSPM as a sort of verification document
   - Plan to reconcile revisions next week
   - Will do a release once ready
 
