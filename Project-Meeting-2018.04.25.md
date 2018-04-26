@@ -8,6 +8,7 @@
   - Eliminated VECommercialTravel, VERoadPerformance, VEEnergyAndEmissions, and VETravelCosts, and replaced them with VEPowertrainsAndFuels and VETravelPerformance so still some work to do to merge to develop
   - Working on memo on conversion and differences from RSPM
   - Plan to reconcile revisions next week
+  - Will do a release once ready
 
 # Test System and Setup
   - Updated [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) to refer to a new install.R script
