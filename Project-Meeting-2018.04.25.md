@@ -20,4 +20,4 @@
   - Tested triggering builds of dependent projects in TravisCI if we decide to eventually go with [separate repositories](https://github.com/gregorbj/VisionEval/issues/129)
 
 # Usability Workshop
-  - We need to get the usability workshop on the calendar; @Ben to follow-up with Kristen
+  - We need to get the usability workshop on the calendar; @Ben to follow-up with Kristin
