@@ -18,3 +18,6 @@
   - Updated [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) to refer to a new install.R script
   - Need to note that installation takes a long time due to re-downloading the repo 
   - Tested triggering builds of dependent projects in TravisCI if we decide to eventually go with [separate repositories](https://github.com/gregorbj/VisionEval/issues/129)
+
+# Usability Workshop
+  - We need to get the usability workshop on the calendar; @Ben to follow-up with Kristen
