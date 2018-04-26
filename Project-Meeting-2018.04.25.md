@@ -9,5 +9,5 @@
   - Plan to reconcile revisions next week
 
 # Test System and Setup
-  - Updated [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) to use install.R script
+  - Updated [Getting Started](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) to refer to a new install.R script
   - Tested triggering builds of dependent projects in TravisCI if we decide to eventually go with [separate repositories](https://github.com/gregorbj/VisionEval/issues/129)
