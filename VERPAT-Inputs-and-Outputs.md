@@ -401,7 +401,7 @@ This module predicts the income for each simulated household given the number of
 
 ### Module Outputs
 
-1. **Income**: Total annual household (non-qroup & group quarters) income in year 1999 dollars
+1. **Income**: Total annual household (non-group & group quarters) income in year 1999 dollars
 
 [Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
@@ -821,29 +821,11 @@ This module is similar to [AssignVehicleFeatures](#assignvehiclefeatures), but u
 
 ### User Input Files
 
-1. **Vehicle fuel economy (*model_veh_mpg_by_year.csv*)**: This file contains the estimates and forecasts of average fuel economy and power economy in miles per gallon for autos, light trucks, heavy trucks (trucks) and miles per kilowatt for trains by vehicle model year. Note that this is not the fleet average for that year. It is the average for new vehicles sold in that year. The fuel economy is the same for all fuel types and is measured in gasoline equivalent gallons (i.e., energy content of a gallon of gasoline). This file is used in the calculations of fuel consumption. This file can be used to test alternative vehicle development scenarios, such as improved technology and/or fuel economy standards that lead to higher vehicle fuel economies.
-   Here is a snapshot of the file:
-
-   | ModelYear                      | AutoMpg                        | LtTruckMpg                     | TruckMpg                       | BusMpg                         | TrainMpg                       |
-   | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ | ------------------------------ |
-   | 1975                           | 15.1                           | 12.7                           | 5.1                            | 4.2                            | 0.098266                       |
-   | 1976                           | 16.6                           | 13.2                           | 5.1                            | 4.1                            | 0.098266                       |
-   | 1977                           | 17.4                           | 14.1                           | 5.1                            | 4.1                            | 0.098266                       |
-   | 1978                           | 19.2                           | 13.7                           | 5.1                            | 4                              | 0.098266                       |
-   | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
-   | 2046                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
-   | 2047                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
-   | 2048                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
-   | 2049                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
-   | 2050                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
+1. None? Everything taken from Assign Vehicle Features #edit
 
 ### Fixed Input Files
 
-1. **Less than one vehicle per driving age person (*model_lt1_veh_prop.csv*)**: This file contains distribution of number of vehicles for a household with less than one vehicle per driving age person. The sample file is not displayed as this data should not be altered.
-2. **Greater than one vehicle per driving age person (*model_gt1_veh_prop.csv*)**: This file contains distribution of number of vehicles for a household with greater than one vehicle per driving age person. The sample file is not displayed as this data should not be altered.
-3. **Vehicle distribution by age (*model_veh_cumprop_by_vehage.csv*)**: This file contains the cumulative distribution of vehicles, of type automobiles and light truck, by vehicle age.
-4. **Vehicle distribution by age and income (*model_veh_prop_by_vehage_vehtype_inc.csv*)**: This file contains the distribution of vehicles, of type automobiles and light truck, by vehicle age and household income group.
-5. **Distribution of DVMT split (*model_veh_mpg_dvmt_prop.csv*)**: This file contains the probability distribution of DVMT split between vehicles for households with one, two, three, four, and five plus vehicles.
+1. None? Everything taken from Assign Vehicle Features #edit
 
 ### Internal Module Inputs
 
@@ -922,6 +904,7 @@ It also calculates truck and bus Vehicle Miles Traveled (VMT). Regional truck VM
    | LtTruck | 0.1        | 0.05          |
    | Bus     | 0.1        | 0.05          |
    | Truck   | 0.1        | 0.01          |
+
 
 4. **Truck and bus vmt (*region_truck_bus_vmt.csv*)**: This file contains the region’s proportion of VMT by truck and bus as well as the distribution of that VMT across functional classes (*freeway*, *arterial*, *other*). The file includes one row for bus VMT data and one row for Truck VMT data. It should be noted that it is not necessary to enter values in the **PropVmt** column for **BusVmt** as this is calculated using the values in the ***transportation_supply.csv*** user input file. The truck VMT proportion (PropVMT column, TruckVMT row) can be obtained from [Highway Performance Monitoring System](http://www.fhwa.dot.gov/policyinformation/hpms.cfm) data and local sources or the regional travel demand model if one exists.
    The proportions of VMT by functional class can be derived from the Federal Highway Cost Allocation Study and data from transit operators. The Federal Highway Cost Allocation Study (Table II-6, 1997 Federal Highway Cost Allocation Study Final Report, [Chapter II](http://www.fhwa.dot.gov/policy/hcas/final/two.cfm) is used to calculate the average proportion of truck VMT by functional class. Data from transit authorities are used to calculate the proportions of bus VMT by urban area functional class.
