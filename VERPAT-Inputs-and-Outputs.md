@@ -819,14 +819,6 @@ This module assigns each household a number of vehicles it is likely to own base
 
 This module is similar to [AssignVehicleFeatures](#assignvehiclefeatures), but uses model estimation of future year data on population and transportation supply as a basis of the calculations.
 
-### User Input Files
-
-1. None? Everything taken from Assign Vehicle Features #edit
-
-### Fixed Input Files
-
-1. None? Everything taken from Assign Vehicle Features #edit
-
 ### Internal Module Inputs
 
 | Package           | Module                                                  | Outputs               | Description                                                  |
