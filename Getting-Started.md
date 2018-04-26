@@ -11,8 +11,7 @@ The [repository](https://github.com/gregorbj/VisionEval) is organized into two d
 
 ## Installation and Setup
   1. Install [R 3.4.2+](https://cran.r-project.org) in a location where you have write access.
-  2. Start R and source the [install script](https://github.com/gregorbj/VisionEval/install.R) described below. This script takes quite some time to run since it downloads the repository again and again.
- This can be done via: `source("https://raw.githubusercontent.com/gregorbj/VisionEval/master/install.R")`
+  2. Start R and source the [install script](https://github.com/gregorbj/VisionEval/install.R) described below. This script takes quite some time to run since it downloads the repository again and again.  Sourcing the script can be done via: `source("https://raw.githubusercontent.com/gregorbj/VisionEval/master/install.R")`
 
 ### Install Script Steps
   1. If working within a proxy server, run the following commands to enable install from GitHub:
