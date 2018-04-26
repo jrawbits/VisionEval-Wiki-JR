@@ -811,7 +811,7 @@ This module assigns each household a number of vehicles it is likely to own base
 7. **NumLtTrk**: Number of light trucks (pickup, sport-utility vehicle, and van) owned or leased by household
 8. **NumAuto**: Number of automobiles (i.e. 4-tire passenger vehicles that are not light trucks) owned or leased by household
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
