@@ -18,7 +18,7 @@
  - [[Meeting Notes]]
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
- - [[RPAT Features Today| RPAT-features]]
+ - [[RPAT Features| RPAT-features]]
 
 ### Review Committee
  - [[Review Team Charter|Review-Team-Charter]]
