@@ -1,4 +1,8 @@
-This page describes the VERPAT inputs (including definitions) and outputs by module.
+This page describes the VERPAT inputs (including definitions) and outputs by module. For a more concise description of the VERPAT parts see:
+
+  - [Inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters)
+  - Modules and Outputs
+  - RPAT to VERPAT Crosswalk
 
 # Contents
   - [Definitions](#definitions)
