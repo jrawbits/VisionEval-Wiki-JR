@@ -1,6 +1,6 @@
 # VERPAT 
   - [Documentation of inputs and outputs](VERPAT-Inputs-and-Outputs) almost complete
-  - Working on some revisions to the VERPAT inputs and outputs as a result of documenting modules
+  - Working on some revisions to the inputs and outputs as a result of documenting modules
   - Should be done by end of week
 
 # VERSPM
