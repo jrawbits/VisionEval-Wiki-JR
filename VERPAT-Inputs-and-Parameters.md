@@ -2,9 +2,9 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
 
 # Inputs and Parameters for VERPAT
 
-## Input files
+## Input Files
 
-**Built Environment**
+[**Built Environment**](#built-environment)
   - [bzone_pop_emp_prop.csv](#bzone_pop_emp_propcsv)
   
 **Demand**
@@ -13,6 +13,11 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
   - [azone_hh_pop_by_age.csv](#azone_hh_pop_by_agecsv)
   - [azone_per_cap_inc.csv](#azone_per_cap_inccsv)
   - [region_truck_bus_vmt.csv](#region_truck_bus_vmtcsv)
+  - [marea_lane_miles.csv](#marea_lane_milescsv)
+  - [marea_rev_miles_pc.csv](#marea_rev_miles_pccsv)
+  
+[**Policy**](#policy)
+  - [model_commute_options.csv](#model_commute_optionscsv)
   - [
   - 
   - model_tdm_transit.csv
@@ -37,10 +42,8 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
   - azone_hhsize_targets.csv
   - azone_its_prop.csv
   - azone_relative_employment.csv
-  - marea_lane_miles.csv
   - marea_parking_growth.csv
-  - marea_rev_miles_pc.csv
-  - model_commute_options.csv
+  - 
   - model_light_vehicles.csv
   - model_tdm_ridesharing.csv
 
@@ -110,6 +113,8 @@ The user should change the input files described here. All files are ```*.csv```
    | Auto    | 3.2   |
    | Transit | 0.4   |
 
+[Top](#input-files)
+
 
 ### employment.csv
 
@@ -147,6 +152,7 @@ The user should change the input files described here. All files are ```*.csv```
    | Multnomah | 2005 | 212319 | 0    | 1    | 1    | 0    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
    | Multnomah | 2005 | 212321 | 0    | 4    | 1    | 1    | 1      | 1      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
 
+[Top](#input-files)
 
 ### azone_hh_pop_by_age.csv
 
@@ -168,6 +174,8 @@ The user should change the input files described here. All files are ```*.csv```
    | Multnomah | 2005 | 129869   | 41133     | 99664     | 277854    | 71658     | 72648     |
    | Multnomah | 2035 | 169200   | 48800     | 144050    | 327750    | 116100    | 162800    |
 
+[Top](#input-files)
+
 ###azone_per_cap_inc.csv
 
 **Regional income**: This file contains information on regional average per capita  household and group quarters income by forecast year in year 2000 dollars. The data can be obtained from the U.S. Department of [Commerce Bureau of Economic Analysis](http://www.bea.gov/regional/index.htm) for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace ***2000*** in column labels with current year. For example, if the data is obtained in year 2005 dollars then the column labels in the file shown below will become **HHIncomePC.2005** and **GQIncomePC.2005**.
@@ -177,6 +185,8 @@ The user should change the input files described here. All files are ```*.csv```
    | --------- | ---- | --------------- | --------------- |
    | Multnomah | 2005 | 32515           | 0               |
    | Multnomah | 2035 | 40000           | 0               |
+
+[Top](#input-files)
 
 ### region_truck_bus_vmt.csv
 
@@ -189,3 +199,33 @@ The user should change the input files described here. All files are ```*.csv```
    | BusVmt   | 0       | 0.15     | 0.591854 | 0.258146 |
    | TruckVmt | 0.08    | 0.452028 | 0.398645 | 0.149327 |
 
+[Top](#input-files)
+
+### marea_lane_miles.csv
+
+**Road lane miles**: This file contains the amount of transportation supply by base year in terms of lane miles of freeways and arterial roadways in the region. The base year data is duplicated for future year.
+   **Freeway** and **Arterial** are total lane miles for those functional classes in the region. These data can be derived from the Federal Highway Administration’s (FHWA) Highway [Statistics data](http://www.fhwa.dot.gov/policy/ohim/hs05/roadway_extent.cfm).
+   Here is a snapshot of the file:
+
+   | Geo       | Year | FwyLaneMi | ArtLaneMi |
+   | --------- | ---- | --------- | --------- |
+   | Multnomah | 2005 | 250       | 900       |
+   | Multnomah | 2035 | 250       | 900       |
+
+[Top](#input-files)
+
+### marea_rev_miles_pc.csv
+
+**Transit revenue miles**: This file contains the amount of transportation supply by base year in terms of the revenue miles operating by the transit system in the region. The base year data is duplicated for future year.
+   **Bus** and **Rail** are annual bus and rail revenue miles per capita for the region. These data can be derived from the [National Transit Database](https://www.transit.dot.gov/ntd/ntd-data), where the annual database contains a “service” table that has annual revenue mile data by mode for each transit operator.
+   Here is a snapshot of the file:
+
+   | Geo       | Year | BusRevMiPC | RailRevMiPC |
+   | --------- | ---- | ---------- | ----------- |
+   | Multnomah | 2005 | 19         | 4           |
+   | Multnomah | 2035 | 19         | 4           |
+
+[Top](#input-files)
+
+
+## Policy
