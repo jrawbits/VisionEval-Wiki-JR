@@ -93,7 +93,7 @@ The user should change the input files described here. All files are ```*.csv```
    | UC_M  | 2035 | 0.1  | 0.1  |
    | UC_T  | 2035 | 0.1  | 0.1  |
 
-[Top](input-files)
+[Top](#input-files)
 
 ## Demand
 
