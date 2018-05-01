@@ -7,7 +7,7 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
 [**Built Environment**](#built-environment)
   - [bzone_pop_emp_prop.csv](#bzone_pop_emp_propcsv)
   
-**Demand**
+[**Demand**](#demand)
   - [region_trips_per_cap.csv](#region_trips_per_capcsv)
   - [employment.csv](#employmentcsv)
   - [azone_hh_pop_by_age.csv](#azone_hh_pop_by_agecsv)
@@ -18,7 +18,9 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
   
 [**Policy**](#policy)
   - [model_commute_options.csv](#model_commute_optionscsv)
-  - [
+  - [azone_its_prop.csv](#azone_its_propcsv)
+  - [model_light_vehicles.csv](#model_light_vehiclescsv)
+  - [marea_parking_growth.csv](#marea_parking_growthcsv)
   - 
   - model_tdm_transit.csv
   - model_tdm_transitlevels.csv
@@ -40,11 +42,9 @@ VERPAT contains 34 input files and 5 parameter files, some of which the user mus
   - region_veh_prop_by_vehage_vehtype_inc.csv
   - azone_gq_pop_by_age.csv
   - azone_hhsize_targets.csv
-  - azone_its_prop.csv
   - azone_relative_employment.csv
-  - marea_parking_growth.csv
+  - marea_parking_growth.
   - 
-  - model_light_vehicles.csv
   - model_tdm_ridesharing.csv
 
 ## Input Parameter Files
@@ -229,3 +229,77 @@ The user should change the input files described here. All files are ```*.csv```
 
 
 ## Policy
+
+
+### model_commute_options.csv
+
+**Percentage of employees offered commute options**: This file contains assumptions about the availability and participation in work based travel demand management programs. The policies are ridesharing programs, transit pass programs, telecommuting or alternative work schedule programs, and vanpool programs. For each, the user enters the proportion of workers who participate (the data items with the “Participation” suffix). For one program, the transit subsidy, the user must also enter the subsidy level in dollars for the TransitSubsidyLevel data item.
+   Here is a snapshot of the file:
+
+   | TDMProgram     | DataItem                        | DataValue |
+   | -------------- | ------------------------------- | --------- |
+   | Ridesharing    | RidesharingParticipation        | 0.05      |
+   | TransitSubsidy | TransitSubsidyParticipation     | 0.1       |
+   | TransitSubsidy | TransitSubsidyLevel             | 1.25      |
+   | WorkSchedule   | Schedule980Participation        | 0.01      |
+   | WorkSchedule   | Schedule440Participation        | 0.01      |
+   | WorkSchedule   | Telecommute1.5DaysParticipation | 0.01      |
+   | Vanpooling     | LowLevelParticipation           | 0.04      |
+   | Vanpooling     | MediumLevelParticipation        | 0.01      |
+   | Vanpooling     | HighLevelParticipation          | 0.01      |
+
+[Top](#input-files)
+
+### azone_its_prop.csv
+
+**Percent road miles with ITS treatment**: This file is an estimate of the proportion of road miles that have improvements which reduce incidents through ITS treatments in both the base and future years. Values entered should be between 0 and 1, with 1 indicating that 100% of road miles are treated.
+   The ITS policy measures the effects of incident management supported by ITS. The ITS table is used to inform the congestion model and the travel demand model. The model uses the mean speeds with and without incidents to compute an overall average speed by road type and congestion level providing a simple level of sensitivity to the potential effects of incident management programs on delay and emissions.
+   The ITS treatments are evaluated only on freeways and arterials. The ITS treatments that can be evaluated are those that the analyst considers will reduce non-recurring congestion due to incidents. This policy does not deal with other operational improvements such as signal coordination, or temporary capacity increases such as allowing shoulder use in the peak.
+   Here is a snapshot of the file:
+
+   | Geo       | Year | ITS  |
+   | --------- | ---- | ---- |
+   | Multnomah | 2005 | 0    |
+   | Multnomah | 2035 | 0    |
+   
+[Top](#input-files)
+
+
+### model_light_vehicles.csv
+
+**Bicycling/light vehicles targets)**: This file contains input data for the non-motorized vehicle model. In VERPAT, non-motorized vehicles are bicycles, and also electric bicycles, segways, and similar vehicles that are small, light-weight and can travel at bicycle speeds or slightly higher. The parameters are as follows:
+
+   - **TargetProp**: non-motorized vehicle ownership rate (average ratio of non-motorized vehicles to driver age population)
+   - **Threshold**: single-occupant vehicle (SOV) tour mileage threshold used in the SOV travel proportion model. This is the upper limit for tour lengths that are suitable for reallocation to non-motorized modes.
+   - **PropSuitable**: proportion of SOV travel suitable for non-motorized vehicle travel. This variable describes the proportion of SOV tours within the mileage threshold for which non-motorized vehicles might be substituted. This variable takes into account such factors as weather and trip purpose.
+
+   The non-motorized vehicle model predicts the ownership and use of non-motorized vehicles (where non-motorized vehicles are bicycles, and also electric bicycles, segways and similar vehicles that are small, light-weight and can travel at bicycle speeds or slightly higher than bicycle speeds). The core concept of the model is that non-motorized vehicle usage will primarily be a substitute for short-distance SOV travel. Therefore, the model estimates the proportion of the household vehicle travel that occurs in short-distance SOV tours. The model determines the maximum potential for household VMT to be diverted to non-motorized vehicles, which is also dependent on the availability of non-motorized vehicles.
+   Note that bike share programs (BSP) serve to increase the availability of non-motorized vehicles and can be taken into account by increasing the **TargetProp** variable. Use national estimates of non-motorized ownership if regional estimates of non-motorized ownership are not available (unless the region has notably atypical levels of bicycle usage). See [Bicycle Ownership in the United States](http://www.academia.edu/1839374/Bicycle_Ownership_in_the_United_States_Empirical_Analysis_of_Regional_Differences) for an analysis of regional differences.
+   Here is a snapshot of the file:
+
+   | DataItem     | DataValue |
+   | ------------ | --------- |
+   | TargetProp   | 0.2       |
+   | Threshold    | 2         |
+   | PropSuitable | 0.1       |
+   
+[Top](#input-files)
+
+### marea_parking_growth.csv
+
+**Increase in parking cost and supply**: This file contains information that allows the effects of policies such as workplace parking charges and "*cash-out buy-back*" programs to be tested. The input parameters are as follows and should be entered for both the base and future year:
+
+   - **PropWrkPkg**: proportion of employees that park at work
+   - **PropWrkChrgd**: proportion of employers that charge for parking
+   - **PropCashOut**: proportion of employment parking that is converted from being free to pay under a "*cash-out buy-back*" type of program
+   - **PrkOthChrgd**: proportion of other parking that is not free
+   - **PkgCost**: average daily parking cost. This variable is the average daily parking cost for those who incur a fee to park. If the paid parking varies across the region, then the "*PkgCost*" value should reflect the average of those parking fees, but weighted by the supply – so if most parking is in the Center City, then the average will be heavily weighted toward the price in the Center City.
+
+   Here is a snapshot of the file:
+
+   | Geo       | Year | PropWorkParking | PropWorkCharged | PropCashOut | PropOtherCharged | ParkingCost.2000 |
+   | --------- | ---- | --------------- | --------------- | ----------- | ---------------- | ---------------- |
+   | Multnomah | 2005 | 1               | 0.1             | 0           | 0.05             | 5                |
+   | Multnomah | 2035 | 1               | 0.1             | 0           | 0.05             | 5                |
+   
+[Top](#input-files)
