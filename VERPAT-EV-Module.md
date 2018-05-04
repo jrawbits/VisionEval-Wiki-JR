@@ -1,3 +1,5 @@
+This addition to VERPAT is inspired by the [GreenSTEP EV module](https://github.com/gregorbj/GreenSTEP/blob/master/Documentation/GreenSTEP-RSPM_Documentation_20151220.docx).
+
 The plan to add EV support to VERPAT is as follows:
 
   - Revise VEHouseholdVehicles
@@ -21,4 +23,4 @@ The plan to add EV support to VERPAT is as follows:
 
 The existing VESimHouseholds, VESyntheticFirms, VELandUse, and VETransportSupply modules are unchanged.
 
-This addition to VERPAT is inspired by the [GreenSTEP EV module](https://github.com/gregorbj/GreenSTEP/blob/master/Documentation/GreenSTEP-RSPM_Documentation_20151220.docx).
+
