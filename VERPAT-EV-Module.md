@@ -1,6 +1,6 @@
 The current version of VERPAT does not model electric vehicles (EVs).  Since EVs produce less local GHG than internal combustion engines, and policies related to EV usage are expected to impact the share of EVs on the road, it is important to add EVs to VERPAT.  This addition to VERPAT is inspired by how [GreenSTEP](https://github.com/gregorbj/GreenSTEP/blob/master/Documentation/GreenSTEP-RSPM_Documentation_20151220.docx) models EVs.
 
-The plan to add EV support to VERPAT is as follows:
+The plan to add EV support to VERPAT is to revise the following packages/modules in a fork:
 
   - Revise VEHouseholdVehicles
     - Revise AssignVehicleFeatures module to identify HEV/PHEVs
@@ -22,5 +22,7 @@ The plan to add EV support to VERPAT is as follows:
     - Revise ReportRPATMetrics module to calculate metrics for EV
 
 The existing VESimHouseholds, VESyntheticFirms, VELandUse, and VETransportSupply modules are unchanged.
+
+Once the new version of VERPAT in the fork is complete, then we'll review the implementation and consider if we should revise the implementation so we can run with or without EV.  
 
 
