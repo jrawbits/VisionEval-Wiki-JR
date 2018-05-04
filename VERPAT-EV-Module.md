@@ -23,6 +23,6 @@ The plan to add EV support to VERPAT is to revise the following packages/modules
 
 The existing VESimHouseholds, VESyntheticFirms, VELandUse, and VETransportSupply modules are unchanged.
 
-Once the new version of VERPAT in the fork is complete, then we'll review the implementation and consider if we should revise the implementation so we can run with or without EV.  
+Once the new forked version of VERPAT is complete, we will review the implementation and consider if we should revise it so  it can be run with or without EV.  
 
 
