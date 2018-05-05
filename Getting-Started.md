@@ -42,7 +42,6 @@ devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupply"
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdVehicles")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VERoadPerformance")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
 devtools::install_github("gregorbj/VisionEval/sources/modules/VETravelCost")
