@@ -29,23 +29,45 @@ devtools::install_github("tdhock/namedCapture")
 source("https://bioconductor.org/biocLite.R")
 biocLite(c("rhdf5","zlibbioc"), suppressUpdates=TRUE)
 ```
-  4. Run the following commands to download and install the required VE framework package:
+  4. Run the following commands to download the VE repository:
 ```
-devtools::install_github("gregorbj/VisionEval/sources/framework/visioneval")
+host <- "https://api.github.com/repos/"
+repo <- "gregorbj/visioneval/"
+ref <- "master"
+destfile <- tempfile(fileext = paste0(".zip"))
+destdir <- normalizePath(tempdir())
+request <- httr::GET(paste0(host, repo, "zipball/", ref))
+writeBin(httr::content(request, "raw"), destfile)
+unzip(zipfile = destfile, exdir = destdir)
+destdir <- normalizePath(file.path(destdir, grep("visioneval", list.files(destdir), value=TRUE, ignore.case=TRUE)))
 ```
-  5. Run the following commands to download and install the required VE modules for VERPAT and VERSPM:
+  5. Run the following commands to install the required VE framework package:
 ```
-devtools::install_github("gregorbj/VisionEval/sources/modules/VESyntheticFirms")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VESimHouseholds")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VELandUse")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupply")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VETransportSupplyUse")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdVehicles")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VEHouseholdTravel")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VERoadPerformance")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VEEnergyAndEmissions")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VETravelCost")
-devtools::install_github("gregorbj/VisionEval/sources/modules/VEReports")
+VE_framework <- "visioneval"
+devtools::install_local(normalizePath(file.path(destdir, "sources", "framework", VE_framework)))
+```
+  6. Run the following commands to install the required VE modules for VERPAT and VERSPM:
+```
+VE_modules <- c(
+	"VE2001NHTS",
+	"VESyntheticFirms",
+	"VESimHouseholds",
+	"VELandUse",
+	"VETransportSupply",
+	"VETransportSupplyUse",
+	"VEHouseholdTravel",
+	"VEHouseholdVehicles",
+	"VEPowertrainsAndFuels",
+	"VETravelPerformance",
+	"VEReports"
+)
+for(module in VE_modules){
+	cat(paste("\nInstalling Module:", module,"\n"))
+	devtools::install_local(normalizePath(file.path(destdir, "sources", "modules", module)))
+	if(!module %in% rownames(installed.packages())){
+		stop(paste0(module, " cannot be installed."))
+	}
+}
 ```
 
 ## Running VE Models
