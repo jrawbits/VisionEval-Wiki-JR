@@ -100,6 +100,7 @@ runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI")
   1. Start R and run the following commands:
 
 ```
+library("shiny")
 full_path = "C:/projects/development/VisionEval/sources/VEGUI"
 setwd(full_path)	
 runApp('../VEGUI')
