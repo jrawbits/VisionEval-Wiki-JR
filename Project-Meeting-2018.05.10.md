@@ -4,10 +4,12 @@
 
 # VERSPM
   - Complete release version available in the master branch
+  - @Brian working on additional module documentation
   - @Brian working on memo on conversion and differences from RSPM for verification purposes
 
 # Test System and Setup
   - Updated [install.R](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup) script to run faster as suggested by Dan [#178](https://github.com/gregorbj/VisionEval/issues/178)
+  - @Thanh to test running models at ODOT
 
 # Usability Workshop
   - Scheduled for Monday June 4th
