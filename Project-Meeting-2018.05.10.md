@@ -12,7 +12,7 @@
 # Usability Workshop
   - Scheduled for Monday June 4th
   - Agenda: 
-    - Deliverables / draft initial plan
+    - Overview of deliverables and initial plan
     - Requirements discussion
     - Review of relevant examples
-    - Deciding on an approach
+    - Finalizing the plan
