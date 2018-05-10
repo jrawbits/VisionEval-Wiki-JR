@@ -4,7 +4,7 @@
 
 # VERSPM
   - Complete release version available in the master branch
-  - @Brian working on memo on conversion and differences from RSPM as a sort of verification document
+  - @Brian working on memo on conversion and differences from RSPM for verification purposes
 
 # Test System and Setup
   - Updated [install.R](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup) script to run faster as suggested by Dan
