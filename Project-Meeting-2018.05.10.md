@@ -1,5 +1,5 @@
 # VERPAT 
-  - Draft [Documentation of inputs and outputs](VERPAT-Inputs-and-Outputs) was reviewed and is being split into sub-sections to make it easier for the user
+  - Draft [inputs and outputs](VERPAT-Inputs-and-Outputs) documentation was reviewed and is being split into sub-sections to make it easier for the user
   - Complete release version available in the master branch
 
 # VERSPM
