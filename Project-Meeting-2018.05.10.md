@@ -10,4 +10,9 @@
   - Updated [install.R](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup) script to run faster as suggested by Dan
 
 # Usability Workshop
-  - Usability workshop scheduled for Monday June 4th
+  - Scheduled for Monday June 4th
+  - Agenda: 
+    - Deliverables / draft initial plan
+    - Requirements discussion
+    - Review of relevant examples
+    - Deciding on an approach
