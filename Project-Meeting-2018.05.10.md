@@ -15,7 +15,7 @@
   - Scheduled for Monday June 4th
   - Agenda: 
     - Overview of deliverables and initial plan
-    - Client/server interface discussion
     - Requirements discussion
+    - Client/server API discussion
     - Review of relevant examples
     - Finalizing the plan
