@@ -2,13 +2,12 @@ The current version of VERPAT does not model electric vehicles (EVs).  Since EVs
 
 The plan to add EV support to VERPAT is to revise the following packages/modules in a fork: 
   - Revise VEHouseholdTravel
-    - Revise AssignVehicleFeatures module to identify HEV/PHEVs ✔️ 
+    - Revise CalculateTravelDemand module to identify HEV/PHEVs ✔️ 
     - Revise CalculateTravelDemand module to identify DVMT by EVs ✔️ 
   - Revise VETransportSupplyUse
-    - Revise CalculateCongestionBase module to identify fuel efficiency, speeds, delays for EVs by functional class 👷 
-  - Revise VEHouseholdVehicles
-    - Revise AssignVehicleFeaturesFuture module to identify HEV/PHEVs for future scenarios
-  - Revise VEHouseholdTravel
+    - Revise CalculateCongestionBase module to identify fuel efficiency, speeds, delays for EVs by functional class ✔️ 
+  - Revise VEHouseholdTravel 👷 
+    - Revise CalculateTravelDemandFuture module to identify HEV/PHEVs for future scenarios
     - Revise CalculateTravelDemandFuture module to identify DVMT by EVs for future scenarios
   - Revise VEHouseholdTravel
     - Revise CalculateInducedDemand module to adjust DVMT by EVs
