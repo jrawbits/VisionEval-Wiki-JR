@@ -8,7 +8,7 @@
     - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
       - Integrated and hidable getting started or separate (Rmarkdown?)? 
   - Requirements:
-    - Some of these are in the [backlog](https://github.com/gregorbj/VisionEval/milestone/17)
+    - Some of these are in the backlog under the [Improve End User Experience Milestone](https://github.com/gregorbj/VisionEval/milestone/17)
     - For beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99), 
     - An RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills 
     - Provides multiple scenario visualization capabilities, [98](https://github.com/gregorbj/VisionEval/issues/98), [97](https://github.com/gregorbj/VisionEval/issues/97), [96](https://github.com/gregorbj/VisionEval/issues/96)
