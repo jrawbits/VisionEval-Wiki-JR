@@ -30,6 +30,7 @@
   - What’s our recommendation for implementation?
     - UI design
     - UI model interface
+    - Documentation integration
   - What are the most important next steps?
   - How do we parse our plan into agile iterations of improvements to a working user interface?
   - Who will test the user interface and provide feedback?
