@@ -24,11 +24,11 @@
 
 ## Review of inspirational examples – 10 to 12
   - Select sites from showmeshiny – 10 to 10:30 - Ben 
-    - http://shinyprognostics.de/pemDemo/
-    - https://johnyagecic.shinyapps.io/ManningsMC/
-    - http://www.mephistosoftware.com/shiny/401k_simulator/
-    - https://cawthron.shinyapps.io/BMOP/
-    - https://compassnz.shinyapps.io/NZIPR/
+    - [pemDemo](http://shinyprognostics.de/pemDemo)
+    - [ManningsMC](https://johnyagecic.shinyapps.io/ManningsMC/)
+    - [401k_simulator](http://www.mephistosoftware.com/shiny/401k_simulator/)
+    - [BMOP](https://cawthron.shinyapps.io/BMOP/)
+    - [NZIPR](https://compassnz.shinyapps.io/NZIPR/)
     - http://www.shinyapps.io/ (for a cloud-based demo)
   - Input documentation management and ODOT SARSPM - 10:30 to 11 - Tara
   - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) GUI with Wizard, and NCHRP Report 852 - 11 to 11:30 – Kevin 
