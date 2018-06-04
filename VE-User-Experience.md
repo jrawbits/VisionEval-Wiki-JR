@@ -47,7 +47,7 @@
     - [Input documentation management](documents/UIDesign/VE_InputDoc_Mockup_20180406.docx) - groups inputs by meta categories, allows for switching between VE modules, show/hide details
     - [ODOT SARSPM](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf) - cover basics for how ODOT’s scenario planning process works for local planners (not appliers)
       - includes very handy Checklist in the appendix 
-    - [EERPAT documenetation](https://www.planning.dot.gov/FHWA_tool/EERPAT_Users_Guide.aspx) - comprehensive (but separate so likely to fall out-of-date)
+    - [EERPAT documentation](https://www.planning.dot.gov/FHWA_tool/EERPAT_Users_Guide.aspx) - comprehensive (but separate so likely to fall out-of-date)
     - [TFL model variables](documents/UIDesign/RSPM-TFLmodelVariables_May2017.pdf) - Liming's table of model variables is helpful for understanding what variables influence what parts of the model
       - should be able to build something based on the VE input, output lists
       - documentation should be in a separate window from the UI so the user can see both at once (like in the wiki or a new browser tab, etc.)
@@ -62,13 +62,21 @@
     - Copy scenario button is great
     - Documentation integrated and links to relevant topics (hyperlinks and an index for example)
   - [FSDM](https://github.com/gregorbj/FSDM) RShiny UI
-    - 
+    - 1/3 left of screen for choices, 2/3 right for results, top has workflow steps
+    - Can build scenarios and then validate and run them
+    - Our output viewer should be in html/JS so it can be easily hosted
+    - RShiny for modelers, Javascript for publishing (on GitHub pages for example)
 
-## Finalizing the plan 
-  - What’s our recommendation for implementation?
-    - UI design
-    - UI model interface
-    - Documentation integration
-  - What are the most important next steps?
-  - How do we parse our plan into agile iterations of improvements to a working user interface?
-  - Who will test the user interface and provide feedback?
+## Next Steps
+  - Important themes from today:
+    - A matrix of requirements - beginner versus advanced and scenario setup and runner versus visualizer
+    - Need to wireframe UI
+    - Documentation auto-built so some ends up in the UI and some in other spots (wiki, pdf, etc.)
+    - Need to think about how we define meta groupings, setup and manage scenarios 
+  - @I'll update the meeting notes 
+  - @Brian and I to draft User experience improvement plan / experiment a bit with ideas discussed today
+  - Schedule
+    - Next meeting of project team to review / finalize plan in early July
+    - Wireframes, revisions to design in July
+    - Iterative development phases - August, September, October - with first release in November/Dec
+  - Tara and Dan to participate as much as needed; design plan will be in the wiki
