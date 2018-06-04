@@ -23,8 +23,8 @@
     - https://compassnz.shinyapps.io/NZIPR/
     - http://www.shinyapps.io/ (cloud-based model)
   - Input documentation management (attached) and ODOT SARSPM - 10:30 to 11 - Tara
-  - TF Guide (Method Selection for Travel Forecasting) GUI with Wizard, and NCHRP Report 852 - 11 to 11:30 – Kevin 
-  - FSDM RShiny user interface – 11:30 to 12 – Brian  
+  - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) GUI with Wizard, and NCHRP Report 852 - 11 to 11:30 – Kevin 
+  - [FSDM](https://github.com/gregorbj/FSDM) RShiny user interface – 11:30 to 12 – Brian  
 
 ## Finalizing the plan –  12 to 1 – Ben 
   - What’s our recommendation for implementation?
