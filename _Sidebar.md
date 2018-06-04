@@ -28,3 +28,6 @@
  - [[Meeting #3 Example Contribution]]
  - [[Example Review|Example-Review]]
  - [Governance Best Practices](http://htmlpreview.github.io/?https://github.com/VisionEval/OSwhitepaper/blob/master/VEwhitepaper.html)
+
+### VE State Pilot Project
+  - [[Kickoff|VE-State-Kickoff]]
