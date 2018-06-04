@@ -2,13 +2,17 @@
   - Deliverables: 
     - Documentation of this workshop’s findings and recommendations for implementation
     - Updates to the user interface for configuring, running, and visualizing multiple scenarios at once
+      - How do we specify which inputs can be systematically varied in the VE framework and exposed in the UI?
     - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
   - Requirements:
-    - Targeted for beginning VisionEval users with little R experience
-    - An RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills
+    - Some of these are in the [backlog](https://github.com/gregorbj/VisionEval/milestone/17)
+    - For beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99), 
+    - An RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills 
+    - Provides multiple scenario visualization capabilities, [98](https://github.com/gregorbj/VisionEval/issues/98), [97](https://github.com/gregorbj/VisionEval/issues/97), [96](https://github.com/gregorbj/VisionEval/issues/96)
+    - Integrated documentation and tutorials, [159](https://github.com/gregorbj/VisionEval/issues/159)
     - Tested and versioned
     - In addition to running locally, also run on the cloud – visioneval.org/demo for example?
-    - Implements a clean interface between the R models and the GUI runner + visualizer
+    - Implements a clean interface between the R models and the GUI runner + visualizer, [91](https://github.com/gregorbj/VisionEval/issues/91), [154](https://github.com/gregorbj/VisionEval/issues/154)
       - HTTP messages, start+stop text files, etc?
   - Questions: 
     - What’s the relative importance of aesthetics versus features?  i.e. how much budget should we spend on the look of the software? 
