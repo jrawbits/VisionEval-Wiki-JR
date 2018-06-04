@@ -73,10 +73,11 @@
     - Wireframing the UI is a good idea
     - Auto-build documentation so it can end up in the UI and in other spots (wiki, pdf, etc.)
     - Need to think about how we define meta groupings, setup/manage scenarios, etc. since this is important to the user experience from start to finish 
-  - @I'll update these meeting notes (done)
-  - @Brian and I draft user experience improvement plan / experiment a bit with ideas discussed today
+  - @Ben update these meeting notes (done)
+  - @Ben and @Brian draft user experience improvement plan / experiment a bit with ideas discussed today
   - Schedule
-    - June - Draft detailed plan; meet in early July to review
+    - June - Draft detailed plan; team meet in early July to review
     - July - Wireframes, revisions to design
     - August - November - iterative development phases
   - Tara and Dan to participate as much as needed; design plan will be in the wiki
+  - @Ben send out doodle for early July meeting
