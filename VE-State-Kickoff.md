@@ -1,6 +1,6 @@
-MEETING DATE:	Wednesday, May 31
-MEETING TIME:	11:00-12:30 p.m. pacific
-LOCATION:	Call in/Skype
+MEETING DATE:	Wednesday, May 31   
+MEETING TIME:	11:00-12:30 p.m. pacific   
+LOCATION:	Call in/Skype   
 
 ## Attendees
 Project & Oversight team members:
@@ -11,6 +11,7 @@ Project & Oversight team members:
   - Charles Baber, BMC (MdDOT rep)
   - Jana Natarajan, WSDOT
   - John Davies, FHWA-EERPAT (partial attendance)
+
 Absent
   - Jeremy Raw, FHWA
   - Brian Hurley, ODOT
@@ -32,16 +33,19 @@ Tara asked participants to introduce themselves and share  their experience with
   - John Davies, FHWA  – leads FHWA’s EERPAT program. Excited to see VisionEvalmoving forward with common architecture that can accommodate a statewide tool, possible EERPAT may move in trajectory of this work. EERPAT has been in a holding pattern since completing the upgrade to a commodity-based freight model. 
 
 ## VisionEval Background 
-Tara quickly summarized the Strategic Niche of the VisionEval tools that use (1) detailed synthetic populations and vehicles like advance Activity Based Models; and (2) incorporate budgets and other feedbacks like integrated models; but (2) drop a detailed network to run quickly and complete many what-if scenarios. ODOT and Atlanta have run 100s-1000s of scenarios and used them in interactive web-based scenario viewers for stakeholders or the public to ascertain tradeoffs between investments and outcome. GUI and Scenario viewer will be part of the base VisionEval functionality. To make these many runs requires a balance between computational efficiency and model accuracy. 
+Tara quickly summarized the Strategic Niche of the VisionEval tools that use (1) detailed synthetic populations and vehicles like advance Activity Based Models; and (2) incorporate budgets and other feedbacks like integrated models; but (2) drop a detailed network to run quickly and complete many what-if scenarios. ODOT and Atlanta have run 100s-1000s of scenarios and used them in interactive web-based [scenario viewers](http://www.oregon.gov/ODOT/Planning/Pages/PTV-SV.aspx?sv=CAMPO) for stakeholders or the public to ascertain tradeoffs between investments and outcome. GUI and Scenario viewer will be part of the base VisionEval functionality. To make these many runs requires a balance between computational efficiency and model accuracy. 
+
 Brian Gregor, Oregon System Analytics, also contrasted VisionEval role relative to traditional tools. He then introduced the family of VisonEval models and outlined how GreenSTEP and RSPM are alike, and how they differ.  The differences being primarily the level of detail on the land use geography. He then summarized the common VisionEval software framework and how this will work for VE-State as well as the existing VE-RSPM and VE-RPAT. The will use common software Framework and datastore, but swap out the land use modules and keeping other VE-RSPM transport modules
+
 Brian summarized the standard geography used by the framework, which can be input or synthesized. Once a common geography is synthesized, the VE-State tool can use existing VE-RSPM modules to evaluate policies, assign vehicles, estimate VMT and congestion, and evaluate GHG.
+
 Finally Brian summarized the new features in VE-RSPM that will be available to VE-State; improvements over both GreenSTEP and EERPAT.
 
 ## Draft Work Plan 
 Brian outlined the three  step work plan and schedule.  
-1- Test that RSPM code works with multiple Mareas and Azones (expected to work with minor fixes)
-2- Develop a module to generate synthetic zones (the bulk of the effort, will need to capture realistic cross tabulation of household and built form attributes)
-3-  Test the package in a “real world” example, using Oregon statewide data.  (ODOT will develop the data)
+  1. Test that RSPM code works with multiple Mareas and Azones (expected to work with minor fixes)
+  2. Develop a module to generate synthetic zones (the bulk of the effort, will need to capture realistic cross tabulation of household and built form attributes)
+  3. Test the package in a “real world” example, using Oregon statewide data.  (ODOT will develop the data)
 
 ## Close and Next steps 
 Tara summarized how the 4 meetings will fit into the work plan. Next meeting will discuss the approach for testing the code and the module to generate households, per a prepared “Integration Plan”.  These first two steps will commence, and report out at Meeting #3. Then the “real world” test will be implemented and reported in Meeting #4.  The product, in addition to the code and documentation, will include follow-up actions for future efforts beyond the pilot. Jana asked if it would be helpful to have a second state “real world” example in WA.  Tara said this was a great idea provided it didn’t slow down the schedule, and suggested revisiting this idea after Meeting #2. It could occur during or following this effort.
