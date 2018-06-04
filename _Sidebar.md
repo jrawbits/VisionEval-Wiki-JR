@@ -19,6 +19,7 @@
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
  - [[RPAT Features| RPAT-features]]
+ - [[VE User Experience | VE-User-Experience]]
 
 ### Review Committee
  - [[Review Team Charter|Review-Team-Charter]]
