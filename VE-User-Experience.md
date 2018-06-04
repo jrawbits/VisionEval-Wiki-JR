@@ -9,6 +9,7 @@
     - Tested and versioned
     - In addition to running locally, also run on the cloud – visioneval.org/demo for example?
     - Implements a clean interface between the R models and the GUI runner + visualizer
+      - HTTP messages, start+stop text files, etc?
   - Questions: 
     - What’s the relative importance of aesthetics versus features?  i.e. how much budget should we spend on the look of the software? 
     - Can we build an online demo version that runs the test model?  This could be really useful for beginners and for marketing/outreach.
