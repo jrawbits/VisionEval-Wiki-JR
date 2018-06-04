@@ -76,7 +76,7 @@
   - @I'll update these meeting notes (done)
   - @Brian and I draft user experience improvement plan / experiment a bit with ideas discussed today
   - Schedule
-    - June - Finalize plan; meet in early July to review
+    - June - Draft detailed plan; meet in early July to review
     - July - Wireframes, revisions to design
     - August - November - iterative development phases
   - Tara and Dan to participate as much as needed; design plan will be in the wiki
