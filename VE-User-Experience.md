@@ -43,14 +43,14 @@
     - Cloud-based demo
       - [shiny io](http://www.shinyapps.io/) - we would need to pay month for Shiny server online hosting, or host ourselves, so long term that may be an issue, but we all really want an online (atleast demo) version
   - Documentation and Scenario Analysis - Tara
-    - [Input documentation management](UIDesign/documents/VE_InputDoc_Mockup_20180406.docx) - groups inputs by meta categories, allows for switching between VE modules, show/hide details
+    - [Input documentation management](documents/UIDesign/VE_InputDoc_Mockup_20180406.docx) - groups inputs by meta categories, allows for switching between VE modules, show/hide details
     - [ODOT SARSPM](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf) - cover basics for how ODOT’s scenario planning process works for local planners (not appliers)
       - includes very handy Checklist in the appendix 
-    - [TFL model variables](UIDesign/documents/RSPM-TFLmodelVariables_May2017.pdf) - Liming's table of model variables is helpful for understanding what variables influence what parts of the model
+    - [TFL model variables](documents/UIDesign/RSPM-TFLmodelVariables_May2017.pdf) - Liming's table of model variables is helpful for understanding what variables influence what parts of the model
       - should be able to build something based on the VE input, output lists
       - documentation should be in a separate window from the UI so the user can see both at once (like in the wiki or a new browser tab, etc.)
-    - [Query language for outputs](UIDesign/documents/state_measures_spec_TN.csv) and [summary_state_measures.csv](UIDesign/documents/summary_state_measures.csv) - run R commands against outputs to create CSV file of metrics for use in Excel, etc.
-    - Statewide scenario analysis [I1](UIDesign/documents/ScenarioOutcomes.JPG), [I2](UIDesign/documents/ScenCharts-AltModes.JPG), [I3](UIDesign/documents/ScenCharts-ITS.JPG), [I4](UIDesign/documents/ScenDashboard.JPG), [I5](UIDesign/documents/ScenValidation.JPG) - again, meta groupings of inputs and outputs, calculates metrics relative to a base case, allows for filtering scenarios by inputs/outputs
+    - [Query language for outputs](documents/UIDesign/state_measures_spec_TN.csv) and [summary_state_measures.csv](documents/UIDesign/summary_state_measures.csv) - run R commands against outputs to create CSV file of metrics for use in Excel, etc.
+    - Statewide scenario analysis [I1](documents/UIDesign/ScenarioOutcomes.JPG), [I2](documents/UIDesign/ScenCharts-AltModes.JPG), [I3](documents/UIDesign/ScenCharts-ITS.JPG), [I4](documents/UIDesign/ScenDashboard.JPG), [I5](documents/UIDesign/ScenValidation.JPG) - again, meta groupings of inputs and outputs, calculates metrics relative to a base case, allows for filtering scenarios by inputs/outputs
       - sort of like using the model as a solver - set a target and allow inputs to vary within constraints
   - Wizards, wire-frames, aesthetics - Kevin
     - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) / NCHRP Report 852 
