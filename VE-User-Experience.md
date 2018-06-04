@@ -24,12 +24,15 @@
 
 ## Review of inspirational examples – 10 to 12
   - Select sites from showmeshiny – 10 to 10:30 - Ben 
-    - [pemDemo](http://shinyprognostics.de/pemDemo)
-    - [ManningsMC](https://johnyagecic.shinyapps.io/ManningsMC/)
-    - [401k_simulator](http://www.mephistosoftware.com/shiny/401k_simulator/)
-    - [BMOP](https://cawthron.shinyapps.io/BMOP/)
-    - [NZIPR](https://compassnz.shinyapps.io/NZIPR/)
-    - http://www.shinyapps.io/ (for a cloud-based demo)
+    - UI, aesthetics
+      - [pemDemo](http://shinyprognostics.de/pemDemo)
+      - [ManningsMC](https://johnyagecic.shinyapps.io/ManningsMC/)
+      - [401k_simulator](http://www.mephistosoftware.com/shiny/401k_simulator/)
+      - [BMOP](https://cawthron.shinyapps.io/BMOP/)
+    - Maps (which I'm not sure we need yet, and don't appear to work that well)
+      - [NZIPR](https://compassnz.shinyapps.io/NZIPR/)
+    - Cloud-based demo
+      - [shiny io](http://www.shinyapps.io/)
   - Input documentation management and ODOT SARSPM - 10:30 to 11 - Tara
   - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) GUI with Wizard, and NCHRP Report 852 - 11 to 11:30 – Kevin 
   - [FSDM](https://github.com/gregorbj/FSDM) RShiny user interface – 11:30 to 12 – Brian  
