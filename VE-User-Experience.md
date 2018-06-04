@@ -2,7 +2,7 @@
   - Deliverables: 
     - Documentation of this workshop’s findings and recommendations for implementation
     - Updates to the user interface for configuring, running, and visualizing multiple scenarios at once
-    - Integrated documentation and tutorials
+    - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
   - Requirements:
     - Targeted for beginning VisionEval users with little R experience
     - An RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills
