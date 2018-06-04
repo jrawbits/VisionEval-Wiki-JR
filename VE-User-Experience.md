@@ -28,6 +28,8 @@
 
 ## Finalizing the plan –  12 to 1 – Ben 
   - What’s our recommendation for implementation?
+    - UI design
+    - UI model interface
   - What are the most important next steps?
   - How do we parse our plan into agile iterations of improvements to a working user interface?
   - Who will test the user interface and provide feedback?
