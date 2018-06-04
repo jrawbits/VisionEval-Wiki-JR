@@ -1,6 +1,6 @@
 ## Deliverables
   - Scope/schedule
-    - Received NTP last week to begin work on AASHTO amendment focused on user experience improvements 
+    - Received NTP last week to begin on user experience improvements 
     - AASHTO team is discussing a peer exchange for September/October, so can we have something to share by then?
   - Deliverables: 
     - Documentation in the wiki of this workshop’s findings and recommendations for implementation
