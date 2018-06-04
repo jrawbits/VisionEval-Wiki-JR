@@ -11,7 +11,7 @@
     - Integrated documentation and tutorials
       - Integrated and hidable getting started materials (such as in the [RPAT UI](https://planningtools.transportation.org/files/112.pdf)) or separate resources (such as an Rmarkdown document or the wiki)? 
   - Requirements:
-    - Some of these are already in the backlog under the [Improve End User Experience Milestone](https://github.com/gregorbj/VisionEval/milestone/17) and in the [UI Design](https://github.com/gregorbj/VisionEval/wiki/User-Interface-Design#scenario-viewer) discussion.
+    - Some of these are already in the backlog under the [Improve End User Experience Milestone](https://github.com/gregorbj/VisionEval/milestone/17) and in the [UI Design](https://github.com/gregorbj/VisionEval/wiki/User-Interface-Design#scenario-viewer) page.
     - For two audiences:
       - beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99) 
       - advanced / power users
@@ -20,29 +20,41 @@
     - Provides multiple scenario visualization capabilities, [98](https://github.com/gregorbj/VisionEval/issues/98), [97](https://github.com/gregorbj/VisionEval/issues/97), [96](https://github.com/gregorbj/VisionEval/issues/96)
     - Integrated documentation and tutorials, [159](https://github.com/gregorbj/VisionEval/issues/159)
     - Tested and versioned like all VE resources
-    - In addition to running locally, also runs the demo model on the cloud – for example, visioneval.org/demo, [184](https://github.com/gregorbj/VisionEval/issues/184)
+    - In addition to running locally, also have a demo model in the cloud – for example, visioneval.org/demo, [184](https://github.com/gregorbj/VisionEval/issues/184)
     - Implements a clean interface between the R models and the GUI runner + visualizer, [91](https://github.com/gregorbj/VisionEval/issues/91), [154](https://github.com/gregorbj/VisionEval/issues/154)
       - HTTP messages, start+stop text files, etc?
     - Needs to output a CSV file of visualizer input data in addition to visualizing the data so user's can load the data into their own tools (Excel, Tableau, R, etc.)
-  - Questions: 
-    - What’s the relative importance of aesthetics versus features?  i.e. how much budget should we spend on the look of the software? 
-    - Can we build an online demo version that runs the test model?  This could be really useful for beginners and for marketing/outreach.
-    - Others?
+    - Seed later module inputs with results from earlier modules so we don't have to re-run everything (i.e. use the same hh module results for a set of travel module runs)
+    - What’s the relative importance of aesthetics versus features?  Aesthetics are important, but functionality must be correct, and the current pilot GUI and Scenario Viewer are not quite what is needed
+    - Maybe we need a "scenario generator" that builds and checks scenarios?  Maybe the user specifies a low/med/high range for input files and then the UI builds X intermediate states?
+    - We need a simpler set of outputs for the beginner user - just a couple key plots of VMT, GHG overtime etc.
+    - We need to think about the groups of inputs and outputs and how they map to input files.  These meta groups are key to the user experience from start to finish, including documentation. 
+    - Different experiences for different users is a key requirement
 
-## Review of inspirational examples – 10 to 12
-  - Select sites from showmeshiny – 10 to 10:30 - Ben 
+## Review of inspirational examples
+  - Select sites from showmeshiny – Ben 
     - UI, aesthetics
-      - [pemDemo](http://shinyprognostics.de/pemDemo)
-      - [ManningsMC](https://johnyagecic.shinyapps.io/ManningsMC/)
-      - [401k_simulator](http://www.mephistosoftware.com/shiny/401k_simulator/)
-      - [BMOP](https://cawthron.shinyapps.io/BMOP/)
-    - Maps (which I'm not sure we need yet, and don't appear to work that well)
-      - [NZIPR](https://compassnz.shinyapps.io/NZIPR/)
+      - [pemDemo](http://shinyprognostics.de/pemDemo) - clean interface, controls on the left, results on the right, workflow on the top, static graphs so it is not too interactive (and nonlinear), too much interaction can be laggy
+        - maybe we have a basic view (default) and advanced (that you click to show)?
+      - [BMOP](https://cawthron.shinyapps.io/BMOP/) - similar to the pemDemo but includes maps
+    - Maps
+      - [NZIPR](https://compassnz.shinyapps.io/NZIPR/) - not a lot of good RShiny map examples, PlaceTypes USA has maps
+        - could do maps for VERSPM since it has bzones, is nice to show spatial data if possible, use leaflet probably
     - Cloud-based demo
-      - [shiny io](http://www.shinyapps.io/)
-  - Input documentation management and ODOT SARSPM - 10:30 to 11 - Tara
-  - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) GUI with Wizard, and NCHRP Report 852 - 11 to 11:30 – Kevin 
-  - [FSDM](https://github.com/gregorbj/FSDM) RShiny user interface – 11:30 to 12 – Brian  
+      - [shiny io](http://www.shinyapps.io/) - we would need to pay month for Shiny server online hosting, or host ourselves, so long term that may be an issue, but we all really want an online (atleast demo) version
+  - Documentation and Scenario Analysis - Tara
+    - [Input documentation management](UIDesign/VE_InputDoc_Mockup_20180406.docx) - groups inputs by meta categories, allows for switching between VE modules, show/hide details
+    - [ODOT SARSPM](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf) - cover basics for how ODOT’s scenario planning process works for local planners (not appliers)
+      - includes very handy Checklist in the appendix 
+    - [TFL model variables](UIDesign/RSPM-TFLmodelVariables_May2017.pdf) - Liming's table of model variables is helpful for understanding what variables influence what parts of the model
+      - should be able to build something based on the VE input, output lists
+      - documentation should be in a separate window from the UI so the user can see both at once (like in the wiki or a new browser tab, etc.)
+    - [Query language for outputs](UIDesign/state_measures_spec_TN.csv) and [summary_state_measures.csv](UIDesign/summary_state_measures.csv) - run R commands against outputs to create CSV file of metrics for use in Excel, etc.
+    - Statewide scenario analysis [I1](UIDesign/ScenarioOutcomes.JPG), [I2](UIDesign/ScenCharts-AltModes.JPG), [I3](UIDesign/ScenCharts-ITS.JPG), [I4](UIDesign/ScenDashboard.JPG), [I5](UIDesign/ScenValidation.JPG) - again, meta groupings of inputs and outputs, calculates metrics relative to a base case, allows for filtering scenarios by inputs/outputs
+      - sort of like using the model as a solver - set a target and allow inputs to vary within constraints
+  - Wizards, wire-frames, aesthetics - Kevin
+    - [TF Guide](https://rguide.rsginc.com) (Method Selection for Travel Forecasting) / NCHRP Report 852 
+  - [FSDM](https://github.com/gregorbj/FSDM) RShiny user interface – Brian  
 
 ## Finalizing the plan –  12 to 1 – Ben 
   - What’s our recommendation for implementation?
