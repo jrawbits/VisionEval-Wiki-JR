@@ -3,6 +3,8 @@
     - Documentation of this workshop’s findings and recommendations for implementation
     - Updates to the user interface for configuring, running, and visualizing multiple scenarios at once
       - How do we specify which inputs can be systematically varied in the VE framework and exposed in the UI?
+      - How do we communicate within VE model runs in a more programmatic manner than a log file so we can inform the user of progress?
+      - How do we understand and query multiple runs from within the UI?
     - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
   - Requirements:
     - Some of these are in the [backlog](https://github.com/gregorbj/VisionEval/milestone/17)
