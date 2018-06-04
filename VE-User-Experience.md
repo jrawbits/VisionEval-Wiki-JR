@@ -72,7 +72,7 @@
     - A matrix of audiences/uses - beginner vs. advanced and scenario setup and runner vs. visualizer
     - Wireframing the UI is a good idea
     - Auto-build documentation so it can end up in the UI and in other spots (wiki, pdf, etc.)
-    - Need to think about how we define meta groupings, setup and anage scenarios, etc. since this is important to the user experience from start to finish 
+    - Need to think about how we define meta groupings, setup/manage scenarios, etc. since this is important to the user experience from start to finish 
   - @I'll update these meeting notes (done)
   - @Brian and I draft user experience improvement plan / experiment a bit with ideas discussed today
   - Schedule
