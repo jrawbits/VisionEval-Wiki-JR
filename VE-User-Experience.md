@@ -1,22 +1,29 @@
-## Overview of deliverables, initial plan, and requirements discussion – 9 to 10 – Ben
+## Overview of deliverables, initial plan, and requirements discussion
+  - Scope/schedule
+    - Received NTP last week to begin work on AASHTO amendment focused on user experience improvements 
+    - AASHTO team is discussing a peer exchange for September/October, so can we have something to share by then?
   - Deliverables: 
-    - Documentation of this workshop’s findings and recommendations for implementation
-    - Updates to the user interface for configuring, running, and visualizing multiple scenarios at once
+    - Documentation in the wiki of this workshop’s findings and recommendations for implementation
+    - Iterative updates to the user interface for configuring, running, and visualizing multiple scenarios at once
       - How do we specify which inputs can be systematically varied in the VE framework and exposed in the UI?
       - How do we communicate within VE model runs in a more programmatic manner than a log file so we can inform the user of progress?
       - How do we understand and query multiple runs from within the UI?
-    - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
-      - Integrated and hidable getting started or separate (Rmarkdown?)? 
+    - Integrated documentation and tutorials
+      - Integrated and hidable getting started materials (such as in the [RPAT UI](https://planningtools.transportation.org/files/112.pdf)) or separate resources (such as an Rmarkdown document or the wiki)? 
   - Requirements:
-    - Some of these are in the backlog under the [Improve End User Experience Milestone](https://github.com/gregorbj/VisionEval/milestone/17)
-    - For beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99), 
-    - An RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills 
+    - Some of these are already in the backlog under the [Improve End User Experience Milestone](https://github.com/gregorbj/VisionEval/milestone/17) and in the [UI Design](https://github.com/gregorbj/VisionEval/wiki/User-Interface-Design#scenario-viewer) discussion.
+    - For two audiences:
+      - beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99) 
+      - advanced / power users
+    - For setting up and running models: an RShiny-based solution that works with any VE model and can be maintained by modelers with strong R programming skills 
+    - For visualizing results: maybe RShiny or instead just html/javascript so it is more lightweight and can be hosted by GitHub pages
     - Provides multiple scenario visualization capabilities, [98](https://github.com/gregorbj/VisionEval/issues/98), [97](https://github.com/gregorbj/VisionEval/issues/97), [96](https://github.com/gregorbj/VisionEval/issues/96)
     - Integrated documentation and tutorials, [159](https://github.com/gregorbj/VisionEval/issues/159)
-    - Tested and versioned
-    - In addition to running locally, also run on the cloud – visioneval.org/demo for example?
+    - Tested and versioned like all VE resources
+    - In addition to running locally, also runs the demo model on the cloud – for example, visioneval.org/demo, [184](https://github.com/gregorbj/VisionEval/issues/184)
     - Implements a clean interface between the R models and the GUI runner + visualizer, [91](https://github.com/gregorbj/VisionEval/issues/91), [154](https://github.com/gregorbj/VisionEval/issues/154)
       - HTTP messages, start+stop text files, etc?
+    - Needs to output a CSV file of visualizer input data in addition to visualizing the data so user's can load the data into their own tools (Excel, Tableau, R, etc.)
   - Questions: 
     - What’s the relative importance of aesthetics versus features?  i.e. how much budget should we spend on the look of the software? 
     - Can we build an online demo version that runs the test model?  This could be really useful for beginners and for marketing/outreach.
