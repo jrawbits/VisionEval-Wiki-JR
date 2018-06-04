@@ -6,6 +6,7 @@
       - How do we communicate within VE model runs in a more programmatic manner than a log file so we can inform the user of progress?
       - How do we understand and query multiple runs from within the UI?
     - Integrated documentation and tutorials (share RPAT TravelWorks Workshop.pdf as prior example)
+      - Integrated and hidable getting started or separate (Rmarkdown?)? 
   - Requirements:
     - Some of these are in the [backlog](https://github.com/gregorbj/VisionEval/milestone/17)
     - For beginning VisionEval users with little R experience, [86](https://github.com/gregorbj/VisionEval/issues/86), [99](https://github.com/gregorbj/VisionEval/issues/99), 
