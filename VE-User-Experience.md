@@ -30,7 +30,7 @@
   - Maybe we need a "scenario generator" that builds and checks scenarios?  Maybe the user specifies a low/med/high range for input files and then the UI builds X intermediate states?
   - We need a simpler set of outputs for the beginner user - just a couple key plots of VMT, GHG overtime etc.
   - We need to think about the groups of inputs and outputs and how they map to input files.  These meta groups are key to the user experience from start to finish, including documentation. 
-  - Different experiences for different users is a key requirement
+  - Different experiences for different types of users
 
 ## Review of inspirational examples
   - Select sites from showmeshiny
