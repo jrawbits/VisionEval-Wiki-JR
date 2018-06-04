@@ -17,7 +17,7 @@ Absent
   - Brian Hurley, ODOT
 
 ## Goals & Objectives
-Tara welcomed everyone to the call and shared objectives and process for the VE-State project. 
+Tara welcomed everyone to the call and shared objectives and process for the VE-State project. See Tara's [slides](documents/VEState/VE-State_Kickoff_20180530final.pdf).
 
 Tara noted the VisionEval milestones of completing the transition of VE-RSPM & VE-RPAT code in the common framework is the foundation for building a statewide VE-State code.  She noted that ODOT uses both Statewide and Metropolitan level tools and was a key goal is to get them on the same platform to ease upgrades and capture the latest advances in VE-RSPM and EERPAT commodity flow freight model. She summarized the VE pooled fund goals and partners.
 
