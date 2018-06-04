@@ -30,4 +30,4 @@
  - [Governance Best Practices](http://htmlpreview.github.io/?https://github.com/VisionEval/OSwhitepaper/blob/master/VEwhitepaper.html)
 
 ### VEState Pilot Project
-  - [[Kickoff|VE-State-Kickoff]]
+  - [[Kickoff Meeting|VE-State-Kickoff]]
