@@ -69,14 +69,14 @@
 
 ## Next Steps
   - Important themes from today:
-    - A matrix of requirements - beginner versus advanced and scenario setup and runner versus visualizer
-    - Need to wireframe UI
-    - Documentation auto-built so some ends up in the UI and some in other spots (wiki, pdf, etc.)
-    - Need to think about how we define meta groupings, setup and manage scenarios 
-  - @I'll update the meeting notes 
-  - @Brian and I to draft User experience improvement plan / experiment a bit with ideas discussed today
+    - A matrix of audiences/uses - beginner vs. advanced and scenario setup and runner vs. visualizer
+    - Wireframing the UI is a good idea
+    - Auto-build documentation so it can end up in the UI and in other spots (wiki, pdf, etc.)
+    - Need to think about how we define meta groupings, setup and anage scenarios, etc. since this is important to the user experience from start to finish 
+  - @I'll update these meeting notes (done)
+  - @Brian and I draft user experience improvement plan / experiment a bit with ideas discussed today
   - Schedule
-    - Next meeting of project team to review / finalize plan in early July
-    - Wireframes, revisions to design in July
-    - Iterative development phases - August, September, October - with first release in November/Dec
+    - June - Finalize plan; meet in early July to review
+    - July - Wireframes, revisions to design
+    - August - November - iterative development phases
   - Tara and Dan to participate as much as needed; design plan will be in the wiki
