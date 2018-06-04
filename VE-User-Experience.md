@@ -27,7 +27,7 @@
   - Needs to output a CSV file of visualizer input data in addition to visualizing the data so user's can load the data into their own tools (Excel, Tableau, R, etc.)
   - Seed later module inputs with results from earlier modules so we don't have to re-run everything (i.e. use the same hh module results for a set of travel module runs)
   - What’s the relative importance of aesthetics versus features?  Aesthetics are important, but functionality must be correct, and the current pilot GUI and Scenario Viewer are not quite what is needed
-  - Maybe we need a "scenario generator" that builds and checks scenarios?  Maybe the user specifies a low/med/high range for input files and then the UI builds X intermediate states?
+  - Maybe we need a "scenario generator" that builds and checks scenarios?  Maybe the user specifies a low/med/high range for input files and then the UI builds X input files/scenarios?
   - We need a simpler set of outputs for the beginner user - just a couple key plots of VMT, GHG overtime etc.
   - We need to think about the groups of inputs and outputs and how they map to input files.  These meta groups are key to the user experience from start to finish, including documentation. 
   - Different experiences for different types of users
