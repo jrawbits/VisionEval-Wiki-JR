@@ -47,6 +47,7 @@
     - [Input documentation management](documents/UIDesign/VE_InputDoc_Mockup_20180406.docx) - groups inputs by meta categories, allows for switching between VE modules, show/hide details
     - [ODOT SARSPM](http://www.oregon.gov/ODOT/Planning/Documents/Oregon-Strategic-Assessment-RSPM-Users-Guide.pdf) - cover basics for how ODOT’s scenario planning process works for local planners (not appliers)
       - includes very handy Checklist in the appendix 
+    - [EERPAT documenetation](https://www.planning.dot.gov/FHWA_tool/EERPAT_Users_Guide.aspx) - comprehensive (but separate so likely to fall out-of-date)
     - [TFL model variables](documents/UIDesign/RSPM-TFLmodelVariables_May2017.pdf) - Liming's table of model variables is helpful for understanding what variables influence what parts of the model
       - should be able to build something based on the VE input, output lists
       - documentation should be in a separate window from the UI so the user can see both at once (like in the wiki or a new browser tab, etc.)
