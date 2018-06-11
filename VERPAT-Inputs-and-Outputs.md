@@ -1,7 +1,7 @@
 This page describes the VERPAT inputs (including definitions) and outputs by module. For descriptions focused on a single part of the VERPAT model, see:
 
   - [Inputs and parameters](VERPAT-Inputs-and-Parameters)
-  - [Modules and Outputs]((VERPAT-Modules-and-Outputs)
+  - [Modules and Outputs](VERPAT-Modules-and-Outputs)
   - [RPAT to VERPAT Crosswalk](RPAT-to-VERPAT)
 
 # Contents
