@@ -2,7 +2,7 @@ This page describes the VERPAT inputs (including definitions) and outputs by mod
 
   - [Inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters)
   - Modules and Outputs
-  - [RPAT to VERPAT Crosswalk](#https://github.com/gregorbj/VisionEval/wiki/RPAT-to-VERPAT)
+  - [RPAT to VERPAT Crosswalk](https://github.com/gregorbj/VisionEval/wiki/RPAT-to-VERPAT)
 
 # Contents
   - [Definitions](#definitions)
