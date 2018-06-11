@@ -2,7 +2,7 @@ This page describes the VERPAT inputs (including definitions) and outputs by mod
 
   - [Inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters)
   - Modules and Outputs
-  - RPAT to VERPAT Crosswalk
+  - [RPAT to VERPAT Crosswalk](#https://github.com/gregorbj/VisionEval/wiki/RPAT-to-VERPAT)
 
 # Contents
   - [Definitions](#definitions)
@@ -326,7 +326,7 @@ This module creates simulated households for a model using inputs of population 
 9. **Age65Plus**: Persons in 65 or older age group
 10. **HhType**: Coded household age composition (e.g. 2-1-0-2-0-0) or Grp for group quarters
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -373,7 +373,7 @@ This module assigns workers by age to households and to non-institutional group 
 6. **Workers**: Total number of workers
 7. **NumWkr**: Number of workers residing in the zone
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -383,7 +383,7 @@ This module predicts the income for each simulated household given the number of
 
 ### User Input Files
 
-1. **Regional income (*azone_per_cap_inc.csv*)**: This file contains information on regional average per capita  household and group quarters income by forecast year in year 2000 dollars. The data can be obtained from the U.S. Department of [Commerce Bureau of Economic Analysis](http://www.bea.gov/regional/index.htm) for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace ***2000*** in column labels with current year. For example, if the data is obtained in year 2005 dollars then the column labels in the file shown below will become **HHIncomePC.2005** and **GQIncomePC.2005**.
+1. **Regional income (*azone_per_cap_inc.csv*)**: This file contains information on regional average per capita  household (**HHIncomePC**) and group quarters (**GQIncomePC**) income by forecast year in year 2000 dollars. The data can be obtained from the U.S. Department of [Commerce Bureau of Economic Analysis](http://www.bea.gov/regional/index.htm) for the current year or from regional or state sources for forecast years. In order to use current year dollars just replace ***2000*** in column labels with current year. For example, if the data is obtained in year 2005 dollars then the column labels in the file shown below will become **HHIncomePC.2005** and **GQIncomePC.2005**.
    Here is a snapshot of the file:
 
    | Geo       | Year | HHIncomePC.2000 | GQIncomePC.2000 |
@@ -407,7 +407,7 @@ This module predicts the income for each simulated household given the number of
 
 1. **Income**: Total annual household (non-group & group quarters) income in year 1999 dollars
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -458,7 +458,7 @@ This module creates a set of firms for base year that represents the likely firm
 3. **numbus**: The number of businesses
 4. **emp**: The number of employees in a business
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -570,7 +570,7 @@ The outputs produced by this module is for base year.
 5. **UrbanEmp**: Total employees by place types
 6. **UrbanIncome**: Total income by place types
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -613,7 +613,7 @@ The outputs produced by this module is for future year.
 5. **UrbanEmp**: Total employees by place types
 6. **UrbanIncome**: Total income by place types
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -656,7 +656,7 @@ This module calculates freeway, arterial, and public transit supply levels for a
 4. **BusRevMi**: Bus revenue miles for the region
 5. **RailRevMi**: Rail revenue miles for the region
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -753,7 +753,7 @@ This module calculates freeway, arterial, and public transit supply levels for a
 4. **BusRevMiFuture**: Bus revenue miles for the region calculated using model estimation of future data
 5. **RailRevMiFuture**: Rail revenue miles for the region calculated using model estimation of future data
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -788,6 +788,23 @@ This module assigns each household a number of vehicles it is likely to own base
 3. **Vehicle distribution by age (*model_veh_cumprop_by_vehage.csv*)**: This file contains the cumulative distribution of vehicles, of type automobiles and light truck, by vehicle age.
 4. **Vehicle distribution by age and income (*model_veh_prop_by_vehage_vehtype_inc.csv*)**: This file contains the distribution of vehicles, of type automobiles and light truck, by vehicle age and household income group.
 5. **Distribution of DVMT split (*model_veh_mpg_dvmt_prop.csv*)**: This file contains the probability distribution of DVMT split between vehicles for households with one, two, three, four, and five plus vehicles.
+
+### User Input Parameters
+
+1. **Light Truck Proportions (*LtTruckProp*)**: The proportion of household vehicles that are light trucks (SUVs, pickup trucks) as opposed to autos. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "LtTruckProp",
+       "VALUE": "0.45",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+   
 
 ### Internal Module Inputs
 
@@ -849,7 +866,7 @@ This module is similar to [AssignVehicleFeatures](#assignvehiclefeatures), but u
 7. **NumLtTrkFuture**: Number of light trucks (pickup, sport-utility vehicle, and van) owned or leased by household
 8. **NumAutoFuture**: Number of automobiles (i.e. 4-tire passenger vehicles that are not light trucks) owned or leased by household
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1311,7 +1328,7 @@ This module is similar to [CalculateTravelDemand](#calculatetraveldemand) module
 7. **DailyParkingCostFuture**: Average daily parking cost by each household estimated using model estimations of future year data
 8. **FutureCostPerMileFuture**: Total cost per mile for future year for each household estimated using model estimations of future year data
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1417,7 +1434,7 @@ This module calculates the amount of congestion using estimated data. Auto, and 
 18. **MpgAdjHh**: Average fuel efficiency adjustment for households in the region
 19. **LtVehDvmtFactor**: Light vehicle Dvmt factor adjustment factor
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1524,7 +1541,7 @@ This module is similar to [CalculateCongestionBase](#calculatecongestionbase) mo
 18. **MpgAdjHhFuture**: Average fuel efficiency adjustment for households in the region calculated using model estimation of future data
 19. **LtVehDvmtFactorFuture**: Light vehicle Dvmt factor adjustment factor calculated using model estimation of future data
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1607,7 +1624,7 @@ Induced demand is calculated for changes in roadway supply in the near term as a
 7. **TransitTrips**: Policy adjusted transit trips
 8. **Walking**: Growth in walking
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1732,6 +1749,49 @@ This module calculates scenario travel demand. The average daily VMT for each ho
    | Participation4     | 0.1                |
    | Participation5     | 0.25               |
 
+### User Input Parameters:
+
+1. **% Increase in Auto Operating Cost (*AutoCostGrowth*):** This parameter reflects the proportional increase in auto operating cost. This can be used to test different assumptions for future gas prices or the effects of increased gas taxes. A value of 1.5 multiplies base year operating costs by 1.5 and thus reflects a 50% increase. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "AutoCostGrowth",
+       "VALUE": "1.5",
+       "TYPE" : "double",
+       "UNITS" : "multiplier",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+2. **Auto Operating Surcharge Per VMT (*VmtCharge*)**: It is a cost in cents per mile that would be levied on auto users through the form of a VMT charge. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "VmtCharge",
+       "VALUE": "0.05",
+       "TYPE" : "compound",
+       "UNITS" : "USD/MI",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+3. **Work VMT Proportion (*WorkVmtProp*)**: The proportion of household VMT that takes place for commute to work purposes; used to differentiate between travel purposes for use in estimating overall VMT reductions that are targeted at the commute to work. It should be defined in [model_parameters.json](#model_parametersjson) as follows:
+
+   ```json
+   {
+       "NAME" : "WorkVmtProp",
+       "VALUE": "0.25",
+       "TYPE" : "double",
+       "UNITS" : "proportion",
+       "PROHIBIT" : "c('NA', '< 0')",
+       "ISELEMENTOF" : ""
+   }
+   ```
+
+   
+
 ### Internal Module Inputs
 
 | Package              | Module                                                      | Outputs                     | Description                                                  |
@@ -1801,7 +1861,7 @@ This module calculates scenario travel demand. The average daily VMT for each ho
 12. **IncomePolicy**: Income of the households after applying policy
 13. **CostsPolicy**: Various policy related energy costs
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -1908,7 +1968,7 @@ This module is similar to [CalculateCongestionBase](#calculatecongestionbase) mo
 18. **MpgAdjHhPolicy**: Average fuel efficiency adjustment for households in the region calculated using model estimation of future data after adjusting for policies
 19. **LtVehDvmtFactorPolicy**: Light vehicle Dvmt factor adjustment factor calculated using model estimation of future data after adjusting for policies
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
 
@@ -2029,6 +2089,6 @@ This module calculates performance metrics that are designed to address a variet
 21. **TruckConsumptionMetric**: Annual truck fuel consumption by fuel type
 22. **BusConsumptionMetric**: Annual bus fuel consumption by fuel type
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+	Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
 
 ------
