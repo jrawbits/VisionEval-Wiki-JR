@@ -33,9 +33,9 @@ There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv
 
 [**Policy**](#policy)
   - CSV Inputs
-      - [model_commute_options.csv](#model_commute_optionscsv)
+      - [region_commute_options.csv](#region_commute_optionscsv)
       - [azone_its_prop.csv](#azone_its_propcsv)
-      - [model_light_vehicles.csv](#model_light_vehiclescsv)
+      - [region_light_vehicles.csv](#region_light_vehiclescsv)
       - [marea_parking_growth.csv](#marea_parking_growthcsv)
   - JSON Inputs
       - [AutoCostGrowth](#autocostgrowth)
@@ -386,7 +386,7 @@ Here is a snapshot of the file:
 
 ### CSV Inputs
 
-### model_commute_options.csv
+### region_commute_options.csv
 
 **Percentage of employees offered commute options**: This file contains assumptions about the availability and participation in work based travel demand management programs. The policies are ridesharing programs, transit pass programs, telecommuting or alternative work schedule programs, and vanpool programs. For each, the user enters the proportion of workers who participate (the data items with the “Participation” suffix). For one program, the transit subsidy, the user must also enter the subsidy level in dollars for the TransitSubsidyLevel data item.
    Here is a snapshot of the file:

@@ -24,10 +24,10 @@
 |                       |                                  | ArtLaneMiGrowth                      |      | x    |
 |                       |                                  | BusRevMiPCGrowth                     |      | x    |
 |                       |                                  | RailRevMiPCGrowth                    |      | x    |
-|                       | commute_options.csv              | model_commute_options.csv            | x    |      |
+|                       | commute_options.csv              | region_commute_options.csv           | x    |      |
 |                       | its.csv                          | azone_its_prop.csv                   | x    |      |
 |                       | vmt_charge.csv                   | VmtCharge                            |      | x    |
-|                       | light_vehicles.csv               | model_light_vehicles.csv             | x    |      |
+|                       | light_vehicles.csv               | region_light_vehicles.csv            | x    |      |
 |                       | parking_growth.csv               | marea_parking_growth.csv             | x    |      |
 | **Model Parameters**  |                                  |                                      |      |      |
 |                       | keyvalue.csv                     | AnnVmtInflator                       |      | x    |
