@@ -1,7 +1,5 @@
 VERPAT contains 29 input files and 5 parameter files, some of which the user must change and others which typically remain unchanged. This page walks the end user through these files and specifies which files must be updated to implement VERPAT in a new region.
 
-# Inputs and Parameters for VERPAT
-
 ## Input Files
 
 There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv``` file and **JSON Inputs** are specified in ```model_parameters.json``` file. The :construction: shows the connection between RPAT inputs to VERPAT inputs.
