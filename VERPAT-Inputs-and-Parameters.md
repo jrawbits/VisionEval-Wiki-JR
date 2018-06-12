@@ -45,24 +45,28 @@ There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv
       - [RailRevMiPCGrowth](#railrevmipcgrowth)
       - [VmtCharge](#vmtcharge)
 
+### Model Parameters
+
+There are two ways to specify model parameters. Some parameters are specified in a ```*.csv``` file and rest in a ```model_parameters.json``` file.
+
 [**Model Parameters**](#model-parameters)
 
-  - CSV Inputs
+  - CSV Parameters
       - [model_accident_rates.csv](#model_accident_ratescsv)
       - [model_fuel_prop_by_veh.csv](#model_fuel_prop_by_vehcsv)
       - [model_fuel_composition_prop.csv](#model_fuel_composition_propcsv)
-    - [model_fuel_co2.csv](#model_fuel_co2csv)
-    - [model_place_type_elasticities.csv](#model_place_type_elasticitiescsv)
-    - [model_place_type_relative_values.csv](#model_place_type_relative_valuescsv)
-    - [model_tdm_ridesharing.csv](#model_tdm_ridesharingcsv)
-    - [model_tdm_transit.csv](#model_tdm_transitcsv)
-    - [model_tdm_transitlevels.csv](#model_tdm_transitlevelscsv)
-    - [model_tdm_vanpooling.csv](#model_tdm_vanpoolingcsv)
-    - [model_tdm_workschedule.csv](#model_tdm_workschedulecsv)
-    - [model_tdm_workschedulelevels.csv](#model_tdm_workschedulelevelscsv)
-    - [model_transportation_costs.csv](#model_transportation_costscsv)
-    - [model_veh_mpg_by_year.csv](#model_veh_mpg_by_yearcsv)
-- JSON Inputs
+          - [model_fuel_co2.csv](#model_fuel_co2csv)
+          - [model_place_type_elasticities.csv](#model_place_type_elasticitiescsv)
+          - [model_place_type_relative_values.csv](#model_place_type_relative_valuescsv)
+          - [model_tdm_ridesharing.csv](#model_tdm_ridesharingcsv)
+          - [model_tdm_transit.csv](#model_tdm_transitcsv)
+          - [model_tdm_transitlevels.csv](#model_tdm_transitlevelscsv)
+          - [model_tdm_vanpooling.csv](#model_tdm_vanpoolingcsv)
+          - [model_tdm_workschedule.csv](#model_tdm_workschedulecsv)
+          - [model_tdm_workschedulelevels.csv](#model_tdm_workschedulelevelscsv)
+          - [model_transportation_costs.csv](#model_transportation_costscsv)
+          - [model_veh_mpg_by_year.csv](#model_veh_mpg_by_yearcsv)
+- JSON Parameters
   - [AnnVmtInflator](#annvmtinflator)
   - [BaseCostPerMile](#basecostpermile)
   - [DvmtBudgetProp](#DvmtBudgetProp)
@@ -73,7 +77,7 @@ There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv
   - [TruckVmtGrowthMultiplier](#TruckVmtGrowthMultiplier)
   - [WorkVmtProp](#WorkVmtProp)
 
-## Input Parameter Files
+## Model Definition Files
 
   - model_parameters.json
   - run_parameters.json
@@ -559,9 +563,11 @@ Here is a snapshot of the file:
 
 [Top](#input-files)
 
-## Model Parameters
+# Model Parameters
 
 ------
+
+Users can modify these parameters to test alternative scenarios. For e.g. users can use [model_veh_mpg_by_year.csv](#model_veh_mpg_by_yearcsv) to test alternative vehicle development scenarios, such as improved technology and/or fuel economy standards that lead to higher fuel economies.
 
 ### CSV Inputs
 
@@ -801,7 +807,7 @@ Here is a snapshot of the file:
 
 ### model_veh_mpg_by_year.csv
 
-**Vehicle fuel economy (*model_veh_mpg_by_year.csv*)**: This file contains the estimates and forecasts of average fuel economy and power economy in miles per gallon for autos, light trucks, heavy trucks (trucks) and miles per kilowatt for trains by vehicle model year. Note that this is not the fleet average for that year. It is the average for new vehicles sold in that year. The fuel economy is the same for all fuel types and is measured in gasoline equivalent gallons (i.e. energy content of a gallon of gasoline). This file is used in the calculations of fuel consumption. This file can be used to test alternative vehicle development scenarios, such as improved technology and/or fuel economy standards that lead to higher vehicle fuel economies.
+**Vehicle fuel economy (*model_veh_mpg_by_year.csv*)**: This file contains the estimates and forecasts of average fuel economy and power economy in miles per gallon for autos, light trucks, heavy trucks (trucks) and miles per kilowatt for trains by vehicle model year. Note that this is not the fleet average for that year. It is the average for new vehicles sold in that year. The fuel economy is the same for all fuel types and is measured in gasoline equivalent gallons (i.e. energy content of a gallon of gasoline). This file is used in the calculations of fuel consumption.
 Here is a snapshot of the file:
 
 | ModelYear                      | AutoMpg                        | LtTruckMpg                     | TruckMpg                       | BusMpg                         | TrainMpg                       |
