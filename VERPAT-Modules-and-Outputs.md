@@ -1,5 +1,3 @@
-# Inputs and Outputs
-
 The VERPAT model is a compilation of several packages, listed below, the inputs of which are described respectively. The inputs are classified into five categories:
 
 1. **User input files**: These are input files (model or scenario specific) that a user is recommended to change.
