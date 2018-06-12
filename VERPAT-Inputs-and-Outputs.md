@@ -1,4 +1,4 @@
-This page describes the VERPAT inputs (including definitions) and outputs by module. For descriptions focused on a single part of the VERPAT model, see:
+The VERPAT inputs (including definitions) and outputs are described in the following pages:
 
   - [Inputs and parameters](VERPAT-Inputs-and-Parameters)
   - [Modules and Outputs](VERPAT-Modules-and-Outputs)
