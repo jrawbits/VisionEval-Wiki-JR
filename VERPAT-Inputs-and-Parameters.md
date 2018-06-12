@@ -49,7 +49,7 @@ There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv
 
 There are two ways to specify model parameters. Some parameters are specified in a ```*.csv``` file and rest in a ```model_parameters.json``` file.
 
-[**Model Parameters**](#model-parameters)
+[**Model Parameters**](#model-parameters-1)
 
   - CSV Parameters
       - [model_accident_rates.csv](#model_accident_ratescsv)
