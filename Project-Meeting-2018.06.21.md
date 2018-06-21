@@ -1,5 +1,6 @@
 # Documentation
   - VERPAT wiki-based [documentation](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Outputs) complete
+  - Need to add advice for actually coding up scenarios, reviewing results, etc, i.e. more like a tutorial, which we're planning to do in the next amendment
 
 # New Issues
   - [#186](https://github.com/gregorbj/VisionEval/issues/186) and [#183](https://github.com/gregorbj/VisionEval/issues/183)
