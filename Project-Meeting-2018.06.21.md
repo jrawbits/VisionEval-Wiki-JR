@@ -1,6 +1,9 @@
 # Documentation
   - VERPAT wiki-based [documentation](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Outputs) complete
 
+# New Issues
+  - [#186](https://github.com/gregorbj/VisionEval/issues/186) and [#183](https://github.com/gregorbj/VisionEval/issues/183)
+
 # Pull request
   - RSG and [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
   - What's our [contribution review process](https://github.com/gregorbj/VisionEval/wiki/Example-Review) for the [pull request](https://github.com/gregorbj/VisionEval/pull/185)?
