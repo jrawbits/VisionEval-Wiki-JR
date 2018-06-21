@@ -10,4 +10,4 @@
   - Done with AASHTO first amendment other than peer exchange and support tasks, and now starting on [user experience](https://github.com/gregorbj/VisionEval/wiki/VE-User-Experience) amendment
   - Any updates on the Peer Exchange discussion? 
   - Volpe and RSG submitting a session to [Scenario Planning Conference](http://www.scenarioplanning.io/conferences/) in September
-  - Anything to discuss for our ITM session next week?
+  - Anything to discuss for our [ITM session](http://www.cvent.com/events/7th-trb-innovations-in-travel-modeling-conference/event-summary-4bb3bd199b894528aba85ddc0102452f.aspx) next week?
