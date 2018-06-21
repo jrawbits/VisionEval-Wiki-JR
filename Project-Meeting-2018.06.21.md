@@ -1,6 +1,6 @@
 # Documentation
   - VERPAT wiki-based [documentation](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Outputs) complete
-  - Need to add advice for actually coding up scenarios, reviewing results, etc, i.e. more like a tutorial, which we're planning to do in the next amendment
+  - Need to add advice for actually coding up scenarios, reviewing results, etc, i.e. more like a tutorial, which we're planning to do soon
 
 # New issues
   - [#183](https://github.com/gregorbj/VisionEval/issues/183) - We decided to tie initialization features to some module.  We're not going to do this right now since it requires framework revisions, which are low priority right now.  Let's revisit under the pooled funds.
