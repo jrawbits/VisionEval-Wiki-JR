@@ -3,7 +3,7 @@
   - Need to add advice for actually coding up scenarios, reviewing results, etc, i.e. more like a tutorial, which we're planning to do in the next amendment
 
 # New Issues
-  - [#183](https://github.com/gregorbj/VisionEval/issues/183)
+  - [#183](https://github.com/gregorbj/VisionEval/issues/183) - We decided to tie initialization features to some module.  We're not going to do this right now since it requires framework revisions, which are low priority right now.  Let's revisit under the pooled funds.
   - [#186](https://github.com/gregorbj/VisionEval/issues/186)
 
 # Pull request
