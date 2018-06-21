@@ -8,7 +8,7 @@
 
 # Pull request
   - RSG and [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
-  - What's our [contribution review process](https://github.com/gregorbj/VisionEval/wiki/Example-Review) for the [pull request](https://github.com/gregorbj/VisionEval/pull/185)?
+  - What's our [contribution review process](https://github.com/gregorbj/VisionEval/wiki/Example-Review) for this [pull request](https://github.com/gregorbj/VisionEval/pull/185)?
 
 # Other news
   - Started on [GreenSTEP conversion](https://github.com/gregorbj/VisionEval/wiki/VE-State-Kickoff) under ODOT project
