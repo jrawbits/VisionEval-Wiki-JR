@@ -4,7 +4,7 @@
 
 # New issues
   - [#183](https://github.com/gregorbj/VisionEval/issues/183) - We decided to tie initialization features to some module.  We're not going to do this right now since it requires framework revisions, which are low priority right now.  Let's revisit under the pooled funds.
-  - [#186](https://github.com/gregorbj/VisionEval/issues/186)
+  - [#186](https://github.com/gregorbj/VisionEval/issues/186) - will discuss next time
 
 # Pull request
   - RSG for [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
