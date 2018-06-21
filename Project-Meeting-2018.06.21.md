@@ -3,7 +3,8 @@
   - Need to add advice for actually coding up scenarios, reviewing results, etc, i.e. more like a tutorial, which we're planning to do in the next amendment
 
 # New Issues
-  - [#186](https://github.com/gregorbj/VisionEval/issues/186) and [#183](https://github.com/gregorbj/VisionEval/issues/183)
+  - [#183](https://github.com/gregorbj/VisionEval/issues/183)
+  - [#186](https://github.com/gregorbj/VisionEval/issues/186)
 
 # Pull request
   - RSG and [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
