@@ -7,7 +7,7 @@
   - [#186](https://github.com/gregorbj/VisionEval/issues/186)
 
 # Pull request
-  - RSG and [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
+  - RSG for [NYSERDA](https://www.nyserda.ny.gov/) added support for [EVs to VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-EV-Module)
   - What's our [contribution review process](https://github.com/gregorbj/VisionEval/wiki/Example-Review) for this [pull request](https://github.com/gregorbj/VisionEval/pull/185)?
 
 # Other news
