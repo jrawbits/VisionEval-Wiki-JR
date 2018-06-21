@@ -37,7 +37,7 @@ The "run_parameters.json" file contains parameters that define key attributes of
 
 ### model_parameters.json
 
-The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs and outputs](VERPAT-Modules-and-Outputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
+The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs and outputs](VERPAT-Modules-and-Outputs) section. Some of these values may be modified to run scenarios. The variables that can be modified are described further [Input Files](#input-files). The format of the VERPAT *model_parameters.json* file is as follows:
 
 ```json
 [
@@ -83,7 +83,7 @@ The "model_parameters.json" can contain global parameters for a particular model
 
 ### deflators.csv
 
-The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
+The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. This file does not need to be modified unless the years for which the dollar values used in the input dataset is not contained in this file. The format of the file is as follows:
 
 |              Year              |             Value              |
 | :----------------------------: | :----------------------------: |
@@ -98,7 +98,7 @@ The **deflators.csv** file defines the annual deflator values, such as the consu
 
 ### geo.csv
 
-The "geography.csv" file describes all of the geographic relationships for the model and the names of geographic entities in a [CSV-formatted](https://en.wikipedia.org/wiki/Comma-separated_values) text file. The format of the file is as follows:
+The "geography.csv" file describes all of the geographic relationships for the model and the names of geographic entities in a [CSV-formatted](https://en.wikipedia.org/wiki/Comma-separated_values) text file. **Azone**, **Bzone**, and **Marea** should remain consistent with the input data. The format of the file is as follows:
 
 | [Azone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Bzone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Czone](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) | [Marea](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#62-model-geography) |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -206,7 +206,7 @@ The following is an enumeration of each place type abbreviation as it appears in
 
 ## units.csv
 
-The "units.csv" file describes the default units to be used for storing complex data types in the model. The format of the file is as follows:
+The "units.csv" file describes the default units to be used for storing complex data types in the model. This file should not be modified by the user. The format of the file is as follows:
 
 | Type                           | Units                          |
 | ------------------------------ | ------------------------------ |
