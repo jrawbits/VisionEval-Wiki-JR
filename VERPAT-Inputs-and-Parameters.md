@@ -1,99 +1,20 @@
-VERPAT contains 29 input files and 5 parameter files, some of which the user must change and others which typically remain unchanged. This page walks the end user through these files and specifies which files must be updated to implement VERPAT in a new region.
+VERPAT contains 5 definition files and 29 input files, some of which the user must change and others which typically remain unchanged. This page walks the end user through these files and specifies which files must be updated to implement VERPAT in a new region.
 
-## Input Files
 
-There are two ways to specify inputs. **CSV Inputs** are specified in a ```*.csv``` file and **JSON Inputs** are specified in ```model_parameters.json``` file. The :construction: shows the connection between RPAT inputs to VERPAT inputs.
 
-[**Built Environment**](#built-environment)
-  - CSV Inputs
-      - [bzone_pop_emp_prop.csv](#bzone_pop_emp_propcsv)
+# Model Definition Files
 
-[**Demand**](#demand)
-  - CSV Inputs
-      - [region_trips_per_cap.csv](#region_trips_per_capcsv)
-      - [azone_employment_by_naics.csv](#azone_employment_by_naicscsv)
-      - [azone_hh_pop_by_age.csv](#azone_hh_pop_by_agecsv)
-      - [azone_gq_pop_by_age.csv](#azone_gq_pop_by_agecsv)
-      - [azone_hhsize_targets.csv](#azone_hhsize_targetscsv)
-      - [azone_per_cap_inc.csv](#azone_per_cap_inccsv)
-      - [azone_relative_employment.csv](#azone_relative_employmentcsv)
-      - [region_truck_bus_vmt.csv](#region_truck_bus_vmtcsv)
-  - JSON Inputs
-      - [BaseLtVehDvmt](#baseltvehdvmt)
-      - [BaseFwyArtProp](#basefwyartprop)
-      - [EmploymentGrowth](#employmentgrowth)
-
-[**Transport Supply**](#Transport-Supply)
-
-- CSV Inputs
-  - [marea_lane_miles.csv](#marea_lane_milescsv)
-  - [marea_rev_miles_pc.csv](#marea_rev_miles_pccsv)
-
-[**Policy**](#policy)
-  - CSV Inputs
-      - [region_commute_options.csv](#region_commute_optionscsv)
-      - [azone_its_prop.csv](#azone_its_propcsv)
-      - [region_light_vehicles.csv](#region_light_vehiclescsv)
-      - [marea_parking_growth.csv](#marea_parking_growthcsv)
-  - JSON Inputs
-      - [AutoCostGrowth](#autocostgrowth)
-      - [FwyLaneMiGrowth](#fwylanemigrowth)
-      - [ArtLaneMiGrowth](#artlanemigrowth)
-      - [BusRevMiPCGrowth](#busrevmipcgrowth)
-      - [RailRevMiPCGrowth](#railrevmipcgrowth)
-      - [VmtCharge](#vmtcharge)
-
-### Model Parameters
-
-There are two ways to specify model parameters. Some parameters are specified in a ```*.csv``` file and rest in a ```model_parameters.json``` file.
-
-[**Model Parameters**](#model-parameters-1)
-
-  - CSV Parameters
-      - [model_accident_rates.csv](#model_accident_ratescsv)
-      - [model_fuel_prop_by_veh.csv](#model_fuel_prop_by_vehcsv)
-      - [model_fuel_composition_prop.csv](#model_fuel_composition_propcsv)
-      - [model_fuel_co2.csv](#model_fuel_co2csv)
-      - [model_place_type_elasticities.csv](#model_place_type_elasticitiescsv)
-      - [model_place_type_relative_values.csv](#model_place_type_relative_valuescsv)
-      - [model_tdm_ridesharing.csv](#model_tdm_ridesharingcsv)
-      - [model_tdm_transit.csv](#model_tdm_transitcsv)
-      - [model_tdm_transitlevels.csv](#model_tdm_transitlevelscsv)
-      - [model_tdm_vanpooling.csv](#model_tdm_vanpoolingcsv)
-      - [model_tdm_workschedule.csv](#model_tdm_workschedulecsv)
-      - [model_tdm_workschedulelevels.csv](#model_tdm_workschedulelevelscsv)
-      - [model_transportation_costs.csv](#model_transportation_costscsv)
-      - [model_veh_mpg_by_year.csv](#model_veh_mpg_by_yearcsv)
-- JSON Parameters
-  - [AnnVmtInflator](#annvmtinflator)
-  - [BaseCostPerMile](#basecostpermile)
-  - [DvmtBudgetProp](#DvmtBudgetProp)
-  - [FuelCost](#FuelCost)
-  - [GasTax](#GasTax)
-  - [LtTruckProp](#LtTruckProp)
-  - [TranRevMiAdjFactor](#TranRevMiAdjFactor)
-  - [TruckVmtGrowthMultiplier](#TruckVmtGrowthMultiplier)
-  - [WorkVmtProp](#WorkVmtProp)
-
-## Model Definition Files
-
-  - model_parameters.json
-  - run_parameters.json
-  - units.csv
-  - deflators.csv
-  - geo.csv
-
-# Definitions
 The following five files need to be configured in the "defs" directory:
-  - [run_parameters.json](#run_parametersjson)
-  - [model_parameters.json](#model_parametersjson)
-  - [deflators.csv](#deflatorscsv)
-  - [geo.csv](#geocsv)
-  - [units.csv](#unitscsv)
 
-## run_parameters.json
+- [run_parameters.json](#run_parametersjson)
+- [model_parameters.json](#model_parametersjson)
+- [deflators.csv](#deflatorscsv)
+- [geo.csv](#geocsv)
+- [units.csv](#unitscsv)
 
-The "run_parameters.json" file contains parameters that define key attributes of the model run and relationships to other model runs. A more detailed description of the file can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The format of the VERPAT *run_parameters.json* file is as follows:
+### run_parameters.json
+
+The "run_parameters.json" file contains parameters that define key attributes of the model run and relationships to other model runs. A more detailed description of the file can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The results of model run are stored in a directory with the name specified by ```"DatastoreName"```. This name should be changed when running different scenarios. For e.g. when running base scenario the output directory name can be set to *BaseScenario* by using ```"DatastoreName": ["BaseScenario"]``` in the file. The format of the VERPAT *run_parameters.json* file is as follows:
 
 ```json
 {
@@ -110,13 +31,13 @@ The "run_parameters.json" file contains parameters that define key attributes of
 }
 ```
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)
+[Inputs](#inputs)  [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ------
 
-## model_parameters.json
+### model_parameters.json
 
-The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs and outputs](#inputs-and-outputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
+The "model_parameters.json" can contain global parameters for a particular model configuration that may be used by multiple modules. A more detailed description of the file and its structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure). The description about the variables, required for **VERPAT**, listed in the file are documented by the modules that uses them in the [inputs and outputs](VERPAT-Modules-and-Outputs) section. The format of the VERPAT *model_parameters.json* file is as follows:
 
 ```json
 [
@@ -156,25 +77,26 @@ The "model_parameters.json" can contain global parameters for a particular model
 ]
 ```
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ------
 
-## deflators.csv
+### deflators.csv
+
 The **deflators.csv** file defines the annual deflator values, such as the consumer price index, that are used to convert currency values between different years for currency denomination. The format of the file is as follows:
 
-|              Year              |  Value   |
-| :----------------------------: | :------: |
-|              1999              |  172.6   |
-|              2000              |   178    |
-|              2001              |  182.4   |
+|              Year              |             Value              |
+| :----------------------------: | :----------------------------: |
+|              1999              |             172.6              |
+|              2000              |              178               |
+|              2001              |             182.4              |
 | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ------
 
-## geo.csv
+### geo.csv
 
 The "geography.csv" file describes all of the geographic relationships for the model and the names of geographic entities in a [CSV-formatted](https://en.wikipedia.org/wiki/Comma-separated_values) text file. The format of the file is as follows:
 
@@ -196,13 +118,13 @@ The "geography.csv" file describes all of the geographic relationships for the m
 
 The geography is described by 13 place types as shown below. One emerging school of thought in land use planning is to consider land uses in terms of place types instead of simply residential or commercial or high density compared to low density. A place type refers to all of the characteristics of a developed area including the types of uses included, the mix of uses, the density and intensity of uses.
 
-|                                  | URBAN <br />CORE | CLOSE-IN <br />COMMUNITY |   SUBURBAN   |    RURAL     |
-| :------------------------------- | :--------------: | :----------------------: | :----------: | :----------: |
-| **Residential**                  |   ![](./VERPAT_images/checkmark.gif)   |       ![](./VERPAT_images/checkmark.gif)       | ![](./VERPAT_images/checkmark.gif) |              |
-| **Commercial**                   |   ![](./VERPAT_images/checkmark.gif)   |       ![](./VERPAT_images/checkmark.gif)       | ![](./VERPAT_images/checkmark.gif) |              |
-| **Mixed-Use**                    |   ![](./VERPAT_images/checkmark.gif)   |       ![](./VERPAT_images/checkmark.gif)       | ![](./VERPAT_images/checkmark.gif) |              |
-| **Transit-Oriented Development** |   ![](./VERPAT_images/checkmark.gif)   |       ![](./VERPAT_images/checkmark.gif)       | ![](./VERPAT_images/checkmark.gif) |              |
-| **Rural/Greenfield**             |                  |                          |              | ![](./VERPAT_images/checkmark.gif) |
+|                                  |          URBAN <br />CORE          |      CLOSE-IN <br />COMMUNITY      |              SUBURBAN              |               RURAL                |
+| :------------------------------- | :--------------------------------: | :--------------------------------: | :--------------------------------: | :--------------------------------: |
+| **Residential**                  | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) |                                    |
+| **Commercial**                   | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) |                                    |
+| **Mixed-Use**                    | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) |                                    |
+| **Transit-Oriented Development** | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) | ![](./VERPAT_images/checkmark.gif) |                                    |
+| **Rural/Greenfield**             |                                    |                                    |                                    | ![](./VERPAT_images/checkmark.gif) |
 
 An initial typology or system to organize place types can be traced to the Smart Growth Transect, which contained six zones in its original configuration including:
 
@@ -227,7 +149,7 @@ Several of these place type categories provided additional options such as the C
 
 An alternative view of place types was provided by Reconnecting America, which developed a performance based place type approach for describing areas proximate to transit stations. Station areas would vary in terms of their relative focus between residential units, employees or a mix of the two. Station areas are also characterized on their relative intensity as well as shown below.
 
-![PERFORMANCE BASED TYPOLOGY FOR TRANSIT STATION AREAS](./VERPAT_images/performancebasedtypology.png)
+![PERFORMANCE BASED TYPOLOGY FOR TRANSIT STATION AREAS](C:/Users/aditya.gore/OneDrive%20-%20Resource%20Systems%20Group,%20Inc/VisionEval.wiki/VERPAT_images/performancebasedtypology.png)
 
 The approach employed for the place types in RPAT is therefore an amalgam of these approaches, in that the terminology is borrowed from the Smart Growth Transect and Caltrans Smart Mobility Study, while the relative performance of each place type is taken from the Reconnecting America approach but applied to a region instead of transit station sites.
 
@@ -278,7 +200,7 @@ The following is an enumeration of each place type abbreviation as it appears in
 | UC_M         | Urban Core Mixed Use                            |
 | UC_T         | Urban Core Transit Oriented Development         |
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)  
 
 ------
 
@@ -286,18 +208,95 @@ The following is an enumeration of each place type abbreviation as it appears in
 
 The "units.csv" file describes the default units to be used for storing complex data types in the model. The format of the file is as follows:
 
-| Type     | Units    |
-| -------- | -------- |
-| currency | USD      |
-| distance | MI       |
-| area     | SQMI     |
+| Type                           | Units                          |
+| ------------------------------ | ------------------------------ |
+| currency                       | USD                            |
+| distance                       | MI                             |
+| area                           | SQMI                           |
 | ![](./VERPAT_images/vdots.gif) | ![](./VERPAT_images/vdots.gif) |
 
 The VisionEval model system keeps track of the types and units of measure of all data that is processed. More details about the file and structure can be found [here](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#63-data-types-units-and-currency-deflators).
 
-[Top](#contents)										[Definitions](#definitions)								[Inputs/Outputs](#inputs-and-outputs)  
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)  
 
-------
+
+
+# Input Files
+
+### Inputs
+
+The scenario inputs are split into four (4) categories: *Built Environment*, *Demand*, *Policy*, and *Supply*. There are two ways to specify these inputs. **CSV Inputs** are specified in a ```*.csv``` file and **JSON Inputs** are specified in ```model_parameters.json``` file. The users are encouraged to change these inputs to build different scenarios. The [RPAT to VERPAT](RPAT-To-VERPAT) the connection between RPAT inputs to VERPAT inputs.
+
+[**Built Environment**](#built-environment)
+  - CSV Inputs
+      - [bzone_pop_emp_prop.csv](#bzone_pop_emp_propcsv)
+
+[**Demand**](#demand)
+  - CSV Inputs
+      - [region_trips_per_cap.csv](#region_trips_per_capcsv)
+      - [azone_employment_by_naics.csv](#azone_employment_by_naicscsv)
+      - [azone_hh_pop_by_age.csv](#azone_hh_pop_by_agecsv)
+      - [azone_gq_pop_by_age.csv](#azone_gq_pop_by_agecsv)
+      - [azone_hhsize_targets.csv](#azone_hhsize_targetscsv)
+      - [azone_per_cap_inc.csv](#azone_per_cap_inccsv)
+      - [azone_relative_employment.csv](#azone_relative_employmentcsv)
+      - [region_truck_bus_vmt.csv](#region_truck_bus_vmtcsv)
+  - JSON Inputs
+      - [BaseLtVehDvmt](#baseltvehdvmt)
+      - [BaseFwyArtProp](#basefwyartprop)
+      - [EmploymentGrowth](#employmentgrowth)
+
+[**Transport Supply**](#Transport-Supply)
+
+- CSV Inputs
+  - [marea_lane_miles.csv](#marea_lane_milescsv)
+  - [marea_rev_miles_pc.csv](#marea_rev_miles_pccsv)
+
+[**Policy**](#policy)
+  - CSV Inputs
+      - [region_commute_options.csv](#region_commute_optionscsv)
+      - [azone_its_prop.csv](#azone_its_propcsv)
+      - [region_light_vehicles.csv](#region_light_vehiclescsv)
+      - [marea_parking_growth.csv](#marea_parking_growthcsv)
+  - JSON Inputs
+      - [AutoCostGrowth](#autocostgrowth)
+      - [FwyLaneMiGrowth](#fwylanemigrowth)
+      - [ArtLaneMiGrowth](#artlanemigrowth)
+      - [BusRevMiPCGrowth](#busrevmipcgrowth)
+      - [RailRevMiPCGrowth](#railrevmipcgrowth)
+      - [VmtCharge](#vmtcharge)
+
+### Model Parameters
+
+There are two ways to specify model parameters. **CSV Parameters** are specified in a ```*.csv``` file and **JSON Parameters** in a ```model_parameters.json``` file. While you are provided access to the model parameters, you are encouraged to use the default parameter values unless directed to use alternatives. Editing modeling parameters should be based only on research pertaining to local data sources and may result in unpredictable results.
+
+[**Model Parameters**](#model-parameters-1)
+
+  - CSV Parameters
+      - [model_accident_rates.csv](#model_accident_ratescsv)
+      - [model_fuel_prop_by_veh.csv](#model_fuel_prop_by_vehcsv)
+      - [model_fuel_composition_prop.csv](#model_fuel_composition_propcsv)
+      - [model_fuel_co2.csv](#model_fuel_co2csv)
+      - [model_place_type_elasticities.csv](#model_place_type_elasticitiescsv)
+      - [model_place_type_relative_values.csv](#model_place_type_relative_valuescsv)
+      - [model_tdm_ridesharing.csv](#model_tdm_ridesharingcsv)
+      - [model_tdm_transit.csv](#model_tdm_transitcsv)
+      - [model_tdm_transitlevels.csv](#model_tdm_transitlevelscsv)
+      - [model_tdm_vanpooling.csv](#model_tdm_vanpoolingcsv)
+      - [model_tdm_workschedule.csv](#model_tdm_workschedulecsv)
+      - [model_tdm_workschedulelevels.csv](#model_tdm_workschedulelevelscsv)
+      - [model_transportation_costs.csv](#model_transportation_costscsv)
+      - [model_veh_mpg_by_year.csv](#model_veh_mpg_by_yearcsv)
+- JSON Parameters
+  - [AnnVmtInflator](#annvmtinflator)
+  - [BaseCostPerMile](#basecostpermile)
+  - [DvmtBudgetProp](#DvmtBudgetProp)
+  - [FuelCost](#FuelCost)
+  - [GasTax](#GasTax)
+  - [LtTruckProp](#LtTruckProp)
+  - [TranRevMiAdjFactor](#TranRevMiAdjFactor)
+  - [TruckVmtGrowthMultiplier](#TruckVmtGrowthMultiplier)
+  - [WorkVmtProp](#WorkVmtProp)
 
 
 # Input Files to Change
@@ -313,7 +312,7 @@ The user should change the input files described here.
 ### bzone_pop_emp_prop.csv
 
 **Population and Jobs by Place Type**: This file contains the distribution of  population and employment among the 13 place types for base and future year. See [this](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Outputs#geocsv) explanation for more infomation regarding place types. Each column, for each year, must sum to one (1). It is acceptable to have no land use (i.e. a value of 0) in certain categories.
-   The yearly TAZ employment and population totals were summed by the 13 place type and then scaled to total one for both employment and population. The growth between the base and the future years in population and employment to each of the 13 place types is captured by the rows containing future years. The discussion of the population and jobs by place type input below describes how to allocate existing land use to the 13 place types. A similar approach can be used to allocate expected growth from spatial planning resources such as TAZ or Census Block Group level forecasts to the place types.
+   The yearly TAZ employment and population totals were summed by the 13 place type and then scaled to total one for both employment and population. The allocation of growth between the base and the future years in population and employment to each of the 13 place types is captured by the rows containing future years. The discussion of the population and jobs by place type input above describes how to allocate existing land use to the 13 place types. A similar approach can be used to allocate expected growth from spatial planning resources such as TAZ or Census Block Group level forecasts to the place types.
    Here is a snapshot of the file:
 
 | Geo   | Year | Pop  | Emp  |
@@ -345,7 +344,7 @@ The user should change the input files described here.
 | UC_M  | 2035 | 0.1  | 0.1  |
 | UC_T  | 2035 | 0.1  | 0.1  |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ## Demand
 
@@ -367,7 +366,7 @@ The user should change the input files described here.
 | Auto    | 3.2   |
 | Transit | 0.4   |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 
 ### azone_employment_by_naics.csv
@@ -406,7 +405,7 @@ The user should change the input files described here.
 | Multnomah | 2005 | 212319 | 0    | 1    | 1    | 0    | 0      | 0      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
 | Multnomah | 2005 | 212321 | 0    | 4    | 1    | 1    | 1      | 1      | 0      | 0        | 0        | 0        | 0     | 0       | 0       | 0       | 0       |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_hh_pop_by_age.csv
 
@@ -428,11 +427,11 @@ The user should change the input files described here.
 | Multnomah | 2005 | 129869   | 41133     | 99664     | 277854    | 71658     | 72648     |
 | Multnomah | 2035 | 169200   | 48800     | 144050    | 327750    | 116100    | 162800    |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_gq_pop_by_age.csv :construction:
 
-**Group quarter population**: This file contains group quarters population estimates/forecasts by county and age cohort for each of the base and future years. The file format includes six age categories used by the population synthesis model:
+**Group quarter population**: This file contains group quarters population estimates/forecasts by county and age cohort for each of the base and future years. A value of 1 is needed for each year in exactly one column  even if the users have no group quarters. The file format includes six age categories used by the population synthesis model:
 
 - **0-14**
 - **15-19**
@@ -448,7 +447,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 0           | 0            | 0            | 1            | 0            | 0            |
 | Multnomah | 2035 | 0           | 0            | 0            | 1            | 0            | 0            |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_hhsize_targets.csv :construction:
 
@@ -464,7 +463,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | NA        | NA         |
 | Multnomah | 2035 | NA        | NA         |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_per_cap_inc.csv
 
@@ -476,7 +475,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 32515           | 0               |
 | Multnomah | 2035 | 40000           | 0               |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_relative_employment.csv
 
@@ -495,7 +494,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 1            | 1            | 1            | 1            | 1            |
 | Multnomah | 2035 | 1            | 1            | 1            | 1            | 1            |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### region_truck_bus_vmt.csv
 
@@ -508,7 +507,7 @@ Here is a snapshot of the file:
 | BusVmt   | 0       | 0.15     | 0.591854 | 0.258146 |
 | TruckVmt | 0.08    | 0.452028 | 0.398645 | 0.149327 |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### JSON Inputs
 
@@ -527,7 +526,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### BaseFwyArtProp
 
@@ -544,7 +543,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### EmploymentGrowth
 
@@ -561,7 +560,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ## Transport Supply
 
@@ -580,7 +579,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 250       | 900       |
 | Multnomah | 2035 | 250       | 900       |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### marea_rev_miles_pc.csv
 
@@ -593,7 +592,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 19         | 4           |
 | Multnomah | 2035 | 19         | 4           |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ## Policy
 
@@ -618,7 +617,7 @@ Here is a snapshot of the file:
 | Vanpooling     | MediumLevelParticipation        | 0.01      |
 | Vanpooling     | HighLevelParticipation          | 0.01      |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### azone_its_prop.csv
 
@@ -632,7 +631,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 0    |
 | Multnomah | 2035 | 0    |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 
 ### region_light_vehicles.csv
@@ -653,17 +652,17 @@ Here is a snapshot of the file:
 | Threshold    | 2         |
 | PropSuitable | 0.1       |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### marea_parking_growth.csv
 
 **Increase in parking cost and supply**: This file contains information that allows the effects of policies such as workplace parking charges and "*cash-out buy-back*" programs to be tested. The input parameters are as follows and should be entered for both the base and future year:
 
-   - **PropWrkPkg**: proportion of employees that park at work
-   - **PropWrkChrgd**: proportion of employers that charge for parking
+   - **PropWorkParking**: proportion of employees that park at work
+   - **PropWorkCharged**: proportion of employers that charge for parking
    - **PropCashOut**: proportion of employment parking that is converted from being free to pay under a "*cash-out buy-back*" type of program
-   - **PrkOthChrgd**: proportion of other parking that is not free
-   - **PkgCost**: average daily parking cost. This variable is the average daily parking cost for those who incur a fee to park. If the paid parking varies across the region, then the "*PkgCost*" value should reflect the average of those parking fees, but weighted by the supply – so if most parking is in the Center City, then the average will be heavily weighted toward the price in the Center City.
+   - **PropOtherCharged**: proportion of other parking that is not free
+   - **ParkingCost.2000**: average daily parking cost in 2000 year USD. In order to use base year dollars just replace ***2000*** in column labels with base year. This variable is the average daily parking cost for those who incur a fee to park. If the paid parking varies across the region, then the "*PkgCost*" value should reflect the average of those parking fees, but weighted by the supply – so if most parking is in the Center City, then the average will be heavily weighted toward the price in the Center City.
 
    Here is a snapshot of the file:
 
@@ -672,7 +671,7 @@ Here is a snapshot of the file:
 | Multnomah | 2005 | 1               | 0.1             | 0           | 0.05             | 5                |
 | Multnomah | 2035 | 1               | 0.1             | 0           | 0.05             | 5                |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### JSON Inputs
 
@@ -691,7 +690,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### FwyLaneMiGrowth
 
@@ -708,7 +707,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### ArtLaneMiGrowth
 
@@ -725,7 +724,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### BusRevMiPCGrowth
 
@@ -742,7 +741,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### RailRevMiPCGrowth
 
@@ -759,7 +758,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### VmtCharge
 
@@ -776,7 +775,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 # Model Parameters
 
@@ -802,7 +801,7 @@ Here is a snapshot of the file:
 | Injury   | 51.35  |
 | Property | 133.95 |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_fuel_prop_by_veh.csv
 
@@ -821,7 +820,7 @@ Here is a snapshot of the file:
 | Bus     | 0.995      | 0.005   | 0       |
 | Truck   | 0.945      | 0.005   | 0.05    |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_fuel_composition_prop.csv
 
@@ -839,7 +838,7 @@ Here is a snapshot of the file:
 | Bus     | 0.1        | 0.05          |
 | Truck   | 0.1        | 0.01          |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_fuel_co2.csv
 
@@ -855,7 +854,7 @@ Here is a snapshot of the file:
 | Ethanol   | 74.88     |
 | Cng       | 62.14     |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_place_type_elasticities.csv
 
@@ -876,7 +875,7 @@ Here is a snapshot of the file:
 | Regional_Accessibility | -0.2  | -0.036       | 0            | 0       |
 | Distance_to_Transit    | -0.05 | 0            | 0.29         | 0.15    |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_place_type_relative_values.csv
 
@@ -899,7 +898,7 @@ Here is a snapshot of the file:
 | UC_M  | 1.5     | 1.5       | 1.5    | 1.5                    | 1.2                 |
 | UC_T  | 1.5     | 1.5       | 1.5    | 1.5                    | 1.5                 |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_ridesharing.csv
 
@@ -913,7 +912,7 @@ Here is a snapshot of the file:
 | CIC      | 0.1           |
 | UC       | 0.15          |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_transit.csv
 
@@ -927,7 +926,7 @@ Here is a snapshot of the file:
 | CIC      | 0        | 0.034    | 0.073    | 0.164    | 0.2      |
 | UC       | 0        | 0.062    | 0.129    | 0.2      | 0.2      |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_transitlevels.csv
 
@@ -942,7 +941,7 @@ Here is a snapshot of the file:
 | Subsidy3     | 2.98              |
 | Subsidy4     | 5.96              |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_vanpooling.csv
 
@@ -956,7 +955,7 @@ Here is a snapshot of the file:
 | Medium                  | 0.0685       |
 | High                    | 0.134        |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_workschedule.csv
 
@@ -976,7 +975,7 @@ Here is a snapshot of the file:
 | Schedule440               | 0              | 0.0015         | 0.0045         | 0.007          | 0.015          | 0.0375         |
 | TelecommuteoneandhalfDays | 0              | 0.0022         | 0.0066         | 0.011          | 0.022          | 0.055          |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_tdm_workschedulelevels.csv
 
@@ -992,7 +991,7 @@ Here is a snapshot of the file:
 | Participation4     | 0.1                |
 | Participation5     | 0.25               |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_transportation_costs.csv
 
@@ -1018,7 +1017,7 @@ Here is a snapshot of the file:
 | Bus         | 0.71          | 3.4          | 0.91      |
 | Rail        | 5.11          | 4.87         | 2.19      |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### model_veh_mpg_by_year.csv
 
@@ -1038,7 +1037,7 @@ Here is a snapshot of the file:
 | 2049                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
 | 2050                           | 63.7                           | 41.1                           | 5.6                            | 4.8                            | 0.121191                       |
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### JSON Inputs
 
@@ -1057,7 +1056,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### BaseCostPerMile
 
@@ -1074,7 +1073,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### DvmtBudgetProp
 
@@ -1091,7 +1090,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### FuelCost
 
@@ -1108,7 +1107,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### GasTax
 
@@ -1125,7 +1124,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### LtTruckProp
 
@@ -1142,7 +1141,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### TranRevMiAdjFactor
 
@@ -1159,7 +1158,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### TruckVmtGrowthMultiplier
 
@@ -1176,7 +1175,7 @@ Here is a snapshot of the file:
 }
 ```
 
-[Top](#input-files)
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
 
 ### WorkVmtProp
 
@@ -1193,3 +1192,4 @@ Here is a snapshot of the file:
 }
 ```
 
+[Inputs](#inputs)   [Model Parameters](#model-parameters) [Definitions](#model-definition-files)
