@@ -10,7 +10,11 @@ Brooke Jordan
 
 # Summary
 ## Technical Activities
-* outcome of usability workshop: need to have a usable product all the way through
+* outcome of usability workshop: 
+  - need to have a usable product all the way through
+  - focus on beginner users
+  - setup online/cloud-based demo version
+  - wireframe the UI improvements first and iterate on design before programming
 * hooking up Gregor’s visualizer to VE RPAT now 
 * VERPAT documentation is updated now
 ## Peer exchange planning
