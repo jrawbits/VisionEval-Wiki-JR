@@ -24,4 +24,4 @@ Brooke Jordan
 * Kristin to circulate updated agenda
 * Kristin to circulate attendee list; team to add contact people/email addresses
 * Jeremy will invite pooled fund members; Matt will invite others
-* Team will meet on 7/13 to confirm agenda, invitation letter and invite list
+* Team will meet 8:30 am Pacific on 7/12 (Thursday) to confirm agenda, invitation letter and invite list
