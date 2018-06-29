@@ -1,12 +1,12 @@
-# Attendees:
-Brian Gregor
-Jeremy Raw
-Matt Hardy
-Tara Weidner
-Ben Stabler
-Maren Outwater
-Kristin Hull
-Brooke Jordan
+# Attendees
+* Brian Gardner
+* Jeremy Raw
+* Matt Hardy
+* Tara Weidner
+* Ben Stabler
+* Maren Outwater
+* Kristin Hull
+* Brooke Jordan
 
 # Summary
 ## Technical Activities
