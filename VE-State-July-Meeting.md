@@ -46,7 +46,7 @@
   - Assign Parking Restrictions
   - Assign Demand Management
   - Assign Car Service Availability
-  - See Brian's slides for details about each step
+  - See [Brian's slides](documents/VE-STATE_Mtg#2_final_20180705.pdf) for details about each step
 
 ## Bzone Attributes to Synthesize
   - Destination access, number of hhs, hhs by type, number of jobs by sector, place types (like development types in GreenSTEP, but plan to use RPAT-like types based on area type and development type), 
