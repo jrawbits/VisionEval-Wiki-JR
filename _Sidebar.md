@@ -30,3 +30,4 @@
 
 ### VEState Pilot Project
   - [[Kickoff Meeting|VE-State-Kickoff]]
+  - [[July Meeting|VE-State-July]]
