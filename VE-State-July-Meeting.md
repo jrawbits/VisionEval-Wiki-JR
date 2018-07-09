@@ -31,7 +31,9 @@
     - So VEState will operate at the bzone level, but with synthesized bzones based on Azone and MArea inputs
 
 ## Work Tasks
-  - 1 - Test VERSPM with multiple MAreas and Azones by duplicating the 1 existing VERSPM example MArea (basically double the region, as opposed to split all inputs into two halves)
+  - 1 - Test VERSPM with multiple MAreas and Azones to ensure existing software will work.
+    - Will duplicate the 1 existing VERSPM example MArea
+    - Basically double the region, as opposed to split all inputs into two halves, since this is easier
   - 2 - Develop the synthetic zone generator
   - 3 - Create the full set of VEState inputs and test
 
