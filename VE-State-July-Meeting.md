@@ -6,14 +6,14 @@
   - Synthetic population sensitivities/differences by region
     - You could skip some of the synthetic population parts of VE and instead use your own pop syn, provided it produces the requires household and person attributes.  For example, BMC could create a VEPopGenImporter module.  This may be done in Oregon as well for some of the models.
   - Need to improve sensitivities of auto ownership model
-   - There are more auto ownership / income sensitivities in the model as compared to EERPAT
-   - The model operates at geographies finer than counties
-   - Can adjust driving licensing rates
-   - You could also skip some of the auto ownership pats of VE and instead use your own auto own module, provided in produces the required attributes, including vehicle type and powertrains
-   - May want to better separate households auto ownership attributes from vehicle attributes for more modular use
+    - There are more auto ownership / income sensitivities in the model as compared to EERPAT
+    - The model operates at geographies finer than counties
+    - Can adjust driving licensing rates
+    - You could also skip some of the auto ownership pats of VE and instead use your own auto own module, provided in produces the required attributes, including vehicle type and powertrains
+    - May want to better separate households auto ownership attributes from vehicle attributes for more modular use
  - Setting up a Washington state model
-   - based on Oregon example
-   - need a good description of the required inputs
+    - based on Oregon example
+    - need a good description of the required inputs
 
 ## VE zone system recap
   - Region - whole model area
