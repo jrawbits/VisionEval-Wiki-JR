@@ -26,8 +26,7 @@
     - From MArea to Azones (county)
     - From Azones (districts) to Bzones (block groups)
     - SimHHs module will put households into bzones
-    - From LandUse package to SimLandUse package
-      - will create synthetic bzones with land use attributes
+    - From LandUse package to SimLandUse package, which will create synthetic bzones with land use attributes
     - VERSPM needs bzone inputs, but that's too much detail at a state level
     - So VEState will operate at the bzone level, but with synthesized bzones based on Azone and MArea inputs
 
