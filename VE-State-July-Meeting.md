@@ -3,7 +3,7 @@
   - Next meeting: October 3rd
 
 ## Questions
-  - Synthetic population
+  - Synthetic population sensitivities/differences by region
     - You could skip some of the synthetic population parts of VE and instead use your own pop syn, provided it produces the requires household and person attributes.  For example, BMC could create a VEPopGenImporter module.  This may be done in Oregon as well for some of the models.
   - Need to improve sensitivities of auto ownership model
    - There are more auto ownership / income sensitivities in the model as compared to EERPAT
