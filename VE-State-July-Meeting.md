@@ -50,9 +50,7 @@
 
 ## Bzone Attributes to Synthesize
   - Destination access, number of hhs, hhs by type, number of jobs by sector, place types (like development types in GreenSTEP, but plan to use RPAT-like types based on area type and development type), 
-
-## Estimation
-  - Plan to use EPA SLD at block group level for 2010
+  - Plan to use EPA SLD at block group level for 2010 to estimate the model 
 
 ## Questions
   - Will create a new branch off of develop in the repository called VEState
