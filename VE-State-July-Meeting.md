@@ -54,7 +54,7 @@
 
 ## Discussion
   - Will create a new branch off of develop in the repository called VEState
-  - Need a flow chart of model steps and a detailed description of all inputs
+  - Need a flow chart of model steps and a detailed description of all inputs, preferably for the next meeting
   - Default values will be important to get the model up and running for other states
   - Using the EPA SLD as the primary data source is great since it is available to everyone
   - Brian to get into the work and share progress ahead of the October meeting
