@@ -52,8 +52,9 @@
   - Destination access, number of hhs, hhs by type, number of jobs by sector, place types (like development types in GreenSTEP, but plan to use RPAT-like types based on area type and development type), 
   - Plan to use EPA SLD at block group level for 2010 to estimate the model 
 
-## Questions
+## Discussion
   - Will create a new branch off of develop in the repository called VEState
   - Need a flow chart of model steps and a detailed description of all inputs
   - Default values will be important to get the model up and running for other states
   - Using the EPA SLD as the primary data source is great since it is available to everyone
+  - Brian to get into the work and share progress ahead of the October meeting
