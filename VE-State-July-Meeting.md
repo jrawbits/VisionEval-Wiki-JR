@@ -57,6 +57,6 @@
   - Will create a new branch off of develop in the repository called VEState
   - Need a flow chart of model steps and a detailed description of all inputs, preferably for the next meeting
   - Default values will be important to minimized complexity in getting the model up and running for other states
-  - Using the EPA SLD as the primary data source is great since it is available to everyone
+  - Using the [EPA SLD](https://www.epa.gov/smartgrowth/smart-location-mapping#SLD) as the primary data source is great since it is available to everyone
   - Brian to get into the work and share progress, enable e-review, ahead of the October meeting
   - Post October meeting, "real world" Test of the pilot tool and report at December meeting
