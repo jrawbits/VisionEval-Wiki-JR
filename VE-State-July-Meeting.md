@@ -51,9 +51,9 @@
 ## Bzone Attributes to Synthesize BZones
   - Destination access, number of hhs, hhs by type, number of jobs by sector, place types (like development types in GreenSTEP, but plan to use RPAT-like types based on area type and development type), 
   - Plan to use [EPA SLD](https://www.epa.gov/smartgrowth/smart-location-mapping#SLD) at block group level for 2010 to develop the various models/relationships
-  - Expect some new AZone, MArea, Place Types inputs as well. Use defaults, best practice methods, to keep as manageable as possible.  RPAT Place Types will be used (e.g., as defined in Oregon). 
-Development Type (neighborhood character): TOD, Mixed Use, Employment, Residential, Rural 
-Area Type (regional role): Regional Center, Close-In-Community, Suburban, Rural (will map to Current GreenSTEP Metropolitan-Town-Rural types)
+  - Expect some new AZone, MArea, Place Types inputs as well. Use defaults, best practice methods, to keep as manageable as possible.  RPAT Place Types will be used (e.g., as defined in [Oregon](https://www.oregon.gov/ODOT/Planning/PTVSV/PlaceType_Flyer.pdf)). 
+    - **Development Type** (neighborhood character): TOD, Mixed Use, Employment, Residential, Rural 
+    - **Area Type** (regional role): Regional Center, Close-In-Community, Suburban, Rural (will map to Current GreenSTEP Metropolitan-Town-Rural types)
 
 ## Discussion
   - Will create a new branch off of develop in the repository called VEState
