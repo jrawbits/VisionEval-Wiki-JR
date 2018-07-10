@@ -1,0 +1,1 @@
+[Detailed approach](https://github.com/gregorbj/VisionEval/wiki/documents/vestate_approach_20180709.pdf)
