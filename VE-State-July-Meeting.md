@@ -48,7 +48,7 @@
   - Assign Car Service Availability
   - See [Brian's slides](https://github.com/gregorbj/VisionEval/wiki/documents/VE-STATE_Mtg2_final_20180705.pdf) for details about each step
 
-## Bzone Attributes to Synthesize
+## Bzone Attributes to Synthesize BZones
   - Destination access, number of hhs, hhs by type, number of jobs by sector, place types (like development types in GreenSTEP, but plan to use RPAT-like types based on area type and development type), 
   - Plan to use EPA SLD at block group level for 2010 to develop the various models/relationships
   - Expect some new AZone, MArea inputs as well. Use defaults, best practice methods, to keep as manageable as possible.  
