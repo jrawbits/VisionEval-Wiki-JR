@@ -37,7 +37,7 @@ The [translation of the statewide GreenSTEP to VisionEval](https://github.com/gr
 * Create [Pay As You Drive (PAYD)](https://github.com/gregorbj/VisionEval/issues/137) module as the example for new developers
 
 ## New VE Home
-Eventually VisionEval will move to its new [organization](https://github.com/VisionEval) home.
+Eventually VisionEval will move to its new [organization](http://visioneval.org/) home.
 
 ## Wishlist
 * **Safety and security**: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
