@@ -26,6 +26,6 @@
     - Wireframe revisions
     - Implement changes
     - Update documentation and draft tutorial
-
+  - See new wiki page and cleaned-up issues/milestone - https://github.com/gregorbj/VisionEval/wiki/Multiple-Scenarios
 ## VERSPM Documentation
   - @Brian working on completing the VERSPM documentation so he can branch it for VEState improvement
