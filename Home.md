@@ -21,9 +21,10 @@ Models consist of a set sequence of modules called in a run script (e.g. RSPM, R
   - [RSPM](https://github.com/gregorbj/VisionEval/tree/master/sources/models/VERSPM)
 
 ### Graphical User Interface and Scenario Viewer
-A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models is being developed.  
+A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models is being developed and integrated.  The GUI and scenario viewer support setting up, running, and viewing multiple scenarios.
   - [VEGUI](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI)
-  - [[Design | User-Interface-Design]]
+  - [Viewer](https://github.com/gregorbj/RPAT_Viewer_Pilot)
+  - [Multiple Runs](https://github.com/gregorbj/VisionEval/wiki/Multiple-Scenarios)
 
 ### Outstanding Issues and Project Progress
 The current list of VisionEval todos, feature requests, known issues, etc. is being managed as [Issues](https://github.com/gregorbj/VisionEval/issues) within [Project Milestones](https://github.com/gregorbj/VisionEval/milestones).  The [Meeting Notes](Meeting-Notes) are also a useful resource.  
