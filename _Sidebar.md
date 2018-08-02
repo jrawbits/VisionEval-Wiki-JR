@@ -12,6 +12,7 @@
 - [[Modules and Packages|Modules-and-Packages]]
 - [[Development Roadmap|Development-Roadmap]]
 - [[Documentation Plan|Documentation-Plan]]
+- [[Multiple Scenarios | Multiple-Scenarios]]
 - [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
 
 ### Project Management
@@ -19,7 +20,6 @@
  - [Issues](https://github.com/gregorbj/VisionEval/issues)
  - [Project Milestones](https://github.com/gregorbj/VisionEval/milestones)
  - [[VE User Experience | VE-User-Experience]]
- - [[Multiple Scenarios | Multiple-Scenarios]]
 
 ### Review Committee
  - [[Review Team Charter|Review-Team-Charter]]
