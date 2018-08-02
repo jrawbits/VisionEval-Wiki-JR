@@ -1,4 +1,4 @@
-Support for setting up and running multiple scenarios is inspired by the [RPAT_Viewer_Pilot](https://github.com/gregorbj/RPAT_Viewer_Pilot/blob/master/automating_rpat.md)
+Support for setting up and running multiple scenarios is inspired by the [RPAT_Viewer_Pilot](https://github.com/gregorbj/RPAT_Viewer_Pilot/blob/master/automating_rpat.md).  Much of the development related to this work is done under [this](https://github.com/gregorbj/VisionEval/milestone/17) milestone.
 
 ## Design
   - Add new [VEScenarios](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) package that does the following:
