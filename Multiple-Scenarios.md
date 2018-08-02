@@ -1,0 +1,1 @@
+The design for support for setting up and running multiple scenarios is inspired by https://github.com/gregorbj/RPAT_Viewer_Pilot/blob/master/automating_rpat.md
