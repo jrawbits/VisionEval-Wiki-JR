@@ -6,7 +6,7 @@
     - Gregorbj transfers ownership to VisionEval.org and then gregorby forks back and WSP/CS fork off of VisionEval.org.  What does @Brian think?
     - Maybe VisionEval.org re-forks at the end of the AASHTO and ODOT contracts?
     - We'll cancel Liming's pull request and the Pooled Funds can coordinate with him 
-  - I'm going to clean-up the gregorbj issues, wiki, etc. so it is focused on our scoped work.  This means closing non-scoped issues, revising the roadmap, etc.  
+  - I'm going to clean-up the gregorbj issues, wiki, etc. so it is focused on our scoped work.  This means closing non-scoped issues, revising the roadmap, etc.  --> this is largely done now
   - We should have a meeting with the development team ahead of the AMPO peer exchange so we instill confidence in the new pooled funds participants that we have a collective plan.
   - RSG is going to accept the pull request for the VE RPAT EV upgrades to the gregorbj project.  This way we can get all our stuff into one nice complete, tested, and documented effort.
 
