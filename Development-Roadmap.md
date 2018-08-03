@@ -1,43 +1,12 @@
 This page maintains current, future, and wishlist related developments to the VisionEval model system.  The current set of work packages are:
-  - [Setting Up VisionEval including VERSPM Migration](#setting-up-visioneval-including-verspm-migration) 
-  - [Integrate PSU Multi-Modal model](#integrate-psu-multi-modal-model)
-  - [VERPAT Migration](#verpat-migration)
   - [VEGreenSTEP Migration](#vegreenstep-migration)
   - [Usability](#usability) (including [[Documentation-Plan]])
-  - [Migrate to the new VisionEval home](#new-ve-home)
-  - [VEGreenSTEP Migration](#upcoming)
 
 This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
   - [Wishlist](#wishlist)
 
-## Setting Up VisionEval, including VERSPM Migration
-This current work task is described in more detail [here](Modules-and-Packages)
-
-## Integrate PSU Multi-Modal model
-Replace VERSPM modules with PSU’s Multi-Modal model, including modules which calculate household average daily vehicle miles traveled (ADVMT), and household average daily trip and miles by each of 3 alternative modes: transit, walk, bike.  This model has a more rigorous output estimation of non-vehicle  travel (bike, walk, transit) than the current VE module. In addition the model of household ADVMT has better sensitivity to auto ownership; which is non-linear. This is important in car sharing and automated vehicle policies. It also includes a new household drivers and auto ownership models. The inclusion of built form variables better aligns RSPM and RPAT methods, and allows opportunities to incorporate built form into other modules.
-
-## VERPAT Migration 
-The translation of RPAT to VERPAT still needs to be completed.  VERPAT will utilize and/or revise VE modules as needed.  For example:
-
-  - household() will start from VESimHouseholds and VESyntheticFirms
-  - urban() will start from VELandUse, see [#136](https://github.com/gregorbj/VisionEval/issues/136)
-  - accessibility() will start from VETransportSupply
-  - vehicle() will start from VEVehicleOwnership
-  - demand() will start from VETravelDemand
-  - congestion() 
-  - policy congestion()
-
 ## VEGreenSTEP Migration 
 The [translation of the statewide GreenSTEP to VisionEval](https://github.com/gregorbj/VisionEval/issues/139) is funded and planned for 2018.  It will utilize and/or revise VE modules as needed. 
-
-## Usability
-* Improve the graphic user interface and integrate the dashboard/visualizer
-* Improve documentation, as outlined in the [[Documentation-Plan]]
-* Create [Package Template](https://github.com/gregorbj/VisionEval/issues/128)
-* Create [Pay As You Drive (PAYD)](https://github.com/gregorbj/VisionEval/issues/137) module as the example for new developers
-
-## New VE Home
-Eventually VisionEval will move to its new [organization](http://visioneval.org/) home.
 
 ## Wishlist
 * **Safety and security**: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
