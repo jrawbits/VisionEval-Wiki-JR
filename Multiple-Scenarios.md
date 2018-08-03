@@ -3,7 +3,7 @@ Support for setting up and running multiple scenarios is inspired by the [RPAT_V
 ## Design
   - Add new [VEScenarios](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) package that does the following:
     - multi-run / scenario builder
-    - runs scenarios in parallel 
+    - runs scenarios outside the GUI in parallel 
     - gathers results from the multiple scenarios
     - generates the [Visualizer](https://github.com/gregorbj/RPAT_Viewer_Pilot) output file
   - An example implementation for VERPAT will be [here](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/models/VERPAT_Scenarios)
