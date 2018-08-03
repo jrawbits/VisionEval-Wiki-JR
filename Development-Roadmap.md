@@ -1,4 +1,4 @@
-This page maintains our development roadmap.  The current set of work packages are:
+This page maintains our development roadmap, including a wishlist for VisionEval.  The current set of work packages are:
   - [VEState - ODOT GreenSTEP Migration Project](https://github.com/gregorbj/VisionEval/milestone/16)
   - [UX - Improve End User Experience](https://github.com/gregorbj/VisionEval/milestone/17)
 
