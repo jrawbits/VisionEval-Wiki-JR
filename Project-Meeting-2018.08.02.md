@@ -11,7 +11,7 @@
   - We will accept the pull request for the VE RPAT EV upgrades to the gregorbj project.  This way we can get all our stuff into one nice complete, tested, and documented effort.
 
 ## Multiple Scenarios and Visualizer
-  - Added new draft [VEScenarios](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) package under [add_scenario](https://github.com/gregorbj/VisionEval/tree/add_scenario) branch
+  - Drafted new [VEScenarios](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) package under [add_scenario](https://github.com/gregorbj/VisionEval/tree/add_scenario) branch
   - Includes the following features:
     - multi-run / scenario builder
     - runs scenarios outside the GUI in parallel 
