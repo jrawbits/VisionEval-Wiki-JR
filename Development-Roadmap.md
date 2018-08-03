@@ -1,12 +1,6 @@
 This page maintains current, future, and wishlist related developments to the VisionEval model system.  The current set of work packages are:
-  - [VEGreenSTEP Migration](#vegreenstep-migration)
-  - [Usability](#usability) (including [[Documentation-Plan]])
-
-This page also maintains a wishlist, which may overlap with the project [issues](https://github.com/gregorbj/VisionEval/issues).
-  - [Wishlist](#wishlist)
-
-## VEGreenSTEP Migration 
-The [translation of the statewide GreenSTEP to VisionEval](https://github.com/gregorbj/VisionEval/issues/139) is funded and planned for 2018.  It will utilize and/or revise VE modules as needed. 
+  - [VEState - ODOT GreenSTEP Migration Project](https://github.com/gregorbj/VisionEval/milestone/16)
+  - [UX - Improve End User Experience](https://github.com/gregorbj/VisionEval/milestone/17)
 
 ## Wishlist
 * **Safety and security**: link policies to safety outcomes including ITS, autonomous vehicles, multimodal countermeasures
