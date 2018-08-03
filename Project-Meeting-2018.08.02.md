@@ -19,13 +19,13 @@
     - generates the [Visualizer](https://github.com/gregorbj/RPAT_Viewer_Pilot) output file
   - An example implementation for VERPAT is [here](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/models/VERPAT_Scenarios)
   - It is designed to also work for VERSPM
-  - @Ben to test and @Aditya to revise as needed
-  - We're planning to demo at the AMPO peer exchange
   - Next steps, see milestone [#17](https://github.com/gregorbj/VisionEval/milestone/17)
+  - @Ben to test and @Aditya to revise as needed
     - Revise VEGUI to support additional VEScenarios functionality
     - Wireframe revisions
     - Implement changes
     - Update documentation and draft tutorial
+    - We're planning to demo at the AMPO peer exchange
   - See new [multiple scenarios](https://github.com/gregorbj/VisionEval/wiki/Multiple-Scenarios) wiki page and cleaned-up issues/milestone
 ## VERSPM Documentation
   - @Brian working on completing the VERSPM documentation so he can branch it for VEState improvement
