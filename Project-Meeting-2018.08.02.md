@@ -20,7 +20,7 @@
   - An example implementation for VERPAT is [here](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/models/VERPAT_Scenarios)
   - It is designed to also work for VERSPM
   - Next steps, see milestone [#17](https://github.com/gregorbj/VisionEval/milestone/17)
-  - @Ben to test and @Aditya to revise as needed
+    - @Ben to test and @Aditya to revise as needed
     - Revise VEGUI to support additional VEScenarios functionality
     - Wireframe revisions
     - Implement changes
