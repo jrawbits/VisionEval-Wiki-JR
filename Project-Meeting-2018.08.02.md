@@ -14,7 +14,7 @@
   - Added new draft [VEScenarios](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) package under [add_scenario](https://github.com/gregorbj/VisionEval/tree/add_scenario) branch
   - Includes the following features:
     - multi-run / scenario builder
-    - runs scenarios in parallel 
+    - runs scenarios outside the GUI in parallel 
     - gathers results from the multiple scenarios
     - generates the [Visualizer](https://github.com/gregorbj/RPAT_Viewer_Pilot) output file
   - An example implementation for VERPAT is [here](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/models/VERPAT_Scenarios)
