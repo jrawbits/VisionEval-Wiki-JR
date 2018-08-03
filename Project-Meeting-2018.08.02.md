@@ -1,6 +1,6 @@
 
 ## Project Management  / Pooled Funds Collaboration
-  - We discussed ownership of VE resources now that WSP/CS will be the pooled funds contractor
+  - We discussed ownership of VE resources now that the pooled funds contractor has been decided
   - A few ideas discussed include:
     - VisionEval.org continues to maintain a fork of the gregorbj version and WSP/CS forks off of the fork.  Both gregorbj/RSG and WSP/CS collaborate through the VisionEval.org fork.
     - Gregorbj transfers ownership to VisionEval.org and then gregorby forks back and WSP/CS fork off of VisionEval.org.  What does @Brian think?
