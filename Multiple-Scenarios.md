@@ -12,3 +12,6 @@ Support for setting up and running multiple scenarios is inspired by the [RPAT_V
 ## Additional Revisions to VisionEval as a Result
   - Revise VEGUI to support additional VEScenarios functionality
   - Update documentation and draft tutorial
+
+## In-Development Getting Started
+  - https://github.com/gregorbj/VisionEval/blob/add_scenario/sources/models/VERPAT_Scenarios/README.md
