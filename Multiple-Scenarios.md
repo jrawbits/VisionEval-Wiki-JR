@@ -5,7 +5,7 @@ Support for setting up and running multiple scenarios is inspired by the [RPAT V
     - multi-run / scenario builder
     - runs scenarios outside the GUI in parallel 
     - gathers results from the multiple scenarios
-    - generates the [Visualizer](https://github.com/gregorbj/RPAT_Viewer_Pilot) output file
+    - generates the [Visualizer](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/VEScenarioViewer) output file
   - An example implementation for VERPAT is [here](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/models/VERPAT_Scenarios)
   - It will be designed to also work for VERSPM, like it did for [RSPM](https://github.com/gregorbj/RSPM-Viewer)
 
