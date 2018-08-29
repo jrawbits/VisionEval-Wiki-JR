@@ -2,6 +2,7 @@
 
 ### Getting Started
 - [[Getting Started|Getting-Started]]
+- [[VERPAT Tutorial|VERPAT-Tutorial]]
 - [[Developer Orientation|Developer-Orientation]]
 
 ### Software Management
