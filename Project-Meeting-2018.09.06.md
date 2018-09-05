@@ -1,5 +1,5 @@
 # Tutorial
-  - Started working on the VE Tutorial for RPAT, which will eventually be [here](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial)
+  - @Matt started working on the VE Tutorial for RPAT, which will eventually be [here](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial)
   - Will follow a similar outline to the [RPAT AMPO training materials](https://planningtools.transportation.org/files/112.pdf)
   - Will also include:
     - Using the Scenario Viewer 
