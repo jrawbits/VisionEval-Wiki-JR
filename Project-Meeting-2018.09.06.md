@@ -12,7 +12,7 @@
     - documentation review for new users
     - looking into one-click install type solution
     - integration of the PSU multi-modal module
-  - We may be able to use the existing AASHTO contract Task 4 for support / clarification / coordination with the pooled funds
+  - We may be able to use the existing AASHTO contract Task 4 for support / clarification / coordination with the pooled funds - check with @Kristin
   - Would be good for WSP to review tutorial when ready
   - Integration of the PSU multi-modal module will require revisions to the framework
 
