@@ -8,8 +8,10 @@
   - Coordinating with the NYSERDA VERPAT application to get additional user feedback/review
 
 ## Coordination with Pooled Funds
-  - Dave at WSP doing a documentation review for new users 
-  - WSP also looking into one-click install type solution and integration of the PSU multi-modal module
+  - WSP doing:
+    - documentation review for new users
+    - looking into one-click install type solution
+    - integration of the PSU multi-modal module
   - We may be able to use the existing AASHTO contract Task 4 for support / clarification / coordination with the pooled funds
   - Would be good for WSP to review tutorial when ready
   - Integration of the PSU multi-modal module will require revisions to the framework
