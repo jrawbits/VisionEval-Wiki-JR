@@ -34,3 +34,4 @@
   - [[Approach|VE-State-Approach]]
   - [[Kickoff Meeting|VE-State-Kickoff]]
   - [[July Meeting|VE-State-July-Meeting]]
+  - [[Status|VE-State-Status]]
