@@ -6,6 +6,19 @@ This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Ra
 
 ## Table of Contents
 
+[Scenario Planning](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#scenario-planning)
+
+[The VERPAT Model](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#the-verpat-model)
+
+[Installation of VisionEval and VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#installation-of-visioneval-and-verpat) (include??)
+
+[Single Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#single-scenarios-with-verpat)
+
+[Multiple Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#multiple-scenarios-with-verpat)
+
+[Performance Metrics](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#performance-metrics)
+
+[Bonus material](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#bonus-material)
 
 ## Scenario Planning
 
@@ -185,21 +198,20 @@ Compare multiple scenarios at a time graphically to quickly assess results
 
 TODO: insert graphic of output
 
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+
+
 ## The VERPAT Model
 #### Rapid Policy Assessment Tool Process
 
-![](VERPAT-Tutorial-images/rpat_process.png)
+TODO: Add links to modules
 
-  1. Household Synthesis
-  2. Firm Synthesis
-  3. Urban Form
-  4. Accessibility
-  5. Vehicles
-  6. Auto Travel Demand
-  7. Truck and Bus Travel Demand
-  8. Congestion
-  9. Induced Demand
-  10. Policy Benefits
+<table>
+  <tr>
+    <td>![](VERPAT-Tutorial-images/rpat_process2.png)</td>
+    <td>Household Synthesis <br>Firm Synthesis<br>Urban Form<br>Accessibility<br>Vehicles<br>Auto Travel Demand<br>Truck and Bus Travel Demand<br>Congestion<br>Induced Demand<br>Policy Benefits</td>
+  </tr>
+</table>
 
 + Captures individual household and firm characteristics
 + Captures interactions between policies
@@ -348,32 +360,161 @@ Land market and location impacts
   
 
 
-## Generating Scenarios with VERPAT
+#### For more information
 
-#### Sample scenarios
+[VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
 
-TODO: change this to the ones used in the repo
-6 DCHC tested scenarios
-  1. 2040 MTP - Baseline
-  2. E+C: 18% reduction of roadway construction
-  3. Hwy: 9.8% increase of roadway construction
-  4. TRN: 276% rail mile increase, 12% bus mile reduction and 9.4% reduction of roadway construction
-  5. Shift 15% growth to dense areas
-  6. Shift 15% growth to dense areas with 15% lane mile ITS treatment
+[TravelWorks Rapid Policy Assessment Tool](https://planningtools.transportation.org/551/rapid-policy-analysis-tool.html)
+
+[RPAT User manual](https://planningtools.transportation.org/files/63.pdf)
+
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+
+## Installation of VisionEval and VERPAT
+
+Q: Include this?
+
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+
+## Single Scenarios with VERPAT
+
+From the [Getting Started guide](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) 
+
+### Data background
+
+Data are RPAT Pilot data for Multnomah County OR.  TODO: Is there a description of these data somewhere?
+
+### Run from R console
+
+Open R using RStudio or Rgui
+Set working directory to location containing `run_model.R`.  
+`source` the file.
+
+``` 
+full_path <- "/Users/matt.landis/Git/VisionEval/sources/models/VERPAT"
+setwd(full_path)
+source("run_model.R")
+```
+
+<img align="center" width="40%" height="40%" border=1 src="VERPAT-Tutorial-images/verpat_single_scenario_R_output.PNG">
+
+
+### Run from VEGUI
+
+TODO: Include this?
+
+### Modifying the scenario
+
+TODO
+
+### Viewing output
+
+TODO
+
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+
+## Multiple Scenarios with VERPAT
+
+TODO: Show directory structure within VERPAT_Scenarios directory
+
+#### Scenario inputs
+
+Model scenarios are defined in terms of combinations of individual model input parameters and policy choices.  The various inputs are defined in the "scenario_inputs" folder.
+
+Scenario inputs consist of six folders, one for each of a particular category of input, as described below.  All six folders are required.
+
+Within each folder, there are subfolders containing input files, one per specific input. Each of the folders must contain at least one subfolder named "1", defining the input for the base scenario.  Subsequent numbered folders contain input files modifying parameters of interest, as shown in the screenshots below:
+
+Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_model\defs` and `VERPAT_model\inputs`
+
+TODO: Description of sample data used for illustration
+
+
+<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
+
+The subfolder names and scenario inputs are defined as follows (input file to modify given in parentheses):
+
+  - B - BikesOrLightVehicles (`region_light_vehicles.csv`)
+    - 1 - Base TargetProp and PropSuitable
+    - 2 - Double TargetProp and PropSuitable
+  - C - Cost (`model_parameters.json`)
+    - 1 - Base, no charge
+    - 2 - 5 cents per mile
+    - 3 - 9 cents per mile
+  - D - DemandManagement (`region_commute_options.csv`)
+    - 1 - Base
+    - 2 - Double all participation rates	
+    - 3 - Double all participation rates and transit subsidy level
+  - L - LandUse (`bzone_pop_emp_prop.csv`)
+    - 1 - Base, growth proportions same as base proportions
+    - 2 - Half suburban population and employment growth (-20%, -15%), distribute to urban core R/E (+5%, +3.75%), urban core MU (+10%, +7.5%), and close in communities R/E (+5%, +3.75%)
+  - P - ParkingGrowth (`marea_parking_growth.csv`)
+    - 1 - Base, existing costs and proportions paid
+    - 2 - Increase parking fees to 20% of workforce and 20% of other
+    - 3 - Same as 2 but double parking cost
+  - T - TransportationSupply (`model_parameters.json`)
+    - 1 - Base, supply stays at present level
+    - 2 - Double transit supply
+    - 3 - Triple transit supply
+
+Running all of these input values will result in 324 total scenarios, which will take several hours to half a day to run.  
+
+To test, reduce the number of scenario inputs by deleting the numbered folders, making sure to retain the "1" folder for each of the six options.  
+
+A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C), resulting in six scenarios.
+
+<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
+
   
-#### Create new scenario in VERPAT
 
-TODO: Screenshots of this process.  Manually create CSV that changes parameters
+#### Create and run combinations
 
-#### Run scenario in VERPAT
+The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
 
-TODO: Screenshots of process
+<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
 
-#### Output directory in VERPAT
 
-TODO: Screenshots
+The model automatically builds and runs scenarios based on combinations of the policy inputs.  These are found in the `scenarios` folder.
+
+
+<img align="center" width="30%" height="30%" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
+
+
+Each folder contains the results of a model run, with its own inputs, datastore, and log file.
+
+
+When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
+
+
+<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
+
+
+<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
+
+#### Modify policies
+
+TODO: Show how to modify the number of different policy alternatives are being explored.  
+
+TODO: Show how to modify the policy alternatives themselves.
+
+<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
+
+<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
+
+#### View output			
+
+TODO: See Instructions on VE_ScenarioViewer 
+TODO: screenshots of selecting desired performance metrics to illustrate which scenarios contribute
+
+#### Accessing the data
+
+TODO: Where are the output data stored?  How does one access them?
+
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 	
 ## Performance Metrics
+
+TODO: Update these tables for current data
 
 #### Direct travel impacts
 
@@ -535,12 +676,15 @@ Public health impacts and costs
   
 #### Visualizing performance metrics
 
-![performance_metric](VERPAT-Tutorial-images/performance_metric.png)
+TODO:  UPdate this for VERPAT!
+
+![](VERPAT-Tutorial-images/performance_metric.png)
 
 VERPAT's charting is very easy to use and follows a template so each chart can be easily interpreted
 
 In this example, **scenarios 3 and 8** have the highest reduction in vehicle hours of delay (23-24%) due to additional lane miles.  **Scenario 4** includes ITS treatments, which also reduce congestion a significant amount.
 
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 ## Bonus material
 
@@ -548,7 +692,10 @@ In this example, **scenarios 3 and 8** have the highest reduction in vehicle hou
 
 RDS files locations
 
+[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 
 
 
+
+	
