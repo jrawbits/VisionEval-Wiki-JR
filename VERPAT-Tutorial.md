@@ -70,7 +70,7 @@ Scenario planning software programs can also help develop and assess scenarios, 
 	<li> Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment </li> 
 	<li> Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas </li>
 	</ul> </th>
-    <th><img> align="center" width="500" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"</img> </th>
+    <th><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"> </th>
   </tr>
 </table>
 
@@ -89,7 +89,7 @@ Areas where smart growth levers can be used
 	<li> Programming </li>
 	<li> Implementation </li>
 	</ul> </th>
-    <th><img> align="center" width="500" border=1 src="VERPAT-Tutorial-images/decision_points.png" </img></th>
+    <th><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/decision_points.png"></th>
   </tr>
 </table>
 
@@ -112,21 +112,13 @@ Develop a tool that can be used by land use and transportation planners to provi
 #### Gaps in research
 
 
-| Topic                        | Well-Established <br> Relationships        | Gaps in Research                               |
-|:-----------------------------|:-------------------------|:-----------------------------------------------|
-| Built environment impact on  | Impact on daily travel   | Impact by time of day                          |
-| peak auto demand             |                          |                                                |
-| Mobility by mode and purpose | Impact on daily travel   | Impact by trip purpose                         |
-| Induced traffic and induced  | Capacity expansion on an | Route shifts, time of day shifts, mode shifts, |
-| growth                       | expanded facility        | induced trips, new destinations, growth shifts |
-|                              |                          | on the network; effects of operational         |
-|                              |                          | improvements, land use plans                   |
-| Relationship between smart   | Localized effects        | Macro-level or regional effects                |
-| growth and congestion        |                          |                                                |
-| Smart growth and freight     | Freight is necessary for | Impacts of loading docks, truck routing,       |
-|                              | population centers       | full-cost pricing, freight facilities and      |
-|                              |                          | crossings, inter-firm cooperation,             |
-|                              |                          | stakeholder communication                                               |
+| Topic                                                 | Well-Established <br> Relationships             | Gaps in Research                                                                                                                                                                 |
+|:------------------------------------------------------|:------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Built environment impact on <br> peak auto demand     | Impact on daily travel                          | Impact by time of day                                                                                                                                                            |
+| Mobility by mode and purpose                          | Impact on daily travel                          | Impact by trip purpose                                                                                                                                                           |
+| Induced traffic and induced <br growth                | Capacity expansion on an <br> expanded facility | Route shifts, time of day shifts, mode shifts, <br> induced trips, new destinations, growth shifts <br> on the network; effects of operational <br> improvements, land use plans |
+| Relationship between smart <br> growth and congestion | Localized effects                               | Macro-level or regional <br> effects             |
+| Smart growth and freight                              | Freight is necessary for <br> population centers | Impacts of loading docks, truck <br> routing, full-cost pricing, freight facilities and <br> crossings, inter-firm cooperation, <br> stakeholder communication      |
 
 
 
@@ -193,8 +185,7 @@ Transportation Supply
 
 Strategic models bridge the gap between regional visioning and specific plans
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png)
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png">
+<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
 #### Communicating Results
 
@@ -247,7 +238,7 @@ Data can be updated from local sources
 
 #### Urban Form Models
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png" >
 
 Predicts place types
 
@@ -444,7 +435,7 @@ Model inputs not otherwise specified in the `scenario_inputs` directory are draw
 TODO: Description of sample data used for illustration
 
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
+<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
 
 The subfolder names and scenario inputs are defined as follows (input file to modify given in parentheses):
 
@@ -477,7 +468,7 @@ To test, reduce the number of scenario inputs by deleting the numbered folders, 
 
 A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C), resulting in six scenarios.
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
+<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
   
 
@@ -485,13 +476,13 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 
 The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
+<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
 
 
 The model automatically builds and runs scenarios based on combinations of the policy inputs.  These are found in the `scenarios` folder.
 
 
-<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
+<img align="center" width="300" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
 
 
 Each folder contains the results of a model run, with its own inputs, datastore, and log file.
@@ -512,6 +503,7 @@ TODO: Show how to modify the number of different policy alternatives are being e
 TODO: Show how to modify the policy alternatives themselves.
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
+
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
 
