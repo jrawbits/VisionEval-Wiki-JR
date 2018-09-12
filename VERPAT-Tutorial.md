@@ -58,29 +58,40 @@ Scenario planning software programs can also help develop and assess scenarios, 
     - State of the practice report: survey of MPOs on current practices
 
 <a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
-<img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="50%" height="50%">
+<img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="50%">
 </a>
 
 #### Needs for a data driven process
 
-  + Understand critical decision points in the transportation planning process and how land use affects demand for transportation capacity
-  + Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment
-  + Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas
+<table>
+  <tr>
+    <th> <ul> 
+	<li> Understand critical decision points in the transportation planning process and how land use affects demand for transportation capacity</li>
+	<li> Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment </li> 
+	<li> Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas </li>
+	</ul> </th>
+    <th>![](VERPAT-Tutorial-images/data_driven_process.png)</th>
+  </tr>
+</table>
 
-![data_driven_process](VERPAT-Tutorial-images/data_driven_process.png)
-  
 #### Decision points for smart growth in planning process
 
 Process maps for state DOTs and MPOs
 
 Areas where smart growth levers can be used 
 
-  + Policy studies
-  + Planning studies
-  + Programming
-  + Implementation
-  
-![decision_points](VERPAT-Tutorial-images/decision_points.png)
+
+<table>
+  <tr>
+    <th> <ul> 
+	<li> Policy studies </li>
+	<li> Planning studies </li> 
+	<li> Programming </li>
+	<li> Implementation </li>
+	</ul> </th>
+    <th>![](VERPAT-Tutorial-images/decision_points.png)</th>
+  </tr>
+</table>
 
 #### Practioner information needs survey
 
@@ -486,10 +497,10 @@ Each folder contains the results of a model run, with its own inputs, datastore,
 When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
 
 
-<img align="center" width="300" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
+<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
 
 
-<img align="center" width="75%" height="75%" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
+<img align="center" width="700" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
 
 #### Modify policies
 
