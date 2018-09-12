@@ -486,10 +486,10 @@ Each folder contains the results of a model run, with its own inputs, datastore,
 When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
 
 
-<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
+<img align="center" width="300" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
 
 
-<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
+<img align="center" width="75%" height="75%" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
 
 #### Modify policies
 
@@ -555,9 +555,7 @@ Fuel consumption
   + calculated from VMT and fuel economy, split into fuel types
   + calculated for light vehicles, heavy trucks and buses
   
-| Year | Auto       | Auto       | Lt. truck  | Lt. truck  | Gas        | Diesel     |
-|      | Proportion | Proportion | Proportion | Proportion | Proportion | Proportion |
-|      | Diesel     | CNG        | Diesel     | CNG        | Ethanol    | Biodiesel  |
+| Year | Auto <br> Proportion <br> Diesel | Auto <br> Proportion <br> CNG | Lt. truck <br> Proportion <br> Diesel  | Lt. truck <br> Proportion <br> CNG | Gas <br> Proportion <br> Ethanol    | Diesel <br> Proportion <br> Biodiesel   |
 |------|------------|------------|------------|------------|------------|------------|
 | 1990 | 0.007      | 0          | 0.04       | 0          | 0          | 0          |
 | 1995 | 0.007      | 0          | 0.04       | 0          | 0          | 0          |
@@ -575,8 +573,7 @@ Greenhouse gas emissions
   + Light vehicles calculated by household
   + Regional heavy truck and transit emissions
 
-| Fuel type                                               | Carbon intensity    |
-|                                                         | (g per mega joule ) |
+| Fuel type                                               | Carbon intensity <br> (g per mega joule ) |
 |---------------------------------------------------------|---------------------|
 | Ultra-low sulfur diesel (USLD)                          | 77.19               |
 | Biodiesel                                               | 76.81               |
@@ -601,8 +598,7 @@ Regional highway infrastructure costs
   + FHWA Highway Economic Requirements System (HERS)
   + Construction costs per lane mile in 2002 dollars
   
-| Functional                 |              | Small        | Large        |
-| Classification             | Small Urban  | Urbanized    | Urbanized    |
+| Functional <br> Classification  | Small Urban | Small <br> Urbanized | Large <br> Urbanized      |
 |----------------------------|--------------|--------------|--------------|
 | Freeways                   | $3.1 - $11.1 | $3.4 - $12.1 | $5.7 - $60.0 |
 | Principal Arterial         | $2.6 - $9.4  | $2.9 - $10.2 | $4.2 - $15.0 |
@@ -613,8 +609,7 @@ Regional transit infrastructure and operating costs
   + National Transit Database (NTD)
   + Net cost to supply an unlinked passenger trip by mode (2009)
   
-|               |              | Operating |            |              |          |
-| Mode          | Capital Cost | Cost      | Total Cost | Fare Revenue | Net Cost |
+| Mode          | Capital Cost | Operating <br> Cost      | Total Cost | Fare Revenue | Net Cost |
 |---------------|--------------|-----------|------------|--------------|----------|
 | Bus           | $0.71        | $3.40     | $4.11      | $0.91        | $3.20    |
 | Heavy Rail    | $1.78        | $1.80     | $3.58      | $1.09        | $2.49    |
