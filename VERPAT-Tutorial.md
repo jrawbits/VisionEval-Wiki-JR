@@ -70,7 +70,7 @@ Scenario planning software programs can also help develop and assess scenarios, 
 	<li> Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment </li> 
 	<li> Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas </li>
 	</ul> </th>
-    <th>![](VERPAT-Tutorial-images/data_driven_process.png)</th>
+    <th><img> align="center" width="500" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"</img> </th>
   </tr>
 </table>
 
@@ -89,7 +89,7 @@ Areas where smart growth levers can be used
 	<li> Programming </li>
 	<li> Implementation </li>
 	</ul> </th>
-    <th>![](VERPAT-Tutorial-images/decision_points.png)</th>
+    <th><img> align="center" width="500" border=1 src="VERPAT-Tutorial-images/decision_points.png" </img></th>
   </tr>
 </table>
 
@@ -112,8 +112,7 @@ Develop a tool that can be used by land use and transportation planners to provi
 #### Gaps in research
 
 
-| Topic                        | Well-Established         | Gaps in Research                               |
-|                              | Relationships            |                                                |
+| Topic                        | Well-Established <br> Relationships        | Gaps in Research                               |
 |:-----------------------------|:-------------------------|:-----------------------------------------------|
 | Built environment impact on  | Impact on daily travel   | Impact by time of day                          |
 | peak auto demand             |                          |                                                |
@@ -136,6 +135,7 @@ Develop a tool that can be used by land use and transportation planners to provi
 Built Environment: Location of population and employment by place type
 
 | Development Type             | Urban Core | Close in Community | Suburban | Rural |
+|------------------------------|:----------:|:------------------:|:--------:|:-----:|
 | Residential                  | X          | X                  | X        |       |
 | Employment                   | X          | X                  | X        |       |
 | Mixed-use                    | X          | X                  | X        |       |
@@ -193,7 +193,8 @@ Transportation Supply
 
 Strategic models bridge the gap between regional visioning and specific plans
 
-![](VERPAT-Tutorial-images/strategic_model_purpose.png)
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png)
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png">
 
 #### Communicating Results
 
@@ -219,7 +220,7 @@ TODO: Add links to modules
 
 <table>
   <tr>
-    <td>![](VERPAT-Tutorial-images/rpat_process2.png)</td>
+    <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
     <td>Household Synthesis <br>Firm Synthesis<br>Urban Form<br>Accessibility<br>Vehicles<br>Auto Travel Demand<br>Truck and Bus Travel Demand<br>Congestion<br>Induced Demand<br>Policy Benefits</td>
   </tr>
 </table>
@@ -230,7 +231,7 @@ TODO: Add links to modules
 
 #### Household and Firm Synthesis
 
-![](VERPAT-Tutorial-images/household_synthesis.png)
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/household_synthesis.png">
 
 Households
  
@@ -246,7 +247,7 @@ Data can be updated from local sources
 
 #### Urban Form Models
 
-![](VERPAT-Tutorial-images/urban_form_model.png)
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png">
 
 Predicts place types
 
@@ -393,7 +394,9 @@ From the [Getting Started guide](https://github.com/gregorbj/VisionEval/wiki/Get
 
 ### Data background
 
-Data are RPAT Pilot data for Multnomah County OR.  TODO: Is there a description of these data somewhere?
+Data are RPAT Pilot data for Multnomah County OR.  
+
+TODO: Is there a description of these data somewhere?
 
 ### Run from R console
 
@@ -407,7 +410,7 @@ setwd(full_path)
 source("run_model.R")
 ```
 
-<img align="center" width="40%" height="40%" border=1 src="VERPAT-Tutorial-images/verpat_single_scenario_R_output.PNG">
+<img align="center" width="1000" border=1 src="VERPAT-Tutorial-images/verpat_single_scenario_R_output.PNG">
 
 
 ### Run from VEGUI
@@ -441,7 +444,7 @@ Model inputs not otherwise specified in the `scenario_inputs` directory are draw
 TODO: Description of sample data used for illustration
 
 
-<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
 
 The subfolder names and scenario inputs are defined as follows (input file to modify given in parentheses):
 
@@ -474,7 +477,7 @@ To test, reduce the number of scenario inputs by deleting the numbered folders, 
 
 A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C), resulting in six scenarios.
 
-<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
   
 
@@ -482,13 +485,13 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 
 The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
 
-<img align="center" width="30%" height="30%" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
 
 
 The model automatically builds and runs scenarios based on combinations of the policy inputs.  These are found in the `scenarios` folder.
 
 
-<img align="center" width="30%" height="30%" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
+<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
 
 
 Each folder contains the results of a model run, with its own inputs, datastore, and log file.
@@ -497,10 +500,10 @@ Each folder contains the results of a model run, with its own inputs, datastore,
 When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
 
 
-<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
+<img align="center" width="1000" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
 
 
-<img align="center" width="700" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
+<img align="center" width="1000" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
 
 #### Modify policies
 
@@ -508,9 +511,9 @@ TODO: Show how to modify the number of different policy alternatives are being e
 
 TODO: Show how to modify the policy alternatives themselves.
 
-<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
+<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
 
-<img align="center" width="50%" height="50%" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
+<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
 
 #### View output			
 
@@ -670,6 +673,7 @@ Public health impacts and costs
 	- Injury = 51.35 per 100 million VMT
 	- Property damage = 133.95 per 100 million VMT
   + Amount of walking (proxy for physical fitness)
+  
     | D                      | Description                       | Walking increase |
     |------------------------|-----------------------------------|------------------|
     | Density                | Household / Population density    | 0.07             |
@@ -684,7 +688,7 @@ Public health impacts and costs
 
 TODO:  UPdate this for VERPAT!
 
-![](VERPAT-Tutorial-images/performance_metric.png)
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/performance_metric.png" </img>
 
 VERPAT's charting is very easy to use and follows a template so each chart can be easily interpreted
 
