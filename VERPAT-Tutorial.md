@@ -22,7 +22,7 @@ This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Ra
 
 ## Scenario Planning
 
-#### A definition of scenario planning
+### A definition of scenario planning
 
 A group of participants who are engaged in a data driven communication process that seeks to: 
 
@@ -30,7 +30,7 @@ A group of participants who are engaged in a data driven communication process t
   + Develop answers
   + Come to agreement on common problems and solutions
 
-#### Scenario planning framework
+### Scenario planning framework
 
 Scenario planning provides a framework for developing a shared vision for the future by analyzing the various forces that affect growth
 
@@ -40,7 +40,7 @@ Scenario planning provides a framework for developing a shared vision for the fu
   + Environmental
   + Land use
   
-#### Benefits of scenario planning
+### Benefits of scenario planning
 
 Helps agencies engage in a more informed and strategic transportation decision-making process
 
@@ -48,7 +48,7 @@ Used in conjunction with a charrette or chips games, can help stakeholders bette
 
 Scenario planning software programs can also help develop and assess scenarios, visualize the differences between alternatives, and encourage stakeholder participation
 
-#### Scenario planning at FHWA/FTA
+### Scenario planning at FHWA/FTA
 
   + Workshops and peer exchanges
   + Webinar series to promote scenario planning
@@ -61,20 +61,20 @@ Scenario planning software programs can also help develop and assess scenarios, 
 <img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="50%">
 </a>
 
-#### Needs for a data driven process
+### Needs for a data driven process
 
 <table>
   <tr>
-    <th> <ul> 
+    <td> <ul> 
 	<li> Understand critical decision points in the transportation planning process and how land use affects demand for transportation capacity</li>
 	<li> Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment </li> 
 	<li> Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas </li>
-	</ul> </th>
-    <th><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"> </th>
+	</ul> </td>
+    <td><img align="center" width="200" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"> </td>
   </tr>
 </table>
 
-#### Decision points for smart growth in planning process
+### Decision points for smart growth in planning process
 
 Process maps for state DOTs and MPOs
 
@@ -83,17 +83,17 @@ Areas where smart growth levers can be used
 
 <table>
   <tr>
-    <th> <ul> 
+    <td> <ul> 
 	<li> Policy studies </li>
 	<li> Planning studies </li> 
 	<li> Programming </li>
 	<li> Implementation </li>
-	</ul> </th>
-    <th><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/decision_points.png"></th>
+	</ul> </td>
+    <td><img align="center" width="600" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
   </tr>
 </table>
 
-#### Practioner information needs survey
+### Practioner information needs survey
 
 Most agencies are interested in scenario planning as a strategy for evaluating land use policies
 
@@ -109,7 +109,7 @@ Agencies also want to understand
   
 Develop a tool that can be used by land use and transportation planners to provide opportunities for interaction on common goals
 
-#### Gaps in research
+### Gaps in research
 
 
 | Topic                                                 | Well-Established <br> Relationships             | Gaps in Research                                                                                                                                                                 |
@@ -122,7 +122,7 @@ Develop a tool that can be used by land use and transportation planners to provi
 
 
 
-#### Land Use Scenarios
+### Land Use Scenarios
 
 Built Environment: Location of population and employment by place type
 
@@ -146,7 +146,7 @@ Measures
   + Proportion of population and employment by place type
   + Population and employment densities by place type
 
-#### Transportation scenarios
+### Transportation scenarios
 
 Travel Demand
 
@@ -167,7 +167,7 @@ Transportation Supply
   + Amount of regional transit service
   + Amount of freeway and arterial capacity
   
-#### Strategic Models for Integrated Land Use and Transportation
+### Strategic Models for Integrated Land Use and Transportation
 
   + Support strategic planning efforts
   + Consider many possible scenarios 
@@ -185,9 +185,9 @@ Transportation Supply
 
 Strategic models bridge the gap between regional visioning and specific plans
 
-<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
+<img align="center" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
-#### Communicating Results
+### Communicating Results
 
 Evaluate scenarios across a range of performance metrics
 
@@ -205,7 +205,7 @@ TODO: insert graphic of output
 
 
 ## The VERPAT Model
-#### Rapid Policy Assessment Tool Process
+### Rapid Policy Assessment Tool Process
 
 TODO: Add links to modules
 
@@ -220,7 +220,7 @@ TODO: Add links to modules
 + Captures interactions between policies
 + Spatial results are by place type
 
-#### Household and Firm Synthesis
+### Household and Firm Synthesis
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/household_synthesis.png">
 
@@ -236,7 +236,7 @@ Firms
   
 Data can be updated from local sources
 
-#### Urban Form Models
+### Urban Form Models
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png" >
 
@@ -253,7 +253,7 @@ Based on households with
   
 Adjusted to fit regional totals
 
-#### Accessibility
+### Accessibility
 
 Inputs
 
@@ -268,7 +268,7 @@ Outputs
 Relates both transit and auto accessibility to travel behavior
 Used in vehicle ownership models and vehicle miles traveled models
 
-#### Vehicle models
+### Vehicle models
 
 Predicts number of vehicles for each household
 
@@ -287,7 +287,7 @@ Based on
   + Freeway and transit supply
   + Urban mixed-use area
 
-#### Travel demand models
+### Travel demand models
 
 Predicts vehicle miles traveled for each household
 
@@ -308,7 +308,7 @@ Based on
 Truck VMT is based on changes in regional household income
 Bus VMT is calculated from bus revenue miles
 
-#### Accounting for congestion
+### Accounting for congestion
 
 Three aspects are represented:
 
@@ -318,7 +318,7 @@ Three aspects are represented:
   
 Congestion is part of a feedback loop between changes in each scenario and induced growth
 
-#### Induced demand
+### Induced demand
 
 Definition: Additional demand resulting from adding transportation supply
 
@@ -329,7 +329,7 @@ Short term -- induced demand
   
 Long term -- induced growth: changes in growth patterns resulting from changes in travel patterns
 
-#### Performance metrics
+### Performance metrics
 
 Direct travel impacts
 
@@ -363,7 +363,7 @@ Land market and location impacts
   
 
 
-#### For more information
+### For more information
 
 [VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
 
@@ -422,7 +422,7 @@ TODO
 
 TODO: Show directory structure within VERPAT_Scenarios directory
 
-#### Scenario inputs
+### Scenario inputs
 
 Model scenarios are defined in terms of combinations of individual model input parameters and policy choices.  The various inputs are defined in the "scenario_inputs" folder.
 
@@ -472,7 +472,7 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 
   
 
-#### Create and run combinations
+### Create and run combinations
 
 The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
 
@@ -496,7 +496,7 @@ When finished, the VERPAT Scenario Viewer will automatically open to display the
 
 <img align="center" width="1000" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
 
-#### Modify policies
+### Modify policies
 
 TODO: Show how to modify the number of different policy alternatives are being explored.  
 
@@ -507,12 +507,12 @@ TODO: Show how to modify the policy alternatives themselves.
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
 
-#### View output			
+### View output			
 
 TODO: See Instructions on VE_ScenarioViewer 
 TODO: screenshots of selecting desired performance metrics to illustrate which scenarios contribute
 
-#### Accessing the data
+### Accessing the data
 
 TODO: Where are the output data stored?  How does one access them?
 
@@ -522,7 +522,7 @@ TODO: Where are the output data stored?  How does one access them?
 
 TODO: Update these tables for current data
 
-#### Direct travel impacts
+### Direct travel impacts
 
 Daily vehicle trips
 
@@ -554,7 +554,7 @@ Daily transit trips
     - Vehicle hours of travel at free flow
     - Vehicle hours of travel in congestion
 	
-#### Energy impacts
+### Energy impacts
 
 Fuel consumption
 
@@ -572,7 +572,7 @@ Fuel consumption
 | 2020 | 0.007      | 0          | 0.04       | 0          | 0.1        | 0.05       |
 
 
-#### Environmental impacts
+### Environmental impacts
 
 Greenhouse gas emissions
 
@@ -597,7 +597,7 @@ Criteria emissions
   + Sulfur dioxide (SO2)
   + Particulate matter (PM)
 
-#### Financial & economic impacts
+### Financial & economic impacts
 
 Regional highway infrastructure costs
 
@@ -633,7 +633,7 @@ Annual travler cost - travel time
   + Average travel delay for each metropolitan region
   + Only includes auto users
   
-#### Location & community impacts
+### Location & community impacts
 
 Relative increase in jobs accessibility by auto
 
@@ -656,7 +656,7 @@ Equity impact
 
   + Regional accessibility by income group
   
-#### Community impacts
+### Community impacts
 
 Public health impacts and costs
 
@@ -676,7 +676,7 @@ Public health impacts and costs
 
   + Emissions (PM, NOX, VOC)
   
-#### Visualizing performance metrics
+### Visualizing performance metrics
 
 TODO:  UPdate this for VERPAT!
 
@@ -690,7 +690,7 @@ In this example, **scenarios 3 and 8** have the highest reduction in vehicle hou
 
 ## Bonus material
 
-#### VERPAT performance metrics in raw form
+### VERPAT performance metrics in raw form
 
 RDS files locations
 
