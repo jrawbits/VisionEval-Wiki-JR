@@ -42,11 +42,9 @@ Scenario planning provides a framework for developing a shared vision for the fu
   
 ### Benefits of scenario planning
 
-Helps agencies engage in a more informed and strategic transportation decision-making process
-
-Used in conjunction with a charrette or chips games, can help stakeholders better understand and visualize future transportation and land use patterns
-
-Scenario planning software programs can also help develop and assess scenarios, visualize the differences between alternatives, and encourage stakeholder participation
+  + Helps agencies engage in a more informed and strategic transportation decision-making process
+  + Used in conjunction with a charrette or chips games, can help stakeholders better understand and visualize future transportation and land use patterns
+  + Scenario planning software programs can also help develop and assess scenarios, visualize the differences between alternatives, and encourage stakeholder participation
 
 ### Scenario planning at FHWA/FTA
 
@@ -89,11 +87,13 @@ Areas where smart growth levers can be used
 	<li> Programming </li>
 	<li> Implementation </li>
 	</ul> </td>
-    <td><img align="center" width="600" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
+    <td><img align="center" width="700" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
   </tr>
 </table>
 
 ### Practioner information needs survey
+
+**TODO: Explain title.  Is this section the results of a survey?**
 
 Most agencies are interested in scenario planning as a strategy for evaluating land use policies
 
@@ -111,18 +111,20 @@ Develop a tool that can be used by land use and transportation planners to provi
 
 ### Gaps in research
 
+**TODO: More to say about this table?  Introduce it?**
 
-| Topic                                                 | Well-Established <br> Relationships             | Gaps in Research                                                                                                                                                                 |
-|:------------------------------------------------------|:------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Built environment impact on <br> peak auto demand     | Impact on daily travel                          | Impact by time of day                                                                                                                                                            |
-| Mobility by mode and purpose                          | Impact on daily travel                          | Impact by trip purpose                                                                                                                                                           |
-| Induced traffic and induced <br growth                | Capacity expansion on an <br> expanded facility | Route shifts, time of day shifts, mode shifts, <br> induced trips, new destinations, growth shifts <br> on the network; effects of operational <br> improvements, land use plans |
-| Relationship between smart <br> growth and congestion | Localized effects                               | Macro-level or regional <br> effects             |
-| Smart growth and freight                              | Freight is necessary for <br> population centers | Impacts of loading docks, truck <br> routing, full-cost pricing, freight facilities and <br> crossings, inter-firm cooperation, <br> stakeholder communication      |
-
+| Topic                                            | Well-Established <br> Relationships         | Gaps in Research                                                                                                                                                  |
+|:-------------------------------------------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Built environment impact on peak auto demand     | Impact on daily travel                      | Impact by time of day                                                                                                                                             |
+| Mobility by mode and purpose                     | Impact on daily travel                      | Impact by trip purpose                                                                                                                                            |
+| Induced traffic and induced growth               | Capacity expansion on an expanded facility  | Route shifts, time of day shifts, mode shifts, induced trips, new destinations, growth shifts on the network; effects of operational improvements, land use plans |
+| Relationship between smart growth and congestion | Localized effects                           | Macro-level or regional effects                                                                                                                                   |
+| Smart growth and freight                         | Freight is necessary for population centers | Impacts of loading docks, truck routing, full-cost pricing, freight facilities and crossings, inter-firm cooperation, stakeholder communication                   |
 
 
 ### Land Use Scenarios
+
+**TODO: Introduce this table**
 
 Built Environment: Location of population and employment by place type
 
@@ -136,6 +138,8 @@ Built Environment: Location of population and employment by place type
 
 Demand Management Policies
 
+TODO: Introduce bullets
+
   + Vanpool
   + Telecommuting
   + Ridesharing
@@ -147,6 +151,8 @@ Measures
   + Population and employment densities by place type
 
 ### Transportation scenarios
+
+**TODO: Introduce these bullets**
 
 Travel Demand
 
@@ -169,6 +175,8 @@ Transportation Supply
   
 ### Strategic Models for Integrated Land Use and Transportation
 
+**TODO Introduce these bullets**
+
   + Support strategic planning efforts
   + Consider many possible scenarios 
   + Combines higher level analysis of the transportation supply with individual characteristics of travel demand, built environment and policies
@@ -183,9 +191,7 @@ Transportation Supply
   + Policy benefits
   + Easy to apply and run quickly
 
-Strategic models bridge the gap between regional visioning and specific plans
-
-<img align="center" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
+Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
 ### Communicating Results
 
@@ -207,12 +213,23 @@ TODO: insert graphic of output
 ## The VERPAT Model
 ### Rapid Policy Assessment Tool Process
 
-TODO: Add links to modules
+**TODO: Add links to modules**
 
 <table>
   <tr>
     <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
-    <td>Household Synthesis <br>Firm Synthesis<br>Urban Form<br>Accessibility<br>Vehicles<br>Auto Travel Demand<br>Truck and Bus Travel Demand<br>Congestion<br>Induced Demand<br>Policy Benefits</td>
+    <td> <ul> 
+	<li> Household Synthesis </li>
+	<li> Firm Synthesis </li> 
+	<li> Urban Form </li>
+	<li> Accessibility </li>
+	<li> Vehicles </li>
+	<li> Auto Travel Demand </li>
+	<li> Truck and Bus Travel Demand </li>
+	<li> Congestion </li>
+	<li> Induced Demand </li> 
+	<li> Policy Benefits </li> 
+	</ul> </td>
   </tr>
 </table>
 
@@ -221,6 +238,8 @@ TODO: Add links to modules
 + Spatial results are by place type
 
 ### Household and Firm Synthesis
+
+**TODO link to VERPAT modules**
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/household_synthesis.png">
 
@@ -237,6 +256,8 @@ Firms
 Data can be updated from local sources
 
 ### Urban Form Models
+
+**TODO link to VERPAT modules**
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png" >
 
@@ -255,6 +276,8 @@ Adjusted to fit regional totals
 
 ### Accessibility
 
+**TODO link to VERPAT modules**
+
 Inputs
 
   + Freeway lane miles
@@ -269,6 +292,8 @@ Relates both transit and auto accessibility to travel behavior
 Used in vehicle ownership models and vehicle miles traveled models
 
 ### Vehicle models
+
+**TODO link to VERPAT modules**
 
 Predicts number of vehicles for each household
 
@@ -288,6 +313,8 @@ Based on
   + Urban mixed-use area
 
 ### Travel demand models
+
+**TODO link to VERPAT modules**
 
 Predicts vehicle miles traveled for each household
 
@@ -310,6 +337,8 @@ Bus VMT is calculated from bus revenue miles
 
 ### Accounting for congestion
 
+**TODO link to VERPAT modules**
+
 Three aspects are represented:
 
   1. VMT is allocated to freeways and arterials by congestion level
@@ -319,6 +348,8 @@ Three aspects are represented:
 Congestion is part of a feedback loop between changes in each scenario and induced growth
 
 ### Induced demand
+
+**TODO link to VERPAT modules**
 
 Definition: Additional demand resulting from adding transportation supply
 
@@ -330,6 +361,8 @@ Short term -- induced demand
 Long term -- induced growth: changes in growth patterns resulting from changes in travel patterns
 
 ### Performance metrics
+
+**TODO introduce bullet points**
 
 Direct travel impacts
 
@@ -362,20 +395,17 @@ Land market and location impacts
   + Regional accessibility
   
 
-
 ### For more information
 
-[VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
-
-[TravelWorks Rapid Policy Assessment Tool](https://planningtools.transportation.org/551/rapid-policy-analysis-tool.html)
-
-[RPAT User manual](https://planningtools.transportation.org/files/63.pdf)
+  + [VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
+  + [TravelWorks Rapid Policy Assessment Tool](https://planningtools.transportation.org/551/rapid-policy-analysis-tool.html)
+  + [RPAT User manual](https://planningtools.transportation.org/files/63.pdf)
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 ## Installation of VisionEval and VERPAT
 
-Q: Include this?
+**TODO**
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
@@ -387,7 +417,7 @@ From the [Getting Started guide](https://github.com/gregorbj/VisionEval/wiki/Get
 
 Data are RPAT Pilot data for Multnomah County OR.  
 
-TODO: Is there a description of these data somewhere?
+**TODO: Is there a description of these data somewhere?**
 
 ### Run from R console
 
@@ -406,15 +436,15 @@ source("run_model.R")
 
 ### Run from VEGUI
 
-TODO: Include this?
+**TODO: Include this?**
 
 ### Modifying the scenario
 
-TODO
+**TODO**
 
 ### Viewing output
 
-TODO
+**TODO**
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
@@ -426,7 +456,7 @@ The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenari
 
 The directory structure for a model set up for VEScenarios contains the following files:
 
-<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/multi-scenario_directory_structure.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_directory_structure.png">
 
   + defs
   + inputs
@@ -438,7 +468,11 @@ The directory structure for a model set up for VEScenarios contains the followin
   
 #### defs
 
+TODO
+
 #### inputs
+
+TODO
 
 #### scenario_inputs
 
@@ -486,7 +520,7 @@ To test, reduce the number of scenario inputs by deleting the numbered folders, 
 
 A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C), resulting in six scenarios.
 
-<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
+<img align="center" width="400" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
   
 
@@ -497,7 +531,7 @@ The `VERPAT_base_model` folder contains inputs and R script necessary to run the
 
 #### Visualizer
 
-<img align="center" width="300" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
+<img align="center" width="400" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
 
 The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
 
@@ -506,13 +540,13 @@ The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed 
 
 The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
 
-<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
+<img align="center" width="400" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
 
 
 The model automatically builds and runs scenarios based on combinations of the policy inputs.  These are found in the `scenarios` folder.
 
 
-<img align="center" width="300" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
+<img align="center" width="400" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
 
 
 Each folder contains the results of a model run, with its own inputs, datastore, and log file.
@@ -540,6 +574,7 @@ TODO: Show how to modify the policy alternatives themselves.
 ### View output			
 
 TODO: See Instructions on VE_ScenarioViewer 
+
 TODO: screenshots of selecting desired performance metrics to illustrate which scenarios contribute
 
 ### Accessing the data
@@ -550,7 +585,7 @@ TODO: Where are the output data stored?  How does one access them?
 	
 ## Performance Metrics
 
-TODO: Update these tables for current data
+**TODO: Update these tables for current data**
 
 ### Direct travel impacts
 
@@ -708,7 +743,7 @@ Public health impacts and costs
   
 ### Visualizing performance metrics
 
-TODO:  UPdate this for VERPAT!
+**TODO:  UPdate this for VERPAT!**
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/performance_metric.png" </img>
 
@@ -721,6 +756,8 @@ In this example, **scenarios 3 and 8** have the highest reduction in vehicle hou
 ## Bonus material
 
 ### VERPAT performance metrics in raw form
+
+**TODO**
 
 RDS files locations
 
