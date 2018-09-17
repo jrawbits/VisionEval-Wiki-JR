@@ -6,19 +6,13 @@ This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Ra
 
 ## Table of Contents
 
-[Scenario Planning](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#scenario-planning)
-
-[The VERPAT Model](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#the-verpat-model)
-
-[Installation of VisionEval and VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#installation-of-visioneval-and-verpat) (include??)
-
-[Single Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#single-scenarios-with-verpat)
-
-[Multiple Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#multiple-scenarios-with-verpat)
-
-[Performance Metrics](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#performance-metrics)
-
-[Bonus material](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#bonus-material)
+  + [Scenario Planning](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#scenario-planning)
+  + [The VERPAT Model](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#the-verpat-model)
+  + [Installation of VisionEval and VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#installation-of-visioneval-and-verpat)
+  + [Single Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#single-scenarios-with-verpat)
+  + [Multiple Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#multiple-scenarios-with-verpat)
+  + [Performance Metrics](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#performance-metrics)
+  + [Bonus material](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#bonus-material)
 
 ## Scenario Planning
 
@@ -48,16 +42,22 @@ Scenario planning provides a framework for developing a shared vision for the fu
 
 ### Scenario planning at FHWA/FTA
 
-  + Workshops and peer exchanges
-  + Webinar series to promote scenario planning
-  + Innovative research
-  + Publications, case studies
-    - Scenario planning guidebook: six-phases
-    - State of the practice report: survey of MPOs on current practices
-
-<a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
+<table>
+  <tr>
+    <td> <ul> 
+	<li> Workshops and peer exchanges </li>
+	<li> Webinar series to promote scenario planning </li> 
+	<li> Innovative research </li>
+    <li> Publications, case studies 
+	     <ul> <li> Scenario planning guidebook: six-phases </li>
+		      <li> State of the practice report: survey of MPOs on current practices </li>
+	     </ul> </li>
+	</ul> </td>
+    <td> <a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
 <img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="50%">
-</a>
+</a> </td>
+  </tr>
+</table>
 
 ### Needs for a data driven process
 
@@ -87,7 +87,7 @@ Areas where smart growth levers can be used
 	<li> Programming </li>
 	<li> Implementation </li>
 	</ul> </td>
-    <td><img align="center" width="700" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
+    <td><img align="center" width="800" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
   </tr>
 </table>
 
@@ -138,7 +138,7 @@ Built Environment: Location of population and employment by place type
 
 Demand Management Policies
 
-TODO: Introduce bullets
+**TODO: Introduce bullets**
 
   + Vanpool
   + Telecommuting
@@ -191,7 +191,7 @@ Transportation Supply
   + Policy benefits
   + Easy to apply and run quickly
 
-Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
+Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="200" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
 ### Communicating Results
 
@@ -205,7 +205,8 @@ Evaluate scenarios across a range of performance metrics
 
 Compare multiple scenarios at a time graphically to quickly assess results
 
-TODO: insert graphic of output
+<img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
+
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
@@ -213,22 +214,22 @@ TODO: insert graphic of output
 ## The VERPAT Model
 ### Rapid Policy Assessment Tool Process
 
-**TODO: Add links to modules**
+**TODO: Check links -- are they correctly associated with bullets?**
 
 <table>
   <tr>
     <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
     <td> <ul> 
-	<li> Household Synthesis </li>
-	<li> Firm Synthesis </li> 
-	<li> Urban Form </li>
-	<li> Accessibility </li>
-	<li> Vehicles </li>
-	<li> Auto Travel Demand </li>
-	<li> Truck and Bus Travel Demand </li>
-	<li> Congestion </li>
-	<li> Induced Demand </li> 
-	<li> Policy Benefits </li> 
+	<li> [Household Synthesis](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) </li>
+	<li> [Firm Synthesis](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) </li> 
+	<li> [Urban Form](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) </li>
+	<li> [Accessibility](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply) </li>
+	<li> [Vehicle Models](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles) </li>
+	<li> [Auto Travel Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li>
+	<li> [Truck and Bus Travel Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li>
+	<li> [Congestion](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) </li>
+	<li> [Induced Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li> 
+	<li> [Policy Benefits](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li> 
 	</ul> </td>
   </tr>
 </table>
@@ -237,18 +238,19 @@ TODO: insert graphic of output
 + Captures interactions between policies
 + Spatial results are by place type
 
-### Household and Firm Synthesis
+For more, see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs).
 
-**TODO link to VERPAT modules**
+
+### Household and Firm Synthesis
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/household_synthesis.png">
 
-Households
+[Households](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds)
  
   + Person by Age (from census data)
   + Household income (from Bureau of Economic Analysis data)
   
-Firms
+[Firms](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms)
 
   + Employees
   + Industry (from County Business Pattern data)
@@ -256,8 +258,6 @@ Firms
 Data can be updated from local sources
 
 ### Urban Form Models
-
-**TODO link to VERPAT modules**
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/urban_form_model.png" >
 
@@ -274,9 +274,9 @@ Based on households with
   
 Adjusted to fit regional totals
 
-### Accessibility
+Modules are available in the [VELandUse package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse).
 
-**TODO link to VERPAT modules**
+### Accessibility
 
 Inputs
 
@@ -288,12 +288,13 @@ Outputs
   + Freeway lane miles per person
   + Transit revenue miles per person
   
-Relates both transit and auto accessibility to travel behavior
-Used in vehicle ownership models and vehicle miles traveled models
+Relates both transit and auto accessibility to travel behavior.  
+
+Used in vehicle ownership models and vehicle miles traveled models.  
+
+Modules are available in the [VETransportSupply package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply).  
 
 ### Vehicle models
-
-**TODO link to VERPAT modules**
 
 Predicts number of vehicles for each household
 
@@ -312,9 +313,9 @@ Based on
   + Freeway and transit supply
   + Urban mixed-use area
 
-### Travel demand models
+Modules are available in the [VEHouseholdVehicles package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles).  
 
-**TODO link to VERPAT modules**
+### Travel demand models
 
 Predicts vehicle miles traveled for each household
 
@@ -333,11 +334,12 @@ Based on
   + Mixed use development
   
 Truck VMT is based on changes in regional household income
+
 Bus VMT is calculated from bus revenue miles
 
-### Accounting for congestion
+Modules are available in the [VEHouseholdTravel package](https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VEHouseholdTravel).
 
-**TODO link to VERPAT modules**
+### Accounting for congestion
 
 Three aspects are represented:
 
@@ -347,9 +349,9 @@ Three aspects are represented:
   
 Congestion is part of a feedback loop between changes in each scenario and induced growth
 
-### Induced demand
+Modules are available in the [VETransportSupplyUse package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse). 
 
-**TODO link to VERPAT modules**
+### Induced demand
 
 Definition: Additional demand resulting from adding transportation supply
 
@@ -359,6 +361,8 @@ Short term -- induced demand
   + Potential mode and route shift
   
 Long term -- induced growth: changes in growth patterns resulting from changes in travel patterns
+
+Induced demand is calculated in the [VEHouseholdTravel package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel).
 
 ### Performance metrics
 
@@ -394,7 +398,8 @@ Land market and location impacts
 
   + Regional accessibility
   
-
+Performance metrics are calculated in the [VEReports package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports).  For more information, also see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#reportrpatmetrics).  
+  
 ### For more information
 
   + [VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
@@ -405,46 +410,33 @@ Land market and location impacts
 
 ## Installation of VisionEval and VERPAT
 
-**TODO**
+See [Installation and Setup](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup).  
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 ## Single Scenarios with VERPAT
 
-From the [Getting Started guide](https://github.com/gregorbj/VisionEval/wiki/Getting-Started) 
+See instructions at [Getting Started: Running VE Models](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-ve-models).  This describes running VERPAT with sample data for Multnomah County, Oregon, via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
 
-### Data background
+### Directory structure
 
-Data are RPAT Pilot data for Multnomah County OR.  
+TODO:  screenshot of directory structure for VERPAT model
 
-**TODO: Is there a description of these data somewhere?**
+The `defs` directory contains five ["Model Definition File"](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files). 
 
-### Run from R console
-
-Open R using RStudio or Rgui
-Set working directory to location containing `run_model.R`.  
-`source` the file.
-
-``` 
-full_path <- "/Users/matt.landis/Git/VisionEval/sources/models/VERPAT"
-setwd(full_path)
-source("run_model.R")
-```
-
-<img align="center" width="1000" border=1 src="VERPAT-Tutorial-images/verpat_single_scenario_R_output.PNG">
-
-
-### Run from VEGUI
-
-**TODO: Include this?**
+The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files). 
 
 ### Modifying the scenario
 
-**TODO**
+**TODO screenshots of increasing region_light_vehicles.csv**
+
+Model inputs are described at https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters.  
+
+To modify a scenario, the appropriate file is edited.  For example, to increase bicycle usage, the file [`inputs/region_light_vehicles.csv`](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#region_light_vehiclescsv) is modified to change the `DataValue` of `TargetProp` from 0.2 to 0.4.
 
 ### Viewing output
 
-**TODO**
+**TODO: add screenshot of Datastore directory**
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
@@ -468,11 +460,14 @@ The directory structure for a model set up for VEScenarios contains the followin
   
 #### defs
 
-TODO
+**TODO**
+Differences from model defs folder
+
 
 #### inputs
 
-TODO
+**TODO**
+Differences from model 
 
 #### scenario_inputs
 
@@ -484,7 +479,7 @@ Within each folder, there are subfolders containing input files, one per specifi
 
 Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_model\defs` and `VERPAT_model\inputs`
 
-TODO: Description of sample data used for illustration
+**TODO: Description of sample data used for illustration**
 
 
 <img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
@@ -527,7 +522,7 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 
 #### VERPAT_base_model
 
-The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario.  The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files)while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
+The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario.  The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
 
 #### Visualizer
 
@@ -555,16 +550,14 @@ Each folder contains the results of a model run, with its own inputs, datastore,
 When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
 
 
-<img align="center" width="1000" border=1, src="VERPAT-Tutorial-images/scenario_output.png">
+<img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
-
-<img align="center" width="1000" border=1, src="VERPAT-Tutorial-images/scenario_output1.png">
 
 ### Modify policies
 
-TODO: Show how to modify the number of different policy alternatives are being explored.  
+**TODO: Show how to modify the number of different policy alternatives are being explored.**
 
-TODO: Show how to modify the policy alternatives themselves.
+**TODO: Show how to modify the policy alternatives themselves.**
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
 
@@ -573,7 +566,7 @@ TODO: Show how to modify the policy alternatives themselves.
 
 ### View output			
 
-TODO: See Instructions on VE_ScenarioViewer 
+TODO: See Instructions in VE_ScenarioViewer (PPT slides) 
 
 TODO: screenshots of selecting desired performance metrics to illustrate which scenarios contribute
 
@@ -586,6 +579,9 @@ TODO: Where are the output data stored?  How does one access them?
 ## Performance Metrics
 
 **TODO: Update these tables for current data**
+
+**What is the source of these numbers?  VERPAT output files?**
+
 
 ### Direct travel impacts
 
@@ -764,7 +760,7 @@ RDS files locations
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 
-
+Source for images is [documents/verpat_tutorial.pptx](documents/verpat_tutorial.pptx)
 
 
 	
