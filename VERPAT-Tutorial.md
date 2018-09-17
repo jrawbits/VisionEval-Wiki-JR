@@ -420,9 +420,27 @@ TODO
 
 ## Multiple Scenarios with VERPAT
 
-TODO: Show directory structure within VERPAT_Scenarios directory
+The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) provides the capability to quickly set up, run, and visualize the results of large numbers of scenarios based on a base scenario and combinations of input changes.  
 
-### Scenario inputs
+### Directory structure
+
+The directory structure for a model set up for VEScenarios contains the following files:
+
+<img align="center" width="300" border=1 src="VERPAT-Tutorial-images/multi-scenario_directory_structure.png">
+
+  + defs
+  + inputs
+  + scenario_inputs
+  + VERPAT_base_model
+  + Visualizer
+  + README.md
+  + run_model.R
+  
+#### defs
+
+#### inputs
+
+#### scenario_inputs
 
 Model scenarios are defined in terms of combinations of individual model input parameters and policy choices.  The various inputs are defined in the "scenario_inputs" folder.
 
@@ -471,6 +489,18 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 <img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
   
+
+
+#### VERPAT_base_model
+
+The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario.  The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files)while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
+
+#### Visualizer
+
+<img align="center" width="300" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
+
+The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
+
 
 ### Create and run combinations
 
