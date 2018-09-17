@@ -3,6 +3,7 @@
 ### Getting Started
 - [[Getting Started|Getting-Started]]
 - [[VERPAT Tutorial|VERPAT-Tutorial]]
+- [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
 - [[Developer Orientation|Developer-Orientation]]
 
 ### Software Management
@@ -14,7 +15,6 @@
 - [[Development Roadmap|Development-Roadmap]]
 - [[Documentation Plan|Documentation-Plan]]
 - [[Multiple Scenarios | Multiple-Scenarios]]
-- [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
 
 ### Project Management
  - [[Meeting Notes]]
