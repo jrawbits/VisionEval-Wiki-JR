@@ -220,16 +220,16 @@ Compare multiple scenarios at a time graphically to quickly assess results
   <tr>
     <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
     <td> <ul> 
-	<li> [Household Synthesis](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds) </li>
-	<li> [Firm Synthesis](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms) </li> 
-	<li> [Urban Form](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse) </li>
-	<li> [Accessibility](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply) </li>
-	<li> [Vehicle Models](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles) </li>
-	<li> [Auto Travel Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li>
-	<li> [Truck and Bus Travel Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li>
-	<li> [Congestion](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse) </li>
-	<li> [Induced Demand](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li> 
-	<li> [Policy Benefits](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel) </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Household Synthesis </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms"> Firm Synthesis </a> </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse"> Urban Form </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply"> Accessibility </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles"> Vehicle Models </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Auto Travel Demand </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Truck and Bus Travel Demand </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse"> Congestion </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Induced Demand </a> </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Policy Benefits </a> </li> 
 	</ul> </td>
   </tr>
 </table>
@@ -420,23 +420,31 @@ See instructions at [Getting Started: Running VE Models](https://github.com/greg
 
 ### Directory structure
 
-TODO:  screenshot of directory structure for VERPAT model
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory.png">
 
-The `defs` directory contains five ["Model Definition File"](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files). 
+The `defs` directory contains five [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files). 
 
 The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files). 
 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
+
 ### Modifying the scenario
 
-**TODO screenshots of increasing region_light_vehicles.csv**
-
-Model inputs are described at https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters.  
+Model inputs are described [here](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters).
 
 To modify a scenario, the appropriate file is edited.  For example, to increase bicycle usage, the file [`inputs/region_light_vehicles.csv`](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#region_light_vehiclescsv) is modified to change the `DataValue` of `TargetProp` from 0.2 to 0.4.
 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_region_light_vehicles.png">
+
+
 ### Viewing output
 
-**TODO: add screenshot of Datastore directory**
+**Are there functions for viewing output?**
+
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore_2005_Azone.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore_global.png">
+
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
@@ -530,6 +538,9 @@ The `VERPAT_base_model` folder contains inputs and R script necessary to run the
 
 The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
 
+#### run_model.R
+
+ 
 
 ### Create and run combinations
 
@@ -555,20 +566,42 @@ When finished, the VERPAT Scenario Viewer will automatically open to display the
 
 ### Modify policies
 
-**TODO: Show how to modify the number of different policy alternatives are being explored.**
-
-**TODO: Show how to modify the policy alternatives themselves.**
+<img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
-
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_2.png">
 
 ### View output			
 
-TODO: See Instructions in VE_ScenarioViewer (PPT slides) 
+Output of all 324 scenarios
 
-TODO: screenshots of selecting desired performance metrics to illustrate which scenarios contribute
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
+
+Accessing instructions
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_quick_start1.png">
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_quick_start2.png">
+
+Detailed instructions
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_detailed_instructions1.png">
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_detailed_instructions.png">
+
+Selecting bars
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_selecting_bars.png">
+
+
+Selecting scenarios
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_selecting_pie.png">
+
+Selecting data
+
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_data_table.png">
 
 ### Accessing the data
 
@@ -577,6 +610,8 @@ TODO: Where are the output data stored?  How does one access them?
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 	
 ## Performance Metrics
+
+https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#module-outputs-18
 
 **TODO: Update these tables for current data**
 
