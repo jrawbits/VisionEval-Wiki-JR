@@ -9,7 +9,7 @@ This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Ra
   + [Scenario Planning](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#scenario-planning)
   + [The VERPAT Model](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#the-verpat-model)
   + [Installation of VisionEval and VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#installation-of-visioneval-and-verpat)
-  + [Single Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#single-scenarios-with-verpat)
+  + [Running the VERPAT model](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#running-the-verpat-model)
   + [Multiple Scenarios with VERPAT](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#multiple-scenarios-with-verpat)
   + [Performance Metrics](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#performance-metrics)
   + [Bonus material](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#bonus-material)
@@ -410,86 +410,132 @@ Performance metrics are calculated in the [VEReports package](https://github.com
 
 ## Installation of VisionEval and VERPAT
 
-See [Installation and Setup](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup).  
+See [Getting Started: Installation and Setup](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup). That document describes the installation of the VisionEval framework as well as the VERPAT model itself. 
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
-## Single Scenarios with VERPAT
+## Running the VERPAT model
 
-See instructions at [Getting Started: Running VE Models](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-ve-models).  That page describes running VERPAT with sample data for Multnomah County, Oregon, via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
+Once VisionEval and VERPAT have been installed, a model directory with sample data for Multnomah County, Oregon will be present at `VisionEval/sources/models/VERPAT`. This directory contains two subdirectories and several files:
 
-### Directory structure
-
-The model directory structure and necessary files are described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#6-model-layer-description). 
-
-The model directory contains two folders and several files:
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory.png">
 
 The `defs` directory contains five [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files), also described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure).  
 
-The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) and in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#64-model-inputs).  
+The `inputs` directory contains a number of CSV and JSON files that describe the properties for the model.  Each module specifies what input files it needs.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) and in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#64-model-inputs).  
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
 
+To change the conditions in the model, these input files are modified (see [Modifying the scenario](#modifying-the-scenario)). 
 
-The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model.  
+The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model. 
 
 <img align="center" width="1100" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
 
+
+To run this file in R, see instructions at [Getting Started: Running VE Models](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-ve-models).  That page describes running VERPAT via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
+
+
 ### Modifying the scenario
 
-Model inputs are described [here](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters).
-
-To modify a scenario, the appropriate file is edited.  For example, to increase bicycle usage, the file [`inputs/region_light_vehicles.csv`](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#region_light_vehiclescsv) is modified to change the `DataValue` of `TargetProp` from 0.2 to 0.4.
+To modify a scenario, the appropriate input files are edited.  For example, to increase bicycle usage, the file [`inputs/region_light_vehicles.csv`](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#region_light_vehiclescsv) would be modified in Excel, LibreOffice, or a text editor to change the `DataValue` of `TargetProp` from 0.2 to 0.4:
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_region_light_vehicles.png">
 
 
 ### Viewing output
 
-**Are there functions for viewing output?**
 
-The output data are contained in a *datastore*, which can be either an HDF5 file or a directory of Rdata files.  The datastore is described in detail in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#65-the-datastore).  
+The output data are contained in a *datastore*, which can be either an HDF5 file or a directory of RData files.  The datastore is described in detail in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#65-the-datastore).  
+
+In this case, the datastore is a directory of RData files. It has a hierarchical structure, with directories for each year that the model is run, plus a `Global` folder for output that is not year specific.  
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore.png">
+
+The year directories contain subdirectories for each geographic level, containing RData files.
+
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore_2005_Azone.png">
+
+The Global directory contains data that do not vary by model run year such as model parameters or geographic tables.
+
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore_global.png">
+
+**TODO: Are there functions for viewing output?**
 
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
 ## Multiple Scenarios with VERPAT
 
-The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) provides the capability to quickly set up, run, and visualize the results of large numbers of scenarios based on a base scenario and combinations of input changes.  
+The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) provides the capability to quickly set up, run, and visualize large numbers of scenarios based on a base scenario and combinations of input changes.  The VEScenarios module and a model directory (`VERPAT_Scenarios`) with sample data for Multnomah County, Oregon, are automatically installed when following the instructions [above](#installation-of-visioneval-and-verpat).  
 
 ### Directory structure
 
-The directory structure for a model set up for VEScenarios contains the following files:
+The directory structure for `VERPAT_Scenarios` contains the following files and directories:
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_directory_structure.png">
 
-  + defs
-  + inputs
-  + scenario_inputs
-  + VERPAT_base_model
-  + Visualizer
-  + README.md
-  + run_model.R
-  
+#### VERPAT_base_model
+
+The `VERPAT_base_model` directory contains the inputs and R script necessary to run the base scenario, as described above ([Running the VERPAT Model](#running-the-verpat-model)).  
+
+The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
+
 #### defs
+
+The `VERPAT_Scenarios/defs` directory contains the same files as the `VERPAT_base_model/defs` directory:
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_defs_folder.png">
 
-**TODO**
-Differences from model defs folder
+but the `model_parameters.json` file differs between `VERPAT_base_model/defs` and `VERPAT_Scenarios/defs` in that the latter version contains just four parameters specifying the locations of inputs and outputs, as well as the number of processors (`NWorkers`) to use:
+
+```
+[
+  {
+    "NAME": "ModelFolder",
+    "VALUE": "VERPAT_base_model",
+    "TYPE": "character",
+    "UNITS": "NA",
+    "PROHIBIT": "NA",
+    "SIZE": 20,
+    "ISELEMENTOF": ""
+  },
+  {
+    "NAME": "ScenarioInputFolder",
+    "VALUE": "scenario_inputs",
+    "TYPE": "character",
+    "UNITS": "NA",
+    "PROHIBIT": "NA",
+    "SIZE": 20,
+    "ISELEMENTOF": ""
+  },
+  {
+    "NAME" : "ScenarioOutputFolder",
+    "VALUE": "scenarios",
+   "TYPE": "character",
+   "UNITS": "NA",
+   "PROHIBIT": "NA",
+   "SIZE": 20,
+   "ISELEMENTOF": ""
+  },
+  {
+    "NAME" : "NWorkers",
+    "VALUE": "4",
+    "TYPE" : "integer",
+    "UNITS" : "NA",
+    "PROHIBIT" : "c('NA', '< 0')",
+    "ISELEMENTOF" : ""
+  }
+]
+```
 
 
 #### inputs
 
+The `inputs` folder in `VERPAT_Scenarios` also differs from that in `VERPAT`.  In this case, there is only a single file specifying the output data tables that should be exported.  **TODO: what does "exported" mean in this case?**.
+
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_input_folder.png">
 
-**TODO**
-Differences from model 
 
 #### scenario_inputs
 
@@ -500,9 +546,6 @@ Scenario inputs consist of six folders, one for each of a particular category of
 Within each folder, there are subfolders containing input files, one per specific input. Each of the folders must contain at least one subfolder named "1", defining the input for the base scenario.  Subsequent numbered folders contain input files modifying parameters of interest, as shown in the screenshots below:
 
 Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_base_model/defs` and `VERPAT_base_model/inputs`
-
-**TODO: Description of sample data used for illustration**
-
 
 <img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
 
@@ -533,30 +576,26 @@ The subfolder names and scenario inputs are defined as follows (input file to mo
 
 Running all of these input values will result in 324 total scenarios, which will take several hours to half a day to run.  
 
-To test, reduce the number of scenario inputs by deleting the numbered folders, making sure to retain the "1" folder for each of the six options.  
+To test the multi-scenario capability in less time, reduce the number of scenario inputs by deleting the numbered folders, making sure to retain the "1" folder for each of the six options.  
 
-A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C), resulting in six scenarios.
+A reasonable test would be to generate six scenarios: use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C):
 
 <img align="center" width="400" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
-  
-
-
-#### VERPAT_base_model
-
-The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario, as described above ([Single Scenarios with VERPAT](#single-scenarios-with-verpat)).  
-
-The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
 
 #### Visualizer
 
+The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
+
 <img align="center" width="400" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
 
-The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
 
 #### run_model.R
 
+The `run_model.R` script in this case runs four modules that create the scenarios from the inputs, runs each, combines the results, and visualizes them using the `Visualizer`.  
+
 <img align="center" width="1000" border=1 src="VERPAT-Tutorial-images/multi-scenario_run_model.png">
+
 
 
 ### Create and run combinations
@@ -565,14 +604,15 @@ The `run_model.R` script will automatically create the scenarios from all combin
 
 <img align="center" width="400" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
 
+The `run_model.R` script can be run as described above in [Running the VERPAT model](#running-the-verpat-model).  See the [Getting Started document](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) for details.
 
-The model automatically builds and runs scenarios based on combinations of the policy inputs.  These are found in the `scenarios` folder.
+The model automatically builds and runs scenarios based on combinations of the inputs.  The scenarios to run are found in the newly created `scenarios` directory.
 
 
 <img align="center" width="400" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
 
 
-Each folder contains the results of a model run, with its own inputs, datastore, and log file.
+Each directory contains the results of a model run, with its own inputs, datastore, and log file.
 
 
 When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
@@ -581,9 +621,13 @@ When finished, the VERPAT Scenario Viewer will automatically open to display the
 <img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
 
-### Modify policies
+### Modify inputs
+
+To modify the scenario inputs, the numbered subdirectories can be created or deleted.  Each directory contains a single input file containing the modified model parameter.  
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
+
+In the screenshots below, the change in bicycle `TargetProp` is increased from 0.2 to 0.4.  
 
 <img align="center" width="500" border=1, src="VERPAT-Tutorial-images/scenario_input_B_1.png">
 
@@ -591,9 +635,13 @@ When finished, the VERPAT Scenario Viewer will automatically open to display the
 
 ### View output			
 
-Output of all 324 scenarios
+Upon completion of the `run_model.R` script, an HTML page will be automatically opened in a browser:
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
+
+This file, located in `VERPAT_Scenarios/Visualizer/verpat.html`, shows a number of key output variables for all of the scenarios.  
+
+**TODO: Finish text below**.
 
 Accessing instructions
 
