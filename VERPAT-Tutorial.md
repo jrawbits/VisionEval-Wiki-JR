@@ -416,23 +416,25 @@ See [Installation and Setup](https://github.com/gregorbj/VisionEval/wiki/Getting
 
 ## Single Scenarios with VERPAT
 
-See instructions at [Getting Started: Running VE Models](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-ve-models).  This describes running VERPAT with sample data for Multnomah County, Oregon, via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
+See instructions at [Getting Started: Running VE Models](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-ve-models).  That page describes running VERPAT with sample data for Multnomah County, Oregon, via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
 
 ### Directory structure
 
 The model directory structure and necessary files are described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#6-model-layer-description). 
 
+The model directory contains two folders and several files:
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory.png">
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
-
-The `defs` directory contains five [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files). 
+The `defs` directory contains five [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files), also described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#61-model-directory-structure).  
 
 The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) and in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#64-model-inputs).  
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
+
 
 The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model.  
+
+<img align="center" width="1100" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
 
 ### Modifying the scenario
 
@@ -484,7 +486,7 @@ Differences from model defs folder
 
 #### inputs
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_inputs_folder.png">
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_input_folder.png">
 
 **TODO**
 Differences from model 
@@ -497,7 +499,7 @@ Scenario inputs consist of six folders, one for each of a particular category of
 
 Within each folder, there are subfolders containing input files, one per specific input. Each of the folders must contain at least one subfolder named "1", defining the input for the base scenario.  Subsequent numbered folders contain input files modifying parameters of interest, as shown in the screenshots below:
 
-Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_model\defs` and `VERPAT_model\inputs`
+Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_base_model/defs` and `VERPAT_base_model/inputs`
 
 **TODO: Description of sample data used for illustration**
 
@@ -554,7 +556,7 @@ The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed 
 
 #### run_model.R
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
+<img align="center" width="1000" border=1 src="VERPAT-Tutorial-images/multi-scenario_run_model.png">
 
 
 ### Create and run combinations
@@ -791,7 +793,7 @@ Public health impacts and costs
 
 **TODO:  UPdate this for VERPAT!**
 
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/performance_metric.png" </img>
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/performance_metric.png"> </img>
 
 VERPAT's charting is very easy to use and follows a template so each chart can be easily interpreted
 
@@ -805,7 +807,7 @@ In this example, **scenarios 3 and 8** have the highest reduction in vehicle hou
 
 **TODO**
 
-RDS files locations
+RDA files locations -- See https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#65-the-datastore
 
 [top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
 
