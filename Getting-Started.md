@@ -71,10 +71,10 @@ for(module in VE_modules){
 ```
 
 ## Running VE Models
-There are multiple ways to run VisionEval models.
+There are multiple ways to run VisionEval models.  The models folder in this repository contains example models for running VERPAT and VERSPM.
 
 ### Running VERPAT or VERSPM from within R
-  1. Git clone (i.e. copy) this repository to your computer.
+  1. Git clone this repository to your computer in order to get the example models.  A zipped version of the repository is available [here](https://github.com/gregorbj/VisionEval/archive/master.zip) for download.
   2. Start R and run the following commands:
 
 ```
@@ -84,7 +84,7 @@ source("run_model.R")
 ```
 
 ### Running VEGUI from GitHub to run VERPAT or VERSPM
-  1. Git Clone (i.e. copy) this repository to your computer.
+  1. Git clone this repository to your computer in order to get the example models.  A zipped version of the repository is available [here](https://github.com/gregorbj/VisionEval/archive/master.zip) for download.
   1. Start R and run the following commands:
 
 ```
@@ -96,7 +96,7 @@ runGitHub("gregorbj/VisionEval", subdir="sources/VEGUI")
   5. Click "Run" and then "Run Model Script" to run the model
 
 ### Running VEGUI from within R to run VERPAT or VERSPM
-  1. Git Clone (i.e. copy) this repository to your computer.
+  1. Git clone this repository to your computer in order to get the example models.  A zipped version of the repository is available [here](https://github.com/gregorbj/VisionEval/archive/master.zip) for download.
   1. Start R and run the following commands:
 
 ```
