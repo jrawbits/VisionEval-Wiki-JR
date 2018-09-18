@@ -420,13 +420,19 @@ See instructions at [Getting Started: Running VE Models](https://github.com/greg
 
 ### Directory structure
 
+The model directory structure and necessary files are described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#6-model-layer-description). 
+
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory.png">
+
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
 
 The `defs` directory contains five [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files). 
 
-The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files). 
+The `inputs` directory contains a number of CSV and JSON files that describe the regional properties for the model.  These are described in [Input Files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) and in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#64-model-inputs).  
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
+
+The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model.  
 
 ### Modifying the scenario
 
@@ -440,6 +446,8 @@ To modify a scenario, the appropriate file is edited.  For example, to increase 
 ### Viewing output
 
 **Are there functions for viewing output?**
+
+The output data are contained in a *datastore*, which can be either an HDF5 file or a directory of Rdata files.  The datastore is described in detail in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#65-the-datastore).  
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore.png">
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_datastore_2005_Azone.png">
@@ -468,18 +476,22 @@ The directory structure for a model set up for VEScenarios contains the followin
   
 #### defs
 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_defs_folder.png">
+
 **TODO**
 Differences from model defs folder
 
 
 #### inputs
 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_inputs_folder.png">
+
 **TODO**
 Differences from model 
 
 #### scenario_inputs
 
-Model scenarios are defined in terms of combinations of individual model input parameters and policy choices.  The various inputs are defined in the "scenario_inputs" folder.
+Model scenarios are defined in terms of combinations of individual model input parameters and policy choices.  The various inputs are defined in the `scenario_inputs` folder.
 
 Scenario inputs consist of six folders, one for each of a particular category of input, as described below.  All six folders are required.
 
@@ -530,7 +542,9 @@ A reasonable test would be to use two scenarios for Bikes or Light Vehicles (B) 
 
 #### VERPAT_base_model
 
-The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario.  The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
+The `VERPAT_base_model` folder contains inputs and R script necessary to run the base scenario, as described above ([Single Scenarios with VERPAT](#single-scenarios-with-verpat)).  
+
+The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
 
 #### Visualizer
 
@@ -540,7 +554,8 @@ The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed 
 
 #### run_model.R
 
- 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
+
 
 ### Create and run combinations
 
