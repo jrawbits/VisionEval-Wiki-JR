@@ -28,7 +28,7 @@ The diagram below illustrates the modeling system with inputs, model components,
 + Captures interactions between policies
 + Spatial results are by place type
 
-For more, see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs).
+For more, see [[VERPAT Modules and Outputs | VERPAT-Modules-and-Outputs]].
 
 The following is an explanation of the major steps in the model execution shown above.
 
@@ -197,4 +197,4 @@ Performance metrics are calculated in the [VEReports package](https://github.com
   + [TravelWorks Rapid Policy Assessment Tool](https://planningtools.transportation.org/551/rapid-policy-analysis-tool.html)
   + [RPAT User manual](https://planningtools.transportation.org/files/63.pdf)
 
-[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+[[Overview | VERPAT-Tutorial-Overview]]

@@ -1,8 +1,23 @@
-## Overview
 
 This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Rapid Planning Assessment Tool), a model based on the VisionEval framework for strategic planning of transportation networks.
 
-TODO: add text from https://gregorbj.github.io/VisionEval/
+Strategic planning, also known as scenario planning, is becoming increasingly important as a means to help state and metropolitan area governments select policies and actions to address pressing issues that are fraught with uncertainty. The federal goverment increasingly challenges state, regional and local transportation agencies to measure outcomes of decisions through performance-based planning, including consideration of the impacts of transportation solutions on future outcomes such as health, mobility, and sustainability.  Further complicating matters, plans must be resilient in the face of rapidly changing transportation and land use trends due to emerging technologies, social changes, and environmental constraints.  The objectives of strategic planning are to consider the prospects of future trends, evaluate the potential for influencing those trends and their effects, and develop a strategic vision for the future. A strategic vision identifies desired performance goals and general strategies for achieving those goals. For more background on strategic planning, see [[Scenario Planning | VERPAT-Tutorial-Scenario-Planning]].
+
+### What is VisionEval?
+
+VisionEval, an open source common modeling framework built on the successful GreenSTEP family of strategic planning tools, is intended to address these planning needs.  The framework enables statewide, regional, or urban area models to be built by connecting together modules distributed in standard R language packages. The framework establishes interface standards for modules and manages the data flow between modules and a common datastore. This [repository](https://github.com/gregorbj/VisionEval) is the source for project documentation and code. A description of the impetus and vision for the framework is included in the repository [here](https://github.com/gregorbj/VisionEval/wiki/documents/VisionEval_OverallVision_20151030.pdf). Several partners and technical contributors have participated in the development of the VisionEval framework to date. Partners include the Federal Highway Administration. Technical contributors include Oregon Systems Analytics (OSA), Resource Systems Group (RSG), Portland State University (PSU), University of British Columbia (UBC), Lane Council of Governments (LCOG), and Volpe.
+
+### VERPAT development history
+
+The family of VisionEval tools began with a tool designed to measure GHG emission outcomes in Oregon (GreenSTEP). It was rebranded the Regional Strategic Planning Model (RSPM) when broader measures such as health, household costs, and other outcomes were added. The tool was adapted nationally in modified form as RPAT (Rapid Policy Assessment Tool) and EERPAT (Energy and Emissions Reduction Policy Analysis Tool).  RPAT was developed under the 2nd Strategic Highway Research Program that was authorized in 2005 as part of the federal SAFETEA-LU legislation. The model was developed to help planners evaluate the potential effect of smart growth policies on regional travel. Portions of the GreenSTEP model were used in RPAT, but substantial revisions were made to the code. 
+
+VERPAT is a further development of RPAT, implemented within the VisionEval framework. Like RPAT, VERPAT evaluates policy scenarios to identify the most promising policies that can be further tested using a more detailed project-level tool. Specifically, VERPAT is designed to evaluate transportation investment and policy strategies such as increased transit service, pricing, parking management, etc. combined with land use plans to assess how different combinations of investment and policy actions impact travel behavior and budgets and thus influence desired community outcomes and goals. The short runtimes enable thousands of scenarios to be evaluated testing plan resilience and has resulted in several web-based interactive visualization tools to explore policy/investment trade-offs with stakeholders and the public.
+
+For more on the how the VERPAT model works see [[Model Description | VERPAT-Tutorial-Model-Description]].  
+
+To learn how to install and run VERPAT for a single scenario, see [[Running the Model | VERPAT-Tutorial-Running-the-Model]], and to learn how to run VERPAT for multiple scenarios implementing combinations of policy options, see [[Multiple Scenarios | VERPAT-Tutorial-Multiple-Scenarios]].
+
+Finally, the section [[Performance Metrics | VERPAT-Tutorial-Performance-Metrics]] describes the output from VERPAT.
 
 ## Sections
 
