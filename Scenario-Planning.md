@@ -1,5 +1,3 @@
-## Scenario Planning
-
 ### A definition of scenario planning
 
 A group of participants who are engaged in a data driven communication process that seeks to: 
