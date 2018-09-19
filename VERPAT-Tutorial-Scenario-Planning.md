@@ -1,3 +1,5 @@
+This section introduces scenario planning. What is it?  Why is it done?
+
 ### A definition of scenario planning
 
 A group of participants who are engaged in a data driven communication process that seeks to: 
