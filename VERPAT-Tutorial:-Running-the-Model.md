@@ -1,4 +1,4 @@
-## Running VERPAT
+TODO: Intro to this section
 
 ## Installation of VisionEval and VERPAT
 
