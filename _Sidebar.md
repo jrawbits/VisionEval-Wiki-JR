@@ -3,7 +3,7 @@
 ### Getting Started
 - [[Getting Started|Getting-Started]]
 - [[VERPAT Tutorial|verpat-tutorial-overview]]
-  - [[Scenario Planning | VERPAT-Tutorial-Scenario-Planning]]
+  - [[Scenario Planning | VERPAT-Tutorial---Scenario-Planning]]
   - [[The VERPAT Model | VERPAT-Tutorial-Model-Description]]
   - [[Running VERPAT | VERPAT-Tutorial-Running-the-Model]]
   - [[Multiple Scenarios | VERPAT-Tutorial-Multiple-Scenarios]]
