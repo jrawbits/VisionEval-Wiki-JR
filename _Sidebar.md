@@ -3,11 +3,11 @@
 ### Getting Started
 - [[Getting Started|Getting-Started]]
 - [[VERPAT Tutorial|verpat-tutorial-overview]]
-  - [[Scenario Planning | VERPAT-Tutorial:-Scenario-Planning]]
-  - [[The VERPAT Model | verpat-tutorial-the-verpat-model]]
-  - [[Running VERPAT | verpat-tutorial-running-verpat]]
-  - [[Multiple Scenarios | verpat-tutorial-multiple-scenarios]]
-  - [[Performance Metrics | verpat-tutorial-performance-metrics]]
+  - [[Scenario Planning | VERPAT-Tutorial-Scenario-Planning]]
+  - [[The VERPAT Model | VERPAT-Tutorial:-Model-Description]]
+  - [[Running VERPAT | VERPAT-Tutorial:-Running-the-Model]]
+  - [[Multiple Scenarios | VERPAT-Tutorial:-Multiple-Scenarios]]
+  - [[Performance Metrics | VERPAT-Tutorial:-Performance-Metrics]]
 - [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
 - [[Developer Orientation|Developer-Orientation]]
 
