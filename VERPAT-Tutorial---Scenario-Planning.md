@@ -187,6 +187,6 @@ Evaluate scenarios across a range of performance metrics
 
 Compare multiple scenarios at a time graphically to quickly assess results
 
-<img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
+<img align="center" width="1500" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
 [[Overview | VERPAT-Tutorial-Overview]]
