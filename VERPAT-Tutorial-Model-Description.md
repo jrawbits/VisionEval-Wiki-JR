@@ -1,6 +1,8 @@
-TODO: Intro to this section
+Introduction to the VERPAT model and its design.  
 
-### Rapid Policy Assessment Tool Process
+### Overview of the VERPAT modeling process
+
+The diagram below illustrates the modeling system with inputs, model components, and feedback loops. Links are provided to the source code that implements each section.
 
 **TODO: Check links -- are they correctly associated with bullets?**
 
@@ -28,6 +30,7 @@ TODO: Intro to this section
 
 For more, see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs).
 
+The following is an explanation of the major steps in the model execution shown above.
 
 ### Household and Firm Synthesis
 
