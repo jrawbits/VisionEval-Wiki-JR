@@ -36,7 +36,7 @@ Scenario planning provides a framework for developing a shared vision for the fu
 	     </ul> </li>
 	</ul> </td>
     <td> <a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
-<img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="50%">
+<img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="70%">
 </a> </td>
   </tr>
 </table>
@@ -189,5 +189,4 @@ Compare multiple scenarios at a time graphically to quickly assess results
 
 <img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
-
-[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+[[Overview | VERPAT-Tutorial-Overview]]
