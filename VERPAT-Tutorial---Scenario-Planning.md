@@ -50,7 +50,7 @@ Scenario planning provides a framework for developing a shared vision for the fu
 	<li> Represent the dynamics and interrelationships of land use strategies with the performance of a transportation investment </li> 
 	<li> Facilitate improved communication, interaction, and partnerships between decision-makers and planners in transportation and land use arenas </li>
 	</ul> </td>
-    <td><img align="center" width="200" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"> </td>
+    <td><img align="center" width="300" border=1 src="VERPAT-Tutorial-images/data_driven_process.png"> </td>
   </tr>
 </table>
 
@@ -69,7 +69,7 @@ Areas where smart growth levers can be used
 	<li> Programming </li>
 	<li> Implementation </li>
 	</ul> </td>
-    <td><img align="center" width="800" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
+    <td><img align="center" width="1200" border=1 src="VERPAT-Tutorial-images/decision_points.png"></td>
   </tr>
 </table>
 
@@ -173,7 +173,7 @@ Transportation Supply
   + Policy benefits
   + Easy to apply and run quickly
 
-Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="200" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
+Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
 ### Communicating Results
 
