@@ -2,7 +2,7 @@ This section introduces scenario planning. What is it?  Why is it done?
 
 ### A definition of scenario planning
 
-A group of participants who are engaged in a data driven communication process that seeks to: 
+Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A group of participants who are engaged in a data driven communication process that seeks to: 
 
   + Ask questions
   + Develop answers
