@@ -1,4 +1,5 @@
-## The VERPAT Model
+TODO: Intro to this section
+
 ### Rapid Policy Assessment Tool Process
 
 **TODO: Check links -- are they correctly associated with bullets?**
