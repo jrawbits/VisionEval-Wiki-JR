@@ -8,7 +8,7 @@ The directory structure for `VERPAT_Scenarios` contains the following files and 
 
 #### VERPAT_base_model
 
-The `VERPAT_base_model` directory contains the inputs and R script necessary to run the base scenario, as described above ([Running the VERPAT Model](#running-the-verpat-model)).  
+The `VERPAT_base_model` directory contains the inputs and R script necessary to run the base scenario, as described in [[Running the Model | VERPAT-Tutorial-Running-the-Model]].  
 
 The `defs` folder holds the [model definition files](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#model-definition-files) while the `inputs` folder contains [inputs and parameters](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Inputs-and-Parameters#input-files) needed for the modules.  The `run_model.R` script calls each of the VERPAT modules in turn.  
 
@@ -20,7 +20,7 @@ The `VERPAT_Scenarios/defs` directory contains the same files as the `VERPAT_bas
 
 but the `model_parameters.json` file differs between `VERPAT_base_model/defs` and `VERPAT_Scenarios/defs` in that the latter version contains just four parameters specifying the locations of inputs and outputs, as well as the number of processors (`NWorkers`) to use:
 
-```
+```js
 [
   {
     "NAME": "ModelFolder",
@@ -59,6 +59,8 @@ but the `model_parameters.json` file differs between `VERPAT_base_model/defs` an
   }
 ]
 ```
+
+The `NWorkers` parameter specifies the number of processors to use during the scenario runs.  The default is 4, but be sure to set this to a number appropriate to your machine.
 
 
 #### inputs
@@ -107,7 +109,7 @@ The subfolder names and scenario inputs are defined as follows (input file to mo
 
 Running all of these input values will result in 324 total scenarios, which will take several hours to half a day to run.  
 
-To test the multi-scenario capability in less time, reduce the number of scenario inputs by deleting the numbered folders, making sure to retain the "1" folder for each of the six options.  
+To test the multi-scenario capability in less time, reduce the number of scenario inputs by deleting some of the numbered folders, making sure to retain the "1" folder for each of the six options.  
 
 A reasonable test would be to generate six scenarios: use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C):
 
@@ -120,6 +122,7 @@ The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed 
 
 <img align="center" width="400" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
 
+To view the output manually once the scenarios have been run, open the `verpat.html` file in your web browser. 
 
 #### run_model.R
 
@@ -131,13 +134,9 @@ The `run_model.R` script in this case runs four modules that create the scenario
 
 ### Create and run combinations
 
-The `run_model.R` script will automatically create the scenarios from all combinations of policy inputs and run them using multiple processors.  Be sure to specify the number of processors to use, known as the `NWorkers` parameter in the file `sources/models/VERPAT_Scenarios/defs/model_parameters.json`.   Here I am using 4 processors (the default).
+The `run_model.R` script can be run as described above in [[Running the  Model | VERPAT-Tutorial-Running-the-Model]].  See the [Getting Started document](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) for additional details.
 
-<img align="center" width="400" border=1 src="VERPAT-Tutorial-images/modify_nworkers.png">
-
-The `run_model.R` script can be run as described above in [Running the VERPAT model](#running-the-verpat-model).  See the [Getting Started document](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) for details.
-
-The model automatically builds and runs scenarios based on combinations of the inputs.  The scenarios to run are found in the newly created `scenarios` directory.
+The model automatically builds scenarios by creating all possible combinations of settings found in `scenario_inputs`.  The scenarios to run are found in the newly created `scenarios` directory.
 
 
 <img align="center" width="400" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
