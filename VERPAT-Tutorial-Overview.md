@@ -1,6 +1,6 @@
 ## Overview
 
-This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Rapid Planning Assessment Tool), a model based on the VisionEval framework for strategic planning of transportation networks.
+This tutorial describes the purpose, structure, and use of VERPAT (VisionEval Rapid Planning Assessment Tool), a model based on the VisionEval framework for strategic planning.
 
 TODO: add text from https://gregorbj.github.io/VisionEval/
 
