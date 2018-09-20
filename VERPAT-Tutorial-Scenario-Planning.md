@@ -26,10 +26,11 @@ Scenario planning provides a framework for developing a shared vision for the fu
 
 FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).
 
-+ [Peer Exchange Workshops]((https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/))
-	+ [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
-	+ [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
-        + [Publications and Resources]
++ [Peer Exchange Workshops]
+(https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
++ [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
++ [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
++ [Publications and Resources]
 (https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
 
 
