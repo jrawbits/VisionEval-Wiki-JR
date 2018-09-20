@@ -2,7 +2,7 @@ This section introduces scenario planning. What is it?  Why is it done?
 
 ### A definition of scenario planning
 
-Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A defining characteristic of successful public sector scenario planning is that it actively involves the public, the business community, and elected officials on a broad scale, educating them about growth trends and trade-offs, and incorporating their values and feedback into future plans. FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/). VERPAT is one of several analytical tools and models developed to support scenario planning.
+Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A defining characteristic of successful public sector scenario planning is that it actively involves the public, the business community, and elected officials on a broad scale, educating them about growth trends and trade-offs, and incorporating their values and feedback into future plans. VERPAT is one of several analytical tools and models developed to support scenario planning.
 
 
 ### Scenario planning framework
@@ -21,8 +21,10 @@ Scenario planning provides a framework for developing a shared vision for the fu
   + Integrates regional transportation and local land use stakeholders to collectively better understand and visualize future transportation and land use patterns
   + Improves public and stakeholder involvement through coordinated outreach
   + Scenario planning software helps develop and assess scenarios and visualize the differences between alternatives
-  + Broadens agency and public understanding by exploring future challenges and opportunities.
+  + Broadens agency and public understanding by exploring future challenges and opportunities
 ### Scenario planning at FHWA/FTA
+
+FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).
 
 <table>
   <tr>
