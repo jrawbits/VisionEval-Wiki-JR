@@ -31,9 +31,8 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
 	+ [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
         + [Publications and Resources]
 (https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
-        +    <ul> <li> Scenario planning guidebook: six-phases 
-		      <li> State of the practice report: survey of MPOs on current practices </li>
-	     </ul> </li>
+        +  Scenario planning guidebook: six-phases 
+		      State of the practice report: survey of MPOs on current practices
 	
 href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
 <img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="70%">
