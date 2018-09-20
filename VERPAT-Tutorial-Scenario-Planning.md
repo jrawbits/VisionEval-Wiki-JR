@@ -29,7 +29,7 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
 <table>
   <tr>
     <td> <ul> 
-	<li> [Peer Workshop and Exchange Reports](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/) </li>
+	+ [Peer Workshop and Exchange Reports](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
 	<li> [FHWA Scenario Planning Webinars](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/)</li> 
 	<li> [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) </li>
     <li> [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
