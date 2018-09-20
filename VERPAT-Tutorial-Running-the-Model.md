@@ -30,6 +30,8 @@ To change the conditions in the model, these input files are modified (see [Modi
 
 The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model. 
 
+![](VERPAT-Tutorial-images/verpat_run_model.png)
+
 <img align="center" width="1500" border=1 src="VERPAT-Tutorial-images/verpat_run_model.png">
 
 To run this file in R, see instructions at [[Getting Started: Running VE Models | Getting-Started#running-ve-models]].  That page describes running VERPAT via both the [R console](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-verpat-or-verspm-from-within-r) and using [VEGUI](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#running-vegui-from-github-to-run-verpat-or-verspm).   
