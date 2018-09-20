@@ -26,18 +26,16 @@ Scenario planning provides a framework for developing a shared vision for the fu
 
 FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).
 
-<table>
-  <tr>
-    <td> <ul> 
-	[Peer Workshop and Exchange Reports](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
-	[FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
-	[Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
-        [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
-	     <ul> <li> Scenario planning guidebook: six-phases 
+	+ [Peer Workshop and Exchange Reports](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
+	+ [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
+	+ [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
+        + [Publications and Resources]
+(https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
+        +    <ul> <li> Scenario planning guidebook: six-phases 
 		      <li> State of the practice report: survey of MPOs on current practices </li>
 	     </ul> </li>
-	</ul> </td>
-    <td> <a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
+	
+href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
 <img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="70%">
 </a> </td>
   </tr>
