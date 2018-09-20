@@ -13,7 +13,7 @@ The family of VisionEval tools began with a tool designed to measure GHG emissio
 
 VERPAT is a further development of RPAT, implemented within the VisionEval framework. Like RPAT, VERPAT evaluates policy scenarios to identify the most promising policies that can be further tested using a more detailed project-level tool. Specifically, VERPAT is designed to evaluate transportation investment and policy strategies such as increased transit service, pricing, parking management, etc. combined with land use plans to assess how different combinations of investment and policy actions impact travel behavior and budgets and thus influence desired community outcomes and goals. The short runtimes enable thousands of scenarios to be evaluated testing plan resilience and has resulted in several web-based interactive visualization tools to explore policy/investment trade-offs with stakeholders and the public.
 
-For more on the how the VERPAT model works see [[Model Description | VERPAT-Tutorial-Model-Description]].  
+For more on how the VERPAT model works see [[Model Description | VERPAT-Tutorial-Model-Description]].  
 
 To learn how to install and run VERPAT for a single scenario, see [[Running the Model | VERPAT-Tutorial-Running-the-Model]], and to learn how to run VERPAT for multiple scenarios implementing combinations of policy options, see [[Multiple Scenarios | VERPAT-Tutorial-Multiple-Scenarios]].
 
