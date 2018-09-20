@@ -26,7 +26,7 @@ The `inputs` directory contains a number of CSV and JSON files that provide inpu
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/verpat_model_directory_expand.png">
 
-To change the conditions in the model, these input files are modified (see [[#Modifying the scenario]]). 
+To change the conditions in the model, these input files are modified (see [[#modifying-the-scenario]]). 
 
 The `run_model.R` file is described in the [Model System Design document](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md#5-model-system-layers) and consists of calls to the modules that make up the model. 
 
