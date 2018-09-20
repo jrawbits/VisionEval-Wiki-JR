@@ -24,7 +24,7 @@ Scenario planning provides a framework for developing a shared vision for the fu
   + Broadens agency and public understanding by exploring future challenges and opportunities
 ### Scenario planning at FHWA/FTA
 
-FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).
+FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).  FHWA also offers  workshops, webinars, innovative uses and other resources to assist transportation agencies to support scenario planning for local, regional or statewide activities. 
 
 + [Peer Exchange Workshops](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
 + [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
@@ -32,7 +32,7 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
 + [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
 + [Supporting Performance-Based Planning and Programming through Scenario Planning](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/)
 
-### Needs for a data driven process
+### Scenario planning is a data driven process
 
 <table>
   <tr>
