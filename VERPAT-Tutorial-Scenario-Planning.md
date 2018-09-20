@@ -30,7 +30,7 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
 + [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
 + [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
 + [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
-+ [FHWA Scenario Planning Guidebook](Supporting Performance-Based Planning and Programming through Scenario Planning)
++ [Supporting Performance-Based Planning and Programming through Scenario Planning](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/)
 
 ### Needs for a data driven process
 
