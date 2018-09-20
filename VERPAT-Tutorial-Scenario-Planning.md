@@ -29,10 +29,10 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
 <table>
   <tr>
     <td> <ul> 
-	<li> Workshops and peer exchanges </li>
-	<li> Webinar series to promote scenario planning </li> 
-	<li> Innovative research </li>
-    <li> Publications, case studies 
+	<li> [Peer Workshop and Exchange Reports](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/) </li>
+	<li> [FHWA Scenario Planning Webinars](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/)</li> 
+	<li> [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) </li>
+    <li> [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
 	     <ul> <li> Scenario planning guidebook: six-phases </li>
 		      <li> State of the practice report: survey of MPOs on current practices </li>
 	     </ul> </li>
