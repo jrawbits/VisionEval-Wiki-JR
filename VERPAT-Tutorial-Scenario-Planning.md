@@ -2,7 +2,7 @@ This section introduces scenario planning. What is it?  Why is it done?
 
 ### A definition of scenario planning
 
-Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. Scenario planning provides a framework for developing a shared vision for the future by analyzing various forces (e.g., health, transportation, economic, environmental, land use, etc.) that affect growth. A defining characteristic of successful public sector scenario planning is that it actively involves the public, the business community, and elected officials on a broad scale, educating them about growth trends and trade-offs, and incorporating their values and feedback into future plans. FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/). VERPAT is one of several analytical tools and models developed to support scenario planning.
+Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A defining characteristic of successful public sector scenario planning is that it actively involves the public, the business community, and elected officials on a broad scale, educating them about growth trends and trade-offs, and incorporating their values and feedback into future plans. FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/). VERPAT is one of several analytical tools and models developed to support scenario planning.
 
 
 ### Scenario planning framework
@@ -17,10 +17,11 @@ Scenario planning provides a framework for developing a shared vision for the fu
   
 ### Benefits of scenario planning
 
-  + Helps agencies engage in a more informed and strategic transportation decision-making process
-  + Used in conjunction with a charrette or chips games, can help stakeholders better understand and visualize future transportation and land use patterns
-  + Scenario planning software programs can also help develop and assess scenarios, visualize the differences between alternatives, and encourage stakeholder participation
-
+  + Helps agencies align informed and strategic transportation decision-making with regional goals
+  + Integrates regional transportation and local land use stakeholders to collectively better understand and visualize future transportation and land use patterns
+  + Improves public and stakeholder involvement through coordinated outreach
+  + Scenario planning software helps develop and assess scenarios and visualize the differences between alternatives
+  + Broadens agency and public understanding by exploring future challenges and opportunities.
 ### Scenario planning at FHWA/FTA
 
 <table>
