@@ -45,12 +45,9 @@ FHWA provides scenario planning technical assistance and guidebooks [here](https
   </tr>
 </table>
 
-### Decision points for smart growth in planning process
+### Decision points for smart growth in the planning process
 
-Process maps for state DOTs and MPOs
-
-Areas where smart growth levers can be used 
-
+These process maps for state DOTs and MPOs highlight areas where smart growth levers can be used 
 
 <table>
   <tr>
@@ -64,13 +61,11 @@ Areas where smart growth levers can be used
   </tr>
 </table>
 
-### Practioner information needs survey
+### Practitioner needs 
 
-**TODO: Explain title.  Is this section the results of a survey?**
+Most agencies are interested in scenario planning as a strategy to evaluate new policies for land use, pricing, new vehicle and information technologies and travel demand management. These are policies that are more difficult for most travel demand forecasting models. 
 
-Most agencies are interested in scenario planning as a strategy for evaluating land use policies
-
-Many agencies need coordination, cooperation, and communication with local governments on land use policy, since land use regulations are governed by local governments
+Many agencies need coordination, cooperation, and communication with local governments on land use policy, since land use regulations are governed by local governments. 
 
 Agencies also want to understand 
 
@@ -80,8 +75,6 @@ Agencies also want to understand
   + Congestion reduction
   + Outcomes and performance
   
-Develop a tool that can be used by land use and transportation planners to provide opportunities for interaction on common goals
-
 ### Gaps in research
 
 **TODO: More to say about this table?  Introduce it?**
