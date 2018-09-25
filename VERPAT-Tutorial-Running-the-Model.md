@@ -65,6 +65,8 @@ The `Global` directory contains data that do not vary by model run year such as 
 
 Each of the Rda files contains a single R vector called `Dataset` with attributes describing the data.
 
+### Exporting Data to CSV
+
 For easier access, the data can be exported from the Datastore to a set of five CSV files using an [R script](https://github.com/gregorbj/VisionEval/blob/add_scenario/sources/models/export_output_to_csv.R).  
 
 [[Overview | VERPAT-Tutorial-Overview]]

@@ -2,21 +2,18 @@
 
 The diagram below illustrates the modeling system with inputs, model components, and feedback loops. Links are provided to the source code that implements each section.
 
+[ ![](VERPAT-Tutorial-images/rpat_process3.png) ](VERPAT-Tutorial-images/rpat_process3.png)
 
 <table>
   <tr>
-    <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process3.png"></td>
     <td> <ul> 
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Household Synthesis </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms"> Firm Synthesis </a> </li> 
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse"> Urban Form </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply"> Accessibility </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles"> Vehicle Models </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Auto Travel Demand </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Truck and Bus Travel Demand </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse"> Congestion </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Induced Demand </a> </li> 
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Policy Benefits </a> </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Households Package </a> </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse"> Land Use Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply"> Transport Supply Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles"> Household Vehicle Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Household Travel Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEPowertrainsAndFuels"> Powertrains and Fuels Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETravelPerformance"> Travel Performance Package </a> </li>
 	</ul> </td>
   </tr>
 </table>
@@ -46,22 +43,22 @@ VisionEval is a new type of model, and its development has and is being peer-rev
 
 [] = indicates VE modules
 
-  1. Define Households - Households Package
+  1. **Define Households** - *Households Package*  
 Create synthetic households for the region, including persons [Create Households] and workers [Predict Workers] by age group. This determines lifecycle category for households (i.e. Elderly couple, Family with small children, single middle aged adults, etc.)[AssignLifecycle]. Identify total income for each household [PredictIncome].
-  2. Assign Land Use and Other Policies - Land Use Package
+  2. **Assign Land Use and Other Policies** - *Land Use Package*  
 Determines the dwelling type (single-family, multifamily, group quarters) for each household and their location within a zone of the region [PredictHousing]. Allocate jobs by type (total, retail, service) and their location in the region, and assign household workers to these employment locations [Locate Employment]. Assign land use characteristics to each zone and the households and workplaces within that zone. These include an initial development type (either urban or rural) [AssignDevType], 4D built form measures (e.g., density, diversity, design, and accessibility) [Calculate4DMeasures], which enables identification of mixed use areas (i.e., that meet the density, diversity, design, and accessibility criteria) [CalculateUrbanMixMeasure]. Add policies as they apply to each zone and thus home and work location. These include zone-based parking restrictions and price [Parking Restrictions], Demand Management Programs (households and/or worker participation) [AssignDemandManagement], car sharing services (TNC’s) availability [AssignCarSvcAvailability].
-  3. Assign Transportation System - Transport Supply Package
+  3. **Assign Transportation System** - *Transport Supply Package*  
 Assign the regional transportation system, including road lane miles for freeways and arterials [AssignRoadMiles] and transit bus-equivalent revenue miles [AssignTransitService] per capita and transit vehicle-miles by vehicle type. Transit service is identified by zone.
-  4. Assign Vehicle Characteristics - Household Vehicle Package
+  4. **Assign Vehicle Characteristics** - *Household Vehicle Package*  
 Assigns household driver and vehicle characteristics. This includes the number of drivers by age group [AssignDrivers], number of vehicles owned [AssignVehicleOwnership] and their type (auto or light truck) [AssignVehicleType], and age [AssignVehicleAge]. The ownership cost of each household vehicle is calculated [CalculateVehicleOwnCost] and adjusted for car service usage, where rates are competitive [AdjustVehicleOwnership].
-  5. Estimate VMT- Household Travel Package
+  5. **Estimate VMT** - *Household Travel Package*  
 Calculate multi-modal travel. This includes total number of household trips [CalculateVehicleTrips] and daily VMT for household and car service vehicles [CalculateHouseholdDvmt]. Calculate non-auto trips and miles per household, including walking, biking and transit [CalculateAltModeTrips]. Adjust auto VMT, based on short-trip diversion input, i.e., the proportional of short-range single occupant automobile trips to bicycle or similar "non-auto" modes [DivertSovTravel].
-  6. Estimate GHG - Powertrain and Fuels Package
+  6. **Estimate GHG** - *Powertrain and Fuels Package*  
 Calculate the average carbon intensity of fuels by vehicle type and the carbon intensity of electricity [CalculateCarbonIntensity]. Assigns powertrain types (gasoline, electric, hybrid, plug-in hybrid) and associated attributes to household and car share vehicles [AssignHhVehiclePowertrain].
-  7. Iterate to Balance VMT with Costs -Travel Performance Package
+  7. **Iterate to Balance VMT with Costs** - *Travel Performance Package*  
 Calculate daily light duty VMT (household and commercial vehicles) by urbanized area, vehicle type, and road class [CalculateBaseRoadDvmt] [CalculateFutureRoadDvmt]. Calculate urbanized area roadway congestion, speeds, and delay, and then divides travel between freeways and arterials based on congestion and pricing levels [CalculateRoadPerformance]. Adjust vehicle fuel efficiency (MPG and MPKwh) by vehicle type to reflect the effects of congested travel speeds, and transfer adjustments to household vehicles [CalculateMpgMpkwhAdjustments] [AdjustHhVehicleMpgMpkwh]. Calculate operating costs across all household vehicles and use that to allocate DVMT among vehicles and the use of car services. [CalculateVehicleOperatingCost].
 Adjust VMT as necessary to fit within transportation share of overall household budget. Calculate household vehicle travel energy consumption and emissions including from the use of carsharing. Calculate final travel, energy and emissions [BudgetHouseholdDvmt].
-  8. Non-household Travel and Emissions -Travel Performance Package
+  8. **Non-household Travel and Emissions** - *Travel Performance Package*  
 Calculate the energy consumptions and emissions for non-household vehicles. This includes light duty commercial and heavy duty trucks and public transit vehicles [Commercial Vehicle Energy and Emissions] [Public Transit Energy and Emissions].
 
 Performance metrics are calculated in the [VEReports package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports).  For more information, also see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#reportrpatmetrics).  

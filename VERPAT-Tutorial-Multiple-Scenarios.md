@@ -1,4 +1,4 @@
-The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) provides the capability to quickly set up, run, and visualize large numbers of scenarios based on a base scenario and combinations of input changes.  The VEScenarios module and a model directory (`VERPAT_Scenarios`) with sample data for Multnomah County, Oregon, are automatically installed when following the instructions [above](#installation-of-visioneval-and-verpat).  
+Strategic planning often requires the assessment of large numbers of future scenarios, each assessing a different combination of prioritizations, policy decisions, and constraints.  The [VEScenarios module](https://github.com/gregorbj/VisionEval/tree/add_scenario/sources/modules/VEScenario) provides the capability to quickly set up, run, and visualize large numbers of VERPAT scenarios using a baseline scenario combined with multiple changes to model inputs.  The VEScenarios module and a model directory (`VERPAT_Scenarios`) with sample data for Multnomah County, Oregon, are automatically installed when following the [installation instructions](https://github.com/gregorbj/VisionEval/wiki/Getting-Started#installation-and-setup).  
 
 ### Directory structure
 
@@ -18,7 +18,8 @@ The `VERPAT_Scenarios/defs` directory contains the same files as the `VERPAT_bas
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_defs_folder.png">
 
-but the `model_parameters.json` file differs between `VERPAT_base_model/defs` and `VERPAT_Scenarios/defs` in that the latter version contains just four parameters specifying the locations of inputs and outputs, as well as the number of processors (`NWorkers`) to use:
+but the `model_parameters.json` file differs between `VERPAT_base_model/defs` and `VERPAT_Scenarios/defs` in that the latter version contains just four parameters specifying the locations of inputs and outputs, as well as the number of processors (`NWorkers`) to use. The default is 4, but be sure to set this to a number appropriate to your machine.
+
 
 ```js
 [
@@ -60,12 +61,10 @@ but the `model_parameters.json` file differs between `VERPAT_base_model/defs` an
 ]
 ```
 
-The `NWorkers` parameter specifies the number of processors to use during the scenario runs.  The default is 4, but be sure to set this to a number appropriate to your machine.
-
 
 #### inputs
 
-The `inputs` folder in `VERPAT_Scenarios` also differs from that in `VERPAT`.  In this case, there is only a single file specifying the output data tables that should be exported.  **TODO: what does "exported" mean in this case?**.
+The `inputs` folder in `VERPAT_Scenarios` also differs from that in `VERPAT_base_model`.  In this case, there is only a single file specifying the output data tables that should be exported.  **TODO: what does "exported" mean in this case?**.
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/multi-scenario_input_folder.png">
 
@@ -78,7 +77,7 @@ Scenario inputs consist of six folders, one for each of a particular category of
 
 Within each folder, there are subfolders containing input files, one per specific input. Each of the folders must contain at least one subfolder named "1", defining the input for the base scenario.  Subsequent numbered folders contain input files modifying parameters of interest, as shown in the screenshots below:
 
-Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from inputs in `VERPAT_base_model/defs` and `VERPAT_base_model/inputs`
+Model inputs not otherwise specified in the `scenario_inputs` directory are drawn from files in `VERPAT_base_model/defs` and `VERPAT_base_model/inputs`
 
 <img align="center" width="300" border=1 src="VERPAT-Tutorial-images/scenario_inputs_directory_structure.png">
 
@@ -107,11 +106,11 @@ The subfolder names and scenario inputs are defined as follows (input file to mo
     - 2 - Double transit supply
     - 3 - Triple transit supply
 
-Running all of these input values will result in 324 total scenarios, which will take several hours to half a day to run.  
+Running all of these input values will result in 324 total scenarios, which would take several hours to half a day to run.  
 
 To test the multi-scenario capability in less time, reduce the number of scenario inputs by deleting some of the numbered folders, making sure to retain the "1" folder for each of the six options.  
 
-A reasonable test would be to generate six scenarios: use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C):
+For example, a reasonable test would be to generate six scenarios: use two scenarios for Bikes or Light Vehicles (B) and three scenarios for Cost (C):
 
 <img align="center" width="400" border=1 src="VERPAT-Tutorial-images/scenario_inputs_modified.png">
 
@@ -120,7 +119,9 @@ A reasonable test would be to generate six scenarios: use two scenarios for Bike
 
 The `Visualizer` folder contains the HTML, CSS, and javascript libraries needed for displaying the output of the VEScenarios module.  
 
-<img align="center" width="400" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
+<img align="center" width="500" border="1" src="VERPAT-Tutorial-images/multi-scenario_visualizer_folder.png">
+
+The visualizer will open in a web browser automatically at the end of the model run.  
 
 To view the output manually once the scenarios have been run, open the `verpat.html` file in your web browser. 
 
@@ -142,13 +143,13 @@ The model automatically builds scenarios by creating all possible combinations o
 <img align="center" width="400" border=1, src="VERPAT-Tutorial-images/scenario_directory.png">
 
 
-Each directory contains the results of a model run, with its own inputs, datastore, and log file.
+Each directory is essentially a copy of `VERPAT_base_model`, with inputs modified as specified in the `scenario_inputs` directory.  Each scenario directory contains the results of a model run with its own inputs, datastore, and log file.
 
 
-When finished, the VERPAT Scenario Viewer will automatically open to display the results.  
+When finished, the VERPAT Scenario Viewer will automatically open to display the results:
 
 
-<img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
+[<img align="center" width="1200" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">](VERPAT-Tutorial-images/scenario324_all_selected.png)
 
 
 ### Modify inputs
