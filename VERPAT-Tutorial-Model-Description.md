@@ -2,7 +2,7 @@
 
 The diagram below illustrates the modeling system with inputs, model components, and feedback loops. Links are provided to the source code that implements each section.
 
-![![](VERPAT-Tutorial-images/rpat_process3.png)](VERPAT-Tutorial-images/rpat_process3.png)
+[![](VERPAT-Tutorial-images/rpat_process3.png)](VERPAT-Tutorial-images/rpat_process3.png)
 
 <table>
   <tr>
