@@ -5,7 +5,7 @@ The diagram below illustrates the modeling system with inputs, model components,
 
 <table>
   <tr>
-    <td>[<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process3.png">](VERPAT-Tutorial-images/rpat_process3.png)</td>
+    <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process3.png"></td>
     <td> <ul> 
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Household Synthesis </a> </li>
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms"> Firm Synthesis </a> </li> 
