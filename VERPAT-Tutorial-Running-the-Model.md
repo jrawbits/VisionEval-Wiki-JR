@@ -11,9 +11,9 @@ These are described in [[Getting Started: Installation and Setup | Getting-Start
 
 ## Running the VERPAT model
 
-Once VisionEval and VERPAT have been installed, a directory with sample data for Multnomah County, Oregon will be present at `../VisionEval/sources/models/VERPAT`. (Note '..' refers to the parent directory of the installation directory). 
+Once VisionEval and VERPAT have been installed, a directory with sample data for Multnomah County, Oregon will be present at `../VisionEval/sources/models/VERPAT`. (Note `..` refers to the parent directory of the installation directory). 
 
-This directory serves the dual purposes of providing sample data and serving as a template for local modification to other locations. 
+The `VERPAT` directory serves the dual purposes of providing sample data and serving as a template for local modification to other locations. 
 
 It contains two subdirectories and several files:
 
