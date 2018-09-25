@@ -2,11 +2,8 @@ This section introduces scenario planning. What is it?  Why is it done?
 
 ### A definition of scenario planning
 
-Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A group of participants who are engaged in a data driven communication process that seeks to: 
+Scenario planning is a process to develop and analyze the future based on different assumptions about future uncertainties. A defining characteristic of successful public sector scenario planning is that it actively involves the public, the business community, and elected officials on a broad scale, educating them about growth trends and trade-offs, and incorporating their values and feedback into future plans. VERPAT is one of several analytical tools and models developed to support scenario planning.
 
-  + Ask questions
-  + Develop answers
-  + Come to agreement on common problems and solutions
 
 ### Scenario planning framework
 
@@ -20,30 +17,22 @@ Scenario planning provides a framework for developing a shared vision for the fu
   
 ### Benefits of scenario planning
 
-  + Helps agencies engage in a more informed and strategic transportation decision-making process
-  + Used in conjunction with a charrette or chips games, can help stakeholders better understand and visualize future transportation and land use patterns
-  + Scenario planning software programs can also help develop and assess scenarios, visualize the differences between alternatives, and encourage stakeholder participation
-
+  + Helps agencies align informed and strategic transportation decision-making with regional goals
+  + Integrates regional transportation and local land use stakeholders to collectively better understand and visualize future transportation and land use patterns
+  + Improves public and stakeholder involvement through coordinated outreach
+  + Scenario planning software helps develop and assess scenarios and visualize the differences between alternatives
+  + Broadens agency and public understanding by exploring future challenges and opportunities
 ### Scenario planning at FHWA/FTA
 
-<table>
-  <tr>
-    <td> <ul> 
-	<li> Workshops and peer exchanges </li>
-	<li> Webinar series to promote scenario planning </li> 
-	<li> Innovative research </li>
-    <li> Publications, case studies 
-	     <ul> <li> Scenario planning guidebook: six-phases </li>
-		      <li> State of the practice report: survey of MPOs on current practices </li>
-	     </ul> </li>
-	</ul> </td>
-    <td> <a href="https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/fhwahep16068.pdf">
-<img border="0" src="VERPAT-Tutorial-images/fhwa_scenario_planning.png" width="70%">
-</a> </td>
-  </tr>
-</table>
+FHWA provides scenario planning technical assistance and guidebooks [here](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/).  FHWA also offers  workshops, webinars, innovative uses and other resources to assist transportation agencies to support scenario planning for local, regional or statewide activities. 
 
-### Needs for a data driven process
++ [Peer Exchange Workshops](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/peer_exchange/)
++ [FHWA Scenario Webinar](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_webinars/) 
++ [Noteworthy Practices and Innovative Uses](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenpractices.cfm) 
++ [Publications and Resources](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/publications/)
++ [Supporting Performance-Based Planning and Programming through Scenario Planning](https://www.fhwa.dot.gov/planning/scenario_and_visualization/scenario_planning/scenario_planning_guidebook/)
+
+### Scenario planning is a data driven process
 
 <table>
   <tr>
@@ -56,12 +45,9 @@ Scenario planning provides a framework for developing a shared vision for the fu
   </tr>
 </table>
 
-### Decision points for smart growth in planning process
+### Decision points for smart growth in the planning process
 
-Process maps for state DOTs and MPOs
-
-Areas where smart growth levers can be used 
-
+These process maps for state DOTs and MPOs highlight areas where smart growth levers can be used 
 
 <table>
   <tr>
@@ -75,13 +61,11 @@ Areas where smart growth levers can be used
   </tr>
 </table>
 
-### Practioner information needs survey
+### Practitioner needs 
 
-**TODO: Explain title.  Is this section the results of a survey?**
+Most agencies are interested in scenario planning as a strategy to evaluate new policies for land use, pricing, new vehicle and information technologies and travel demand management. These are policies that are more difficult for most travel demand forecasting models. 
 
-Most agencies are interested in scenario planning as a strategy for evaluating land use policies
-
-Many agencies need coordination, cooperation, and communication with local governments on land use policy, since land use regulations are governed by local governments
+Many agencies need coordination, cooperation, and communication with local governments on land use policy, since land use regulations are governed by local governments. 
 
 Agencies also want to understand 
 
@@ -91,8 +75,6 @@ Agencies also want to understand
   + Congestion reduction
   + Outcomes and performance
   
-Develop a tool that can be used by land use and transportation planners to provide opportunities for interaction on common goals
-
 ### Gaps in research
 
 **TODO: More to say about this table?  Introduce it?**

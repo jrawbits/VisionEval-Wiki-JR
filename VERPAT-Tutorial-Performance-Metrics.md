@@ -1,110 +1,48 @@
-This section will describe the main performance metrics output from the multiple scenarios viewer and what they mean.
 
-https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#module-outputs-18
+A large number of performance metrics are produced during the run of the RPAT model, including environment and energy impacts, financial and economic impacts, and community impacts.
 
-### Direct travel impacts
+Performance metrics are calculated by the [ReportRPATMetrics module](https://github.com/gregorbj/VisionEval/blob/master/sources/modules/VEReports/R/ReportRPATMetrics.R), located in the  [VEReports](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports) package.
 
-Daily vehicle trips
+The full list of outputs available is shown [here](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#module-outputs-18) and is as follows:
 
-Daily transit trips
 
-  + Daily vehicle miles traveled
-    - Light VMT for each household and place type
-    - Regional VMT for heavy trucks and buses
-  + Peak travel speeds by facility class
-    - VMT by speed bin and class (freeway, arterial, other)
-    - Average speeds by class
-  + Vehicle hours of travel, delay
-    - Vehicle hours of travel at free flow
-    - Vehicle hours of travel in congestion
-	
-### Energy impacts
+  1. EmissionsMetric: The amount of greenhouse gas emissions per day by place-types
+  2. FuelMetric: The amount of fuel consumed per day by place-types
+  3. CostsMetric: The annual traveler cost (fuel + charges)
+  4. FuelGallonsMetric: Average daily fuel consumption in gallons after policy
+  5. FuelCo2eMetric: Average daily Co2 equivalent greenhouse gas emissions after policy
+  6. FutureCostPerMileMetric: Total fuel cost per mile after policy
+  7. TotalCostMetric: Total fuel cost after policy
+  8. RailPowerMetric: Annual power consumption by rail
+  9. TruckFuelMetric: Annual truck fuel consumption
+  10. BusFuelMetric: Annual bus fuel consumption
+  11. TruckCo2eMetric: Annual greenhouse gas emissions by truck
+  12. BusCo2eMetric: Annual greenhouse gas emissions by bus
+  13. RailCo2eMetric: Annual greenhouse gas emissions by rail
+  14. HighwayCostMetric: Regional highway infrastructure costs
+  15. TransitCapCostMetric: Regional transit infrastructure costs
+  16. TransitOpCostMetric: Regional transit operating costs
+  17. TransitRevenueMetric: Annual fare revenue
+  18. FatalIncidentMetric: Number of fatal incidents
+  19. InjuryIncidentMetric: Number of incidents with injuries
+  20. PropertyDamageMetric: Amount of incidents with property damage
+  21. TruckConsumptionMetric: Annual truck fuel consumption by fuel type
+  22. BusConsumptionMetric: Annual bus fuel consumption by fuel type
 
-Fuel consumption
 
-  + calculated from VMT and fuel economy, split into fuel types
-  + calculated for light vehicles, heavy trucks and buses
+For simplicity, six key metrics are calculated from multiple scenario runs and are shown on the Scenario Viewer output page:
+
+  + Fatalities & Injuries:  annual traffic fatalities and injuries per 1000 persons
+  + Vehicle Cost Per Capita: average annual cost for owning and operating vehicles per person
+  + DVMT Per Capita:  average daily vehicle miles traveled per person
+  + GHG Emissions Per Capita: average annual metric tons of greenhouse gas emissions per person
+  + Fuel Consumption: average annual gallons of gasoline and other fuels consumed per person
+  + DVHT Per Capita: average daily vehicle hours of travel per person
   
+Each one is displayed as a histogram of the number of scenarios.
 
-### Environmental impacts
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
-Greenhouse gas emissions
+More detail on how to view and select results is described in [[Multiple Scenarios | VERPAT-Tutorial-Multiple-Scenarios]].
 
-  + Light vehicles calculated by household
-  + Regional heavy truck and transit emissions
-
-Criteria emissions
-
-  + Emission rates from MOVES 2010a database
-  + Volatile organic compounds (VOC)
-  + Carbon monoxide (CO)
-  + Oxides of nitrogen (NOx)
-  + Sulfur dioxide (SO2)
-  + Particulate matter (PM)
-
-### Financial & economic impacts
-
-Regional highway infrastructure costs
-
-  + FHWA Highway Economic Requirements System (HERS)
-  + Construction costs per lane mile in 2002 dollars
-  
-Regional transit infrastructure and operating costs
-
-  + National Transit Database (NTD)
-  + Net cost to supply an unlinked passenger trip by mode (2009)
-
-Annual traveler cost - fuel
-
-  + $0.585 per mile in 2010 for auto users
-  + Includes variable costs (gas, oil, maintenance and tires) and fixed costs (insurance, license, registration, taxes, depreciation and finance charges)
- 
-Annual traveler cost - travel time
-
-  + Urban Mobility Report (TTI)
-  + Average travel delay for each metropolitan region
-  + Only includes auto users
-  
-### Location & community impacts
-
-Relative increase in jobs accessibility by auto
-
-  + Function of distribution of growth by place type
-  + Weighted by population and employment growth
-  
-Livability
-
-  + FTA criteria
-  + Use of alternative modes
-    - transit vehicle trips
-	- bike ownership
-  + Mixed use land use
-    - mixed use place type
-    - transit oriented development place type
-  + Household transportation expenditures as a function of budget
-  + Use of alternative modes by low income households
-  
-Equity impact
-
-  + Regional accessibility by income group
-  
-### Community impacts
-
-Public health impacts and costs
-
-  + Road safety impacts (daily VMT * 347 = annual VMT)
-    - Fatal = 1.14 per 100 million VMT
-	- Injury = 51.35 per 100 million VMT
-	- Property damage = 133.95 per 100 million VMT
-  + Amount of walking (proxy for physical fitness)
-  
-  + Emissions (PM, NOX, VOC)
-  
-### Visualizing performance metrics
-
-**TODO:  UPdate this for VERPAT!**
-
-<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/performance_metric.png"> </img>
-
-VERPAT's charting is very easy to use and follows a template so each chart can be easily interpreted
-
+[[Overview | VERPAT-Tutorial-Overview]]

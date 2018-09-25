@@ -165,41 +165,53 @@ In the screenshots below, the change in bicycle `TargetProp` is increased from 0
 
 ### View output			
 
-Upon completion of the `run_model.R` script, an HTML page will be automatically opened in a browser:
+Upon completion of the `run_model.R` script, the Scenario Viewer page will automatically open in a browser:
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_all_selected.png">
 
-This file, located in `VERPAT_Scenarios/Visualizer/verpat.html`, shows a number of key output variables for all of the scenarios.  
+This file, located in `VERPAT_Scenarios/Visualizer/verpat.html`, is an interactive visualization that shows a number of key output variables for all of the scenarios.  
 
-**TODO: Finish text below**.
+In addition to the graphic display at the top of the page, the data are also displayed as a table, the header of which is just visible at the bottom of the previous screenshot.
 
-Accessing instructions
+Using this viewer, users can select inputs of land use or policies and view their effects on model outputs, and the process can also be reversed, allowing users to choose desired outcomes and view the policy scenarios that reflect those outcomes.  
+
+Instructions for using the viewer are built in to the page itself.  To access a condensed version of the instructions, click on the Quick Start button at the top of the page:
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_quick_start1.png">
 
+This opens the instructions for selecting scenarios based on inputs (pie charts) or outputs (bar charts).  
+
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_quick_start2.png">
 
-Detailed instructions
+There is also a button for more detailed instructions:
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_detailed_instructions1.png">
 
+This provides more detail on the available categories of inputs and their levels as well as more detailed descriptions of the model output shown in the bar charts. Instructions for selecting portions of the charts is included, as we 
+
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_detailed_instructions.png">
 
-Selecting bars
+To see which policy choices and land use inputs result in desired outcomes, select a range of values within one outcome.  In this case, the low end of the GHG emissions per capita have been selected:
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_selecting_bars.png">
 
+As the outcome is selected, the pie charts and the data table at the bottom (not shown) update to show only the scenarios resulting in the selected outcome.  In this case, the low end of GHG emissions per capita are associated with the most ambitious scenarios of parking, transit, and vehicle travel cost.  In contrast, demand management strategies appear to have less impact.
 
-Selecting scenarios
+It is also possible to select inputs to view the associated outcomes.  To do so, simply click on a portion of one of the pie charts.  In this case (below), the most ambitious scenario of demand management is selected to view the impacts on outcome variables.  In this case, the highest level of demand management (doubling participation rates in ridesharing and doubling the transit subsidy) only shifts fatalities & injuries from 3.4 to 3.3 per 1000 and daily vehicle miles traveled per capita from 18 to 17.  Other outcome variables are relatively unaffected. 
 
 <img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_selecting_pie.png">
 
-Selecting data
-
-<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_data_table.png">
 
 ### Accessing the data
 
-TODO: Where are the output data stored?  How does one access them?
+Accessing the input and output data underlying the graphics is conveniently enabled by the data table at the bottom of the Scenario Viewer page:  
 
-[top](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Tutorial#table-of-contents)
+<img align="center" width="1100" border=1, src="VERPAT-Tutorial-images/scenario324_data_table.png">
+
+The data table automatically updates in response to any selections above, and can be copied and pasted into a spreadsheet using standard copy and paste keyboard short cuts. 
+
+From the Detailed Instructions on the Scenario Viewer:
+
+> To select the data to copy, double-click in the top left-hand cell, press the Shift key, and then click in the bottom right-hand cell. Once the data has been selected, copy it by pressing the Ctrl c keys for a Windows computer or the Command c keys for an Apple Macintosh computer. Paste as unicode text into the spreadsheet of your choice.
+
+[[Overview | VERPAT-Tutorial-Overview]]
