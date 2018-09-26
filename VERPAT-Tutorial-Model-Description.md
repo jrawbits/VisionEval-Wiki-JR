@@ -75,10 +75,9 @@ Following initial calculations for baseline conditions, the model has feedback l
   
 Performance metrics are calculated in the [VEReports package](https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports).  The other impacts that are produced for a given scenario include environment and energy impacts greenhouse gas (GHG) emissions and fuel consumption), financial and economic impacts (highway and transit infrastructure costs, transit operating costs, and traveler costs), regional accessibility, and community impacts (livability and public health indicators).
 
-For more information, also see [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#reportrpatmetrics).  
-  
 ### For more information
 
+  + [VERPAT Modules and Outputs](https://github.com/gregorbj/VisionEval/wiki/VERPAT-Modules-and-Outputs#reportrpatmetrics)
   + [VisionEval Model System Design and Users Guide](https://github.com/gregorbj/VisionEval/blob/master/api/model_system_design.md)
   + [TravelWorks Rapid Policy Assessment Tool](https://planningtools.transportation.org/551/rapid-policy-analysis-tool.html)
   + [RPAT User manual](https://planningtools.transportation.org/files/63.pdf)
