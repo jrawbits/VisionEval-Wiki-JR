@@ -7,13 +7,15 @@ The diagram below illustrates the modeling system with inputs, model components,
 <table>
   <tr>
     <td> <ul> 
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Households Package </a> </li> 
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESimHouseholds"> Households Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VESyntheticFirms"> Firms Package </a> </li>
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VELandUse"> Land Use Package </a> </li>
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupply"> Transport Supply Package </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles"> Household Vehicle Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdVehicles"> Household Vehicles Package </a> </li>
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEHouseholdTravel"> Household Travel Package </a> </li>
-	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEPowertrainsAndFuels"> Powertrains and Fuels Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETransportSupplyUse"> Transport Supply Use Package </a> </li>
 	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VETravelPerformance"> Travel Performance Package </a> </li>
+	<li> <a href="https://github.com/gregorbj/VisionEval/tree/master/sources/modules/VEReports"> Reporting Package </a> </li>
 	</ul> </td>
   </tr>
 </table>
@@ -22,24 +24,61 @@ The diagram below illustrates the modeling system with inputs, model components,
 For more, see [[VERPAT Modules and Outputs | VERPAT-Modules-and-Outputs]].
 
 
-### VisionEval Summary
+### VERPAT Objectives
 
-The VisionEval model is a strategic modeling tool for the purpose of estimating and forecasting the effects of various policies and other influences on the amount of vehicle travel, the types of vehicles and fuels used, and the resulting greenhouse gas (GHG) emissions among other things. VisionEval can be configured to run at the State or regional level.
-VisionEval estimates vehicle ownership, vehicle travel, fuel consumption, and GHG emissions at the individual household level. This structure accounts for the synergistic and antagonistic effects of multiple policies and factors (e.g. gas prices) on vehicle travel and emissions. For example, the battery range of electric vehicles (EVs) and plug-in hybrid electric vehicles (PHEVs) is less of an issue for households residing in compact mixed-use neighborhoods because those households tend to drive fewer miles each day. Modeling at the household level makes it possible to evaluate the relationships between travel, emissions and the characteristics of households, land use, transportation systems, vehicles, and other factors. In addition, household level analysis makes it possible to evaluate the equitability of the costs and benefits of different strategies.
-The model comprises a series of sequential steps with feedback. Each calculation step is composed of a number of calculations that operate on the results of the previous calculation step and on input data that reflect inputs. The nature of each calculation was determined through the statistical analysis of several data sources such as the National Household Travel Survey. A key method employed in many steps is to sample from observed or target distributions. For example, choosing which households are enrolled in a car sharing program is done by first isolating the correct conditions (e.g., applicable densities) and then randomly assigning enrollment to every Xth household that meets the criteria. Each component calculation was estimated and checked using source data.
-The modeling steps are grouped as follows:
+RPAT is a tool for evaluating the impact of various smart growth policies. RPAT is designed to be a high-level evaluation at a regional scale that can bridge the distance between evaluating smart growth policies during a regional visioning process and evaluating smart growth policies at a project or alternative level in a regional transportation plan. RPAT evaluates policy scenarios to identify the most promising policies that could be further tested using a more detailed project-level tool. Currently, RPAT can provide information on the following changes in the regional system:
+ Built Environment – changes to the urban form (proportion of population and employment living in mixed-use areas, transit-oriented developments, or rural/greenfield areas)
+ Travel Demand – changes in population demographics (age structure), changes in personal income, changes in firms by size or industry, relative amounts of development occurring in urban core, close-in communities, suburban or rural areas, urban core, auto and light truck proportions by year, and induced demand
+ Transportation Supply – amounts of regional transit service, amounts of freeway and arterial capacity
+ Policies – pricing (vehicle miles traveled charges or parking pricing programs), intelligent transportation system (ITS) strategies for freeways and arterials, demand management (vanpool, telecommuting, ridesharing, and transit pass programs)
+RPAT is designed to evaluate regions, which can be a multi-county metropolitan region. It distinguishes between population and employment living/working in the urban core, close-in communities, suburban and rural/greenfield areas based on densities, diversity in land uses, street design or intersection densities, job accessibility by auto, distances to transit stops, and connectivity of the street system.
+The intended audience for RPAT is regional decision-makers and land use and transportation planners involved in the development and evaluation of transportation and land use policies and who need to conduct scenario planning to evaluate smart growth policies and determine their impact on travel demand. RPAT was designed to address as many of the limitations identified in the research as possible and to provide a tool that filled a gap in the set of available tools. The relationships in the RPAT tool were based upon the background research conducted for the SHRP 2 C16 project. RPAT is designed to allow the evaluation of a wide range of policies and combination of policies in a consistent framework quickly and easily so that promising smart growth strategies can be
+USER’S
+GUIDE
+AASHTO
+Rapid Policy Assessment Tool Documentation
+4 April 30, 2015
+identified and pursued in the land use and transportation planning processes. RPAT is intended to precede and supplement more sophisticated modeling efforts, which can be used to evaluate specific smart growth projects. It is designed to be accessible to land use and transportation planners with no modeling experience.RPAT is a tool for evaluating the impact of various smart growth policies. RPAT is designed to be a high-level evaluation at a regional scale that can bridge the distance between evaluating smart growth policies during a regional visioning process and evaluating smart growth policies at a project or alternative level in a regional transportation plan. RPAT evaluates policy scenarios to identify the most promising policies that could be further tested using a more detailed project-level tool. Currently, RPAT can provide information on the following changes in the regional system:
+ Built Environment – changes to the urban form (proportion of population and employment living in mixed-use areas, transit-oriented developments, or rural/greenfield areas)
+ Travel Demand – changes in population demographics (age structure), changes in personal income, changes in firms by size or industry, relative amounts of development occurring in urban core, close-in communities, suburban or rural areas, urban core, auto and light truck proportions by year, and induced demand
+ Transportation Supply – amounts of regional transit service, amounts of freeway and arterial capacity
+ Policies – pricing (vehicle miles traveled charges or parking pricing programs), intelligent transportation system (ITS) strategies for freeways and arterials, demand management (vanpool, telecommuting, ridesharing, and transit pass programs)
+RPAT is designed to evaluate regions, which can be a multi-county metropolitan region. It distinguishes between population and employment living/working in the urban core, close-in communities, suburban and rural/greenfield areas based on densities, diversity in land uses, street design or intersection densities, job accessibility by auto, distances to transit stops, and connectivity of the street system.
+The intended audience for RPAT is regional decision-makers and land use and transportation planners involved in the development and evaluation of transportation and land use policies and who need to conduct scenario planning to evaluate smart growth policies and determine their impact on travel demand. RPAT was designed to address as many of the limitations identified in the research as possible and to provide a tool that filled a gap in the set of available tools. The relationships in the RPAT tool were based upon the background research conducted for the SHRP 2 C16 project. RPAT is designed to allow the evaluation of a wide range of policies and combination of policies in a consistent framework quickly and easily so that promising smart growth strategies can be
+USER’S
+GUIDE
+AASHTO
+Rapid Policy Assessment Tool Documentation
+4 April 30, 2015
+identified and pursued in the land use and transportation planning processes. RPAT is intended to precede and supplement more sophisticated modeling efforts, which can be used to evaluate specific smart growth projects. It is designed to be accessible to land use and transportation planners with no modeling experience.RPAT is a tool for evaluating the impact of various smart growth policies. RPAT is designed to be a high-level evaluation at a regional scale that can bridge the distance between evaluating smart growth policies during a regional visioning process and evaluating smart growth policies at a project or alternative level in a regional transportation plan. RPAT evaluates policy scenarios to identify the most promising policies that could be further tested using a more detailed project-level tool. Currently, RPAT can provide information on the following changes in the regional system:
+ Built Environment – changes to the urban form (proportion of population and employment living in mixed-use areas, transit-oriented developments, or rural/greenfield areas)
+ Travel Demand – changes in population demographics (age structure), changes in personal income, changes in firms by size or industry, relative amounts of development occurring in urban core, close-in communities, suburban or rural areas, urban core, auto and light truck proportions by year, and induced demand
+ Transportation Supply – amounts of regional transit service, amounts of freeway and arterial capacity
+ Policies – pricing (vehicle miles traveled charges or parking pricing programs), intelligent transportation system (ITS) strategies for freeways and arterials, demand management (vanpool, telecommuting, ridesharing, and transit pass programs)
+RPAT is designed to evaluate regions, which can be a multi-county metropolitan region. It distinguishes between population and employment living/working in the urban core, close-in communities, suburban and rural/greenfield areas based on densities, diversity in land uses, street design or intersection densities, job accessibility by auto, distances to transit stops, and connectivity of the street system.
+The intended audience for RPAT is regional decision-makers and land use and transportation planners involved in the development and evaluation of transportation and land use policies and who need to conduct scenario planning to evaluate smart growth policies and determine their impact on travel demand. RPAT was designed to address as many of the limitations identified in the research as possible and to provide a tool that filled a gap in the set of available tools. The relationships in the RPAT tool were based upon the background research conducted for the SHRP 2 C16 project. RPAT is designed to allow the evaluation of a wide range of policies and combination of policies in a consistent framework quickly and easily so that promising smart growth strategies can be
+USER’S
+GUIDE
+AASHTO
+Rapid Policy Assessment Tool Documentation
+4 April 30, 2015
+identified and pursued in the land use and transportation planning processes. RPAT is intended to precede and supplement more sophisticated modeling efforts, which can be used to evaluate specific smart growth projects. It is designed to be accessible to land use and transportation planners with no modeling experience.RPAT is a tool for evaluating the impact of various smart growth policies. RPAT is designed to be a high-level evaluation at a regional scale that can bridge the distance between evaluating smart growth policies during a regional visioning process and evaluating smart growth policies at a project or alternative level in a regional transportation plan. RPAT evaluates policy scenarios to identify the most promising policies that could be further tested using a more detailed project-level tool. Currently, RPAT can provide information on the following changes in the regional system:
+ Built Environment – changes to the urban form (proportion of population and employment living in mixed-use areas, transit-oriented developments, or rural/greenfield areas)
+ Travel Demand – changes in population demographics (age structure), changes in personal income, changes in firms by size or industry, relative amounts of development occurring in urban core, close-in communities, suburban or rural areas, urban core, auto and light truck proportions by year, and induced demand
+ Transportation Supply – amounts of regional transit service, amounts of freeway and arterial capacity
+ Policies – pricing (vehicle miles traveled charges or parking pricing programs), intelligent transportation system (ITS) strategies for freeways and arterials, demand management (vanpool, telecommuting, ridesharing, and transit pass programs)
+RPAT is designed to evaluate regions, which can be a multi-county metropolitan region. It distinguishes between population and employment living/working in the urban core, close-in communities, suburban and rural/greenfield areas based on densities, diversity in land uses, street design or intersection densities, job accessibility by auto, distances to transit stops, and connectivity of the street system.
+The intended audience for RPAT is regional decision-makers and land use and transportation planners involved in the development and evaluation of transportation and land use policies and who need to conduct scenario planning to evaluate smart growth policies and determine their impact on travel demand. RPAT was designed to address as many of the limitations identified in the research as possible and to provide a tool that filled a gap in the set of available tools. The relationships in the RPAT tool were based upon the background research conducted for the SHRP 2 C16 project. RPAT is designed to allow the evaluation of a wide range of policies and combination of policies in a consistent framework quickly and easily so that promising smart growth strategies can be
+USER’S
+GUIDE
+AASHTO
+Rapid Policy Assessment Tool Documentation
+4 April 30, 2015
+identified and pursued in the land use and transportation planning processes. RPAT is intended to precede and supplement more sophisticated modeling efforts, which can be used to evaluate specific smart growth projects. It is designed to be accessible to land use and transportation planners with no modeling experience.
 
-  + Define households and associated polices;
-  + Characterize vehicles;
-  + Calculate VMT and Emissions, and,
-  + Balance VMT with travel costs.
-  + Estimate non-household travel and emissions
-  
-The iterative process to balance the VMT with travel costs allows fees and other costs introduced at this step to influence the amount of travel. This step balances the amount of household travel with the cost of travel and recalculates household VMT, Fuel & GHG in the process.
-The primary outputs of VisionEval are household travel, fuel and power consumption, and GHG emissions calculations, but other information is produced for households and commercial vehicles as well. The amount of commercial (light-duty), transit and freight (heavy duty) travel is calculated as well as associated fuel, power consumption and GHG emissions for those vehicles. .
-VisionEval is a new type of model, and its development has and is being peer-reviewed by state, national and international travel and emissions modeling experts. The Components are tested throughout the development process to check the reasonability of results and whether the model could replicate observed behavior and conditions.
 
-### VisionEval Modules
+
+### VERPAT Modules
 
 [] = indicates VE modules
 
