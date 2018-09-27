@@ -8,7 +8,7 @@
   - [[Running VERPAT | VERPAT-Tutorial-Running-the-Model]]
   - [[Multiple Scenarios | VERPAT-Tutorial-Multiple-Scenarios]]
   - [[Performance Metrics | VERPAT-Tutorial-Performance-Metrics]]
-- [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
+  - [[VERPAT Inputs and Outputs|VERPAT-Inputs-and-Outputs]]
 - [[Developer Orientation|Developer-Orientation]]
 
 ### Software Management
