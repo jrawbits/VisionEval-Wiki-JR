@@ -2,6 +2,7 @@
 
 ### Getting Started
 - [[Getting Started|Getting-Started]]
+- [[VisionEval Models|VisionEval-Models]]
 - [[VERPAT Tutorial|verpat-tutorial-overview]]
   - [[Scenario Planning | VERPAT-Tutorial-Scenario-Planning]]
   - [[The VERPAT Model | VERPAT-Tutorial-Model-Description]]
