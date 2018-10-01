@@ -90,7 +90,9 @@ Agencies also want to understand
 
 ### Land Use Scenarios
 
-**TODO: Introduce this table**
++ The urban core place type was determined to be high-density mixed-use places with high jobs-housing ratios, well-connected streets, and high levels of pedestrian activities. It is anticipated that for many regions, the urban core will be the traditional downtown area of which they likely would be only one. On a statewide level, the urban cores would be the downtown areas of the major cities, of which there would be a limited number.
++ The close-in community place type would be those areas located near the urban cores and would consist primarily of housing with scattered mixed-use centers and
+arterial corridors. Housing would be varied in terms of density and type. Transit would be available with a primary focus on commute trips. These areas may be classified by their residents as suburban would be considered to be close-in communities given their adjacency to the downtown and therefore the higher levels of regional accessibility.
 
 Built Environment: Location of population and employment by place type
 
