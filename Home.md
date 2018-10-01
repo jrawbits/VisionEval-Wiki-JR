@@ -21,7 +21,7 @@ Models consist of a set sequence of modules called in a run script. A model is f
   - VEState (coming soon)
 
 ### Graphical User Interface and Scenario Viewer
-A GUI and scenario viewer (outputs visualizer) that works for both the RPAT and RSPM models is being developed and integrated.  The GUI and scenario viewer support setting up, running, and viewing multiple scenarios.
+A GUI and scenario viewer (outputs visualizer) that works for the VE models is being developed and integrated.  The GUI and scenario viewer support setting up, running, and viewing multiple scenarios.
   - [VEGUI](https://github.com/gregorbj/VisionEval/tree/master/sources/VEGUI)
   - [Multiple Scenarios + Scenario Viewer](https://github.com/gregorbj/VisionEval/wiki/Multiple-Scenarios)
 
