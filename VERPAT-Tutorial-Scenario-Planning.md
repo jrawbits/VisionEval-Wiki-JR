@@ -160,6 +160,17 @@ Each policy is implemented as an adjustment to VMT based on the policy inputs.
 
 Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
+## The VERPAT Model
+### Rapid Policy Assessment Tool Process
+
+VERPAT is a disaggregate policy model that predicts travel demand impacts at an individual household level.
+
+<table>
+  <tr>
+    <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
+    <td>Household Synthesis <br>Firm Synthesis<br>Urban Form<br>Accessibility<br>Vehicles<br>Auto Travel Demand<br>Truck and Bus Travel Demand<br>Congestion<br>Induced Demand<br>Policy Benefits</td>
+  </tr>
+</table>
 
 
 ### Communicating Results
