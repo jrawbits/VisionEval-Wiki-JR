@@ -113,15 +113,15 @@ are primarily residential as well. It is anticipated that this subcategory may b
 subcategory can be found in the suburban place type, it is most commonly found in the close-in community and urban core place type. Downtown areas that have retained their residential population to complement the employment are examples of this subcategory.
 + Transit-oriented development, which is similar to the other subcategories, but applied to all place types except for rural areas because it is thought to be highly unlikely that a rural TOD would be developed. The TOD subcategory is characterized by greater access to transit in all 
 
-Demand Management Policies
+Transportation Policies
 
-**TODO: Introduce bullets**
-
-  + Vanpool
-  + Telecommuting
-  + Ridesharing
-  + Transit pass programs
-  
+There are three types of policies considered in the VERPAT tool: 
++ Pricing, including vehicle use charges, such as VMT charges or gas taxes, and parking pricing.Vehicle use charges are considered as a factor of auto operating charges and parking pricing are considered as an additional cost at employment or other locations.
++ Travel demand management (TDM), including vanpool, telecommuting, ridesharing, and transit pass programs.
++ Intelligent transportation system (ITS), which estimates speeds with and without incidents. This computes an overall
+average speed by road type and congestion level.
+Each policy is implemented as an adjustment to VMT based on the policy inputs. 
+ 
 Measures
 
   + Proportion of population and employment by place type
@@ -139,11 +139,6 @@ Travel Demand
   + Auto and light truck proportions by year
   + Induced demand – short term impacts
 
-Transportation Policies
-
-  + Vehicle miles traveled charges
-  + Parking pricing programs
-  + Intelligent transportation system strategies for freeways and arterials
 
 Transportation Supply
 
