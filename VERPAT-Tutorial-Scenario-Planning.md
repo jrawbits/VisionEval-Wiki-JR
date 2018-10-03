@@ -94,7 +94,7 @@ Agencies also want to understand
 + The close-in community place type would be those areas located near the urban cores and would consist primarily of housing with scattered mixed-use centers and
 arterial corridors. Housing would be varied in terms of density and type. Transit would be available with a primary focus on commute trips. These areas may be classified by their residents as suburban would be considered to be close-in communities given their adjacency to the downtown and therefore the higher levels of regional accessibility.
 + The suburban place type is anticipated to represent the majority of development within regions. These communities are characterized by low level of integration of housing with jobs, retail, and services, poorly connected street networks, low levels of transit service, large amounts of surface parking, and limited walk ability.
-+The rural place type is defined as settlements of widely spaced towns separated by firms, vineyards, orchards, or grazing lands. These areas would be characterized by widely dispersed residential uses, little or no transit service, and very limited pedestrian facilities.
++ The rural place type is defined as settlements of widely spaced towns separated by firms, vineyards, orchards, or grazing lands. These areas would be characterized by widely dispersed residential uses, little or no transit service, and very limited pedestrian facilities.
 
 Built Environment: Location of population and employment by place type
 
@@ -105,6 +105,13 @@ Built Environment: Location of population and employment by place type
 | Mixed-use                    | X          | X                  | X        |       |
 | Transit Oriented Development | X          | X                  | X        |       |
 | Rural/Greenfield             |            |                    |          | X     |
++ Residential includes all place types that are predominantly residential in character with limited employment and retail
+opportunities. Examples of this subcategory might include typical suburban residential or areas of the downtown that
+are primarily residential as well. It is anticipated that this subcategory may be found in all of the place types except for rural.
++ Employment includes those areas that are focused on employment with limited retail and residential. An example of this might include a suburban office complex or a large cluster of office buildings within a close-in community or urban core. As with the residential subcategory, it is anticipated that this type of use would be found in all place types except for rural.
++ Mixed use describes those areas within a region that have a mix of residential, employment, and retail uses. While this
+subcategory can be found in the suburban place type, it is most commonly found in the close-in community and urban core place type. Downtown areas that have retained their residential population to complement the employment are examples of this subcategory.
++ Transit-oriented development, which is similar to the other subcategories, but applied to all place types except for rural areas because it is thought to be highly unlikely that a rural TOD would be developed. The TOD subcategory is characterized by greater access to transit in all 
 
 Demand Management Policies
 
