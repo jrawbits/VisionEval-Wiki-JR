@@ -176,11 +176,20 @@ Evaluate scenarios across a range of performance metrics
        - Daily vehicle trips
        - Daily transit trips
        - Average travel speeds by vehicle type
-       - Vehicle hours of travel, delay
+       - Vehicle hours of travel and vehicle hours of delay
   + Environmental and Energy Impacts
+       - Fuel consumption
+       - Greenhouse gas emissions
   + Financial and Economic Impacts
+       - Regional highway infrastructure costs
+       - Regional transit infrastructure and operating costs
+       - Annual traveler cost, including fuel cost, fuel tax, parking cost and VMT charges
   + Location Impacts
+       - Regional accessibility based on place types
   + Community Impacts
+       - Accidents, including fatalities and injuries and property damage costs
+       - Walking percentage increase
+       - Job accessibility by income group
 
 Compare multiple scenarios at a time graphically to quickly assess results
 
