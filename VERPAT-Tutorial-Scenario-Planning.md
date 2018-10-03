@@ -90,6 +90,7 @@ Background research in five areas provided the framework for VERPAT to address g
 
 ### Land Use Scenarios
 
+Land use scenarios are based on place types, determined by the type of area and the type of development:
 + The urban core place type was determined to be high-density mixed-use places with high jobs-housing ratios, well-connected streets, and high levels of pedestrian activities. It is anticipated that for many regions, the urban core will be the traditional downtown area of which they likely would be only one. On a statewide level, the urban cores would be the downtown areas of the major cities, of which there would be a limited number.
 + The close-in community place type would be those areas located near the urban cores and would consist primarily of housing with scattered mixed-use centers and
 arterial corridors. Housing would be varied in terms of density and type. Transit would be available with a primary focus on commute trips. These areas may be classified by their residents as suburban would be considered to be close-in communities given their adjacency to the downtown and therefore the higher levels of regional accessibility.
@@ -115,28 +116,28 @@ subcategory can be found in the suburban place type, it is most commonly found i
 
 ### Transportation scenarios
 
-
+Transportation scenarios are based on changes in travel demand, transportation supply or transportation policies. 
 
 Travel Demand
 
-  + Changes in population demographics
-  + Changes in personal income
-  + Changes in firm size or industry
-  + Auto and light truck proportions by year
+  + Trip-making, defined as auto trips per capita and the transit trips per capita
+  + Population, defined as persons by age for the base and future years
+  + Employment, defined as employees by firm size and industry and employment growth 
+  + Household income, defined as regional average per capita income by forecast year in year 2000 dollars
+  + Auto and light truck proportions of VMT by year
+  + Truck and bus VMT by year
   + Induced demand – short term impacts
-
 
 Transportation Supply
 
-  + Amount of regional transit service
-  + Amount of freeway and arterial capacity
+  + Amount of regional transit service, defined as bus and rail revenue miles
+  + Amount of roadway capacity, defined as freeway and arterial capacity
 
 Transportation Policies
 
-There are three types of policies considered in the VERPAT tool: 
-+ Pricing, including vehicle use charges, such as VMT charges or gas taxes, and parking pricing.Vehicle use charges are considered as a factor of auto operating charges and parking pricing are considered as an additional cost at employment or other locations.
-+ Travel demand management (TDM), including vanpool, telecommuting, ridesharing, and transit pass programs.
-+ Intelligent transportation system (ITS), which estimates speeds with and without incidents. This computes an overall
+  + Pricing, including vehicle use charges, such as VMT charges or gas taxes, and parking pricing.Vehicle use charges are considered as a factor of auto operating charges and parking pricing are considered as an additional cost at employment or other locations.
+  + Travel demand management (TDM), including vanpool, telecommuting, ridesharing, and transit pass programs.
+  + Intelligent transportation system (ITS), which estimates speeds with and without incidents. This computes an overall
 average speed by road type and congestion level.
 Each policy is implemented as an adjustment to VMT based on the policy inputs. 
  
@@ -160,28 +161,26 @@ Each policy is implemented as an adjustment to VMT based on the policy inputs.
 
 Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
-## The VERPAT Model
-### Rapid Policy Assessment Tool Process
+### The Rapid Policy Assessment Tool Process
 
 VERPAT is a disaggregate policy model that predicts travel demand impacts at an individual household level.
 
-<table>
-  <tr>
-    <td><img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png"></td>
-    <td>Household Synthesis <br>Firm Synthesis<br>Urban Form<br>Accessibility<br>Vehicles<br>Auto Travel Demand<br>Truck and Bus Travel Demand<br>Congestion<br>Induced Demand<br>Policy Benefits</td>
-  </tr>
-</table>
-
-
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png">
+   
 ### Communicating Results
 
 Evaluate scenarios across a range of performance metrics
 
-  + Community Impacts
   + Travel Impacts
+       - Daily VMT
+       - Daily vehicle trips
+       - Daily transit trips
+       - Average travel speeds by vehicle type
+       - Vehicle hours of travel, delay
   + Environmental and Energy Impacts
   + Financial and Economic Impacts
   + Location Impacts
+  + Community Impacts
 
 Compare multiple scenarios at a time graphically to quickly assess results
 
