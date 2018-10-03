@@ -77,7 +77,7 @@ Agencies also want to understand
   
 ### Gaps in research
 
-**TODO: More to say about this table?  Introduce it?**
+Background research in five areas provided the framework for VERPAT to address gaps in the research, where travel impacts are not directly observable. 
 
 | Topic                                            | Well-Established <br> Relationships         | Gaps in Research                                                                                                                                                  |
 |:-------------------------------------------------|:--------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -113,23 +113,9 @@ are primarily residential as well. It is anticipated that this subcategory may b
 subcategory can be found in the suburban place type, it is most commonly found in the close-in community and urban core place type. Downtown areas that have retained their residential population to complement the employment are examples of this subcategory.
 + Transit-oriented development, which is similar to the other subcategories, but applied to all place types except for rural areas because it is thought to be highly unlikely that a rural TOD would be developed. The TOD subcategory is characterized by greater access to transit in all 
 
-Transportation Policies
-
-There are three types of policies considered in the VERPAT tool: 
-+ Pricing, including vehicle use charges, such as VMT charges or gas taxes, and parking pricing.Vehicle use charges are considered as a factor of auto operating charges and parking pricing are considered as an additional cost at employment or other locations.
-+ Travel demand management (TDM), including vanpool, telecommuting, ridesharing, and transit pass programs.
-+ Intelligent transportation system (ITS), which estimates speeds with and without incidents. This computes an overall
-average speed by road type and congestion level.
-Each policy is implemented as an adjustment to VMT based on the policy inputs. 
- 
-Measures
-
-  + Proportion of population and employment by place type
-  + Population and employment densities by place type
-
 ### Transportation scenarios
 
-**TODO: Introduce these bullets**
+
 
 Travel Demand
 
@@ -144,7 +130,16 @@ Transportation Supply
 
   + Amount of regional transit service
   + Amount of freeway and arterial capacity
-  
+
+Transportation Policies
+
+There are three types of policies considered in the VERPAT tool: 
++ Pricing, including vehicle use charges, such as VMT charges or gas taxes, and parking pricing.Vehicle use charges are considered as a factor of auto operating charges and parking pricing are considered as an additional cost at employment or other locations.
++ Travel demand management (TDM), including vanpool, telecommuting, ridesharing, and transit pass programs.
++ Intelligent transportation system (ITS), which estimates speeds with and without incidents. This computes an overall
+average speed by road type and congestion level.
+Each policy is implemented as an adjustment to VMT based on the policy inputs. 
+ 
 ### Strategic Models for Integrated Land Use and Transportation
 
 **TODO Introduce these bullets**
@@ -164,6 +159,8 @@ Transportation Supply
   + Easy to apply and run quickly
 
 Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
+
+
 
 ### Communicating Results
 
