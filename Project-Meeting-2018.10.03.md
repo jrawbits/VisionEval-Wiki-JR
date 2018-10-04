@@ -14,7 +14,7 @@
     - @Matt working on various improvements [#196](https://github.com/gregorbj/VisionEval/issues/196)
 
 ## Working Together
-  - Develop branch is now passing tests again (Shiny package was producing some new stuff not in the target data)
+  - Develop branch is now passing tests again (shiny package was producing some new stuff not in the target data)
   - We're planning to be done around the end of the year
   - We won't be creating an installer
   - master is the release branch
