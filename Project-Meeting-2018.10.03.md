@@ -7,7 +7,7 @@
   - Multi-run, Scenario Viewer  
     - Completed better error handling for multiple scenarios [#197](https://github.com/gregorbj/VisionEval/issues/197)
     - Completed getting Scenario Viewer from source [#194](https://github.com/gregorbj/VisionEval/issues/194)
-    - @Aditya to add VEScenario to the test system
+    - @Aditya to add VEScenario to the test system eventually
     - @Aditya working on updating Scenario Viewer to work with VERSPM [#192](https://github.com/gregorbj/VisionEval/issues/192)
     - Getting examples for RSPM to Scenario Viewer example configurations from Tara
   - GUI
