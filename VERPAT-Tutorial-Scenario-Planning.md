@@ -90,7 +90,9 @@ Background research in five areas provided the framework for VERPAT to address g
 
 ### Land Use Scenarios
 
-Land use scenarios are based on place types, determined by the type of area and the type of development:
+Land use scenarios are based on place types, determined by the type of area and the type of development. 
+<img align="center" width="500" border=1 src="VERPAT-Tutorial-images/areatype.png">
+
 + The urban core place type was determined to be high-density mixed-use places with high jobs-housing ratios, well-connected streets, and high levels of pedestrian activities. It is anticipated that for many regions, the urban core will be the traditional downtown area of which they likely would be only one. On a statewide level, the urban cores would be the downtown areas of the major cities, of which there would be a limited number.
 + The close-in community place type would be those areas located near the urban cores and would consist primarily of housing with scattered mixed-use centers and
 arterial corridors. Housing would be varied in terms of density and type. Transit would be available with a primary focus on commute trips. These areas may be classified by their residents as suburban would be considered to be close-in communities given their adjacency to the downtown and therefore the higher levels of regional accessibility.
@@ -143,11 +145,7 @@ Each policy is implemented as an adjustment to VMT based on the policy inputs.
  
 ### Strategic Models for Integrated Land Use and Transportation
 
-**TODO Introduce these bullets**
-
-  + Support strategic planning efforts
-  + Consider many possible scenarios 
-  + Combines higher level analysis of the transportation supply with individual characteristics of travel demand, built environment and policies
+VERPAT is an example of a strategic model developed to test policies, infrastructure investments and changes in demographics. These models support strategic planning efforts by allowing users to consider hundreds of possible scenarios easily. VERPAT combines higher level analysis of the transportation supply with individual characteristics of travel demand, built environment and policies such as:
   + Growth by place type
   + Households (persons by age and income)
   + Firms (employees and industry)
@@ -157,8 +155,7 @@ Each policy is implemented as an adjustment to VMT based on the policy inputs.
   + Congestion
   + Induced growth
   + Policy benefits
-  + Easy to apply and run quickly
-
+ 
 Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
 ### The Rapid Policy Assessment Tool Process
