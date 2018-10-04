@@ -1,0 +1,11 @@
+10/3/18
+
+Reviewed the overall VE-State Zone Synthesis VESimLandUse [schematic](), and associated [documentation]((https://github.com/gregorbj/VisionEval/blob/develop/sources/modules/VESimLandUse/analyze_3Ds.html) to date. This covers the work to-date on developing  synthetic Bzones and attributing them with of the 5 built form D variables (Steps 1-5 of Schematic), as part of the new [VESimLandUse](https://github.com/gregorbj/VisionEval/tree/develop/sources/modules/VESimLandUse) module.  There have been some changes from the originally proposed approach (and status report), with implementation relying more on 2010 EPA’s Smart Location Database (SLD) as a pivot point for a specific metropolitan area’s land use attributes.  
+
+There was general agreement that the approach was reasonable, and it impressively replicates SLD data variations across most instances.  The following comments/actions were noted:
+  - Interest in keeping the inputs easy, with historic SLD(and/or [PlaceTypes_USA Tool](https://github.com/gregorbj/Placetypes_USA)) and census data, and limited GIS data analysis.  
+  - Interest in seeing test cases for smaller urban areas, in addition to the 9 larger areas. There was recognition that smaller areas are likely to show more scatter and be challenging to replicate, so in application it may be best to report metropolitan areas in aggregate across the state rather than by individual area.  
+  - Interest in being able to review the new inputs (green box entries in the VESimLandUse Schematic) and their ease of use by various participating agencies.  Initial inputs will be developed and tested in the Oregon VE-State test case, which may prompt further review and discussion.  
+  - Add Github Issue#s in Wiki Status report to enable review team to initiate, track and participate in how development topics are resolved.
+
+Status updates will provide further documentation and issues/discussion of remaining tasks.  Next steps will also start to look at what BSimZone attributes are needed for “town” and “rural”  location types. Meanwhile, ODOT is starting to work on developing inputs for the Oregon VE-State test case.
