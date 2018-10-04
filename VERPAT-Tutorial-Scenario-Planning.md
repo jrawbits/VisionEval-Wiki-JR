@@ -88,7 +88,7 @@ Background research in five areas provided the framework for VERPAT to address g
 | Smart growth and freight                         | Freight is necessary for population centers | Impacts of loading docks, truck routing, full-cost pricing, freight facilities and crossings, inter-firm cooperation, stakeholder communication                   |
 
 
-### Land Use Scenarios
+### Land use scenarios
 
 Land use scenarios are based on place types, determined by the type of area and the type of development. 
 
@@ -133,7 +133,7 @@ Transportation Policies
 average speed by road type and congestion level.
 Each policy is implemented as an adjustment to VMT based on the policy inputs. 
  
-### Strategic Models for Integrated Land Use and Transportation
+### Strategic models for integrated land use and transportation
 
 VERPAT is an example of a strategic model developed to test policies, infrastructure investments and changes in demographics. These models support strategic planning efforts by allowing users to consider hundreds of possible scenarios easily. VERPAT combines higher level analysis of the transportation supply with individual characteristics of travel demand, built environment and policies such as:
   + Growth by place type
@@ -148,13 +148,13 @@ VERPAT is an example of a strategic model developed to test policies, infrastruc
  
 Strategic models bridge the gap between regional visioning and specific plans <img align="right" width="100" border=1 src="VERPAT-Tutorial-images/strategic_model_purpose.png">
 
-### The Rapid Policy Assessment Tool Process
+### The Rapid Policy Assessment Tool process
 
 VERPAT is a disaggregate policy model that predicts travel demand impacts at an individual household level.
 
 <img align="center" width="500" border=1 src="VERPAT-Tutorial-images/rpat_process2.png">
    
-### Communicating Results
+### Communicating results
 
 Evaluate scenarios across a range of performance metrics
 
