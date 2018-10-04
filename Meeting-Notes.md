@@ -1,4 +1,5 @@
 ### Meeting Notes
+- [[October 3, 2018|Project Meeting 2018.10.03]] (technical team meeting)
 - [[September 21, 2018|Project Meeting 2018.09.21]]
 - [[September 6, 2018|Project Meeting 2018.09.06]] (technical team meeting)
 - [[August 2, 2018|Project Meeting 2018.08.02]] (technical team meeting)
