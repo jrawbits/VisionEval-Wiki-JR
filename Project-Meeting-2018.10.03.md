@@ -8,5 +8,5 @@
 
 ## VEState
   - See [Status](VE-State-Status)
-  - Completed [#201](https://github.com/gregorbj/VisionEval/issues/201), [#187](https://github.com/gregorbj/VisionEval/issues/187)
+  - Completed [#201](https://github.com/gregorbj/VisionEval/issues/201)
   - Working on [#204](https://github.com/gregorbj/VisionEval/issues/204)
