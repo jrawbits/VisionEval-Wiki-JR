@@ -19,7 +19,7 @@
   - We won't be creating an installer
   - master is the release branch
   - develop is the stable branch (and should always be passing tests)
-  - add_scenario is the [user experience stuff](https://github.com/gregorbj/VisionEval/milestone/17)
+  - add_scenario is for the [user experience stuff](https://github.com/gregorbj/VisionEval/milestone/17)
   - a new branch - vestate - will be created for the [vestate stuff](https://github.com/gregorbj/VisionEval/milestone/16)
   - Documentation updates for VERSPM will be under develop  
 
