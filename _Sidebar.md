@@ -40,5 +40,5 @@
   - [[Approach|VE-State-Approach]]
   - [[Kickoff Meeting|VE-State-Kickoff]]
   - [[July Meeting|VE-State-July-Meeting]]
-  - [[Oct Meeting|VE-State-October-Meeting]]
+  - [[Oct Meeting|VEState-October-Meeting]]
   - [[Status|VE-State-Status]]
